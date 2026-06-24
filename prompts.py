@@ -3,7 +3,7 @@ from graph_utils import GraphNode, GraphEdge, RAComponent
 from text_utils import normalize_name
 import json
 
-# OPTION 1 (map nhiều node)
+# OPTION 1 (map all nodes)
 SYSTEM_PROMPT_OPTION1 = (
     "You are an expert software architect. "
     "Your task is to map nodes in an AADL architecture graph to components "
@@ -12,7 +12,7 @@ SYSTEM_PROMPT_OPTION1 = (
     "formatting, code fences, or explanations."
 )
 
-# OPTION 2 (map từng node)
+# OPTION 2 (map each node)
 SYSTEM_PROMPT_OPTION2 = (
     "You are an expert software architect and a careful classifier.\n"
     "You will receive:\n"
@@ -404,7 +404,7 @@ def build_option1_prompt(
     ra_domain: Optional[str] = None,
     fewshot_learning: bool = False,
 ) -> str:
-    """Prompt Option 1, dùng node name + RA name (+ optional description + optional RA connections)."""
+    """Prompt Option 1, node name + RA name (+ optional description + optional RA connections)."""
 
     id_to_name = {n.id: normalize_name(n.name) for n in nodes}
 

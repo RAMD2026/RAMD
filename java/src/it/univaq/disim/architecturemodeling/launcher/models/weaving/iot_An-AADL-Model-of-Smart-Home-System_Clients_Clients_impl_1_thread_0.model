@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_03d0863357f64452928192f5596f37ef">
-  <relations xmi:id="_59673db7fe13496685405a81d83e0012">
-    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
-    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_Clients_Clients_impl_1.model#comp_system"/>
-    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_Clients_Clients_impl_1.model#comp_client_control_unit"/>
-  </relations>
-</ecore:Implementation_model>

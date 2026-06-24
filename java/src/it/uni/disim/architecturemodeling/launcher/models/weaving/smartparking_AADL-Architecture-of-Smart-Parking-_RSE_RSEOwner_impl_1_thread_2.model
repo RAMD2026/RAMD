@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.disim/ra_adl" xmi:id="_b22f5600a1a7405e8ed057d2780d2ad6">
+  <relations xmi:id="_c25cbf23e4af4bfebb453d4c93a9d030">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AADL-Architecture-of-Smart-Parking-_RSE_RSEOwner_impl_1.model#comp_rse_electric_charge_support_provider"/>
+    <component href="../architectures/AADL-Architecture-of-Smart-Parking-_RSE_RSEOwner_impl_1.model#comp_rse_travel_information_communication_provider"/>
+    <component href="../architectures/AADL-Architecture-of-Smart-Parking-_RSE_RSEOwner_impl_1.model#comp_rse_speed_management_provider"/>
+  </relations>
+  <relations xmi:id="_078f6dff61ac40059023d6fde9c6bf76">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/AADL-Architecture-of-Smart-Parking-_RSE_RSEOwner_impl_1.model#comp_rse_workzone_safety_provider"/>
+  </relations>
+  <relations xmi:id="_13a75c9dd1ba4a08b19e679f7484ae08">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AADL-Architecture-of-Smart-Parking-_RSE_RSEOwner_impl_1.model#comp_rse_traffic_metering_provider"/>
+  </relations>
+</ecore:Implementation_model>

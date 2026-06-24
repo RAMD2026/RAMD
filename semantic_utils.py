@@ -177,9 +177,6 @@ def _build_ra_text(
     ra_descriptions: Dict[str, str],
     use_descriptions: bool,
 ) -> str:
-    """
-    Text đại diện cho một RA component để tính similarity.
-    """
     if use_descriptions:
         desc = ra_descriptions.get(c.name, "")
         if desc:
@@ -196,8 +193,8 @@ def select_top_k_ra_for_node(
     top_k: int,
 ) -> List[RAComponent]:
     """
-    Chọn top-k RA components giống node_name nhất (semantic similarity).
-    node_name nên là normalized name.
+    Select top-k RA components most similar to node_name (semantic similarity).
+    node_name is normalized name.
     """
     if top_k <= 0 or not ra_components:
         return ra_components

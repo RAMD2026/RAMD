@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.disim/ra_adl" xmi:id="_0b0d83eeaf7c4d75a309ac501a0d8fe8">
+  <relations xmi:id="_25a854c54b3c4050b6637c802d3bd79b">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_RSEparkmgmt_impl_1.model#comp_system"/>
+    <component href="../architectures/AadlProjects_smartparking_RSEparkmgmt_impl_1.model#comp_loc_identity"/>
+    <component href="../architectures/AadlProjects_smartparking_RSEparkmgmt_impl_1.model#comp_veh_paymt"/>
+    <component href="../architectures/AadlProjects_smartparking_RSEparkmgmt_impl_1.model#comp_rsideparkcomm"/>
+  </relations>
+  <relations xmi:id="_172fbd3d5a2a4e1fa517c80b6e3981fc">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_RSEparkmgmt_impl_1.model#comp_vehdata"/>
+  </relations>
+</ecore:Implementation_model>

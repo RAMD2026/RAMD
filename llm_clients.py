@@ -65,7 +65,6 @@ class OpenAIClient(BaseLLMClient):
                 return response.choices[0].message.content or ""
             except RateLimitError as e:
                 last_err = e
-                # Thử đọc retry-after từ header trước, nếu không có thì exponential backoff
                 retry_after = None
                 try:
                     retry_after = float(e.response.headers.get("retry-after", 0))
@@ -84,7 +83,6 @@ class OpenAIClient(BaseLLMClient):
                 print("user preview:", repr(user_prompt[:500]))
                 raise
 
-        # Hết số lần retry mà vẫn rate limit
         print(f"===== OPENAI RATE LIMIT: exhausted {self.max_retries} retries =====")
         raise last_err
 

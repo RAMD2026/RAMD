@@ -6,7 +6,7 @@ def compute_scores_for_file(
     mapping_data: Dict[str, Any],
     predicted_mapping: Dict[str, str],
 ) -> Tuple[float, float, Dict[str, float]]:
-    """Trả về: (total_score, avg_score, per_node_score_dict)."""
+    """Return: (total_score, avg_score, per_node_score_dict)."""
     per_node_scores: Dict[str, float] = {}
     total_score = 0.0
     node_count = 0

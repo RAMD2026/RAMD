@@ -26,8 +26,8 @@ mapping:
   execution_mode: "sequential"   #"parallel" or "sequential"
   num_threads: 1
   option: 2                     # 1 = Option 1 (map all nodes); 2 = Option 2 (per-node)
-  max_iterations: 30                # k: số lần lặp tối đa
-  stop_if_same: true               # Dừng nếu mapping không đổi giữa 2 vòng lặp
+  max_iterations: 30                
+  stop_if_same: true              
   use_ra_descriptions: true   
   use_ra_structural_info: false 
   use_chunking: false       #chunking only for option2      
@@ -40,7 +40,7 @@ mapping:
   semantic_top_k: 5 #for RAG
   mapping_knowledge_csv_path: "mapping_data/all_SELF_DRIVING_CAR_connection_components_with_ra_component.csv" #for RAG #or mapping_data/iot_ra_component_mapping_labels.csv mapping_data/all_SMART_PARKING_connection_components_with_ra_component.csv mapping_data/all_SELF_DRIVING_CAR_connection_components_with_ra_component.csv
   mapping_knowledge_top_k: 3 #for RAG
-  mapping_knowledge_weight: 0.7 #for RAG 0.7 nếu muốn dùng KM thì đổi sang 0.7
+  mapping_knowledge_weight: 0.7 
   recreate_mapping_with_llm: true
   recreate_window: 10
   break_after_recreate: true

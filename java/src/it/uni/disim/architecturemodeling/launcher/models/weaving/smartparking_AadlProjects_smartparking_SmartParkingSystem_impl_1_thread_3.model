@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.disim/ra_adl" xmi:id="_81257fe8a6354290ab8d1e4080f1eb71">
+  <relations xmi:id="_5be73348319b4cecb221b1fe118d4753">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_parkmgmtsys"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_parkmgmt"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_dynparklot"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_manageparkreserv"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_park_lot_spaces"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_parkelecpaymt"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_billdriver"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_parking_cost"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_spaces"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_roadsideequip"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_rseparkmgmt"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_veh_paymt"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_rsideparkcomm"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_vehicleobe"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_fromdriver"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_confirmation"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_driverinformationinterface"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_parkingsystem"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_paymentdeviceinterface"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_driverpersonalreq"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_driver"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_personallocmanagement"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_driverloc"/>
+  </relations>
+  <relations xmi:id="_e752fc6c66ee491b912876ec6bc00789">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_park_lot_occupancy"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_detectveh"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_updateparkdata"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_vehdata"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_loc_identity"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_transinfoctr"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_trav_profiles"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_trav_info"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_ticdata_coll"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_misctravinfo"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_traff_data_trav"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_trafficdata"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_pricedata"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_vehiclelocationdata"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_vehicleloc"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_vehiclelocdata"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_vehiclenavmapdatabase"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_personal_info"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_info_thread"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_travnavmapdatabase"/>
+  </relations>
+  <relations xmi:id="_87c8e8481aa24381844906910d6414dd">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Presentation_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_ticinteractv_trav_info"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_driverguidanceinterface"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_roadsideinforeception"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_pers_interactv_trav_info"/>
+  </relations>
+  <relations xmi:id="_75b70dd0bfc643c686f289f52fe32914">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_vehbasesafe"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_communicationremote"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_deviceidentity"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_persidentity"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_communicationsupport"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_vehiclesecurecommunication"/>
+    <component href="../architectures/AadlProjects_smartparking_SmartParkingSystem_impl_1.model#comp_persinfodev"/>
+  </relations>
+</ecore:Implementation_model>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<architecturemodeling:ArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecturemodeling="http://it.disim.univaq/architecturemodeling" xmi:id="arch_smart_home_smart_home_arch_appliances_impl_1" name="SmartHome_smart_home_arch_appliances_impl_1">
-  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_system" name="system" outgoing="conn_activator_system" incoming="conn_activator_system"/>
-  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_activator" name="activator" outgoing="conn_activator_system conn_activator_power_source" incoming="conn_activator_system conn_activator_power_source"/>
-  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_power_source" name="power source" outgoing="conn_activator_power_source" incoming="conn_activator_power_source"/>
-  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_activator_system" name="activator_system" source="comp_activator" target="comp_system"/>
-  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_activator_power_source" name="activator_power_source" source="comp_activator" target="comp_power_source"/>
-</architecturemodeling:ArchitectureModel>

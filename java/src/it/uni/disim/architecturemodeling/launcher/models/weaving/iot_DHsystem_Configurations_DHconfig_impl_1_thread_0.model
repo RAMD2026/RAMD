@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.disim/ra_adl" xmi:id="_896edfe2f4dc4c1c8e8bad9da17f9248">
+  <relations xmi:id="_deb1329fc25e44c5bcca0e8d11919f6f">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/DHsystem_Configurations_DHconfig_impl_1.model#comp_system"/>
+    <component href="../architectures/DHsystem_Configurations_DHconfig_impl_1.model#comp_programmable_appliance_manager"/>
+    <component href="../architectures/DHsystem_Configurations_DHconfig_impl_1.model#comp_security_system"/>
+  </relations>
+  <relations xmi:id="_1786e3ed16444454848b75d3d20d7e2d">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/DHsystem_Configurations_DHconfig_impl_1.model#comp_programmable_thermostat"/>
+    <component href="../architectures/DHsystem_Configurations_DHconfig_impl_1.model#comp_programmable_humidistat"/>
+  </relations>
+  <relations xmi:id="_304cdd0ea85e479f8a3c8004dfd3dd83">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/DHsystem_Configurations_DHconfig_impl_1.model#comp_planner"/>
+    <component href="../architectures/DHsystem_Configurations_DHconfig_impl_1.model#comp_configuration_manager"/>
+    <component href="../architectures/DHsystem_Configurations_DHconfig_impl_1.model#comp_report"/>
+  </relations>
+</ecore:Implementation_model>

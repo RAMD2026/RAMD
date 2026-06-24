@@ -36,10 +36,9 @@ def cosine_similarity(vec_a: np.ndarray, vec_b: np.ndarray) -> float:
 
 def parse_ra_definitions(def_file: str) -> Dict[str, str]:
     """
-    Parse file RA/iot_ra_components.txt có format:
+    Parse file RA/iot_ra_components.txt, format:
     ComponentName: Definition text...
 
-    Mỗi component cách nhau bởi 1 dòng trống.
     """
     with open(def_file, "r", encoding="utf-8") as f:
         content = f.read().strip()
@@ -63,10 +62,6 @@ def normalize_text(text: str) -> str:
 
 
 def build_node_text(node: Dict[str, Any]) -> str:
-    """
-    Tạo text mô tả cho AADL node để embed.
-    Có thể chỉnh lại tùy dataset.
-    """
     name = normalize_text(node.get("name", ""))
     category = normalize_text(node.get("category", ""))
     classifier = normalize_text(node.get("classifier", ""))
@@ -92,10 +87,6 @@ def build_ra_text(
     connectors: List[Dict[str, Any]],
     comp_id_to_name: Dict[str, str]
 ) -> str:
-    """
-    Tạo text mô tả cho RA component để embed.
-    Gồm tên, definition, parent, incoming/outgoing connector names.
-    """
     ra_name = normalize_text(ra_comp.get("name", ""))
     ra_id = ra_comp.get("id", "")
     parent_name = normalize_text(ra_comp.get("parent_name", ""))
@@ -138,9 +129,6 @@ def build_ra_text(
 
 
 def get_ground_truth_ra_names(node: Dict[str, Any]) -> List[str]:
-    """
-    Một prediction được tính đúng nếu predicted RA name thuộc 1 trong các ra_mappings.
-    """
     gt = []
     for item in node.get("ra_mappings", []) or []:
         ra_name = item.get("ra_name")
@@ -155,9 +143,7 @@ def rank_ra_components(
     ra_texts: List[str],
     ra_components: List[Dict[str, Any]]
 ) -> List[Dict[str, Any]]:
-    """
-    Trả về ranking các RA components theo cosine similarity giảm dần.
-    """
+
     node_emb = model.encode(node_text, convert_to_numpy=True, normalize_embeddings=True)
     ra_embs = model.encode(ra_texts, convert_to_numpy=True, normalize_embeddings=True)
 
@@ -210,7 +196,6 @@ def process_mapping_file(
         gt_ra_names = get_ground_truth_ra_names(node)
 
         if not node_text.strip():
-            # Nếu node không có text thì fallback bằng name
             node_text = normalize_text(node.get("name", ""))
 
         ranked = rank_ra_components(

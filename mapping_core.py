@@ -102,7 +102,7 @@ def write_mapping_model(
     ra_ecore_file: str,
     graph_id: str,
     base_dir: str = (
-        "java/src/it/univaq/disim/architecturemodeling/launcher/models/weaving"
+        "java/src/it/uni/disim/architecturemodeling/launcher/models/weaving"
     ),
 ) -> str:
     ra_id_to_name: Dict[str, str] = {c.id: c.name for c in ra_components}
@@ -135,7 +135,7 @@ def write_mapping_model(
     root_attrib = {
         "xmi:version": "2.0",
         "xmlns:xmi": "http://www.omg.org/XMI",
-        "xmlns:ecore": "http://it.univaq.disim/ra_adl",
+        "xmlns:ecore": "http://it.uni.disim/ra_adl",
         "xmi:id": "_" + uuid.uuid4().hex,
     }
 
@@ -264,11 +264,11 @@ def _extract_constraint_violation_count(check_constraints_log: str) -> Optional[
 
 def check_constraints(mapping_model_path, reference_arch_name):
     metamodel_path = (
-        "src/it/univaq/disim/architecturemodeling/launcher/metamodels/RA_ADL.ecore"
+        "src/it/uni/disim/architecturemodeling/launcher/metamodels/RA_ADL.ecore"
     )
 
     reference_arch_prefix = (
-        "src/it/univaq/disim/architecturemodeling/launcher/models/"
+        "src/it/uni/disim/architecturemodeling/launcher/models/"
         "referencearchitectures/"
     )
 
@@ -278,7 +278,7 @@ def check_constraints(mapping_model_path, reference_arch_name):
         "java",
         "-cp",
         CLASSPATH,
-        "it.univaq.disim.architecturemodeling.launcher.validation.RAV",
+        "it.uni.disim.architecturemodeling.launcher.validation.RAV",
         mapping_model_path,
         metamodel_path,
         reference_arch_ecore_path,

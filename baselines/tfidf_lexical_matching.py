@@ -16,7 +16,7 @@ def normalize_text(text: str) -> str:
         return ""
     text = str(text)
 
-    # tách snake_case / ALL_CAPS / CamelCase tương đối
+    # parse snake_case / ALL_CAPS / CamelCase
     text = text.replace("_", " ")
     text = re.sub(r"([a-z])([A-Z])", r"\1 \2", text)
     text = re.sub(r"[^a-zA-Z0-9\s/#.-]", " ", text)
@@ -26,7 +26,7 @@ def normalize_text(text: str) -> str:
 
 def parse_ra_definitions(ra_txt_path: str) -> Dict[str, str]:
     """
-    Parse file RA definitions dạng:
+    Parse file RA definitions:
     Application: Provides ...
     
     IoTIM: Acts as ...
@@ -51,17 +51,12 @@ def parse_ra_definitions(ra_txt_path: str) -> Dict[str, str]:
             ra_defs[name] = definition
 
     if not ra_defs:
-        raise ValueError(f"Không parse được RA definitions từ file: {ra_txt_path}")
+        raise ValueError(f"Cannot parse RA definitions from file: {ra_txt_path}")
 
     return ra_defs
 
 
 def build_ra_texts(mapping_data: Dict[str, Any], ra_defs: Dict[str, str]) -> List[Dict[str, Any]]:
-    """
-    Tạo text biểu diễn cho từng RA component.
-    Ưu tiên dùng component list trong mapping file để lấy id, name, parent_name, tag...
-    Sau đó nối thêm definition từ file txt.
-    """
     ra_components = mapping_data.get("ra_reference", {}).get("components", [])
     results = []
 
@@ -95,15 +90,11 @@ def build_ra_texts(mapping_data: Dict[str, Any], ra_defs: Dict[str, str]) -> Lis
 
 
 def build_node_text(node: Dict[str, Any]) -> str:
-    """
-    Tạo text biểu diễn cho AADL node.
-    """
     name = node.get("name", "")
     category = node.get("category", "")
     classifier = node.get("classifier", "")
     ports = node.get("ports", []) or []
 
-    # Tách classifier để lexical info dễ match hơn
     classifier_text = classifier.replace("/", " ").replace("#", " ").replace(".", " ")
 
     text_parts = [
@@ -122,8 +113,8 @@ def predict_node_ra(
     top_k: int = 3
 ) -> List[Tuple[str, str, float]]:
     """
-    TF-IDF + cosine similarity giữa 1 node và toàn bộ RA components.
-    Trả về top_k kết quả: [(ra_id, ra_name, score), ...]
+    TF-IDF + cosine similarity between 1 node and all RA components.
+    Return top_k: [(ra_id, ra_name, score), ...]
     """
     documents = [node_text] + [item["ra_text"] for item in ra_items]
 
@@ -153,9 +144,6 @@ def predict_node_ra(
 
 
 def evaluate_prediction(pred_ra_name: str, node: Dict[str, Any]) -> Tuple[int, List[str]]:
-    """
-    Correct = 1 nếu pred_ra_name thuộc một trong các ra_mappings ground truth.
-    """
     gt_mappings = node.get("ra_mappings", []) or []
     gt_names = [m.get("ra_name", "").strip() for m in gt_mappings if m.get("ra_name")]
 
@@ -168,12 +156,7 @@ def process_mapping_file(
     ra_defs: Dict[str, str],
     top_k: int = 3
 ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
-    """
-    Xử lý 1 mapping file.
-    Trả về:
-    - records chi tiết từng node
-    - summary của model
-    """
+
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -242,7 +225,7 @@ def run_experiment(mapping_folder: str, ra_txt_path: str, output_dir: str, top_k
     ])
 
     if not mapping_files:
-        raise FileNotFoundError(f"Không tìm thấy file .json nào trong folder: {mapping_folder}")
+        raise FileNotFoundError(f"Cannot find any files .json in the folder: {mapping_folder}")
 
     all_node_records = []
     all_model_summaries = []
@@ -257,7 +240,7 @@ def run_experiment(mapping_folder: str, ra_txt_path: str, output_dir: str, top_k
             print(f"[ERROR] File {fp}: {e}")
 
     if not all_node_records:
-        raise RuntimeError("Không xử lý được file nào thành công.")
+        raise RuntimeError("ERROR")
 
     node_df = pd.DataFrame(all_node_records)
     model_df = pd.DataFrame(all_model_summaries)
