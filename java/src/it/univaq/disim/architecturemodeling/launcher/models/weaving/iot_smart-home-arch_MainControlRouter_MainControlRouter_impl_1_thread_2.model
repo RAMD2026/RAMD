@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_821921b7bb60468d8c814b6db85a2884">
+  <relations xmi:id="_fc047e6f1d174687bc636cab14b9f938">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/smart-home-arch_MainControlRouter_MainControlRouter_impl_1.model#comp_system"/>
+    <component href="../architectures/smart-home-arch_MainControlRouter_MainControlRouter_impl_1.model#comp_zigbee_device_controller"/>
+  </relations>
+  <relations xmi:id="_46988b8a7ab246ec8941cbb1ca96ec88">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Gateway"/>
+    <component href="../architectures/smart-home-arch_MainControlRouter_MainControlRouter_impl_1.model#comp_ip_device_controller"/>
+    <component href="../architectures/smart-home-arch_MainControlRouter_MainControlRouter_impl_1.model#comp_remote_msg_control"/>
+  </relations>
+  <relations xmi:id="_441fdf94ae334dc98d5a46cc11f68233">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/smart-home-arch_MainControlRouter_MainControlRouter_impl_1.model#comp_main_controller"/>
+  </relations>
+</ecore:Implementation_model>

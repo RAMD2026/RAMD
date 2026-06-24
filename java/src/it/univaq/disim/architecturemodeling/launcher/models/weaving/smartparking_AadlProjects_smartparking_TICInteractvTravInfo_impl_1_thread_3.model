@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_dec8864c3a2c4a5e94809308e4b280cb">
+  <relations xmi:id="_fd135fcaf0ff4c258daa4a1144dab568">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_TICInteractvTravInfo_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_f0f859f6142d434382965b0439444496">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Presentation_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_TICInteractvTravInfo_impl_1.model#comp_trav_profiles"/>
+    <component href="../architectures/AadlProjects_smartparking_TICInteractvTravInfo_impl_1.model#comp_trav_info"/>
+  </relations>
+</ecore:Implementation_model>

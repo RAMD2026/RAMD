@@ -1,0 +1,617 @@
+{
+  "graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "IoT System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.application",
+        "name": "Application",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.app-iotim",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.iotim",
+        "name": "IoTIM",
+        "mandatory": true,
+        "incoming": "conn.app-iotim",
+        "outgoing": "conn.iotim-gateway conn.app-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.gateway",
+        "name": "Gateway",
+        "mandatory": true,
+        "incoming": "conn.iotim-gateway",
+        "outgoing": "conn.gateway-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.device",
+        "name": "Device",
+        "mandatory": true,
+        "incoming": "conn.gateway-device conn.app-device",
+        "outgoing": "conn.device-sensor conn.device-actuator",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.driver",
+        "name": "Driver",
+        "mandatory": null,
+        "incoming": null,
+        "outgoing": null,
+        "tag": "child",
+        "parent_id": "comp.device",
+        "parent_name": "Device"
+      },
+      {
+        "id": "comp.sensor",
+        "name": "Sensor",
+        "mandatory": true,
+        "incoming": "conn.device-sensor",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.actuator",
+        "name": "Actuator",
+        "mandatory": true,
+        "incoming": "conn.device-actuator",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.app-iotim",
+        "name": "Application\u2013IoTIM Communication",
+        "source": "comp.application",
+        "target": "comp.iotim",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.iotim-gateway",
+        "name": "IoTIM\u2013Gateway Communication",
+        "source": "comp.iotim",
+        "target": "comp.gateway",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.gateway-device",
+        "name": "Gateway\u2013Device Communication",
+        "source": "comp.gateway",
+        "target": "comp.device",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-sensor",
+        "name": "Device\u2013Sensor Communication",
+        "source": "comp.device",
+        "target": "comp.sensor",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-actuator",
+        "name": "Device\u2013Actuator Communication",
+        "source": "comp.device",
+        "target": "comp.actuator",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.app-device",
+        "name": "Device\u2013IoTIM Communication",
+        "source": "comp.iotim",
+        "target": "comp.device",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_system",
+      "graph_node_id": "SYSTEM::smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+      "name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "in_rs_mcr",
+        "out_rs_mcr",
+        "in_rs_clients",
+        "out_rs_clients"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 69,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 72,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 76,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_client_controller",
+      "graph_node_id": "CLIENT_CONTROLLER::../../github/smart-home-arch/RemoteServer.aadl#RemoteServer.Client_Controller",
+      "name": "CLIENT_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/smart-home-arch/RemoteServer.aadl#RemoteServer.Client_Controller",
+      "ports": [
+        "cc_data_receiver",
+        "cc_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 7,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 11,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 172,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 176,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_router_controller",
+      "graph_node_id": "ROUTER_CONTROLLER::../../github/smart-home-arch/RemoteServer.aadl#RemoteServer.Router_Controller",
+      "name": "ROUTER_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/smart-home-arch/RemoteServer.aadl#RemoteServer.Router_Controller",
+      "ports": [
+        "rc_data_receiver",
+        "rc_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 8,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 19,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 19,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 173,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 173,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 184,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 184,
+          "aadl_graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_system",
+      "target": "comp_router_controller",
+      "type": "connection",
+      "src_port": "in_rs_mcr",
+      "dst_port": "rc_data_receiver",
+      "raw": {
+        "source": "//@featureInstance.0",
+        "destination": "//@componentInstance.1/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_client_controller",
+      "type": "connection",
+      "src_port": "in_rs_clients",
+      "dst_port": "cc_data_receiver",
+      "raw": {
+        "source": "//@featureInstance.2",
+        "destination": "//@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_client_controller",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "cc_data_sender",
+      "dst_port": "out_rs_clients",
+      "raw": {
+        "source": "//@componentInstance.0/@featureInstance.1",
+        "destination": "//@featureInstance.3"
+      }
+    },
+    {
+      "source": "comp_router_controller",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "rc_data_sender",
+      "dst_port": "out_rs_mcr",
+      "raw": {
+        "source": "//@componentInstance.1/@featureInstance.1",
+        "destination": "//@featureInstance.1"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_HOME_graphs.json",
+    "source_ra_grammar": "iot.gramm",
+    "source_mapping_labels": "iot_ra_component_mapping_labels.csv",
+    "enable_global_fallback": true
+  }
+}

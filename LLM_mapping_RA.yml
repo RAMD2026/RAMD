@@ -1,0 +1,59 @@
+# config.yml
+data:
+  #iot
+  # ra_ecore_file: "iot.ecore"
+  # input_folder: "mapping_data/iot_mapping_files"
+  # file_glob: "*.json"           
+  # output_folder: "results"        
+  # ra_description_file: "RA/iot_ra_components.txt"
+
+  #smart_parking
+  # ra_ecore_file: "smartparking.ecore"
+  # input_folder: "mapping_data/SMART_PARKING_mapping_files"  
+  # file_glob: "*.json"             
+  # output_folder: "results"        
+  # ra_description_file: "RA/smartparking_ra_components.txt"
+
+  #autonomous_driving_system
+  ra_ecore_file: "autonomous_driving_system.ecore"
+  input_folder: "mapping_data/SELF_DRIVING_CAR_mapping_files"    
+  file_glob: "*.json"             
+  output_folder: "results"         
+  ra_description_file: "RA/autonomous_driving_system_ra_components.txt"
+
+
+mapping:
+  execution_mode: "sequential"   #"parallel" or "sequential"
+  num_threads: 1
+  option: 2                     # 1 = Option 1 (map all nodes); 2 = Option 2 (per-node)
+  max_iterations: 30                # k: số lần lặp tối đa
+  stop_if_same: true               # Dừng nếu mapping không đổi giữa 2 vòng lặp
+  use_ra_descriptions: true   
+  use_ra_structural_info: false 
+  use_chunking: false       #chunking only for option2      
+  chunk_size: 3
+  check_RA_constraints: true
+  fewshot_learning: true
+  same_mapping_patience: 3
+  use_semantic_filter: true   #RAG only for option2 #switch to true when using RAG
+  semantic_model_name: "sentence-transformers/all-MiniLM-L6-v2"  #for RAG
+  semantic_top_k: 5 #for RAG
+  mapping_knowledge_csv_path: "mapping_data/all_SELF_DRIVING_CAR_connection_components_with_ra_component.csv" #for RAG #or mapping_data/iot_ra_component_mapping_labels.csv mapping_data/all_SMART_PARKING_connection_components_with_ra_component.csv mapping_data/all_SELF_DRIVING_CAR_connection_components_with_ra_component.csv
+  mapping_knowledge_top_k: 3 #for RAG
+  mapping_knowledge_weight: 0.7 #for RAG 0.7 nếu muốn dùng KM thì đổi sang 0.7
+  recreate_mapping_with_llm: true
+  recreate_window: 10
+  break_after_recreate: true
+
+
+
+
+models:
+  - name: "chatgpt"
+    provider: "openai"
+    model: "gpt-4o-mini"          # or "gpt-4.1" / "gpt-4o" "gpt-4o-mini"
+    temperature: 0
+
+api_keys:
+  openai_env: "OPENAI_API_KEY"
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_3edbc91de6264d35a75b97a329c747d5">
+  <relations xmi:id="_c423d5185460424b9f6a7af174009db7">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_persinfodev_impl_1.model#comp_system"/>
+    <component href="../architectures/AadlProjects_smartparking_persinfodev_impl_1.model#comp_info_thread"/>
+    <component href="../architectures/AadlProjects_smartparking_persinfodev_impl_1.model#comp_personallocmanagement"/>
+    <component href="../architectures/AadlProjects_smartparking_persinfodev_impl_1.model#comp_driverloc"/>
+  </relations>
+  <relations xmi:id="_feb9c8b4cd1942dd8da909b0940ac485">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Presentation_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_persinfodev_impl_1.model#comp_pers_interactv_trav_info"/>
+  </relations>
+  <relations xmi:id="_4f5cb5cb27f946d88892e2dcc3fc540c">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_persinfodev_impl_1.model#comp_personal_info"/>
+    <component href="../architectures/AadlProjects_smartparking_persinfodev_impl_1.model#comp_travnavmapdatabase"/>
+  </relations>
+</ecore:Implementation_model>

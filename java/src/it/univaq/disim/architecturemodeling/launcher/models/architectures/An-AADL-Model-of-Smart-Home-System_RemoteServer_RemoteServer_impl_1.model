@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<architecturemodeling:ArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecturemodeling="http://it.disim.univaq/architecturemodeling" xmi:id="arch_an_aadl_model_of_smart_home_system_remote_server_remote_server_impl_1" name="An-AADL-Model-of-Smart-Home-System_RemoteServer_RemoteServer_impl_1">
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_system" name="system" outgoing="conn_router_controller_system conn_client_controller_system" incoming="conn_router_controller_system conn_client_controller_system"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_client_controller" name="client controller" outgoing="conn_client_controller_system" incoming="conn_client_controller_system"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_router_controller" name="router controller" outgoing="conn_router_controller_system" incoming="conn_router_controller_system"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_router_controller_system" name="router_controller_system" source="comp_router_controller" target="comp_system"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_client_controller_system" name="client_controller_system" source="comp_client_controller" target="comp_system"/>
+</architecturemodeling:ArchitectureModel>

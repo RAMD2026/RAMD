@@ -1,0 +1,241 @@
+{
+  "num_models": 29,
+  "mean_of_model_average_scores": 0.3690711452961906,
+  "dataset_average_score": 0.4090909090909091,
+  "total_correct": 99,
+  "total_mappings": 242,
+  "per_model_results": [
+    {
+      "graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+      "source_file": "mapping_AADL_Architecture_of_Smart_Parking_InformationServiceProvider_ISP_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 1,
+      "average_score_for_model": 0.3333333333333333,
+      "output_file": "smartparking_output_embedding_matching/mapping_AADL_Architecture_of_Smart_Parking_InformationServiceProvider_ISP_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AADL-Architecture-of-Smart-Parking-_RSE_RSEOwner_impl_1.aaxl2",
+      "source_file": "mapping_AADL_Architecture_of_Smart_Parking_RSE_RSEOwner_impl_1_aaxl2.json",
+      "num_nodes": 5,
+      "num_correct": 2,
+      "average_score_for_model": 0.4,
+      "output_file": "smartparking_output_embedding_matching/mapping_AADL_Architecture_of_Smart_Parking_RSE_RSEOwner_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AADL-Architecture-of-Smart-Parking-_SmartParkingSystem_tispSys_impl_1.aaxl2",
+      "source_file": "mapping_AADL_Architecture_of_Smart_Parking_SmartParkingSystem_tispSys_impl_1_aaxl2.json",
+      "num_nodes": 13,
+      "num_correct": 7,
+      "average_score_for_model": 0.5384615384615384,
+      "output_file": "smartparking_output_embedding_matching/mapping_AADL_Architecture_of_Smart_Parking_SmartParkingSystem_tispSys_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AADL-SmartParkingApplication_InformationServiceProvider_ISP_impl_1.aaxl2",
+      "source_file": "mapping_AADL_SmartParkingApplication_InformationServiceProvider_ISP_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 2,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "smartparking_output_embedding_matching/mapping_AADL_SmartParkingApplication_InformationServiceProvider_ISP_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AADL-SmartParkingApplication_RSE_RSEOwner_impl_1.aaxl2",
+      "source_file": "mapping_AADL_SmartParkingApplication_RSE_RSEOwner_impl_1_aaxl2.json",
+      "num_nodes": 5,
+      "num_correct": 2,
+      "average_score_for_model": 0.4,
+      "output_file": "smartparking_output_embedding_matching/mapping_AADL_SmartParkingApplication_RSE_RSEOwner_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+      "source_file": "mapping_AADL_SmartParkingApplication_SmartParkingSystem_tispSys_impl_1_aaxl2.json",
+      "num_nodes": 13,
+      "num_correct": 7,
+      "average_score_for_model": 0.5384615384615384,
+      "output_file": "smartparking_output_embedding_matching/mapping_AADL_SmartParkingApplication_SmartParkingSystem_tispSys_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_RSEparkmgmt_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_RSEparkmgmt_impl_1_aaxl2.json",
+      "num_nodes": 5,
+      "num_correct": 2,
+      "average_score_for_model": 0.4,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_RSEparkmgmt_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_SmartParkingSystem_impl_1_aaxl2.json",
+      "num_nodes": 54,
+      "num_correct": 22,
+      "average_score_for_model": 0.4074074074074074,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_SmartParkingSystem_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_TICDataColl_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_TICDataColl_impl_1_aaxl2.json",
+      "num_nodes": 5,
+      "num_correct": 2,
+      "average_score_for_model": 0.4,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_TICDataColl_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_TICInteractvTravInfo_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 0,
+      "average_score_for_model": 0.0,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_TICInteractvTravInfo_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_communicationsupport_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_communicationsupport_impl_1_aaxl2.json",
+      "num_nodes": 1,
+      "num_correct": 0,
+      "average_score_for_model": 0.0,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_communicationsupport_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_driver_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_driver_impl_1_aaxl2.json",
+      "num_nodes": 1,
+      "num_correct": 1,
+      "average_score_for_model": 1.0,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_driver_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_parkelecpaymt_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_parkelecpaymt_impl_1_aaxl2.json",
+      "num_nodes": 5,
+      "num_correct": 4,
+      "average_score_for_model": 0.8,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_parkelecpaymt_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_parkingsystem_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_parkingsystem_impl_1_aaxl2.json",
+      "num_nodes": 1,
+      "num_correct": 0,
+      "average_score_for_model": 0.0,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_parkingsystem_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_parkmgmt_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_parkmgmt_impl_1_aaxl2.json",
+      "num_nodes": 6,
+      "num_correct": 1,
+      "average_score_for_model": 0.16666666666666666,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_parkmgmt_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_parkmgmtsys_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_parkmgmtsys_impl_1_aaxl2.json",
+      "num_nodes": 12,
+      "num_correct": 6,
+      "average_score_for_model": 0.5,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_parkmgmtsys_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_persInteractvTravInfo_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_persInteractvTravInfo_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 0,
+      "average_score_for_model": 0.0,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_persInteractvTravInfo_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_persinfodev_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_persinfodev_impl_1_aaxl2.json",
+      "num_nodes": 7,
+      "num_correct": 1,
+      "average_score_for_model": 0.14285714285714285,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_persinfodev_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_personallocmanagement_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_personallocmanagement_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 1,
+      "average_score_for_model": 0.3333333333333333,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_personallocmanagement_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_roadsideequip_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_roadsideequip_impl_1_aaxl2.json",
+      "num_nodes": 6,
+      "num_correct": 3,
+      "average_score_for_model": 0.5,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_roadsideequip_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_roadsideinforeception_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_roadsideinforeception_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 3,
+      "average_score_for_model": 1.0,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_roadsideinforeception_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_transinfoctr_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_transinfoctr_impl_1_aaxl2.json",
+      "num_nodes": 9,
+      "num_correct": 5,
+      "average_score_for_model": 0.5555555555555556,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_transinfoctr_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_vehbasesafe_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_vehbasesafe_impl_1_aaxl2.json",
+      "num_nodes": 10,
+      "num_correct": 3,
+      "average_score_for_model": 0.3,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_vehbasesafe_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_smartparking_vehicleobe_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_smartparking_vehicleobe_impl_1_aaxl2.json",
+      "num_nodes": 19,
+      "num_correct": 8,
+      "average_score_for_model": 0.42105263157894735,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_smartparking_vehicleobe_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_vtv_VehicleTransitSystem_impl_1_aaxl2.json",
+      "num_nodes": 12,
+      "num_correct": 4,
+      "average_score_for_model": 0.3333333333333333,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_vtv_VehicleTransitSystem_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_vtv_remoteVehicleOBE_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_vtv_remoteVehicleOBE_impl_1_aaxl2.json",
+      "num_nodes": 1,
+      "num_correct": 0,
+      "average_score_for_model": 0.0,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_vtv_remoteVehicleOBE_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_vtv_transOperator_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_vtv_transOperator_impl_1_aaxl2.json",
+      "num_nodes": 1,
+      "num_correct": 0,
+      "average_score_for_model": 0.0,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_vtv_transOperator_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+      "source_file": "mapping_AadlProjects_vtv_transvobe_impl_1_aaxl2.json",
+      "num_nodes": 7,
+      "num_correct": 1,
+      "average_score_for_model": 0.14285714285714285,
+      "output_file": "smartparking_output_embedding_matching/mapping_AadlProjects_vtv_transvobe_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+      "source_file": "mapping_ParkingProject_parking_system_parking_simple_1_aaxl2.json",
+      "num_nodes": 26,
+      "num_correct": 11,
+      "average_score_for_model": 0.4230769230769231,
+      "output_file": "smartparking_output_embedding_matching/mapping_ParkingProject_parking_system_parking_simple_1_aaxl2_embedding_mapping.json"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_70078b96893645ce8eef2fc54f33b45a">
+  <relations xmi:id="_5a42aae5efb04d0f9b53ba9649faa559">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_personallocmanagement_impl_1.model#comp_system"/>
+    <component href="../architectures/AadlProjects_smartparking_personallocmanagement_impl_1.model#comp_driverloc"/>
+  </relations>
+  <relations xmi:id="_554eafdaae23428c802689cdaaaa025e">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_personallocmanagement_impl_1.model#comp_travnavmapdatabase"/>
+  </relations>
+</ecore:Implementation_model>

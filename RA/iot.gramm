@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gramm:ReferenceArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gramm="http://example.org/gramm" referenceArchitectureName="IoT System Reference Architecture">
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.application" name="Application" mandatory="true" outgoing="conn.app-iotim"/>
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.iotim" name="IoTIM" mandatory="true" outgoing="conn.iotim-gateway conn.app-device" incoming="conn.app-iotim"/>
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.gateway" name="Gateway" mandatory="true" outgoing="conn.gateway-device" incoming="conn.iotim-gateway"/>
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.device" name="Device" mandatory="true" outgoing="conn.device-sensor conn.device-actuator" incoming="conn.gateway-device conn.app-device">
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.driver" name="Driver"/>
+  </raelements>
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.sensor" name="Sensor" mandatory="true" incoming="conn.device-sensor"/>
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.actuator" name="Actuator" mandatory="true" incoming="conn.device-actuator"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.app-iotim" name="Application–IoTIM Communication" bidirectional="true" sourceRef="comp.application" targetRef="comp.iotim"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.iotim-gateway" name="IoTIM–Gateway Communication" bidirectional="true" sourceRef="comp.iotim" targetRef="comp.gateway"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.gateway-device" name="Gateway–Device Communication" bidirectional="true" sourceRef="comp.gateway" targetRef="comp.device"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.device-sensor" name="Device–Sensor Communication" bidirectional="true" sourceRef="comp.device" targetRef="comp.sensor"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.device-actuator" name="Device–Actuator Communication" bidirectional="true" sourceRef="comp.device" targetRef="comp.actuator"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.app-device" name="Device–IoTIM Communication" bidirectional="true" sourceRef="comp.iotim" targetRef="comp.device"/>
+</gramm:ReferenceArchitectureModel>

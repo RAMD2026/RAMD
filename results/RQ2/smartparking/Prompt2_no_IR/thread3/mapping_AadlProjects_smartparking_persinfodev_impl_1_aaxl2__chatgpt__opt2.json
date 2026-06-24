@@ -1,0 +1,51 @@
+{
+  "thread": 3,
+  "model": "chatgpt",
+  "option": 2,
+  "graph_id": "AadlProjects_smartparking_persinfodev_impl_1.aaxl2",
+  "file": "mapping_AadlProjects_smartparking_persinfodev_impl_1_aaxl2.json",
+  "predicted_mapping": {
+    "system": "Business_Logic_Layer",
+    "pers interactv trav info": "Presentation_Layer",
+    "personal info": "Data_Management_Layer",
+    "info thread": "Business_Logic_Layer",
+    "personallocmanagement": "Business_Logic_Layer",
+    "travnavmapdatabase": "Data_Management_Layer",
+    "driverloc": "Business_Logic_Layer"
+  },
+  "total_score": 4.883005,
+  "avg_score": 0.697572,
+  "per_node_scores": {
+    "system": 0.976601,
+    "pers interactv trav info": 0.0,
+    "personal info": 0.0,
+    "info thread": 0.976601,
+    "personallocmanagement": 0.976601,
+    "travnavmapdatabase": 0.976601,
+    "driverloc": 0.976601
+  },
+  "check_constraints_log": "All constraints have been satisfied",
+  "avg_prompt_cost": 760.867213,
+  "total_llm_cost": 5326,
+  "execution_time_seconds": 12.2121,
+  "config": {
+    "use_ra_descriptions": true,
+    "use_ra_structural_info": false,
+    "check_RA_constraints": true,
+    "same_mapping_patience": 3,
+    "fewshot_learning": true,
+    "recreate_mapping_with_llm": false,
+    "recreate_window": 10,
+    "break_after_recreate": true,
+    "use_chunking": false,
+    "chunk_size": 3,
+    "use_semantic_filter": true,
+    "semantic_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "semantic_top_k": 5,
+    "mapping_knowledge_csv_path": "mapping_data/all_SMART_PARKING_connection_components_with_ra_component.csv",
+    "mapping_knowledge_top_k": 3,
+    "mapping_knowledge_weight": 0.0,
+    "num_threads": 5,
+    "execution_mode": "sequential"
+  }
+}

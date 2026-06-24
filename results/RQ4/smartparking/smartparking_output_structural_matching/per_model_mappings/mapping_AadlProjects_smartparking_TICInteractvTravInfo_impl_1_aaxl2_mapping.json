@@ -1,0 +1,317 @@
+{
+  "graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+  "ra_name": "Smart Parking System Reference Architecture",
+  "num_nodes": 3,
+  "num_edges": 2,
+  "evaluated_nodes": 3,
+  "correct_predictions": 0,
+  "accuracy": 0.0,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.562944,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.562944
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.562944
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.486607
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.486607
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 0,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 104,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 105,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 111,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 116,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 117,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 130,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 140,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 156,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 159,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 178,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 181,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 194,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 207,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 214,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 219,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 225,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_trav_profiles",
+      "graph_node_id": "trav_profiles::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_profiles.impl",
+      "node_name": "trav_profiles",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_profiles.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.331333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.238
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.238
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 21,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 183,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_trav_info",
+      "graph_node_id": "trav_info::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_info.impl",
+      "node_name": "trav_info",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_info.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.534318,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.534318
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.534318
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.457981
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.457981
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 22,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 158,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 184,
+          "aadl_graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.000395
+}

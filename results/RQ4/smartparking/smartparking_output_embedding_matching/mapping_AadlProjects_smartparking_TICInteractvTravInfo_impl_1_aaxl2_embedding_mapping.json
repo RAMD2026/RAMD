@@ -1,0 +1,113 @@
+{
+  "graph_id": "AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+  "source_file": "mapping_AadlProjects_smartparking_TICInteractvTravInfo_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 3,
+  "num_correct": 0,
+  "average_score_for_model": 0.0,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "traveler_req",
+        "interactv_travle_info"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: traveler req, interactv travle info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Security",
+      "predicted_ra_id": "comp.security",
+      "predicted_score": 0.3880331516265869,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.3880331516265869,
+          "ra_text": "RA component: Security. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_trav_profiles",
+      "graph_node_id": "trav_profiles::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_profiles.impl",
+      "node_name": "trav_profiles",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_profiles.impl",
+      "ports": [
+        "traveler_req",
+        "interactv_travle_info"
+      ],
+      "node_text_used": "Component name: trav profiles. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.trav profiles.impl. Ports: traveler req, interactv travle info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.45899224281311035,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.45899224281311035,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_trav_info",
+      "graph_node_id": "trav_info::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_info.impl",
+      "node_name": "trav_info",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_info.impl",
+      "ports": [
+        "traveler_req",
+        "interactv_travle_info"
+      ],
+      "node_text_used": "Component name: trav info. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.trav info.impl. Ports: traveler req, interactv travle info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4546887278556824,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4546887278556824,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    }
+  ]
+}

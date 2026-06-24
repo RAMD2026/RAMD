@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_3cc90c8385ae43579ea6b0f5a5a6abd8">
+  <relations xmi:id="_3be03267a71a4a7395ea43c1ae96dc53">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_parkingsystem_impl_1.model#comp_paymentdeviceinterface"/>
+  </relations>
+</ecore:Implementation_model>

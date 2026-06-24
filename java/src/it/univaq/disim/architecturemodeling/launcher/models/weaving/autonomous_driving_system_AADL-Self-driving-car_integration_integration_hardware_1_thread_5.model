@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_3855546ad04c467284e682be77caba61">
+  <relations xmi:id="_a550ab17ac6240f7ba0306117b56b199">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Sensors"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_camera"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_radar1"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_radar2"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_traffic_lane_sensor"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_induction_speed_sensor"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_optical_speed_sensor"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_thr_overtaking_detection"/>
+  </relations>
+  <relations xmi:id="_d3db32e1042a477da9701f823c3c5617">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Mobile_Platform_Actuators"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_acceleration_pedal"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_brake"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_accelerator"/>
+  </relations>
+  <relations xmi:id="_fe8cc8addfdc4e8b842116108e63b1c2">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//UI_UX_and_Infotainment"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_panel"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_panel_controller"/>
+  </relations>
+  <relations xmi:id="_9a4a259f4f69469a85fd95eb98ebd4ea">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Data_Collection"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_data_acquisition"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_thr_distance_voter"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_thr_speed_voter"/>
+  </relations>
+  <relations xmi:id="_d15af2c64a2f4a97823188365827842f">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//ML_AI_DL_Algorithms"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_thr_image_analysis"/>
+  </relations>
+  <relations xmi:id="_6131155592b34a99a535a8ad751f54bd">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Real_time_and_Critical_Control_Software"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_speed_controller"/>
+  </relations>
+  <relations xmi:id="_260a551552664bb8965c9bf9605ae43a">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Internal_Networking_Interfaces"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_can1"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_can2"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_can3"/>
+  </relations>
+  <relations xmi:id="_8ddd79d808fb49f292dbbabc3a202ee9">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Processing_Unit"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_cpu1"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_hardware_1.model#comp_cpu2"/>
+  </relations>
+</ecore:Implementation_model>

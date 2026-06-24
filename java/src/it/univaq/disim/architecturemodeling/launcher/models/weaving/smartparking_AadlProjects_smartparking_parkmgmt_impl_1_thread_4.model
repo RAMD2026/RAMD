@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_0fe6bba932144b689e1b4677448ae55c">
+  <relations xmi:id="_0e5e2dc53aa342e0834c4e94c12b7cc6">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_parkmgmt_impl_1.model#comp_system"/>
+    <component href="../architectures/AadlProjects_smartparking_parkmgmt_impl_1.model#comp_dynparklot"/>
+    <component href="../architectures/AadlProjects_smartparking_parkmgmt_impl_1.model#comp_manageparkreserv"/>
+    <component href="../architectures/AadlProjects_smartparking_parkmgmt_impl_1.model#comp_park_lot_spaces"/>
+  </relations>
+  <relations xmi:id="_33449b31b0ef41c4b8bdce540ce67d72">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_parkmgmt_impl_1.model#comp_park_lot_occupancy"/>
+    <component href="../architectures/AadlProjects_smartparking_parkmgmt_impl_1.model#comp_detectveh"/>
+  </relations>
+</ecore:Implementation_model>

@@ -1,0 +1,753 @@
+{
+  "graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "IoT System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.application",
+        "name": "Application",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.app-iotim",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.iotim",
+        "name": "IoTIM",
+        "mandatory": true,
+        "incoming": "conn.app-iotim",
+        "outgoing": "conn.iotim-gateway conn.app-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.gateway",
+        "name": "Gateway",
+        "mandatory": true,
+        "incoming": "conn.iotim-gateway",
+        "outgoing": "conn.gateway-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.device",
+        "name": "Device",
+        "mandatory": true,
+        "incoming": "conn.gateway-device conn.app-device",
+        "outgoing": "conn.device-sensor conn.device-actuator",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.driver",
+        "name": "Driver",
+        "mandatory": null,
+        "incoming": null,
+        "outgoing": null,
+        "tag": "child",
+        "parent_id": "comp.device",
+        "parent_name": "Device"
+      },
+      {
+        "id": "comp.sensor",
+        "name": "Sensor",
+        "mandatory": true,
+        "incoming": "conn.device-sensor",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.actuator",
+        "name": "Actuator",
+        "mandatory": true,
+        "incoming": "conn.device-actuator",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.app-iotim",
+        "name": "Application\u2013IoTIM Communication",
+        "source": "comp.application",
+        "target": "comp.iotim",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.iotim-gateway",
+        "name": "IoTIM\u2013Gateway Communication",
+        "source": "comp.iotim",
+        "target": "comp.gateway",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.gateway-device",
+        "name": "Gateway\u2013Device Communication",
+        "source": "comp.gateway",
+        "target": "comp.device",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-sensor",
+        "name": "Device\u2013Sensor Communication",
+        "source": "comp.device",
+        "target": "comp.sensor",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-actuator",
+        "name": "Device\u2013Actuator Communication",
+        "source": "comp.device",
+        "target": "comp.actuator",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.app-device",
+        "name": "Device\u2013IoTIM Communication",
+        "source": "comp.iotim",
+        "target": "comp.device",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_system",
+      "graph_node_id": "SYSTEM::SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+      "name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "busdata",
+        "configure_control",
+        "Configured_control"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 69,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 72,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 76,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_software_updater",
+      "graph_node_id": "SOFTWARE_UPDATER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Software_updater",
+      "name": "SOFTWARE_UPDATER",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Software_updater",
+      "ports": [
+        "command",
+        "status"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 144,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 144,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 152,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 152,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_plugin_manager",
+      "graph_node_id": "PLUGIN_MANAGER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.plugin_manager",
+      "name": "PLUGIN_MANAGER",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.plugin_manager",
+      "ports": [
+        "Installation",
+        "current_status"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 150,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 150,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 104,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_event_manager",
+      "graph_node_id": "EVENT_MANAGER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.event_manager",
+      "name": "EVENT_MANAGER",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.event_manager",
+      "ports": [
+        "REGIN",
+        "current_status"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 149,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 149,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_custom_plugin",
+      "graph_node_id": "CUSTOM_PLUGIN::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.custom_plugin",
+      "name": "CUSTOM_PLUGIN",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.custom_plugin",
+      "ports": [
+        "command",
+        "status"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 148,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 148,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_protocol_layer",
+      "graph_node_id": "PROTOCOL_LAYER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.protocol_layer",
+      "name": "PROTOCOL_LAYER",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.protocol_layer",
+      "ports": [
+        "Pinput",
+        "Poutput"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 142,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 142,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 151,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 151,
+          "aadl_graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_system",
+      "target": "comp_software_updater",
+      "type": "connection",
+      "src_port": "configure_control",
+      "dst_port": "command",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_plugin_manager",
+      "type": "connection",
+      "src_port": "configure_control",
+      "dst_port": "Installation",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.1/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_event_manager",
+      "type": "connection",
+      "src_port": "configure_control",
+      "dst_port": "REGIN",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.2/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_custom_plugin",
+      "type": "connection",
+      "src_port": "configure_control",
+      "dst_port": "command",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.3/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_protocol_layer",
+      "type": "connection",
+      "src_port": "configure_control",
+      "dst_port": "Pinput",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.4/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_software_updater",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "status",
+      "dst_port": "Configured_control",
+      "raw": {
+        "source": "//@componentInstance.0/@featureInstance.1",
+        "destination": "//@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_plugin_manager",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "current_status",
+      "dst_port": "Configured_control",
+      "raw": {
+        "source": "//@componentInstance.1/@featureInstance.1",
+        "destination": "//@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_event_manager",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "current_status",
+      "dst_port": "Configured_control",
+      "raw": {
+        "source": "//@componentInstance.2/@featureInstance.1",
+        "destination": "//@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_custom_plugin",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "status",
+      "dst_port": "Configured_control",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.1",
+        "destination": "//@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_protocol_layer",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "Poutput",
+      "dst_port": "Configured_control",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.1",
+        "destination": "//@featureInstance.2"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_HOME_graphs.json",
+    "source_ra_grammar": "iot.gramm",
+    "source_mapping_labels": "iot_ra_component_mapping_labels.csv",
+    "enable_global_fallback": true
+  }
+}

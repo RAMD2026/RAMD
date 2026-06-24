@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_fd92feb6a9a541a094bdc593cb276c63">
+  <relations xmi:id="_a06b7cd766ba480a81140dce956109c4">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/DHsystem_Devices_humidity_impl_1.model#comp_system"/>
+    <component href="../architectures/DHsystem_Devices_humidity_impl_1.model#comp_humidifier"/>
+    <component href="../architectures/DHsystem_Devices_humidity_impl_1.model#comp_dehumidifier"/>
+  </relations>
+  <relations xmi:id="_1973bec43d4045f98ba45915cf819c30">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Sensor"/>
+    <component href="../architectures/DHsystem_Devices_humidity_impl_1.model#comp_humidity_sensor"/>
+  </relations>
+</ecore:Implementation_model>

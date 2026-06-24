@@ -1,0 +1,56 @@
+{
+  "graph_id": "AadlProjects_vtv_remoteVehicleOBE_impl_1.aaxl2",
+  "source_file": "mapping_AadlProjects_vtv_remoteVehicleOBE_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 1,
+  "num_correct": 0,
+  "average_score_for_model": 0.0,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::AadlProjects_vtv_remoteVehicleOBE_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "rvloc",
+        "vloc",
+        "vloc_e"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: rvloc, vloc, vloc e.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Security",
+      "predicted_ra_id": "comp.security",
+      "predicted_score": 0.3637513220310211,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.3637513220310211,
+          "ra_text": "RA component: Security. Tag: raelements."
+        }
+      ]
+    }
+  ]
+}

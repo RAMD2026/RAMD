@@ -1,0 +1,47 @@
+{
+  "thread": 3,
+  "model": "chatgpt",
+  "option": 2,
+  "graph_id": "AadlProjects_smartparking_parkelecpaymt_impl_1.aaxl2",
+  "file": "mapping_AadlProjects_smartparking_parkelecpaymt_impl_1_aaxl2.json",
+  "predicted_mapping": {
+    "system": "Business_Logic_Layer",
+    "billdriver": "Business_Logic_Layer",
+    "parking cost": "Business_Logic_Layer",
+    "updateparkdata": "Data_Management_Layer",
+    "spaces": "Business_Logic_Layer"
+  },
+  "total_score": 5.0,
+  "avg_score": 1.0,
+  "per_node_scores": {
+    "system": 1.0,
+    "billdriver": 1.0,
+    "parking cost": 1.0,
+    "updateparkdata": 1.0,
+    "spaces": 1.0
+  },
+  "check_constraints_log": "All constraints have been satisfied",
+  "avg_prompt_cost": 706.328882,
+  "total_llm_cost": 3507,
+  "execution_time_seconds": 10.134969,
+  "config": {
+    "use_ra_descriptions": true,
+    "use_ra_structural_info": false,
+    "check_RA_constraints": true,
+    "same_mapping_patience": 3,
+    "fewshot_learning": true,
+    "recreate_mapping_with_llm": true,
+    "recreate_window": 10,
+    "break_after_recreate": true,
+    "use_chunking": false,
+    "chunk_size": 3,
+    "use_semantic_filter": true,
+    "semantic_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "semantic_top_k": 3,
+    "mapping_knowledge_csv_path": "mapping_data/all_SMART_PARKING_connection_components_with_ra_component.csv",
+    "mapping_knowledge_top_k": 3,
+    "mapping_knowledge_weight": 0.7,
+    "num_threads": 5,
+    "execution_mode": "sequential"
+  }
+}

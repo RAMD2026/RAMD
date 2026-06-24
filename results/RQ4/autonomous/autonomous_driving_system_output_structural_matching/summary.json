@@ -1,0 +1,124 @@
+{
+  "method": "Structural matching",
+  "description": "A fully unsupervised baseline that uses only graph structure, node degree, leaf/root-like role, parent-child relation, and iterative neighborhood consistency.",
+  "input_dir": "mapping_data/SELF_DRIVING_CAR_mapping_files",
+  "output_dir": "autonomous_driving_system_output_structural_matching",
+  "num_models": 10,
+  "mean_of_model_accuracies": 0.32035,
+  "dataset_average_accuracy": 0.320442,
+  "total_correct_predictions": 58,
+  "total_evaluated_nodes": 181,
+  "total_runtime_seconds": 0.042497,
+  "per_model_results": [
+    {
+      "graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+      "input_file": "mapping_AADL_Self_driving_car_integration_integration_functional_1_aaxl2.json",
+      "output_file": "mapping_AADL_Self_driving_car_integration_integration_functional_1_aaxl2_mapping.json",
+      "num_nodes": 16,
+      "num_edges": 16,
+      "evaluated_nodes": 16,
+      "correct_predictions": 7,
+      "accuracy": 0.4375,
+      "runtime_seconds": 0.002646
+    },
+    {
+      "graph_id": "AADL-Self-driving-car_integration_integration_functional_2.aaxl2",
+      "input_file": "mapping_AADL_Self_driving_car_integration_integration_functional_2_aaxl2.json",
+      "output_file": "mapping_AADL_Self_driving_car_integration_integration_functional_2_aaxl2_mapping.json",
+      "num_nodes": 17,
+      "num_edges": 16,
+      "evaluated_nodes": 17,
+      "correct_predictions": 7,
+      "accuracy": 0.411765,
+      "runtime_seconds": 0.002425
+    },
+    {
+      "graph_id": "AADL-Self-driving-car_integration_integration_functional_3.aaxl2",
+      "input_file": "mapping_AADL_Self_driving_car_integration_integration_functional_3_aaxl2.json",
+      "output_file": "mapping_AADL_Self_driving_car_integration_integration_functional_3_aaxl2_mapping.json",
+      "num_nodes": 17,
+      "num_edges": 16,
+      "evaluated_nodes": 17,
+      "correct_predictions": 7,
+      "accuracy": 0.411765,
+      "runtime_seconds": 0.002289
+    },
+    {
+      "graph_id": "AADL-Self-driving-car_integration_integration_functional_4.aaxl2",
+      "input_file": "mapping_AADL_Self_driving_car_integration_integration_functional_4_aaxl2.json",
+      "output_file": "mapping_AADL_Self_driving_car_integration_integration_functional_4_aaxl2_mapping.json",
+      "num_nodes": 17,
+      "num_edges": 16,
+      "evaluated_nodes": 17,
+      "correct_predictions": 7,
+      "accuracy": 0.411765,
+      "runtime_seconds": 0.002361
+    },
+    {
+      "graph_id": "AADL-Self-driving-car_integration_integration_hardware_1.aaxl2",
+      "input_file": "mapping_AADL_Self_driving_car_integration_integration_hardware_1_aaxl2.json",
+      "output_file": "mapping_AADL_Self_driving_car_integration_integration_hardware_1_aaxl2_mapping.json",
+      "num_nodes": 22,
+      "num_edges": 24,
+      "evaluated_nodes": 22,
+      "correct_predictions": 7,
+      "accuracy": 0.318182,
+      "runtime_seconds": 0.002806
+    },
+    {
+      "graph_id": "AADL-Self-driving-car_integration_integration_hardware_2.aaxl2",
+      "input_file": "mapping_AADL_Self_driving_car_integration_integration_hardware_2_aaxl2.json",
+      "output_file": "mapping_AADL_Self_driving_car_integration_integration_hardware_2_aaxl2_mapping.json",
+      "num_nodes": 22,
+      "num_edges": 24,
+      "evaluated_nodes": 22,
+      "correct_predictions": 7,
+      "accuracy": 0.318182,
+      "runtime_seconds": 0.002799
+    },
+    {
+      "graph_id": "AADL-Self-driving-car_integration_integration_hardware_3.aaxl2",
+      "input_file": "mapping_AADL_Self_driving_car_integration_integration_hardware_3_aaxl2.json",
+      "output_file": "mapping_AADL_Self_driving_car_integration_integration_hardware_3_aaxl2_mapping.json",
+      "num_nodes": 22,
+      "num_edges": 24,
+      "evaluated_nodes": 22,
+      "correct_predictions": 7,
+      "accuracy": 0.318182,
+      "runtime_seconds": 0.002688
+    },
+    {
+      "graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+      "input_file": "mapping_AASPE_automotive_system_car_cherokee_1_aaxl2.json",
+      "output_file": "mapping_AASPE_automotive_system_car_cherokee_1_aaxl2_mapping.json",
+      "num_nodes": 13,
+      "num_edges": 26,
+      "evaluated_nodes": 13,
+      "correct_predictions": 3,
+      "accuracy": 0.230769,
+      "runtime_seconds": 0.001727
+    },
+    {
+      "graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+      "input_file": "mapping_AASPE_automotive_system_integration_attack_1_aaxl2.json",
+      "output_file": "mapping_AASPE_automotive_system_integration_attack_1_aaxl2_mapping.json",
+      "num_nodes": 19,
+      "num_edges": 34,
+      "evaluated_nodes": 19,
+      "correct_predictions": 3,
+      "accuracy": 0.157895,
+      "runtime_seconds": 0.002289
+    },
+    {
+      "graph_id": "AASPE_automotive_system_integration_i_1.aaxl2",
+      "input_file": "mapping_AASPE_automotive_system_integration_i_1_aaxl2.json",
+      "output_file": "mapping_AASPE_automotive_system_integration_i_1_aaxl2_mapping.json",
+      "num_nodes": 16,
+      "num_edges": 28,
+      "evaluated_nodes": 16,
+      "correct_predictions": 3,
+      "accuracy": 0.1875,
+      "runtime_seconds": 0.00197
+    }
+  ]
+}

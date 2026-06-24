@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_1a3234c7c57a4c99b27ddee45ecdf04b">
+  <relations xmi:id="_92f3814d7c9745f0ab683d66d9353d19">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_system"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_fromdriver"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_driverinformationinterface"/>
+  </relations>
+  <relations xmi:id="_b3ec764bfc184120b36559e633731c97">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_communicationremote"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_deviceidentity"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_persidentity"/>
+  </relations>
+  <relations xmi:id="_bdb94b6217ee4464aa88a624664d1abb">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Presentation_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_driverguidanceinterface"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_confirmation"/>
+  </relations>
+  <relations xmi:id="_223d3a983c4b47b89ddd0466b5390f8a">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_vehiclelocationdata"/>
+    <component href="../architectures/AadlProjects_smartparking_vehbasesafe_impl_1.model#comp_vehicleloc"/>
+  </relations>
+</ecore:Implementation_model>

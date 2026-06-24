@@ -1,0 +1,922 @@
+{
+  "graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "IoT System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.application",
+        "name": "Application",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.app-iotim",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.iotim",
+        "name": "IoTIM",
+        "mandatory": true,
+        "incoming": "conn.app-iotim",
+        "outgoing": "conn.iotim-gateway conn.app-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.gateway",
+        "name": "Gateway",
+        "mandatory": true,
+        "incoming": "conn.iotim-gateway",
+        "outgoing": "conn.gateway-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.device",
+        "name": "Device",
+        "mandatory": true,
+        "incoming": "conn.gateway-device conn.app-device",
+        "outgoing": "conn.device-sensor conn.device-actuator",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.driver",
+        "name": "Driver",
+        "mandatory": null,
+        "incoming": null,
+        "outgoing": null,
+        "tag": "child",
+        "parent_id": "comp.device",
+        "parent_name": "Device"
+      },
+      {
+        "id": "comp.sensor",
+        "name": "Sensor",
+        "mandatory": true,
+        "incoming": "conn.device-sensor",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.actuator",
+        "name": "Actuator",
+        "mandatory": true,
+        "incoming": "conn.device-actuator",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.app-iotim",
+        "name": "Application\u2013IoTIM Communication",
+        "source": "comp.application",
+        "target": "comp.iotim",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.iotim-gateway",
+        "name": "IoTIM\u2013Gateway Communication",
+        "source": "comp.iotim",
+        "target": "comp.gateway",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.gateway-device",
+        "name": "Gateway\u2013Device Communication",
+        "source": "comp.gateway",
+        "target": "comp.device",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-sensor",
+        "name": "Device\u2013Sensor Communication",
+        "source": "comp.device",
+        "target": "comp.sensor",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-actuator",
+        "name": "Device\u2013Actuator Communication",
+        "source": "comp.device",
+        "target": "comp.actuator",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.app-device",
+        "name": "Device\u2013IoTIM Communication",
+        "source": "comp.iotim",
+        "target": "comp.device",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_system",
+      "graph_node_id": "SYSTEM::HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+      "name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "TargetTemp",
+        "TargetHumid"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 69,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 72,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 76,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_humid_sensor",
+      "graph_node_id": "humid_sensor::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.HumidSensorStep",
+      "name": "humid_sensor",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.HumidSensorStep",
+      "ports": [
+        "inValue",
+        "Value"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 131,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_update",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Humid",
+      "name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Humid",
+      "ports": [
+        "Value_out",
+        "Value_in"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_temp_sensor",
+      "graph_node_id": "temp_sensor::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.TemperatureSensorStep",
+      "name": "temp_sensor",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.TemperatureSensorStep",
+      "ports": [
+        "inValue",
+        "Value"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 132,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_update_2",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Temp",
+      "name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Temp",
+      "ports": [
+        "Value_out",
+        "Value_in"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_window",
+      "graph_node_id": "window::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.WindowStep",
+      "name": "window",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.WindowStep",
+      "ports": [
+        "tempValue",
+        "cmd"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 135,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 135,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_update_3",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Window",
+      "name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Window",
+      "ports": [
+        "Cmd",
+        "Act"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_termostat",
+      "graph_node_id": "termostat::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.HeaterStep",
+      "name": "termostat",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.HeaterStep",
+      "ports": [
+        "tempValue",
+        "cmd"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 133,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 133,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_update_4",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Thermostat",
+      "name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Thermostat",
+      "ports": [
+        "Cmd",
+        "Act"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_ha_control",
+      "graph_node_id": "HA_control::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.hostController.PeriodicOp",
+      "name": "HA_control",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.hostController.PeriodicOp",
+      "ports": [
+        "set_TargetTemp",
+        "set_TargetHumid",
+        "tempValue",
+        "humidValue",
+        "windowCmd",
+        "termostatCMD"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 123,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 123,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_algorithm",
+      "graph_node_id": "algorithm::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.algorithm.ex",
+      "name": "algorithm",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.algorithm.ex",
+      "ports": [
+        "windowCMD",
+        "termostatCDM",
+        "Temp",
+        "Humid"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 125,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 125,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_cpu1",
+      "graph_node_id": "cpu1::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "name": "cpu1",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 126,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 126,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_cpu2",
+      "graph_node_id": "cpu2::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "name": "cpu2",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 127,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 127,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_cpu3",
+      "graph_node_id": "cpu3::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "name": "cpu3",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 128,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 128,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_cpu4",
+      "graph_node_id": "cpu4::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "name": "cpu4",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 129,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 129,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_cpu5",
+      "graph_node_id": "cpu5::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "name": "cpu5",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 130,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 130,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_system",
+      "target": "comp_ha_control",
+      "type": "connection",
+      "src_port": "TargetHumid",
+      "dst_port": "set_TargetHumid",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.4/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_update",
+      "target": "comp_algorithm",
+      "type": "connection",
+      "src_port": "Value_out",
+      "dst_port": "Humid",
+      "raw": {
+        "source": "//@componentInstance.0/@componentInstance.0/@featureInstance.0",
+        "destination": "//@componentInstance.4/@componentInstance.0/@featureInstance.3"
+      }
+    },
+    {
+      "source": "comp_update_2",
+      "target": "comp_algorithm",
+      "type": "connection",
+      "src_port": "Value_out",
+      "dst_port": "Temp",
+      "raw": {
+        "source": "//@componentInstance.1/@componentInstance.0/@featureInstance.0",
+        "destination": "//@componentInstance.4/@componentInstance.0/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_algorithm",
+      "target": "comp_update_3",
+      "type": "connection",
+      "src_port": "windowCMD",
+      "dst_port": "Cmd",
+      "raw": {
+        "source": "//@componentInstance.4/@componentInstance.0/@featureInstance.0",
+        "destination": "//@componentInstance.2/@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_algorithm",
+      "target": "comp_update_4",
+      "type": "connection",
+      "src_port": "termostatCDM",
+      "dst_port": "Cmd",
+      "raw": {
+        "source": "//@componentInstance.4/@componentInstance.0/@featureInstance.1",
+        "destination": "//@componentInstance.3/@componentInstance.0/@featureInstance.0"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_HOME_graphs.json",
+    "source_ra_grammar": "iot.gramm",
+    "source_mapping_labels": "iot_ra_component_mapping_labels.csv",
+    "enable_global_fallback": true
+  }
+}

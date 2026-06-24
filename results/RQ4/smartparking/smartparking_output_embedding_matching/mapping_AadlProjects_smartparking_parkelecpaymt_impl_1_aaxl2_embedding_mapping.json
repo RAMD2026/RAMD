@@ -1,0 +1,167 @@
+{
+  "graph_id": "AadlProjects_smartparking_parkelecpaymt_impl_1.aaxl2",
+  "source_file": "mapping_AadlProjects_smartparking_parkelecpaymt_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 5,
+  "num_correct": 4,
+  "average_score_for_model": 0.8,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::AadlProjects_smartparking_parkelecpaymt_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "pay_req",
+        "capacity_update"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: pay req, capacity update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4109404683113098,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4109404683113098,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_billdriver",
+      "graph_node_id": "billdriver::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.billdriver.impl",
+      "node_name": "billdriver",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.billdriver.impl",
+      "ports": [
+        "pay_req"
+      ],
+      "node_text_used": "Component name: billdriver. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.billdriver.impl. Ports: pay req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4485776424407959,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4485776424407959,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_parking_cost",
+      "graph_node_id": "parking_cost::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parking_cost.impl",
+      "node_name": "parking_cost",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parking_cost.impl",
+      "ports": [
+        "pay_req"
+      ],
+      "node_text_used": "Component name: parking cost. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.parking cost.impl. Ports: pay req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4365414083003998,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4365414083003998,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_updateparkdata",
+      "graph_node_id": "updateparkdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.updateparkdata.impl",
+      "node_name": "updateparkdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.updateparkdata.impl",
+      "ports": [
+        "capacity_update"
+      ],
+      "node_text_used": "Component name: updateparkdata. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.updateparkdata.impl. Ports: capacity update.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.40398645401000977,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.40398645401000977,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_spaces",
+      "graph_node_id": "spaces::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.spaces.impl",
+      "node_name": "spaces",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.spaces.impl",
+      "ports": [
+        "capacity_update"
+      ],
+      "node_text_used": "Component name: spaces. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.spaces.impl. Ports: capacity update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4017099440097809,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4017099440097809,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    }
+  ]
+}

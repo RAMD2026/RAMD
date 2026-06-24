@@ -1,0 +1,67 @@
+Config_A,Config_B,n_A,n_B,Cliffs_delta,magnitude
+P_all,P_comp,15,15,-0.3956,medium
+P_all,RAMD,15,15,-0.8933,large
+P_all,RAMD_noCC,15,15,-0.7956,large
+P_all,RAMD_noFS,15,15,-0.6,large
+P_all,RAMD_noMR,15,15,-0.6178,large
+P_all,RAMD_noSpec,15,15,-0.7511,large
+P_all,RAMD_KM,15,15,-1.0,large
+P_all,RAMD_KM(GPT-4o),15,15,-1.0,large
+P_all,TF-IDF,15,15,1.0,large
+P_all,Sentence Embedding,15,15,0.4222,medium
+P_all,Graph Similarity,15,15,1.0,large
+P_comp,RAMD,15,15,-0.8044,large
+P_comp,RAMD_noCC,15,15,-0.5289,large
+P_comp,RAMD_noFS,15,15,-0.1556,small
+P_comp,RAMD_noMR,15,15,-0.1733,small
+P_comp,RAMD_noSpec,15,15,-0.6178,large
+P_comp,RAMD_KM,15,15,-1.0,large
+P_comp,RAMD_KM(GPT-4o),15,15,-1.0,large
+P_comp,TF-IDF,15,15,1.0,large
+P_comp,Sentence Embedding,15,15,0.4222,medium
+P_comp,Graph Similarity,15,15,1.0,large
+RAMD,RAMD_noCC,15,15,0.4222,medium
+RAMD,RAMD_noFS,15,15,0.7333,large
+RAMD,RAMD_noMR,15,15,0.4578,medium
+RAMD,RAMD_noSpec,15,15,0.5289,large
+RAMD,RAMD_KM,15,15,-0.9111,large
+RAMD,RAMD_KM(GPT-4o),15,15,-1.0,large
+RAMD,TF-IDF,15,15,1.0,large
+RAMD,Sentence Embedding,15,15,1.0,large
+RAMD,Graph Similarity,15,15,1.0,large
+RAMD_noCC,RAMD_noFS,15,15,0.2,small
+RAMD_noCC,RAMD_noMR,15,15,0.1156,negligible
+RAMD_noCC,RAMD_noSpec,15,15,-0.0133,negligible
+RAMD_noCC,RAMD_KM,15,15,-1.0,large
+RAMD_noCC,RAMD_KM(GPT-4o),15,15,-1.0,large
+RAMD_noCC,TF-IDF,15,15,1.0,large
+RAMD_noCC,Sentence Embedding,15,15,0.7778,large
+RAMD_noCC,Graph Similarity,15,15,1.0,large
+RAMD_noFS,RAMD_noMR,15,15,-0.1022,negligible
+RAMD_noFS,RAMD_noSpec,15,15,-0.2,small
+RAMD_noFS,RAMD_KM,15,15,-1.0,large
+RAMD_noFS,RAMD_KM(GPT-4o),15,15,-1.0,large
+RAMD_noFS,TF-IDF,15,15,1.0,large
+RAMD_noFS,Sentence Embedding,15,15,0.7778,large
+RAMD_noFS,Graph Similarity,15,15,1.0,large
+RAMD_noMR,RAMD_noSpec,15,15,-0.1467,negligible
+RAMD_noMR,RAMD_KM,15,15,-1.0,large
+RAMD_noMR,RAMD_KM(GPT-4o),15,15,-1.0,large
+RAMD_noMR,TF-IDF,15,15,1.0,large
+RAMD_noMR,Sentence Embedding,15,15,0.7778,large
+RAMD_noMR,Graph Similarity,15,15,1.0,large
+RAMD_noSpec,RAMD_KM,15,15,-1.0,large
+RAMD_noSpec,RAMD_KM(GPT-4o),15,15,-1.0,large
+RAMD_noSpec,TF-IDF,15,15,1.0,large
+RAMD_noSpec,Sentence Embedding,15,15,0.6889,large
+RAMD_noSpec,Graph Similarity,15,15,1.0,large
+RAMD_KM,RAMD_KM(GPT-4o),15,15,-1.0,large
+RAMD_KM,TF-IDF,15,15,1.0,large
+RAMD_KM,Sentence Embedding,15,15,1.0,large
+RAMD_KM,Graph Similarity,15,15,1.0,large
+RAMD_KM(GPT-4o),TF-IDF,15,15,1.0,large
+RAMD_KM(GPT-4o),Sentence Embedding,15,15,1.0,large
+RAMD_KM(GPT-4o),Graph Similarity,15,15,1.0,large
+TF-IDF,Sentence Embedding,15,15,-0.3333,medium
+TF-IDF,Graph Similarity,15,15,0.3333,medium
+Sentence Embedding,Graph Similarity,15,15,0.5556,large

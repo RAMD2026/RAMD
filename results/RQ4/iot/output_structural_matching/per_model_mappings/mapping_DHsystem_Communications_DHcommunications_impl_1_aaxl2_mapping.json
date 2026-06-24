@@ -1,0 +1,492 @@
+{
+  "graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+  "ra_name": "IoT System Reference Architecture",
+  "num_nodes": 9,
+  "num_edges": 4,
+  "evaluated_nodes": 9,
+  "correct_predictions": 2,
+  "accuracy": 0.2222222222222222,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.736346,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.736346
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.666234
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.604242
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.589346
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.57437
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_acquisitor",
+      "graph_node_id": "Acquisitor::../../github/DHsystem/Communications.aadl#Communications.Acquisitor",
+      "node_name": "Acquisitor",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.Acquisitor",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.75566,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.75566
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.739645
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.739645
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.598107
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.56666
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 26,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 26,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_communication_manager",
+      "graph_node_id": "CommunicationManager::../../github/DHsystem/Communications.aadl#Communications.CommunicationManager",
+      "node_name": "CommunicationManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.CommunicationManager",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.713264,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.713264
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.642054
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.612101
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.528101
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.51477
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 27,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_dhgateway",
+      "graph_node_id": "DHgateway::../../github/DHsystem/Communications.aadl#Communications.DHgateway.impl",
+      "node_name": "DHgateway",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.DHgateway.impl",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.736346,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.736346
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.666234
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.631346
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.61637
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.61637
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 28,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_temp_controller",
+      "graph_node_id": "tempController::../../github/DHsystem/Communications.aadl#Communications.tempController",
+      "node_name": "tempController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.tempController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 34,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 34,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_hum_controller",
+      "graph_node_id": "humController::../../github/DHsystem/Communications.aadl#Communications.humController",
+      "node_name": "humController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.humController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 31,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 31,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_power_controller",
+      "graph_node_id": "powerController::../../github/DHsystem/Communications.aadl#Communications.powerController",
+      "node_name": "powerController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.powerController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 32,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 32,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_appl_controller",
+      "graph_node_id": "applController::../../github/DHsystem/Communications.aadl#Communications.applController",
+      "node_name": "applController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.applController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 30,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_sec_controller",
+      "graph_node_id": "secController::../../github/DHsystem/Communications.aadl#Communications.secController",
+      "node_name": "secController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.secController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 33,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 33,
+          "aadl_graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.000708
+}

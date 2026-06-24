@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="iot" nsURI="http://www.example.org/iot" nsPrefix="iot">
+  <eClassifiers xsi:type="ecore:EClass" name="Application">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="app_iotim" upperBound="-1"
+        eType="#//IoTIM"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IoTIM">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iotim_gateway" upperBound="-1"
+        eType="#//Gateway"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iotim_device" upperBound="-1"
+        eType="#//Device"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iotim_app" upperBound="-1"
+        eType="#//Application"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gateway">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gateway_device" upperBound="-1"
+        eType="#//Device"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gateway_iotim" upperBound="-1"
+        eType="#//IoTIM"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Device">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="device_sensor" upperBound="-1"
+        eType="#//Sensor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="device_actuator" upperBound="-1"
+        eType="#//Actuator"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="device_driver" upperBound="-1"
+        eType="#//Driver"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="device_iotim" upperBound="-1"
+        eType="#//IoTIM"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="device_gateway" upperBound="-1"
+        eType="#//Gateway"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sensor">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensor_device" upperBound="-1"
+        eType="#//Device"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actuator">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actuator_device" upperBound="-1"
+        eType="#//Device"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Driver">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driver_device" upperBound="-1"
+        eType="#//Device"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RAIoTSystemModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="applications" upperBound="-1"
+        eType="#//Application"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iotims" upperBound="-1"
+        eType="#//IoTIM"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gateways" upperBound="-1"
+        eType="#//Gateway"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="devices" upperBound="-1"
+        eType="#//Device"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensors" upperBound="-1"
+        eType="#//Sensor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actuators" upperBound="-1"
+        eType="#//Actuator"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="drivers" upperBound="-1"
+        eType="#//Driver"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<architecturemodeling:ArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecturemodeling="http://it.disim.univaq/architecturemodeling" xmi:id="arch_dhsystem_devices_dhdevices_impl_1" name="DHsystem_Devices_DHdevices_impl_1">
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_system" name="system" outgoing="conn_device_manager_system" incoming="conn_device_manager_system"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_device_manager" name="device manager" outgoing="conn_device_manager_system conn_device_manager_humidity_devices conn_device_manager_power_devices conn_device_manager_security_devices conn_device_manager_thermostat_devices" incoming="conn_device_manager_system conn_device_manager_humidity_devices conn_device_manager_power_devices conn_device_manager_security_devices conn_device_manager_thermostat_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_humidity_devices" name="humidity devices" outgoing="conn_device_manager_humidity_devices" incoming="conn_device_manager_humidity_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_humidifier" name="humidifier" outgoing="conn_humidifier_humidity_sensor" incoming="conn_humidifier_humidity_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_dehumidifier" name="dehumidifier" outgoing="conn_dehumidifier_humidity_sensor" incoming="conn_dehumidifier_humidity_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_humidity_sensor" name="humidity sensor" outgoing="conn_humidifier_humidity_sensor conn_dehumidifier_humidity_sensor" incoming="conn_humidifier_humidity_sensor conn_dehumidifier_humidity_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_power_devices" name="power devices" outgoing="conn_device_manager_power_devices" incoming="conn_device_manager_power_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_switch" name="switch" outgoing="conn_appliances_switch conn_lights_switch" incoming="conn_appliances_switch conn_lights_switch"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_appliances" name="appliances" outgoing="conn_appliances_switch" incoming="conn_appliances_switch"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_lights" name="lights" outgoing="conn_lights_switch" incoming="conn_lights_switch"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_security_devices" name="security devices" outgoing="conn_device_manager_security_devices" incoming="conn_device_manager_security_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_alarms" name="alarms" outgoing="conn_alarms_door_sensor conn_alarms_window_sensor" incoming="conn_alarms_door_sensor conn_alarms_window_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_door_sensor" name="door sensor" outgoing="conn_alarms_door_sensor" incoming="conn_alarms_door_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_window_sensor" name="window sensor" outgoing="conn_alarms_window_sensor" incoming="conn_alarms_window_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_thermostat_devices" name="thermostat devices" outgoing="conn_device_manager_thermostat_devices" incoming="conn_device_manager_thermostat_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_hvac" name="hvac" outgoing="conn_hvac_thermostat_sensort" incoming="conn_hvac_thermostat_sensort"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_thermostat_sensort" name="thermostat sensort" outgoing="conn_hvac_thermostat_sensort" incoming="conn_hvac_thermostat_sensort"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_device_manager_system" name="device_manager_system" source="comp_device_manager" target="comp_system"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_device_manager_humidity_devices" name="device_manager_humidity_devices" source="comp_device_manager" target="comp_humidity_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_device_manager_power_devices" name="device_manager_power_devices" source="comp_device_manager" target="comp_power_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_device_manager_security_devices" name="device_manager_security_devices" source="comp_device_manager" target="comp_security_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_device_manager_thermostat_devices" name="device_manager_thermostat_devices" source="comp_device_manager" target="comp_thermostat_devices"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_humidifier_humidity_sensor" name="humidifier_humidity_sensor" source="comp_humidifier" target="comp_humidity_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_dehumidifier_humidity_sensor" name="dehumidifier_humidity_sensor" source="comp_dehumidifier" target="comp_humidity_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_appliances_switch" name="appliances_switch" source="comp_appliances" target="comp_switch"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_lights_switch" name="lights_switch" source="comp_lights" target="comp_switch"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_alarms_door_sensor" name="alarms_door_sensor" source="comp_alarms" target="comp_door_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_alarms_window_sensor" name="alarms_window_sensor" source="comp_alarms" target="comp_window_sensor"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_hvac_thermostat_sensort" name="hvac_thermostat_sensort" source="comp_hvac" target="comp_thermostat_sensort"/>
+</architecturemodeling:ArchitectureModel>

@@ -1,0 +1,84 @@
+operation weaving!Implementation_model missingMandatoryComponents() : Sequence {
+    var components_to_check : Sequence(ramm!EClass) =
+        ramm!EReference.all.select(r | r.lowerBound > 0).etype;
+
+    var used = self.relations.RAcomp.flatten();
+
+    return components_to_check.reject(c | used.includes(c));
+}
+
+operation weaving!Implementation_model checkMandatoryComponents(): Boolean{
+    return self.missingMandatoryComponents().isEmpty();
+}
+
+
+operation weaving!RA_ADL_Relation relationViolations() : Sequence {
+    var errs = Sequence{};
+
+    var components = self.component;
+    var racomponents = self.RAcomp;
+
+    for (comp in components) {
+
+        if (comp.outgoing.isUndefined() or comp.outgoing.isEmpty()) {
+            continue;
+        }
+
+        for (r in comp.outgoing) {
+
+            var source = r.source;
+            var target = r.target;
+
+            var source_ref_RA =
+                weaving!RA_ADL_Relation.allInstances()
+                    .select(rel | rel.component.includes(source))
+                    .collect(co | co.RAcomp)
+                    .flatten();
+
+            // allowed features từ RA (từ source_ref_RA)
+            var all_features =
+                source_ref_RA.eAllStructuralFeatures.collect(t | t.etype).flatten();
+
+            var target_ref_RA =
+                weaving!RA_ADL_Relation.allInstances()
+                    .select(rel | rel.component.includes(target))
+                    .collect(co | co.RAcomp)
+                    .flatten();
+            var source_ra_names = source_ref_RA.collect(x | x.name).toJoinedString(", ");
+            for (trg in target_ref_RA) {
+
+                var ok = racomponents.includes(trg) or all_features.includes(trg);
+
+                if (not ok) {
+                    // trg.name: RA component/type bị vi phạm
+                    errs.add(
+                        source.name + " (mapped to " + source_ra_names + ")" +
+                        " connects to " + target.name + " (mapped to " + trg.name + "), " +
+                        "but in the RA there is no allowed connection from " +
+                        source_ra_names + " to " + trg.name + "."
+                    );
+                }
+            }
+        }
+    }
+
+    return errs;
+}
+
+operation weaving!RA_ADL_Relation checkRelation(): Boolean {
+    return self.relationViolations().isEmpty();
+}
+
+operation Sequence toJoinedString(sep : String) : String {
+    var s = "";
+    var first = true;
+    for (x in self) {
+        if (first) {
+            s = x.asString();
+            first = false;
+        } else {
+            s = s + sep + x.asString();
+        }
+    }
+    return s;
+}

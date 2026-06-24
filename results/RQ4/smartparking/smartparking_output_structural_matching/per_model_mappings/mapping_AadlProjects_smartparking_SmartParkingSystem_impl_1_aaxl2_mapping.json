@@ -1,0 +1,3166 @@
+{
+  "graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+  "ra_name": "Smart Parking System Reference Architecture",
+  "num_nodes": 54,
+  "num_edges": 15,
+  "evaluated_nodes": 54,
+  "correct_predictions": 4,
+  "accuracy": 0.07407407407407407,
+  "predictions": [
+    {
+      "node_id": "comp_parkmgmtsys",
+      "graph_node_id": "parkmgmtsys::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkmgmtsys.impl",
+      "node_name": "parkmgmtsys",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkmgmtsys.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.720946,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.720946
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.720946
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.644609
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.644609
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_parkmgmt",
+      "graph_node_id": "parkmgmt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkmgmt.impl",
+      "node_name": "parkmgmt",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkmgmt.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.366333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.273
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.273
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 2,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 226,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_dynparklot",
+      "graph_node_id": "dynparklot::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.dynparklot.impl",
+      "node_name": "dynparklot",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.dynparklot.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 3,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 220,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 227,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_park_lot_occupancy",
+      "graph_node_id": "park_lot_occupancy::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.park_lot_occupancy.impl",
+      "node_name": "park_lot_occupancy",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.park_lot_occupancy.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.51872,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.51872
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.51872
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.442383
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.442383
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 4,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 221,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 228,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_detectveh",
+      "graph_node_id": "detectveh::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.detectveh.impl",
+      "node_name": "detectveh",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.detectveh.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 222,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 229,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_manageparkreserv",
+      "graph_node_id": "manageparkreserv::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.manageparkreserv.impl",
+      "node_name": "manageparkreserv",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.manageparkreserv.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 6,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 223,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 230,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_park_lot_spaces",
+      "graph_node_id": "park_lot_spaces::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.park_lot_spaces.impl",
+      "node_name": "park_lot_spaces",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.park_lot_spaces.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.51872,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.51872
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.51872
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.442383
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.442383
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 7,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 224,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 231,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_parkelecpaymt",
+      "graph_node_id": "parkelecpaymt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkelecpaymt.impl",
+      "node_name": "parkelecpaymt",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkelecpaymt.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.366333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.273
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.273
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 8,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 232,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_billdriver",
+      "graph_node_id": "billdriver::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.billdriver.impl",
+      "node_name": "billdriver",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.billdriver.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 233,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_parking_cost",
+      "graph_node_id": "parking_cost::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parking_cost.impl",
+      "node_name": "parking_cost",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parking_cost.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.515921,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.515921
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.515921
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.439584
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.439584
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 10,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 142,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 234,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_updateparkdata",
+      "graph_node_id": "updateparkdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.updateparkdata.impl",
+      "node_name": "updateparkdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.updateparkdata.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 11,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 143,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 235,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_spaces",
+      "graph_node_id": "spaces::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.spaces.impl",
+      "node_name": "spaces",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.spaces.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.490038,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.490038
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.490038
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.413701
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.413701
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 12,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 144,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 236,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_roadsideequip",
+      "graph_node_id": "roadsideequip::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.roadsideequip.impl",
+      "node_name": "roadsideequip",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.roadsideequip.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.553016,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.553016
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.553016
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.476679
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.476679
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 13,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 88,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_rseparkmgmt",
+      "graph_node_id": "RSEparkmgmt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.RSEparkmgmt.impl",
+      "node_name": "RSEparkmgmt",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.RSEparkmgmt.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.366333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.273
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.273
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 14,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 106,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_vehdata",
+      "graph_node_id": "vehdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehdata.impl",
+      "node_name": "vehdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehdata.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.331333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.238
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.238
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 15,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 107,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 215,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_loc_identity",
+      "graph_node_id": "loc_identity::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.loc_identity.impl",
+      "node_name": "loc_identity",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.loc_identity.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.471836,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.395499
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.395499
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 16,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 108,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 216,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_veh_paymt",
+      "graph_node_id": "veh_paymt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.veh_paymt.impl",
+      "node_name": "veh_paymt",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.veh_paymt.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.667768,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.667768
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.667768
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.591432
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.591432
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 17,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 109,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 217,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_rsideparkcomm",
+      "graph_node_id": "Rsideparkcomm::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.Rsideparkcomm.impl",
+      "node_name": "Rsideparkcomm",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.Rsideparkcomm.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.690838,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.690838
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.690838
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.614501
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.614501
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 18,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 110,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 218,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_transinfoctr",
+      "graph_node_id": "transinfoctr::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.transinfoctr.impl",
+      "node_name": "transinfoctr",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.transinfoctr.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.680936,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.680936
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.680936
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.604599
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.604599
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 19,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_ticinteractv_trav_info",
+      "graph_node_id": "TICInteractvTravInfo::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.TICInteractvTravInfo.impl",
+      "node_name": "TICInteractvTravInfo",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.TICInteractvTravInfo.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.366333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.273
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.273
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 20,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 182,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_trav_profiles",
+      "graph_node_id": "trav_profiles::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_profiles.impl",
+      "node_name": "trav_profiles",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_profiles.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.331333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.238
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.238
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 21,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 183,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_trav_info",
+      "graph_node_id": "trav_info::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_info.impl",
+      "node_name": "trav_info",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_info.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.66132,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.66132
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.66132
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.584983
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.584983
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 22,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 158,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 184,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_ticdata_coll",
+      "graph_node_id": "TICDataColl::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.TICDataColl.impl",
+      "node_name": "TICDataColl",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.TICDataColl.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.324333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.231
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.231
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 23,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 185,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_misctravinfo",
+      "graph_node_id": "misctravinfo::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.misctravinfo.impl",
+      "node_name": "misctravinfo",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.misctravinfo.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 24,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 112,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 186,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_traff_data_trav",
+      "graph_node_id": "traff_data_trav::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.traff_data_trav.impl",
+      "node_name": "traff_data_trav",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.traff_data_trav.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.514489,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.514489
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.514489
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.438152
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.438152
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 113,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 187,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_trafficdata",
+      "graph_node_id": "trafficdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trafficdata.impl",
+      "node_name": "trafficdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trafficdata.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 26,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 114,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 188,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_pricedata",
+      "graph_node_id": "pricedata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.pricedata.impl",
+      "node_name": "pricedata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.pricedata.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 27,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 115,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 189,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_vehicleobe",
+      "graph_node_id": "vehicleobe::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehicleobe.impl",
+      "node_name": "vehicleobe",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehicleobe.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.716859,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.716859
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.716859
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.640522
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.640522
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 28,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_vehbasesafe",
+      "graph_node_id": "vehbasesafe::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehbasesafe.impl",
+      "node_name": "vehbasesafe",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehbasesafe.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.366333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.273
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.273
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 160,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_communicationremote",
+      "graph_node_id": "communicationremote::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.communicationremote.impl",
+      "node_name": "communicationremote",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.communicationremote.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 30,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 131,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 161,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_deviceidentity",
+      "graph_node_id": "deviceidentity::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.deviceidentity.impl",
+      "node_name": "deviceidentity",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.deviceidentity.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.514489,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.514489
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.514489
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.438152
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.438152
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 31,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 132,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 162,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_driverguidanceinterface",
+      "graph_node_id": "driverguidanceinterface::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverguidanceinterface.impl",
+      "node_name": "driverguidanceinterface",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverguidanceinterface.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.331333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.238
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.238
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 32,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 32,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 133,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 133,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 163,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 163,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_fromdriver",
+      "graph_node_id": "fromdriver::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.fromdriver.impl",
+      "node_name": "fromdriver",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.fromdriver.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.524095,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.524095
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.524095
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.447758
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.447758
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 33,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 164,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_confirmation",
+      "graph_node_id": "confirmation::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.confirmation.impl",
+      "node_name": "confirmation",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.confirmation.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 34,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 135,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 165,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_vehiclelocationdata",
+      "graph_node_id": "vehiclelocationdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclelocationdata.impl",
+      "node_name": "vehiclelocationdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclelocationdata.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 136,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 136,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_vehicleloc",
+      "graph_node_id": "vehicleloc::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehicleloc.impl",
+      "node_name": "vehicleloc",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehicleloc.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.471836,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.395499
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.395499
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 36,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 137,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 167,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_driverinformationinterface",
+      "graph_node_id": "driverinformationinterface::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverinformationinterface.impl",
+      "node_name": "driverinformationinterface",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverinformationinterface.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 37,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 37,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 168,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 168,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_persidentity",
+      "graph_node_id": "persidentity::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persidentity.impl",
+      "node_name": "persidentity",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persidentity.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.471836,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.395499
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.395499
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 38,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 139,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_communicationsupport",
+      "graph_node_id": "communicationsupport::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.communicationsupport.impl",
+      "node_name": "communicationsupport",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.communicationsupport.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.324333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.231
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.231
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 39,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_vehiclesecurecommunication",
+      "graph_node_id": "vehiclesecurecommunication::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclesecurecommunication.impl",
+      "node_name": "vehiclesecurecommunication",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclesecurecommunication.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 40,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 152,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 171,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_parkingsystem",
+      "graph_node_id": "parkingsystem::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkingsystem.impl",
+      "node_name": "parkingsystem",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkingsystem.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.324333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.231
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.231
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 41,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 172,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_paymentdeviceinterface",
+      "graph_node_id": "paymentdeviceinterface::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.paymentdeviceinterface.impl",
+      "node_name": "paymentdeviceinterface",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.paymentdeviceinterface.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 42,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 173,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 193,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_roadsideinforeception",
+      "graph_node_id": "roadsideinforeception::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.roadsideinforeception.impl",
+      "node_name": "roadsideinforeception",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.roadsideinforeception.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.324333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.231
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.231
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 43,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_vehiclelocdata",
+      "graph_node_id": "vehiclelocdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclelocdata.impl",
+      "node_name": "vehiclelocdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclelocdata.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 44,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 44,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 58,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 58,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 175,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 175,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_vehiclenavmapdatabase",
+      "graph_node_id": "vehiclenavmapdatabase::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclenavmapdatabase.impl",
+      "node_name": "vehiclenavmapdatabase",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclenavmapdatabase.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 45,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 45,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 59,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 59,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 176,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 176,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_driverpersonalreq",
+      "graph_node_id": "driverpersonalreq::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverpersonalreq.impl",
+      "node_name": "driverpersonalreq",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverpersonalreq.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 46,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 177,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_driver",
+      "graph_node_id": "driver::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driver.impl",
+      "node_name": "driver",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driver.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.704169,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.704169
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.704169
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.627833
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.627833
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_persinfodev",
+      "graph_node_id": "persinfodev::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persinfodev.impl",
+      "node_name": "persinfodev",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persinfodev.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.366333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.273
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.273
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 48,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_pers_interactv_trav_info",
+      "graph_node_id": "persInteractvTravInfo::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persInteractvTravInfo.impl",
+      "node_name": "persInteractvTravInfo",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persInteractvTravInfo.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.366333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.366333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.273
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.273
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 49,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 208,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_personal_info",
+      "graph_node_id": "personal_info::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.personal_info.impl",
+      "node_name": "personal_info",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.personal_info.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.331333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.331333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.238
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.238
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 50,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 179,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 209,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_info_thread",
+      "graph_node_id": "info_thread::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.info_thread.impl",
+      "node_name": "info_thread",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.info_thread.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.66132,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.66132
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.66132
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.584983
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.584983
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 51,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 180,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 210,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_personallocmanagement",
+      "graph_node_id": "personallocmanagement::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.personallocmanagement.impl",
+      "node_name": "personallocmanagement",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.personallocmanagement.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.324333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.324333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.231
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.231
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 52,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 211,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_travnavmapdatabase",
+      "graph_node_id": "travnavmapdatabase::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.travnavmapdatabase.impl",
+      "node_name": "travnavmapdatabase",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.travnavmapdatabase.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 53,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 53,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 154,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 154,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 212,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 212,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_driverloc",
+      "graph_node_id": "driverloc::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverloc.impl",
+      "node_name": "driverloc",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverloc.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.471836,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.395499
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.395499
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 54,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 155,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 213,
+          "aadl_graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.002713
+}

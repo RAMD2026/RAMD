@@ -1,0 +1,2212 @@
+{
+  "graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+  "ra_name": "IoT System Reference Architecture",
+  "num_nodes": 42,
+  "num_edges": 40,
+  "evaluated_nodes": 42,
+  "correct_predictions": 7,
+  "accuracy": 0.16666666666666666,
+  "predictions": [
+    {
+      "node_id": "comp_web_interface",
+      "graph_node_id": "WebInterface::../../github/DHsystem/Interfaces.aadl#Interfaces.webInterface",
+      "node_name": "WebInterface",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Interfaces.aadl#Interfaces.webInterface",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.683534,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.683534
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.683194
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.683194
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.683115
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.655194
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 116,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_backup_recovery",
+      "graph_node_id": "BackupRecovery::../../github/DHsystem/Interfaces.aadl#Interfaces.backupRecovery",
+      "node_name": "BackupRecovery",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Interfaces.aadl#Interfaces.backupRecovery",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.683534,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.683534
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.683194
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.683194
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.683115
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.655194
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 88,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 88,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_plugin_manager",
+      "graph_node_id": "PluginManager::../../github/DHsystem/Interfaces.aadl#Interfaces.pluginManager",
+      "node_name": "PluginManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Interfaces.aadl#Interfaces.pluginManager",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.687357,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.687357
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.661903
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.655954
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.622448
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.622448
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 104,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 104,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_simulated_environment",
+      "graph_node_id": "SimulatedEnvironment::../../github/DHsystem/Interfaces.aadl#Interfaces.simulatedEnvironment",
+      "node_name": "SimulatedEnvironment",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Interfaces.aadl#Interfaces.simulatedEnvironment",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.745187,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.745187
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.745187
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.739059
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.643577
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.600732
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 112,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 112,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_account",
+      "graph_node_id": "Account::../../github/DHsystem/Accounts.aadl#Accounts.DHaccounts.impl",
+      "node_name": "Account",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.DHaccounts.impl",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.574,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.574
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.502091
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.499545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.499545
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.499545
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 82,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 82,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_authentication",
+      "graph_node_id": "Authentication::../../github/DHsystem/Accounts.aadl#Accounts.Authentication",
+      "node_name": "Authentication",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.Authentication",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.701261,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.701261
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.675615
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.669427
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.629973
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.624452
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 87,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 87,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_account_settings",
+      "graph_node_id": "AccountSettings::../../github/DHsystem/Accounts.aadl#Accounts.AccountSettings",
+      "node_name": "AccountSettings",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.AccountSettings",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.701622,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.701622
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.699076
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.695508
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.695508
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.673239
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 83,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 83,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_access_control",
+      "graph_node_id": "AccessControl::../../github/DHsystem/Accounts.aadl#Accounts.AccessControl",
+      "node_name": "AccessControl",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.AccessControl",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.68037,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.68037
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.68037
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.680362
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.679942
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.658099
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 81,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 81,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_dhconfigurations",
+      "graph_node_id": "DHConfigurations::../../github/DHsystem/Configurations.aadl#Configurations.DHconfig.impl",
+      "node_name": "DHConfigurations",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.DHconfig.impl",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.532,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.532
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.502091
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.476636
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.457545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.457545
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 92,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_programmable_thermostat",
+      "graph_node_id": "ProgrammableThermostat::../../github/DHsystem/Configurations.aadl#Configurations.thermoProgram",
+      "node_name": "ProgrammableThermostat",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.thermoProgram",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.685065,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.685065
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.65961
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.653306
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.620156
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.620156
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 108,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_programmable_appliance_manager",
+      "graph_node_id": "ProgrammableApplianceManager::../../github/DHsystem/Configurations.aadl#Configurations.appProgramManager",
+      "node_name": "ProgrammableApplianceManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.appProgramManager",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.685065,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.685065
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.65961
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.653306
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.620156
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.620156
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 106,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_security_system",
+      "graph_node_id": "SecuritySystem::../../github/DHsystem/Configurations.aadl#Configurations.securitySystem",
+      "node_name": "SecuritySystem",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.securitySystem",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.685065,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.685065
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.65961
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.653306
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.620156
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.620156
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 111,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_programmable_humidistat",
+      "graph_node_id": "ProgrammableHumidistat::../../github/DHsystem/Configurations.aadl#Configurations.humProgram",
+      "node_name": "ProgrammableHumidistat",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.humProgram",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.685065,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.685065
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.65961
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.653306
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.620156
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.620156
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 107,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_planner",
+      "graph_node_id": "Planner::../../github/DHsystem/Configurations.aadl#Configurations.planner",
+      "node_name": "Planner",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.planner",
+      "predicted_ra_id": "comp.device",
+      "predicted_ra_name": "Device",
+      "prediction_score": 0.666176,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.666176
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.637326
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.616453
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.533812
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.529283
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 103,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 103,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_configuration_manager",
+      "graph_node_id": "ConfigurationManager::../../github/DHsystem/Configurations.aadl#Configurations.commManager",
+      "node_name": "ConfigurationManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.commManager",
+      "predicted_ra_id": "comp.device",
+      "predicted_ra_name": "Device",
+      "prediction_score": 0.519711,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.519711
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.493359
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.468894
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.385732
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.382567
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 91,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_report",
+      "graph_node_id": "Report::../../github/DHsystem/Configurations.aadl#Configurations.report",
+      "node_name": "Report",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.report",
+      "predicted_ra_id": "comp.device",
+      "predicted_ra_name": "Device",
+      "prediction_score": 0.666176,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.666176
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.637326
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.616453
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.533812
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.529283
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 109,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_communication",
+      "graph_node_id": "Communication::../../github/DHsystem/Communications.aadl#Communications.DHcommunications.impl",
+      "node_name": "Communication",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.DHcommunications.impl",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.574,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.574
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.502091
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.499545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.499545
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.499545
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 89,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 89,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_acquisitor",
+      "graph_node_id": "Acquisitor::../../github/DHsystem/Communications.aadl#Communications.Acquisitor",
+      "node_name": "Acquisitor",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.Acquisitor",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.751783,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.751783
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.751783
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.745994
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644676
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.607328
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 84,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 84,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_communication_manager",
+      "graph_node_id": "CommunicationManager::../../github/DHsystem/Communications.aadl#Communications.CommunicationManager",
+      "node_name": "CommunicationManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.CommunicationManager",
+      "predicted_ra_id": "comp.device",
+      "predicted_ra_name": "Device",
+      "prediction_score": 0.696151,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.696151
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.67042
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.635735
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.594799
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.590984
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 90,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 90,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_dhgateway",
+      "graph_node_id": "DHgateway::../../github/DHsystem/Communications.aadl#Communications.DHgateway.impl",
+      "node_name": "DHgateway",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.DHgateway.impl",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.734485,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.734485
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.70903
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.677617
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.67403
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.67403
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 93,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_temp_controller",
+      "graph_node_id": "tempController::../../github/DHsystem/Communications.aadl#Communications.tempController",
+      "node_name": "tempController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.tempController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.425091
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 122,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 122,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_hum_controller",
+      "graph_node_id": "humController::../../github/DHsystem/Communications.aadl#Communications.humController",
+      "node_name": "humController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.humController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.425091
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 119,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 119,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_power_controller",
+      "graph_node_id": "powerController::../../github/DHsystem/Communications.aadl#Communications.powerController",
+      "node_name": "powerController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.powerController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.425091
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 120,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 120,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_appl_controller",
+      "graph_node_id": "applController::../../github/DHsystem/Communications.aadl#Communications.applController",
+      "node_name": "applController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.applController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.425091
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 118,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_sec_controller",
+      "graph_node_id": "secController::../../github/DHsystem/Communications.aadl#Communications.secController",
+      "node_name": "secController",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Communications.aadl#Communications.secController",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.569545
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.425091
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 121,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 121,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_devices",
+      "graph_node_id": "Devices::../../github/DHsystem/Devices.aadl#Devices.DHdevices.impl",
+      "node_name": "Devices",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.DHdevices.impl",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.574,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.574
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.502091
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.499545
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.499545
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.499545
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 96,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_device_manager",
+      "graph_node_id": "DeviceManager::../../github/DHsystem/Devices.aadl#Devices.deviceManager",
+      "node_name": "DeviceManager",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.deviceManager",
+      "predicted_ra_id": "comp.device",
+      "predicted_ra_name": "Device",
+      "prediction_score": 0.666597,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.666597
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.639326
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.595663
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.451208
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.444098
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 95,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 95,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_humidity_devices",
+      "graph_node_id": "HumidityDevices::../../github/DHsystem/Devices.aadl#Devices.humidity.impl",
+      "node_name": "HumidityDevices",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.humidity.impl",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.717187,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.717187
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.717187
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.711059
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.635732
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.615577
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 100,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_humidifier",
+      "graph_node_id": "Humidifier::../../github/DHsystem/Devices.aadl#Devices.humidifier",
+      "node_name": "Humidifier",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.humidifier",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.750352,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.750352
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.643435
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.605898
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 99,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 99,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_dehumidifier",
+      "graph_node_id": "Dehumidifier::../../github/DHsystem/Devices.aadl#Devices.dehumidifier",
+      "node_name": "Dehumidifier",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.dehumidifier",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.750352,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.750352
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.643435
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.605898
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 94,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 94,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_humidity_sensor",
+      "graph_node_id": "HumiditySensor::../../github/DHsystem/Devices.aadl#Devices.humSensor",
+      "node_name": "HumiditySensor",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.humSensor",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.689456,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.689456
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.678811
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.676266
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.6735
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.6735
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 101,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_power_devices",
+      "graph_node_id": "PowerDevices::../../github/DHsystem/Devices.aadl#Devices.power.impl",
+      "node_name": "PowerDevices",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.power.impl",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.717187,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.717187
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.717187
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.711059
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.635732
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.615577
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 105,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 105,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_switch",
+      "graph_node_id": "Switch::../../github/DHsystem/Devices.aadl#Devices.switch",
+      "node_name": "Switch",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.switch",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.689456,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.689456
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.678811
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.676266
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.6735
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.6735
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 113,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 113,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_appliances",
+      "graph_node_id": "Appliances::../../github/DHsystem/Devices.aadl#Devices.appliances",
+      "node_name": "Appliances",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.appliances",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.750352,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.750352
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.643435
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.605898
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 86,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_lights",
+      "graph_node_id": "Lights::../../github/DHsystem/Devices.aadl#Devices.lights",
+      "node_name": "Lights",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.lights",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.750352,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.750352
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.643435
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.605898
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 102,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 102,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_security_devices",
+      "graph_node_id": "SecurityDevices::../../github/DHsystem/Devices.aadl#Devices.security.impl",
+      "node_name": "SecurityDevices",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.security.impl",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.717187,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.717187
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.717187
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.711059
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.635732
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.615577
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 110,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_alarms",
+      "graph_node_id": "Alarms::../../github/DHsystem/Devices.aadl#Devices.alarms",
+      "node_name": "Alarms",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.alarms",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_ra_name": "IoTIM",
+      "prediction_score": 0.689456,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.689456
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.678811
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.676266
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.6735
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.6735
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 85,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 85,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_door_sensor",
+      "graph_node_id": "DoorSensor::../../github/DHsystem/Devices.aadl#Devices.doorSensor",
+      "node_name": "DoorSensor",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.doorSensor",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.750352,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.750352
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.643435
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.605898
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 97,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_window_sensor",
+      "graph_node_id": "WindowSensor::../../github/DHsystem/Devices.aadl#Devices.windowSensor",
+      "node_name": "WindowSensor",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.windowSensor",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.750352,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.750352
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.744335
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.643435
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.605898
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 117,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_thermostat_devices",
+      "graph_node_id": "ThermostatDevices::../../github/DHsystem/Devices.aadl#Devices.thermo.impl",
+      "node_name": "ThermostatDevices",
+      "category": "system",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.thermo.impl",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.717187,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.717187
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.717187
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.711059
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.635732
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.615577
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 114,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_hvac",
+      "graph_node_id": "HVAC::../../github/DHsystem/Devices.aadl#Devices.hvac",
+      "node_name": "HVAC",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.hvac",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.727788,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.727788
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.721771
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.721771
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.639674
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.58882
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 98,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 98,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_thermostat_sensort",
+      "graph_node_id": "ThermostatSensort::../../github/DHsystem/Devices.aadl#Devices.thermoSensor",
+      "node_name": "ThermostatSensort",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.thermoSensor",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.727788,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.727788
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.721771
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.721771
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.639674
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.58882
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 115,
+          "aadl_graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.003998
+}

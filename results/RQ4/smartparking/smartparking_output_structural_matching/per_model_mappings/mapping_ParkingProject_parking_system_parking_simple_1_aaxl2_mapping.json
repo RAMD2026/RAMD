@@ -1,0 +1,1130 @@
+{
+  "graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+  "ra_name": "Smart Parking System Reference Architecture",
+  "num_nodes": 26,
+  "num_edges": 29,
+  "evaluated_nodes": 26,
+  "correct_predictions": 3,
+  "accuracy": 0.11538461538461539,
+  "predictions": [
+    {
+      "node_id": "comp_vme",
+      "graph_node_id": "VME::../../github/ParkingProject/parking_system.aadl#parking_system.VME",
+      "node_name": "VME",
+      "category": "bus",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.VME",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.504675,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.504675
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.504675
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.454509
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.454509
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 61,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_camera_in",
+      "graph_node_id": "camera_in::../../github/ParkingProject/parking_system.aadl#parking_system.camera",
+      "node_name": "camera_in",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.camera",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.644193,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.644193
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.644193
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.595141
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.595141
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 62,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_camera_out",
+      "graph_node_id": "camera_out::../../github/ParkingProject/parking_system.aadl#parking_system.camera",
+      "node_name": "camera_out",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.camera",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.644193,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.644193
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.644193
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.595141
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.595141
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 63,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_gate_in",
+      "graph_node_id": "gate_in::../../github/ParkingProject/parking_system.aadl#parking_system.gate",
+      "node_name": "gate_in",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.gate",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.69659,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.69659
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.69659
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.654127
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.654127
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 64,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_gate_out",
+      "graph_node_id": "gate_out::../../github/ParkingProject/parking_system.aadl#parking_system.gate",
+      "node_name": "gate_out",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.gate",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.692022,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.692022
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.692022
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.654375
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.654375
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 65,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_inductive_loop_in",
+      "graph_node_id": "inductive_loop_in::../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop",
+      "node_name": "inductive_loop_in",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.572633,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.572633
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.572633
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.535508
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.535508
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 66,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_inductive_loop_out",
+      "graph_node_id": "inductive_loop_out::../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop",
+      "node_name": "inductive_loop_out",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.572633,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.572633
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.572633
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.535508
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.535508
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 67,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_gate_loop_in",
+      "graph_node_id": "gate_loop_in::../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop",
+      "node_name": "gate_loop_in",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.574002,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.574002
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.574002
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.535744
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.535744
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 68,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_gate_loop_out",
+      "graph_node_id": "gate_loop_out::../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop",
+      "node_name": "gate_loop_out",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.573898,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.573898
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.573898
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.535751
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.535751
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 69,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_check_out",
+      "graph_node_id": "check_out::../../github/ParkingProject/parking_system.aadl#parking_system.check_out",
+      "node_name": "check_out",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.check_out",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.688362,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.688362
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.688362
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.638522
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.638522
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 70,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_board",
+      "graph_node_id": "board::../../github/ParkingProject/parking_system.aadl#parking_system.capacity_board",
+      "node_name": "board",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.capacity_board",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.685541,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.685541
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.685541
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.638875
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.638875
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 71,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_parking_slot1",
+      "graph_node_id": "parking_slot1::../../github/ParkingProject/parking_system.aadl#parking_system.slot_sensor",
+      "node_name": "parking_slot1",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.slot_sensor",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.698458,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.698458
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.698458
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.651791
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.651791
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 72,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_parking_slot2",
+      "graph_node_id": "parking_slot2::../../github/ParkingProject/parking_system.aadl#parking_system.slot_sensor",
+      "node_name": "parking_slot2",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.slot_sensor",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.698458,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.698458
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.698458
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.651791
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.651791
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 73,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_parking_slot3",
+      "graph_node_id": "parking_slot3::../../github/ParkingProject/parking_system.aadl#parking_system.slot_sensor",
+      "node_name": "parking_slot3",
+      "category": "device",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.slot_sensor",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.618059,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.618059
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.618059
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.571392
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.571392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 74,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_ram",
+      "graph_node_id": "RAM::../../github/ParkingProject/parking_system.aadl#parking_system.RAM",
+      "node_name": "RAM",
+      "category": "memory",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.RAM",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.543042,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.543042
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.543042
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.496375
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.496375
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 75,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_main",
+      "graph_node_id": "main::../../github/ParkingProject/parking_system.aadl#parking_system.parking_process.impl",
+      "node_name": "main",
+      "category": "process",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.parking_process.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.424667,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.424667
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.424667
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.378
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.378
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 76,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_inductive_loop_in_thread",
+      "graph_node_id": "inductive_loop_in_thread::../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop_in_thread.impl",
+      "node_name": "inductive_loop_in_thread",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop_in_thread.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.678881,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.678881
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.678881
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.636374
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.636374
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 77,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_plates_data_thread",
+      "graph_node_id": "plates_data_thread::../../github/ParkingProject/parking_system.aadl#parking_system.plates_data_thread.impl",
+      "node_name": "plates_data_thread",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.plates_data_thread.impl",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.695017,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.695017
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.695017
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.645177
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.645177
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 78,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_car_passed_entry_thread",
+      "graph_node_id": "car_passed_entry_thread::../../github/ParkingProject/parking_system.aadl#parking_system.car_passed_entry_thread.impl",
+      "node_name": "car_passed_entry_thread",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.car_passed_entry_thread.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.680064,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.680064
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.680064
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.642428
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.642428
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_car_parked_thread",
+      "graph_node_id": "car_parked_thread::../../github/ParkingProject/parking_system.aadl#parking_system.car_parked_thread.impl",
+      "node_name": "car_parked_thread",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.car_parked_thread.impl",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.702297,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.702297
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.702297
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.64863
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.64863
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 80,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_car_moved_thread",
+      "graph_node_id": "car_moved_thread::../../github/ParkingProject/parking_system.aadl#parking_system.car_moved_thread.impl",
+      "node_name": "car_moved_thread",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.car_moved_thread.impl",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.651351,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.651351
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.651351
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.596809
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.596809
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 81,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_inductive_loop_out_thread",
+      "graph_node_id": "inductive_loop_out_thread::../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop_out_thread.impl",
+      "node_name": "inductive_loop_out_thread",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.inductive_loop_out_thread.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.678881,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.678881
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.678881
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.636374
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.636374
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 82,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_calculate_price",
+      "graph_node_id": "calculate_price::../../github/ParkingProject/parking_system.aadl#parking_system.calculate_price.impl",
+      "node_name": "calculate_price",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.calculate_price.impl",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.69439,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.69439
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.69439
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.647724
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.647724
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 83,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_open_gate_out_thread",
+      "graph_node_id": "open_gate_out_thread::../../github/ParkingProject/parking_system.aadl#parking_system.open_gate_out_thread.impl",
+      "node_name": "open_gate_out_thread",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.open_gate_out_thread.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.697214,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.697214
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.697214
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.654752
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.654752
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 84,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_car_passed_exit_thread",
+      "graph_node_id": "car_passed_exit_thread::../../github/ParkingProject/parking_system.aadl#parking_system.car_passed_exit_thread.impl",
+      "node_name": "car_passed_exit_thread",
+      "category": "thread",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.car_passed_exit_thread.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.680093,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.680093
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.680093
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.64188
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.64188
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 85,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_cpu",
+      "graph_node_id": "cpu::../../github/ParkingProject/parking_system.aadl#parking_system.leon2",
+      "node_name": "cpu",
+      "category": "processor",
+      "classifier": "../../github/ParkingProject/parking_system.aadl#parking_system.leon2",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.543042,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.543042
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.543042
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.496375
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.496375
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 86,
+          "aadl_graph_id": "ParkingProject_parking_system_parking_simple_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.001871
+}

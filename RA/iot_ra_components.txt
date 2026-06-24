@@ -1,0 +1,13 @@
+Application: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.
+
+IoTIM: Acts as an integration layer for sensors, actuators, devices, and applications. It receives data from devices, processes it, and forwards it to applications, enabling interoperability and unified management.
+
+Gateway: Handles communication between devices and higher-level layers when direct connectivity is not possible. It bridges heterogeneous protocols, communication technologies, and payload formats.
+
+Device: Serves as the entry point from the physical world into the digital one. It connects to sensors and/or actuators via wired or wireless interfaces and enables interaction with the environment.
+
+Driver: Software running on the device that provides access to sensors and actuators. It includes computing and storage resources needed to control hardware components and manage data acquisition.
+
+Sensor: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.
+
+Actuator: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.

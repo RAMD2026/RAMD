@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gramm:ReferenceArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gramm="http://example.org/gramm" referenceArchitectureName="Smart Parking System Reference Architecture">
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.presentation" name="Presentation_Layer" mandatory="true" incoming="conn.webui-presentation conn.mobileui-presentation conn.desktopui-presentation" outgoing="conn.presentation-business conn.presentation-security">
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.webui" name="Web_User_Interface" outgoing="conn.webui-presentation"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.mobileui" name="Mobile_User_Interface" outgoing="conn.mobileui-presentation"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.desktopui" name="Desktop_User_Interface" outgoing="conn.desktopui-presentation"/>
+  </raelements>
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.business" name="Business_Logic_Layer" mandatory="true" incoming="conn.presentation-business conn.navigation-business conn.reservation-business conn.administration-business conn.parkingmap-business conn.parkinglot-business conn.driver-business" outgoing="conn.business-data conn.business-security">
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.navigation" name="Navigation" outgoing="conn.navigation-business"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.reservation" name="Reservation" outgoing="conn.reservation-business"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.administration" name="Administration" outgoing="conn.administration-business"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.parkingmap" name="Parking_Map" outgoing="conn.parkingmap-business"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.parkinglot" name="Parking_Lot" outgoing="conn.parkinglot-business"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.driver" name="Driver" outgoing="conn.driver-business"/>
+  </raelements>
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.data" name="Data_Management_Layer" mandatory="true" incoming="conn.business-data conn.dataacquisition-data conn.dataprocessing-data conn.decisionmaking-data conn.datastorage-data conn.datavisualisation-data" outgoing="conn.data-security">
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.dataacquisition" name="Data_Acquisition" outgoing="conn.dataacquisition-data"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.dataprocessing" name="Data_Processing" outgoing="conn.dataprocessing-data"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.decisionmaking" name="Decision_Making" outgoing="conn.decisionmaking-data"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.datastorage" name="Data_Storage" outgoing="conn.datastorage-data"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.datavisualisation" name="Data_Visualisation" outgoing="conn.datavisualisation-data"/>
+  </raelements>
+  <raelements xsi:type="gramm:RAComponent" xmi:id="comp.security" name="Security" mandatory="true" incoming="conn.presentation-security conn.business-security conn.data-security conn.confidentiality-security conn.integrity-security conn.availability-security">
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.confidentiality" name="Confidentiality" outgoing="conn.confidentiality-security"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.integrity" name="Integrity" outgoing="conn.integrity-security"/>
+    <child xsi:type="gramm:RAComponent" xmi:id="comp.availability" name="Availability" outgoing="conn.availability-security"/>
+  </raelements>
+
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.presentation-business" name="User_Requests" sourceRef="comp.presentation" targetRef="comp.business"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.business-data" name="Business_Data_Access" sourceRef="comp.business" targetRef="comp.data"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.presentation-security" name="Presentation_Security" sourceRef="comp.presentation" targetRef="comp.security"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.business-security" name="Business_Security" sourceRef="comp.business" targetRef="comp.security"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.data-security" name="Data_Security" sourceRef="comp.data" targetRef="comp.security"/>
+
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.webui-presentation" name="Web_UI_To_Presentation" sourceRef="comp.webui" targetRef="comp.presentation"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.mobileui-presentation" name="Mobile_UI_To_Presentation" sourceRef="comp.mobileui" targetRef="comp.presentation"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.desktopui-presentation" name="Desktop_UI_To_Presentation" sourceRef="comp.desktopui" targetRef="comp.presentation"/>
+
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.navigation-business" name="Navigation_To_Business" sourceRef="comp.navigation" targetRef="comp.business"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.reservation-business" name="Reservation_To_Business" sourceRef="comp.reservation" targetRef="comp.business"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.administration-business" name="Administration_To_Business" sourceRef="comp.administration" targetRef="comp.business"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.parkingmap-business" name="Parking_Map_To_Business" sourceRef="comp.parkingmap" targetRef="comp.business"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.parkinglot-business" name="Parking_Lot_To_Business" sourceRef="comp.parkinglot" targetRef="comp.business"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.driver-business" name="Driver_To_Business" sourceRef="comp.driver" targetRef="comp.business"/>
+
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.dataacquisition-data" name="Data_Acquisition_To_Data_Management" sourceRef="comp.dataacquisition" targetRef="comp.data"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.dataprocessing-data" name="Data_Processing_To_Data_Management" sourceRef="comp.dataprocessing" targetRef="comp.data"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.decisionmaking-data" name="Decision_Making_To_Data_Management" sourceRef="comp.decisionmaking" targetRef="comp.data"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.datastorage-data" name="Data_Storage_To_Data_Management" sourceRef="comp.datastorage" targetRef="comp.data"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.datavisualisation-data" name="Data_Visualisation_To_Data_Management" sourceRef="comp.datavisualisation" targetRef="comp.data"/>
+
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.confidentiality-security" name="Confidentiality_To_Security" sourceRef="comp.confidentiality" targetRef="comp.security"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.integrity-security" name="Integrity_To_Security" sourceRef="comp.integrity" targetRef="comp.security"/>
+  <raelements xsi:type="gramm:RAConnector" xmi:id="conn.availability-security" name="Availability_To_Security" sourceRef="comp.availability" targetRef="comp.security"/>
+</gramm:ReferenceArchitectureModel>

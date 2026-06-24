@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_f585202b1b184e86bf0c2f0b492a3259">
+  <relations xmi:id="_e01dc210fcd346eaa339c55e153a8366">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_zigbee_devices"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_ip_devices"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_ip_device_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_router_controller"/>
+  </relations>
+  <relations xmi:id="_18d42ecd0fa5472a9a729b7c33bbb84c">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Gateway"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_main_control_router"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_zigbee_device_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_main_controller"/>
+  </relations>
+  <relations xmi:id="_f7c9d1e615334b4a8d98477365f40387">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_remote_msg_control"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_remote_server"/>
+  </relations>
+  <relations xmi:id="_9006c9203bdf400ab979af660cfd00d7">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_client_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_clients"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_client_control_unit"/>
+  </relations>
+</ecore:Implementation_model>

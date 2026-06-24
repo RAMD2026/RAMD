@@ -1,0 +1,201 @@
+{
+  "graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+  "source_file": "mapping_SmartHome_smart_home_arch_smarthome_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 7,
+  "num_correct": 3,
+  "average_score_for_model": 0.42857142857142855,
+  "predictions": [
+    {
+      "node_id": "comp_in_range",
+      "graph_node_id": "IN_RANGE::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.In_range",
+      "node_name": "IN_RANGE",
+      "category": "device",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.In_range",
+      "ports": [
+        "Turn_on_instructed_appliance",
+        "Sensor_Instruction"
+      ],
+      "node_text_used": "Component name: IN RANGE. Category: device. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.In range. Ports: Turn on instructed appliance, Sensor Instruction.",
+      "ground_truth_ra_names": [
+        "Sensor"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.5012102723121643,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.5012102723121643,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_communicator",
+      "graph_node_id": "COMMUNICATOR::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.out_range",
+      "node_name": "COMMUNICATOR",
+      "category": "device",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.out_range",
+      "ports": [
+        "Turn_off_instructed_appliance",
+        "Sensor_Instruction"
+      ],
+      "node_text_used": "Component name: COMMUNICATOR. Category: device. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.out range. Ports: Turn off instructed appliance, Sensor Instruction.",
+      "ground_truth_ra_names": [
+        "Gateway",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.49317389726638794,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.49317389726638794,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_home_controller",
+      "graph_node_id": "HOME_CONTROLLER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.sensor_unit",
+      "node_name": "HOME_CONTROLLER",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.sensor_unit",
+      "ports": [
+        "Sense_inward_moment",
+        "user_command",
+        "Configuration"
+      ],
+      "node_text_used": "Component name: HOME CONTROLLER. Category: system. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.sensor unit. Ports: Sense inward moment, user command, Configuration.",
+      "ground_truth_ra_names": [
+        "Application",
+        "Device"
+      ],
+      "predicted_ra_name": "Sensor",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_score": 0.47733572125434875,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.47733572125434875,
+          "ra_text": "RA component: Sensor. Definition: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.. Tag: raelements. Incoming connectors: Device–Sensor Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_client_tier",
+      "graph_node_id": "CLIENT_TIER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Client_tier.impl",
+      "node_name": "CLIENT_TIER",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Client_tier.impl",
+      "ports": [
+        "Configuration",
+        "Monitoring"
+      ],
+      "node_text_used": "Component name: CLIENT TIER. Category: system. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.Client tier.impl. Ports: Configuration, Monitoring.",
+      "ground_truth_ra_names": [
+        "Application"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.481599360704422,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.481599360704422,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_smarthome_hw_platform",
+      "graph_node_id": "SMARTHOME_HW_PLATFORM::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Smarthome_HW_Platform",
+      "node_name": "SMARTHOME_HW_PLATFORM",
+      "category": "processor",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Smarthome_HW_Platform",
+      "ports": [],
+      "node_text_used": "Component name: SMARTHOME HW PLATFORM. Category: processor. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.Smarthome HW Platform.",
+      "ground_truth_ra_names": [
+        "Device"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.44123589992523193,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.44123589992523193,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_plugin",
+      "graph_node_id": "PLUGIN::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.plugin",
+      "node_name": "PLUGIN",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.plugin",
+      "ports": [
+        "busdata",
+        "configure_control",
+        "Configured_control"
+      ],
+      "node_text_used": "Component name: PLUGIN. Category: system. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.plugin. Ports: busdata, configure control, Configured control.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.42721083760261536,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.42721083760261536,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_appliances",
+      "graph_node_id": "APPLIANCES::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Appliances",
+      "node_name": "APPLIANCES",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Appliances",
+      "ports": [
+        "Appliance_switch",
+        "Current_status"
+      ],
+      "node_text_used": "Component name: APPLIANCES. Category: system. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.Appliances. Ports: Appliance switch, Current status.",
+      "ground_truth_ra_names": [
+        "Device"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.4271054267883301,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.4271054267883301,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    }
+  ]
+}

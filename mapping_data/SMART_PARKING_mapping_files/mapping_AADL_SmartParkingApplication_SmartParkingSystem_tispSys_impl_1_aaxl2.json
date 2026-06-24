@@ -1,0 +1,711 @@
+{
+  "graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "Smart Parking System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.presentation",
+        "name": "Presentation_Layer",
+        "mandatory": true,
+        "incoming": "conn.webui-presentation conn.mobileui-presentation conn.desktopui-presentation",
+        "outgoing": "conn.presentation-business conn.presentation-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.business",
+        "name": "Business_Logic_Layer",
+        "mandatory": true,
+        "incoming": "conn.presentation-business conn.navigation-business conn.reservation-business conn.administration-business conn.parkingmap-business conn.parkinglot-business conn.driver-business",
+        "outgoing": "conn.business-data conn.business-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.data",
+        "name": "Data_Management_Layer",
+        "mandatory": true,
+        "incoming": "conn.business-data conn.dataacquisition-data conn.dataprocessing-data conn.decisionmaking-data conn.datastorage-data conn.datavisualisation-data",
+        "outgoing": "conn.data-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.security",
+        "name": "Security",
+        "mandatory": true,
+        "incoming": "conn.presentation-security conn.business-security conn.data-security conn.confidentiality-security conn.integrity-security conn.availability-security",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.presentation-business",
+        "name": "User_Requests",
+        "source": "comp.presentation",
+        "target": "comp.business",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.business-data",
+        "name": "Business_Data_Access",
+        "source": "comp.business",
+        "target": "comp.data",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.presentation-security",
+        "name": "Presentation_Security",
+        "source": "comp.presentation",
+        "target": "comp.security",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.business-security",
+        "name": "Business_Security",
+        "source": "comp.business",
+        "target": "comp.security",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.data-security",
+        "name": "Data_Security",
+        "source": "comp.data",
+        "target": "comp.security",
+        "bidirectional": false
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_system",
+      "graph_node_id": "SYSTEM::AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+      "name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "signal_in",
+        "signal2_in",
+        "signal3_in"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 0,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 104,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 105,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 111,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 116,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 117,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 130,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 140,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 156,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 159,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 178,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 181,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 194,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 207,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 214,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 219,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 225,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_driver",
+      "graph_node_id": "sub_driver::../../github/AADL-SmartParkingApplication/Driver.aadl#Driver.driver.impl",
+      "name": "sub_driver",
+      "category": "",
+      "classifier": "../../github/AADL-SmartParkingApplication/Driver.aadl#Driver.driver.impl",
+      "ports": [
+        "DriverInfo_input",
+        "DriverOut"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 118,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 195,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_hardware_comm",
+      "graph_node_id": "sub_hardwareComm::../../github/AADL-SmartParkingApplication/InformationServiceProvider.aadl#InformationServiceProvider.hardwareComm.impl",
+      "name": "sub_hardwareComm",
+      "category": "bus",
+      "classifier": "../../github/AADL-SmartParkingApplication/InformationServiceProvider.aadl#InformationServiceProvider.hardwareComm.impl",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 119,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 196,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_vehicle_obe",
+      "graph_node_id": "sub_vehicleOBE::../../github/AADL-SmartParkingApplication/SmartParkingSystem.aadl#SmartParkingSystem.VehicleOBE",
+      "name": "sub_vehicleOBE",
+      "category": "device",
+      "classifier": "../../github/AADL-SmartParkingApplication/SmartParkingSystem.aadl#SmartParkingSystem.VehicleOBE",
+      "ports": [
+        "signal_out",
+        "parking_data_received"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 120,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 197,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_roadside_obe",
+      "graph_node_id": "sub_roadsideOBE::../../github/AADL-SmartParkingApplication/SmartParkingSystem.aadl#SmartParkingSystem.RoadsideOBE",
+      "name": "sub_roadsideOBE",
+      "category": "device",
+      "classifier": "../../github/AADL-SmartParkingApplication/SmartParkingSystem.aadl#SmartParkingSystem.RoadsideOBE",
+      "ports": [
+        "signal_out",
+        "parking_data_received"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 121,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 198,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_parking_manager",
+      "graph_node_id": "sub_parkingManager::../../github/AADL-SmartParkingApplication/SmartParkingSystem.aadl#SmartParkingSystem.ParkingManager",
+      "name": "sub_parkingManager",
+      "category": "process",
+      "classifier": "../../github/AADL-SmartParkingApplication/SmartParkingSystem.aadl#SmartParkingSystem.ParkingManager",
+      "ports": [
+        "signal_out",
+        "signal_in"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 122,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 199,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_rse_electric_charge_support_provider",
+      "graph_node_id": "sub_RSE_ElectricChargeSupportProvider::../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_ElectricChargeSupportProvider",
+      "name": "sub_RSE_ElectricChargeSupportProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_ElectricChargeSupportProvider",
+      "ports": [
+        "RSE_ECSP_data_in",
+        "RSE_ECSP_data_out"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 123,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 200,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_rse_workzone_safety_provider",
+      "graph_node_id": "sub_RSE_WorkzoneSafetyProvider::../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_WorkzoneSafetyProvider",
+      "name": "sub_RSE_WorkzoneSafetyProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_WorkzoneSafetyProvider",
+      "ports": [
+        "RSE_WSP_data_in",
+        "RSE_WSP_data_out"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 201,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_rse_travel_information_communication_provider",
+      "graph_node_id": "sub_RSE_TravelInformationCommunicationProvider::../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_TravelInformationCommunicationProvider",
+      "name": "sub_RSE_TravelInformationCommunicationProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_TravelInformationCommunicationProvider",
+      "ports": [
+        "RSE_TICP_data_in",
+        "RSE_TICP_data_out"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 125,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 202,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_rse_traffic_metering_provider",
+      "graph_node_id": "sub_RSE_TrafficMeteringProvider::../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_TrafficMeteringProvider",
+      "name": "sub_RSE_TrafficMeteringProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_TrafficMeteringProvider",
+      "ports": [
+        "RSE_TMP_data_in",
+        "RSE_TMP_data_out"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 126,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 203,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_rse_speed_management_provider",
+      "graph_node_id": "sub_RSE_SpeedManagementProvider::../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_SpeedManagementProvider",
+      "name": "sub_RSE_SpeedManagementProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-SmartParkingApplication/RSE.aadl#RSE.RSE_SpeedManagementProvider",
+      "ports": [
+        "RSE_SMP_data_in",
+        "RSE_SMP_data_out"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 127,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 204,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_sub_tic",
+      "graph_node_id": "sub_TIC::../../github/AADL-SmartParkingApplication/InformationServiceProvider.aadl#InformationServiceProvider.TIC.impl",
+      "name": "sub_TIC",
+      "category": "processor",
+      "classifier": "../../github/AADL-SmartParkingApplication/InformationServiceProvider.aadl#InformationServiceProvider.TIC.impl",
+      "ports": [
+        "bus_access"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 56,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 128,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 191,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 205,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_collection",
+      "graph_node_id": "collection::../../github/AADL-SmartParkingApplication/InformationServiceProvider.aadl#InformationServiceProvider.dataCollection",
+      "name": "collection",
+      "category": "memory",
+      "classifier": "../../github/AADL-SmartParkingApplication/InformationServiceProvider.aadl#InformationServiceProvider.dataCollection",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 57,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 129,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 192,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 206,
+          "aadl_graph_id": "AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_system",
+      "target": "comp_sub_rse_electric_charge_support_provider",
+      "type": "connection",
+      "src_port": "signal_in",
+      "dst_port": "RSE_ECSP_data_in",
+      "raw": {
+        "source": "//@featureInstance.0",
+        "destination": "//@componentInstance.5/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_sub_rse_travel_information_communication_provider",
+      "type": "connection",
+      "src_port": "signal2_in",
+      "dst_port": "RSE_TICP_data_in",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.7/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_sub_parking_manager",
+      "type": "connection",
+      "src_port": "signal3_in",
+      "dst_port": "signal_in",
+      "raw": {
+        "source": "//@featureInstance.2",
+        "destination": "//@componentInstance.4/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_sub_hardware_comm",
+      "target": "comp_sub_tic",
+      "type": "connection",
+      "src_port": "sub_hardwareComm",
+      "dst_port": "bus_access",
+      "raw": {
+        "source": "//@componentInstance.1",
+        "destination": "//@componentInstance.10/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_sub_parking_manager",
+      "target": "comp_sub_driver",
+      "type": "connection",
+      "src_port": "signal_out",
+      "dst_port": "DriverInfo_input",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.0",
+        "destination": "//@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_sub_rse_electric_charge_support_provider",
+      "target": "comp_sub_roadside_obe",
+      "type": "connection",
+      "src_port": "RSE_ECSP_data_out",
+      "dst_port": "parking_data_received",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.1",
+        "destination": "//@componentInstance.3/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_sub_rse_travel_information_communication_provider",
+      "target": "comp_sub_vehicle_obe",
+      "type": "connection",
+      "src_port": "RSE_TICP_data_out",
+      "dst_port": "parking_data_received",
+      "raw": {
+        "source": "//@componentInstance.7/@featureInstance.1",
+        "destination": "//@componentInstance.2/@featureInstance.1"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_PARKING_graphs.json",
+    "source_ra_grammar": "smartparking.gramm",
+    "source_mapping_labels": "all_SMART_PARKING_connection_components_with_ra_component.csv",
+    "enable_global_fallback": true
+  }
+}

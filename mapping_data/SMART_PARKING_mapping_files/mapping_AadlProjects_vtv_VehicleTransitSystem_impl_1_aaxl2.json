@@ -1,0 +1,592 @@
+{
+  "graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "Smart Parking System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.presentation",
+        "name": "Presentation_Layer",
+        "mandatory": true,
+        "incoming": "conn.webui-presentation conn.mobileui-presentation conn.desktopui-presentation",
+        "outgoing": "conn.presentation-business conn.presentation-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.business",
+        "name": "Business_Logic_Layer",
+        "mandatory": true,
+        "incoming": "conn.presentation-business conn.navigation-business conn.reservation-business conn.administration-business conn.parkingmap-business conn.parkinglot-business conn.driver-business",
+        "outgoing": "conn.business-data conn.business-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.data",
+        "name": "Data_Management_Layer",
+        "mandatory": true,
+        "incoming": "conn.business-data conn.dataacquisition-data conn.dataprocessing-data conn.decisionmaking-data conn.datastorage-data conn.datavisualisation-data",
+        "outgoing": "conn.data-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.security",
+        "name": "Security",
+        "mandatory": true,
+        "incoming": "conn.presentation-security conn.business-security conn.data-security conn.confidentiality-security conn.integrity-security conn.availability-security",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.presentation-business",
+        "name": "User_Requests",
+        "source": "comp.presentation",
+        "target": "comp.business",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.business-data",
+        "name": "Business_Data_Access",
+        "source": "comp.business",
+        "target": "comp.data",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.presentation-security",
+        "name": "Presentation_Security",
+        "source": "comp.presentation",
+        "target": "comp.security",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.business-security",
+        "name": "Business_Security",
+        "source": "comp.business",
+        "target": "comp.security",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.data-security",
+        "name": "Data_Security",
+        "source": "comp.data",
+        "target": "comp.security",
+        "bidirectional": false
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_transit_vehicle_databus",
+      "graph_node_id": "transitVehicleDatabus::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transitVehicleDatabus.impl",
+      "name": "transitVehicleDatabus",
+      "category": "bus",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transitVehicleDatabus.impl",
+      "ports": [
+        "host_status",
+        "coll_inf",
+        "pla_ctrl",
+        "chg_ctrl"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 87,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 87,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_roadside_equip",
+      "graph_node_id": "RoadsideEquip::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.RoadsideEquip.impl",
+      "name": "RoadsideEquip",
+      "category": "device",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.RoadsideEquip.impl",
+      "ports": [
+        "vloc_e"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 13,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 88,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_itsroadequip",
+      "graph_node_id": "itsroadequip::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.itsroadequip.impl",
+      "name": "itsroadequip",
+      "category": "device",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.itsroadequip.impl",
+      "ports": [
+        "dvr_inf"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 89,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_transvobe",
+      "graph_node_id": "transvobe::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transvobe.impl",
+      "name": "transvobe",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transvobe.impl",
+      "ports": [
+        "bus_access",
+        "host_status",
+        "coll_inf",
+        "op_disp",
+        "op_in",
+        "rvloc",
+        "vloc",
+        "alarm",
+        "pla_ctrl",
+        "chg_ctrl",
+        "p",
+        "l"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 90,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_transv2vsafety",
+      "graph_node_id": "transv2vsafety::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transv2vsafety.impl",
+      "name": "transv2vsafety",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transv2vsafety.impl",
+      "ports": [
+        "host_status",
+        "coll_inf",
+        "op_disp",
+        "op_in",
+        "rvloc",
+        "vloc",
+        "alarm",
+        "pla_ctrl",
+        "chg_ctrl",
+        "p",
+        "l"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 91,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 146,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_status",
+      "graph_node_id": "status::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.status.impl",
+      "name": "status",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.status.impl",
+      "ports": [
+        "host_status",
+        "coll_inf",
+        "alarm",
+        "p",
+        "l"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 92,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 147,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_op_ctrl",
+      "graph_node_id": "op_ctrl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.op_ctrl.impl",
+      "name": "op_ctrl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.op_ctrl.impl",
+      "ports": [
+        "op_disp",
+        "op_in",
+        "dp",
+        "dl"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 93,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 148,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_loc_ctrl",
+      "graph_node_id": "loc_ctrl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.loc_ctrl.impl",
+      "name": "loc_ctrl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.loc_ctrl.impl",
+      "ports": [
+        "rvloc",
+        "vloc"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 94,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 149,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_thp",
+      "graph_node_id": "thp::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thp.impl",
+      "name": "thp",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thp.impl",
+      "ports": [
+        "datin",
+        "datout"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 95,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 150,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_thl",
+      "graph_node_id": "thl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thl.impl",
+      "name": "thl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thl.impl",
+      "ports": [
+        "datin",
+        "datout"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 96,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 151,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_remote_vehicle_obe",
+      "graph_node_id": "remoteVehicleOBE::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.remoteVehicleOBE.impl",
+      "name": "remoteVehicleOBE",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.remoteVehicleOBE.impl",
+      "ports": [
+        "rvloc",
+        "vloc",
+        "vloc_e"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 97,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_trans_operator",
+      "graph_node_id": "transOperator::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transOperator.impl",
+      "name": "transOperator",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transOperator.impl",
+      "ports": [
+        "dvr_inf",
+        "op_disp",
+        "op_in",
+        "alarm"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 98,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_transit_vehicle_databus",
+      "target": "comp_transvobe",
+      "type": "connection",
+      "src_port": "transitVehicleDatabus",
+      "dst_port": "bus_access",
+      "raw": {
+        "source": "//@componentInstance.0",
+        "destination": "//@componentInstance.3/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_transit_vehicle_databus",
+      "target": "comp_status",
+      "type": "connection",
+      "src_port": "host_status",
+      "dst_port": "host_status",
+      "raw": {
+        "source": "//@componentInstance.0/@featureInstance.0",
+        "destination": "//@componentInstance.3/@componentInstance.0/@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_itsroadequip",
+      "target": "comp_trans_operator",
+      "type": "connection",
+      "src_port": "dvr_inf",
+      "dst_port": "dvr_inf",
+      "raw": {
+        "source": "//@componentInstance.2/@featureInstance.0",
+        "destination": "//@componentInstance.5/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_status",
+      "target": "comp_transit_vehicle_databus",
+      "type": "connection",
+      "src_port": "coll_inf",
+      "dst_port": "coll_inf",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@componentInstance.0/@featureInstance.1",
+        "destination": "//@componentInstance.0/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_status",
+      "target": "comp_trans_operator",
+      "type": "connection",
+      "src_port": "alarm",
+      "dst_port": "alarm",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@componentInstance.0/@featureInstance.2",
+        "destination": "//@componentInstance.5/@featureInstance.3"
+      }
+    },
+    {
+      "source": "comp_op_ctrl",
+      "target": "comp_thp",
+      "type": "connection",
+      "src_port": "dp",
+      "dst_port": "datin",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@componentInstance.1/@featureInstance.2",
+        "destination": "//@componentInstance.3/@componentInstance.0/@componentInstance.3/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_op_ctrl",
+      "target": "comp_thl",
+      "type": "connection",
+      "src_port": "dl",
+      "dst_port": "datin",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@componentInstance.1/@featureInstance.3",
+        "destination": "//@componentInstance.3/@componentInstance.0/@componentInstance.4/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_op_ctrl",
+      "target": "comp_trans_operator",
+      "type": "connection",
+      "src_port": "op_disp",
+      "dst_port": "op_disp",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@componentInstance.1/@featureInstance.0",
+        "destination": "//@componentInstance.5/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_loc_ctrl",
+      "target": "comp_remote_vehicle_obe",
+      "type": "connection",
+      "src_port": "vloc",
+      "dst_port": "vloc",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@componentInstance.2/@featureInstance.1",
+        "destination": "//@componentInstance.4/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_thp",
+      "target": "comp_transit_vehicle_databus",
+      "type": "connection",
+      "src_port": "datout",
+      "dst_port": "pla_ctrl",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@componentInstance.3/@featureInstance.1",
+        "destination": "//@componentInstance.0/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_thl",
+      "target": "comp_transit_vehicle_databus",
+      "type": "connection",
+      "src_port": "datout",
+      "dst_port": "chg_ctrl",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@componentInstance.4/@featureInstance.1",
+        "destination": "//@componentInstance.0/@featureInstance.3"
+      }
+    },
+    {
+      "source": "comp_remote_vehicle_obe",
+      "target": "comp_loc_ctrl",
+      "type": "connection",
+      "src_port": "rvloc",
+      "dst_port": "rvloc",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.0",
+        "destination": "//@componentInstance.3/@componentInstance.0/@componentInstance.2/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_remote_vehicle_obe",
+      "target": "comp_roadside_equip",
+      "type": "connection",
+      "src_port": "vloc_e",
+      "dst_port": "vloc_e",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.2",
+        "destination": "//@componentInstance.1/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_trans_operator",
+      "target": "comp_op_ctrl",
+      "type": "connection",
+      "src_port": "op_in",
+      "dst_port": "op_in",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.2",
+        "destination": "//@componentInstance.3/@componentInstance.0/@componentInstance.1/@featureInstance.1"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_PARKING_graphs.json",
+    "source_ra_grammar": "smartparking.gramm",
+    "source_mapping_labels": "all_SMART_PARKING_connection_components_with_ra_component.csv",
+    "enable_global_fallback": true
+  }
+}

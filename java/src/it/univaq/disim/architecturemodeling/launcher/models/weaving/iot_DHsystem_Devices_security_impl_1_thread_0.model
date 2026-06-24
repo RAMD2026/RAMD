@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_5a148327ccb044c4b95c52798e5e2c35">
+  <relations xmi:id="_4e03255be2004f3087475583fc0a51b9">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/DHsystem_Devices_security_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_582d1c688a174fa293d9916c012f7856">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/DHsystem_Devices_security_impl_1.model#comp_alarms"/>
+  </relations>
+  <relations xmi:id="_51caaef119214dbcb7d2f3aeb60ff600">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Sensor"/>
+    <component href="../architectures/DHsystem_Devices_security_impl_1.model#comp_door_sensor"/>
+    <component href="../architectures/DHsystem_Devices_security_impl_1.model#comp_window_sensor"/>
+  </relations>
+</ecore:Implementation_model>

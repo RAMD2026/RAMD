@@ -1,0 +1,140 @@
+{
+  "graph_id": "An-AADL-Model-of-Smart-Home-System_RemoteServer_RemoteServer_impl_1.aaxl2",
+  "source_file": "mapping_An_AADL_Model_of_Smart_Home_System_RemoteServer_RemoteServer_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 3,
+  "num_correct": 2,
+  "average_score_for_model": 0.6666666666666666,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::An-AADL-Model-of-Smart-Home-System_RemoteServer_RemoteServer_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "in_rs_mcr",
+        "out_rs_mcr",
+        "in_rs_clients",
+        "out_rs_clients"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: in rs mcr, out rs mcr, in rs clients, out rs clients.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "Application",
+        "Application",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.4497050642967224,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.4497050642967224,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_client_controller",
+      "graph_node_id": "CLIENT_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.Client_Controller",
+      "node_name": "CLIENT_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.Client_Controller",
+      "ports": [
+        "cc_data_receiver",
+        "cc_data_sender"
+      ],
+      "node_text_used": "Component name: CLIENT CONTROLLER. Category: process. Classifier: .. .. github An-AADL-Model-of-Smart-Home-System Plugin Resources The Smart Home System RemoteServer.aadl#RemoteServer.Client Controller. Ports: cc data receiver, cc data sender.",
+      "ground_truth_ra_names": [
+        "Application",
+        "Application",
+        "Application",
+        "Application"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.47471854090690613,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.47471854090690613,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_router_controller",
+      "graph_node_id": "ROUTER_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.Router_Controller",
+      "node_name": "ROUTER_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.Router_Controller",
+      "ports": [
+        "rc_data_receiver",
+        "rc_data_sender"
+      ],
+      "node_text_used": "Component name: ROUTER CONTROLLER. Category: process. Classifier: .. .. github An-AADL-Model-of-Smart-Home-System Plugin Resources The Smart Home System RemoteServer.aadl#RemoteServer.Router Controller. Ports: rc data receiver, rc data sender.",
+      "ground_truth_ra_names": [
+        "Gateway",
+        "Device",
+        "Gateway",
+        "Device",
+        "Gateway",
+        "Device",
+        "Gateway"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.49896901845932007,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.49896901845932007,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    }
+  ]
+}

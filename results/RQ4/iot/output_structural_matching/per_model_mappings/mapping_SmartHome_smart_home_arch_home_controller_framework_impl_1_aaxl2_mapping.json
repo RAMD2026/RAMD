@@ -1,0 +1,332 @@
+{
+  "graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+  "ra_name": "IoT System Reference Architecture",
+  "num_nodes": 6,
+  "num_edges": 10,
+  "evaluated_nodes": 6,
+  "correct_predictions": 0,
+  "accuracy": 0.0,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "predicted_ra_id": "comp.device",
+      "predicted_ra_name": "Device",
+      "prediction_score": 0.694153,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.694153
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.635113
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.539628
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.406628
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.390988
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_system_settings",
+      "graph_node_id": "SYSTEM_SETTINGS::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.system_setting",
+      "node_name": "SYSTEM_SETTINGS",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.system_setting",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.751405,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.738168
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.618405
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.614068
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 146,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_user_command",
+      "graph_node_id": "USER_COMMAND::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.user_command",
+      "node_name": "USER_COMMAND",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.user_command",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.751405,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.738168
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.618405
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.614068
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 147,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_schedular",
+      "graph_node_id": "SCHEDULAR::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.schedular",
+      "node_name": "SCHEDULAR",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.schedular",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.751405,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.738168
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.618405
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.614068
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 143,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 143,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_software_updater",
+      "graph_node_id": "SOFTWARE_UPDATER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Software_updater",
+      "node_name": "SOFTWARE_UPDATER",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Software_updater",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.751405,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.738168
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.618405
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.614068
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 144,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 144,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_protocol_layer",
+      "graph_node_id": "PROTOCOL_LAYER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.protocol_layer",
+      "node_name": "PROTOCOL_LAYER",
+      "category": "process",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.protocol_layer",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.751405,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.751405
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.738168
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.618405
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.614068
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 142,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 142,
+          "aadl_graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.000638
+}

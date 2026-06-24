@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_056d49717f414d5c81c9622be429617d">
+  <relations xmi:id="_582e3e64c6ff4b8e8104090d7109a380">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_transit_vehicle_databus"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_transvobe"/>
+  </relations>
+  <relations xmi:id="_9b7fe3a0106941fba14896bc17097f41">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_roadside_equip"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_transv2vsafety"/>
+  </relations>
+  <relations xmi:id="_61eb86d1986e44f5be85d523a71af76d">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_itsroadequip"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_status"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_op_ctrl"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_loc_ctrl"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_thp"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_thl"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_remote_vehicle_obe"/>
+    <component href="../architectures/AadlProjects_vtv_VehicleTransitSystem_impl_1.model#comp_trans_operator"/>
+  </relations>
+</ecore:Implementation_model>

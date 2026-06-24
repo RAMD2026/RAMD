@@ -1,0 +1,568 @@
+{
+  "graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "Smart Parking System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.presentation",
+        "name": "Presentation_Layer",
+        "mandatory": true,
+        "incoming": "conn.webui-presentation conn.mobileui-presentation conn.desktopui-presentation",
+        "outgoing": "conn.presentation-business conn.presentation-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.business",
+        "name": "Business_Logic_Layer",
+        "mandatory": true,
+        "incoming": "conn.presentation-business conn.navigation-business conn.reservation-business conn.administration-business conn.parkingmap-business conn.parkinglot-business conn.driver-business",
+        "outgoing": "conn.business-data conn.business-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.data",
+        "name": "Data_Management_Layer",
+        "mandatory": true,
+        "incoming": "conn.business-data conn.dataacquisition-data conn.dataprocessing-data conn.decisionmaking-data conn.datastorage-data conn.datavisualisation-data",
+        "outgoing": "conn.data-security",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.security",
+        "name": "Security",
+        "mandatory": true,
+        "incoming": "conn.presentation-security conn.business-security conn.data-security conn.confidentiality-security conn.integrity-security conn.availability-security",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.presentation-business",
+        "name": "User_Requests",
+        "source": "comp.presentation",
+        "target": "comp.business",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.business-data",
+        "name": "Business_Data_Access",
+        "source": "comp.business",
+        "target": "comp.data",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.presentation-security",
+        "name": "Presentation_Security",
+        "source": "comp.presentation",
+        "target": "comp.security",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.business-security",
+        "name": "Business_Security",
+        "source": "comp.business",
+        "target": "comp.security",
+        "bidirectional": false
+      },
+      {
+        "id": "conn.data-security",
+        "name": "Data_Security",
+        "source": "comp.data",
+        "target": "comp.security",
+        "bidirectional": false
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_system",
+      "graph_node_id": "SYSTEM::AadlProjects_vtv_transvobe_impl_1.aaxl2",
+      "name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "bus_access",
+        "host_status",
+        "coll_inf",
+        "op_disp",
+        "op_in",
+        "rvloc",
+        "vloc",
+        "alarm",
+        "pla_ctrl",
+        "chg_ctrl",
+        "p",
+        "l"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 0,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 104,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 105,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 111,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 116,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 117,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 130,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 140,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 156,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 159,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 178,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 181,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 194,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 207,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 214,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 219,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 225,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_transv2vsafety",
+      "graph_node_id": "transv2vsafety::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transv2vsafety.impl",
+      "name": "transv2vsafety",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transv2vsafety.impl",
+      "ports": [
+        "host_status",
+        "coll_inf",
+        "op_disp",
+        "op_in",
+        "rvloc",
+        "vloc",
+        "alarm",
+        "pla_ctrl",
+        "chg_ctrl",
+        "p",
+        "l"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 91,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 146,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_status",
+      "graph_node_id": "status::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.status.impl",
+      "name": "status",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.status.impl",
+      "ports": [
+        "host_status",
+        "coll_inf",
+        "alarm",
+        "p",
+        "l"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 92,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 147,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_op_ctrl",
+      "graph_node_id": "op_ctrl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.op_ctrl.impl",
+      "name": "op_ctrl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.op_ctrl.impl",
+      "ports": [
+        "op_disp",
+        "op_in",
+        "dp",
+        "dl"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 93,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 148,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_loc_ctrl",
+      "graph_node_id": "loc_ctrl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.loc_ctrl.impl",
+      "name": "loc_ctrl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.loc_ctrl.impl",
+      "ports": [
+        "rvloc",
+        "vloc"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 94,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 149,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_thp",
+      "graph_node_id": "thp::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thp.impl",
+      "name": "thp",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thp.impl",
+      "ports": [
+        "datin",
+        "datout"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 95,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 150,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_thl",
+      "graph_node_id": "thl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thl.impl",
+      "name": "thl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thl.impl",
+      "ports": [
+        "datin",
+        "datout"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 96,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 151,
+          "aadl_graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_system",
+      "target": "comp_status",
+      "type": "connection",
+      "src_port": "host_status",
+      "dst_port": "host_status",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.0/@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_op_ctrl",
+      "type": "connection",
+      "src_port": "op_in",
+      "dst_port": "op_in",
+      "raw": {
+        "source": "//@featureInstance.4",
+        "destination": "//@componentInstance.0/@componentInstance.1/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_loc_ctrl",
+      "type": "connection",
+      "src_port": "rvloc",
+      "dst_port": "rvloc",
+      "raw": {
+        "source": "//@featureInstance.5",
+        "destination": "//@componentInstance.0/@componentInstance.2/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_status",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "l",
+      "dst_port": "l",
+      "raw": {
+        "source": "//@componentInstance.0/@componentInstance.0/@featureInstance.4",
+        "destination": "//@featureInstance.11"
+      }
+    },
+    {
+      "source": "comp_op_ctrl",
+      "target": "comp_thp",
+      "type": "connection",
+      "src_port": "dp",
+      "dst_port": "datin",
+      "raw": {
+        "source": "//@componentInstance.0/@componentInstance.1/@featureInstance.2",
+        "destination": "//@componentInstance.0/@componentInstance.3/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_op_ctrl",
+      "target": "comp_thl",
+      "type": "connection",
+      "src_port": "dl",
+      "dst_port": "datin",
+      "raw": {
+        "source": "//@componentInstance.0/@componentInstance.1/@featureInstance.3",
+        "destination": "//@componentInstance.0/@componentInstance.4/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_op_ctrl",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "op_disp",
+      "dst_port": "op_disp",
+      "raw": {
+        "source": "//@componentInstance.0/@componentInstance.1/@featureInstance.0",
+        "destination": "//@featureInstance.3"
+      }
+    },
+    {
+      "source": "comp_loc_ctrl",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "vloc",
+      "dst_port": "vloc",
+      "raw": {
+        "source": "//@componentInstance.0/@componentInstance.2/@featureInstance.1",
+        "destination": "//@featureInstance.6"
+      }
+    },
+    {
+      "source": "comp_thp",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "datout",
+      "dst_port": "pla_ctrl",
+      "raw": {
+        "source": "//@componentInstance.0/@componentInstance.3/@featureInstance.1",
+        "destination": "//@featureInstance.8"
+      }
+    },
+    {
+      "source": "comp_thl",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "datout",
+      "dst_port": "chg_ctrl",
+      "raw": {
+        "source": "//@componentInstance.0/@componentInstance.4/@featureInstance.1",
+        "destination": "//@featureInstance.9"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_PARKING_graphs.json",
+    "source_ra_grammar": "smartparking.gramm",
+    "source_mapping_labels": "all_SMART_PARKING_connection_components_with_ra_component.csv",
+    "enable_global_fallback": true
+  }
+}

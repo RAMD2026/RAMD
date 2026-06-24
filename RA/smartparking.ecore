@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="RA_Smart_Parking_System_Model">
+  <eClassifiers xsi:type="ecore:EClass" name="Presentation_Layer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="presentation_layer_business_logic_layer" eType="//Business_Logic_Layer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="presentation_layer_security" eType="//Security"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Web_User_Interface">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="web_user_interface_presentation_layer" eType="//Presentation_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mobile_User_Interface">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mobile_user_interface_presentation_layer" eType="//Presentation_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Desktop_User_Interface">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="desktop_user_interface_presentation_layer" eType="//Presentation_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Business_Logic_Layer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="business_logic_layer_data_management_layer" eType="//Data_Management_Layer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="business_logic_layer_security" eType="//Security"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Navigation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="navigation_business_logic_layer" eType="//Business_Logic_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Reservation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reservation_business_logic_layer" eType="//Business_Logic_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Administration">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="administration_business_logic_layer" eType="//Business_Logic_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parking_Map">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parking_map_business_logic_layer" eType="//Business_Logic_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parking_Lot">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parking_lot_business_logic_layer" eType="//Business_Logic_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Driver">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driver_business_logic_layer" eType="//Business_Logic_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data_Management_Layer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_management_layer_security" eType="//Security"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data_Acquisition">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_acquisition_data_management_layer" eType="//Data_Management_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data_Processing">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_processing_data_management_layer" eType="//Data_Management_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Decision_Making">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="decision_making_data_management_layer" eType="//Data_Management_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data_Storage">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_storage_data_management_layer" eType="//Data_Management_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data_Visualisation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_visualisation_data_management_layer" eType="//Data_Management_Layer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Security"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Confidentiality">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="confidentiality_security" eType="//Security"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Integrity">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="integrity_security" eType="//Security"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Availability">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="availability_security" eType="//Security"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RA_Smart_Parking_System_Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="presentation_layers" lowerBound="1" eType="//Presentation_Layer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="web_user_interfaces" eType="//Web_User_Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mobile_user_interfaces" eType="//Mobile_User_Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="desktop_user_interfaces" eType="//Desktop_User_Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="business_logic_layers" lowerBound="1" eType="//Business_Logic_Layer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="navigations" eType="//Navigation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reservations" eType="//Reservation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="administrations" eType="//Administration"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parking_maps" eType="//Parking_Map"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parking_lots" eType="//Parking_Lot"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="drivers" eType="//Driver"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_management_layers" lowerBound="1" eType="//Data_Management_Layer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_acquisitions" eType="//Data_Acquisition"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_processings" eType="//Data_Processing"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="decision_makings" eType="//Decision_Making"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_storages" eType="//Data_Storage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_visualisations" eType="//Data_Visualisation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securities" lowerBound="1" eType="//Security"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="confidentialities" eType="//Confidentiality"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="integrities" eType="//Integrity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="availabilities" eType="//Availability"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_f55d1705f56d4bd8abe5a355a50541fc">
+  <relations xmi:id="_5253d2e4dd70400c862a6f8f9572666b">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/AadlProjects_smartparking_communicationsupport_impl_1.model#comp_vehiclesecurecommunication"/>
+  </relations>
+</ecore:Implementation_model>

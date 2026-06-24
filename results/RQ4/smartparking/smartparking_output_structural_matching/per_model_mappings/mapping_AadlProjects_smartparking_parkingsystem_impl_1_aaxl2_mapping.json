@@ -1,0 +1,71 @@
+{
+  "graph_id": "AadlProjects_smartparking_parkingsystem_impl_1.aaxl2",
+  "ra_name": "Smart Parking System Reference Architecture",
+  "num_nodes": 1,
+  "num_edges": 0,
+  "evaluated_nodes": 1,
+  "correct_predictions": 1,
+  "accuracy": 1.0,
+  "predictions": [
+    {
+      "node_id": "comp_paymentdeviceinterface",
+      "graph_node_id": "paymentdeviceinterface::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.paymentdeviceinterface.impl",
+      "node_name": "paymentdeviceinterface",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.paymentdeviceinterface.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 42,
+          "aadl_graph_id": "AadlProjects_smartparking_parkingsystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 173,
+          "aadl_graph_id": "AadlProjects_smartparking_parkingsystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 193,
+          "aadl_graph_id": "AadlProjects_smartparking_parkingsystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    }
+  ],
+  "runtime_seconds": 0.000205
+}

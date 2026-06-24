@@ -1,0 +1,71 @@
+{
+  "graph_id": "AadlProjects_smartparking_communicationsupport_impl_1.aaxl2",
+  "ra_name": "Smart Parking System Reference Architecture",
+  "num_nodes": 1,
+  "num_edges": 0,
+  "evaluated_nodes": 1,
+  "correct_predictions": 0,
+  "accuracy": 0.0,
+  "predictions": [
+    {
+      "node_id": "comp_vehiclesecurecommunication",
+      "graph_node_id": "vehiclesecurecommunication::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclesecurecommunication.impl",
+      "node_name": "vehiclesecurecommunication",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclesecurecommunication.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 40,
+          "aadl_graph_id": "AadlProjects_smartparking_communicationsupport_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 152,
+          "aadl_graph_id": "AadlProjects_smartparking_communicationsupport_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 171,
+          "aadl_graph_id": "AadlProjects_smartparking_communicationsupport_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.000229
+}

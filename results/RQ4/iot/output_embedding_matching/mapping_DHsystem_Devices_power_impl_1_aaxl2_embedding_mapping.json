@@ -1,0 +1,117 @@
+{
+  "graph_id": "DHsystem_Devices_power_impl_1.aaxl2",
+  "source_file": "mapping_DHsystem_Devices_power_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 4,
+  "num_correct": 4,
+  "average_score_for_model": 1.0,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::DHsystem_Devices_power_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "dm_pow"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: dm pow.",
+      "ground_truth_ra_names": [
+        "Application"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.38018128275871277,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.38018128275871277,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_switch",
+      "graph_node_id": "Switch::../../github/DHsystem/Devices.aadl#Devices.switch",
+      "node_name": "Switch",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.switch",
+      "ports": [
+        "sw_app",
+        "sw_light"
+      ],
+      "node_text_used": "Component name: Switch. Category: device. Classifier: .. .. github DHsystem Devices.aadl#Devices.switch. Ports: sw app, sw light.",
+      "ground_truth_ra_names": [
+        "Actuator",
+        "Device"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.4556255340576172,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.4556255340576172,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_appliances",
+      "graph_node_id": "Appliances::../../github/DHsystem/Devices.aadl#Devices.appliances",
+      "node_name": "Appliances",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.appliances",
+      "ports": [
+        "sw_app"
+      ],
+      "node_text_used": "Component name: Appliances. Category: device. Classifier: .. .. github DHsystem Devices.aadl#Devices.appliances. Ports: sw app.",
+      "ground_truth_ra_names": [
+        "Device"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.5100374221801758,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.5100374221801758,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_lights",
+      "graph_node_id": "Lights::../../github/DHsystem/Devices.aadl#Devices.lights",
+      "node_name": "Lights",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.lights",
+      "ports": [
+        "sw_light"
+      ],
+      "node_text_used": "Component name: Lights. Category: device. Classifier: .. .. github DHsystem Devices.aadl#Devices.lights. Ports: sw light.",
+      "ground_truth_ra_names": [
+        "Actuator",
+        "Device"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.44195014238357544,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.44195014238357544,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    }
+  ]
+}

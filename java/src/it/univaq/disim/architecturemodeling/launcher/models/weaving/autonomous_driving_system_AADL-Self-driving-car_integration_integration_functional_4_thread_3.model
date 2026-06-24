@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.univaq.disim/ra_adl" xmi:id="_23a40cb3e7fd46aeb456db457d11ee5d">
+  <relations xmi:id="_9e838dd631394a5f97ed516b886a1f23">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Sensors"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_camera"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_radar1"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_radar2"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_traffic_lane_sensor"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_induction_speed_sensor"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_optical_speed_sensor"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_thr_distance_voter"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_thr_overtaking_detection"/>
+  </relations>
+  <relations xmi:id="_6696c8881a564ae8b350ffa1231e6029">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Mobile_Platform_Actuators"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_acceleration_pedal"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_accelerator"/>
+  </relations>
+  <relations xmi:id="_d55fc7bf76364939b4c2d948d1abf26b">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Real_time_and_Critical_Control_Software"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_brake"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_speed_controller"/>
+  </relations>
+  <relations xmi:id="_fdc76576814c4ee9aa73bdb3267d920f">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//UI_UX_and_Infotainment"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_panel"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_panel_controller"/>
+  </relations>
+  <relations xmi:id="_97dfe6f5ebfb45439fb0bb01f22e9e71">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Data_Collection"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_data_acquisition"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_thr_speed_voter"/>
+  </relations>
+  <relations xmi:id="_dbcf7652e6164fdbb28b59cd3c90d7ec">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//ML_AI_DL_Algorithms"/>
+    <component href="../architectures/AADL-Self-driving-car_integration_integration_functional_4.model#comp_thr_image_analysis"/>
+  </relations>
+</ecore:Implementation_model>

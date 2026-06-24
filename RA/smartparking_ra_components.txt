@@ -1,0 +1,7 @@
+Presentation_Layer: Provides user-facing access to the system through multiple interaction channels. It includes the Web User Interface, Mobile User Interface, and Desktop User Interface, enabling users to view information, submit requests, and interact with parking services.
+
+Business_Logic_Layer: Implements core application functionalities and business rules. It includes Navigation, Reservation, and Administration modules, along with Parking Map, Parking Lot, and Driver components to manage routing, booking, operational control, and parking-related entities.
+
+Data_Management_Layer: Handles data collection, processing, storage, and analytics. It includes Data Acquisition, Data Processing, and Decision Making components, as well as Data Storage and Data Visualisation to support insights and operational decisions.
+
+Security_Layer: Provides cross-cutting protection mechanisms across all system layers. It includes Confidentiality, Integrity, and Availability components to ensure secure access, data correctness, and reliable system operation.

@@ -1,0 +1,892 @@
+{
+  "graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+  "ra_name": "IoT System Reference Architecture",
+  "num_nodes": 16,
+  "num_edges": 5,
+  "evaluated_nodes": 16,
+  "correct_predictions": 7,
+  "accuracy": 0.4375,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.687136,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.687136
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.670589
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.670589
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.603136
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.563265
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_humid_sensor",
+      "graph_node_id": "humid_sensor::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.HumidSensorStep",
+      "node_name": "humid_sensor",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.HumidSensorStep",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.378
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 131,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_update",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Humid",
+      "node_name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Humid",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.75637,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.75637
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.75637
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.739822
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.60937
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.600895
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_temp_sensor",
+      "graph_node_id": "temp_sensor::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.TemperatureSensorStep",
+      "node_name": "temp_sensor",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.TemperatureSensorStep",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.378
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 132,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_update_2",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Temp",
+      "node_name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Temp",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.75637,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.75637
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.75637
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.739822
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.60937
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.600895
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_window",
+      "graph_node_id": "window::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.WindowStep",
+      "node_name": "window",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.WindowStep",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.378
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 135,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 135,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_update_3",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Window",
+      "node_name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Window",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.75637,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.75637
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.75637
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.739822
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.60937
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.600895
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_termostat",
+      "graph_node_id": "termostat::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.HeaterStep",
+      "node_name": "termostat",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.HeaterStep",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.378
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Actuator",
+          "ra_id": "comp.actuator",
+          "confidence": 1,
+          "source_row": 133,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 133,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_update_4",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Thermostat",
+      "node_name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Thermostat",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_ra_name": "Sensor",
+      "prediction_score": 0.75637,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.75637
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.75637
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.739822
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.60937
+        },
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.600895
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_ha_control",
+      "graph_node_id": "HA_control::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.hostController.PeriodicOp",
+      "node_name": "HA_control",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.hostController.PeriodicOp",
+      "predicted_ra_id": "comp.application",
+      "predicted_ra_name": "Application",
+      "prediction_score": 0.63637,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.63637
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.619822
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.619822
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.57337
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.532554
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 123,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 123,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_algorithm",
+      "graph_node_id": "algorithm::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.algorithm.ex",
+      "node_name": "algorithm",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.algorithm.ex",
+      "predicted_ra_id": "comp.device",
+      "predicted_ra_name": "Device",
+      "prediction_score": 0.716293,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.716293
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.642493
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.527468
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.443468
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.423918
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 125,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 125,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_cpu1",
+      "graph_node_id": "cpu1::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu1",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 126,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 126,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_cpu2",
+      "graph_node_id": "cpu2::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu2",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 127,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 127,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_cpu3",
+      "graph_node_id": "cpu3::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu3",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 128,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 128,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_cpu4",
+      "graph_node_id": "cpu4::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu4",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 129,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 129,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_cpu5",
+      "graph_node_id": "cpu5::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu5",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "predicted_ra_id": "comp.driver",
+      "predicted_ra_name": "Driver",
+      "prediction_score": 0.644,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.driver",
+          "ra_name": "Driver",
+          "score": 0.644
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.525
+        },
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.336
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 130,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Driver",
+          "ra_id": "comp.driver",
+          "confidence": 1,
+          "source_row": 130,
+          "aadl_graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    }
+  ],
+  "runtime_seconds": 0.001122
+}

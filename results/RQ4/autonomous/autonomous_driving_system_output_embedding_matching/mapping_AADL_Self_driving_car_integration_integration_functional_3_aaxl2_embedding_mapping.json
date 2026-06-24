@@ -1,0 +1,581 @@
+{
+  "graph_id": "AADL-Self-driving-car_integration_integration_functional_3.aaxl2",
+  "source_file": "mapping_AADL_Self_driving_car_integration_integration_functional_3_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 17,
+  "num_correct": 2,
+  "average_score_for_model": 0.11764705882352941,
+  "predictions": [
+    {
+      "node_id": "comp_camera",
+      "graph_node_id": "camera::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.camera",
+      "node_name": "camera",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.camera",
+      "ports": [
+        "picture"
+      ],
+      "node_text_used": "Component name: camera. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.camera. Ports: picture.",
+      "ground_truth_ra_names": [
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.46653980016708374,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.46653980016708374,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_radar1",
+      "graph_node_id": "radar1::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.radar1",
+      "node_name": "radar1",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.radar1",
+      "ports": [
+        "distance"
+      ],
+      "node_text_used": "Component name: radar1. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.radar1. Ports: distance.",
+      "ground_truth_ra_names": [
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.4725934565067291,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.4725934565067291,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_radar2",
+      "graph_node_id": "radar2::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.radar2",
+      "node_name": "radar2",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.radar2",
+      "ports": [
+        "distance"
+      ],
+      "node_text_used": "Component name: radar2. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.radar2. Ports: distance.",
+      "ground_truth_ra_names": [
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.4724428057670593,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.4724428057670593,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_traffic_lane_sensor",
+      "graph_node_id": "traffic_lane_sensor::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.traffic_lane_sensor",
+      "node_name": "traffic_lane_sensor",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.traffic_lane_sensor",
+      "ports": [
+        "lane_crossed"
+      ],
+      "node_text_used": "Component name: traffic lane sensor. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.traffic lane sensor. Ports: lane crossed.",
+      "ground_truth_ra_names": [
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors"
+      ],
+      "predicted_ra_name": "Internal_Networking_Interfaces",
+      "predicted_ra_id": "comp.network",
+      "predicted_score": 0.4812035858631134,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.network",
+          "ra_name": "Internal_Networking_Interfaces",
+          "score": 0.4812035858631134,
+          "ra_text": "RA component: Internal_Networking_Interfaces. Tag: raelements. Incoming connectors: Sensor Data, Compute Interconnect, External Communications, Actuation Feedback, Middleware to Network Interfaces. Outgoing connectors: Network to Compute, Network to Actuators, Hardware Abstraction."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_induction_speed_sensor",
+      "graph_node_id": "induction_speed_sensor::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.induction_speed_sensor",
+      "node_name": "induction_speed_sensor",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.induction_speed_sensor",
+      "ports": [
+        "speed"
+      ],
+      "node_text_used": "Component name: induction speed sensor. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.induction speed sensor. Ports: speed.",
+      "ground_truth_ra_names": [
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.39246368408203125,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.39246368408203125,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_optical_speed_sensor",
+      "graph_node_id": "optical_speed_sensor::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.optical_speed_sensor",
+      "node_name": "optical_speed_sensor",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.optical_speed_sensor",
+      "ports": [
+        "speed"
+      ],
+      "node_text_used": "Component name: optical speed sensor. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.optical speed sensor. Ports: speed.",
+      "ground_truth_ra_names": [
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.412664532661438,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.412664532661438,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_acceleration_pedal",
+      "graph_node_id": "acceleration_pedal::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.acceleration_pedal",
+      "node_name": "acceleration_pedal",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.acceleration_pedal",
+      "ports": [
+        "speed"
+      ],
+      "node_text_used": "Component name: acceleration pedal. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.acceleration pedal. Ports: speed.",
+      "ground_truth_ra_names": [
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors",
+        "Sensors"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.47908613085746765,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.47908613085746765,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_brake",
+      "graph_node_id": "brake::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.brake",
+      "node_name": "brake",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.brake",
+      "ports": [
+        "brake_cmd"
+      ],
+      "node_text_used": "Component name: brake. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.brake. Ports: brake cmd.",
+      "ground_truth_ra_names": [
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.48695889115333557,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.48695889115333557,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_accelerator",
+      "graph_node_id": "accelerator::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.accelerator",
+      "node_name": "accelerator",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.accelerator",
+      "ports": [
+        "accelerate_cmd"
+      ],
+      "node_text_used": "Component name: accelerator. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.accelerator. Ports: accelerate cmd.",
+      "ground_truth_ra_names": [
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators",
+        "Mobile_Platform_Actuators"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.4829130470752716,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.4829130470752716,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_panel",
+      "graph_node_id": "panel::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.panel",
+      "node_name": "panel",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.panel",
+      "ports": [
+        "current_speed",
+        "desired_speed"
+      ],
+      "node_text_used": "Component name: panel. Category: device. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study devices.aadl#devices.panel. Ports: current speed, desired speed.",
+      "ground_truth_ra_names": [
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.5132607817649841,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.5132607817649841,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_data_acquisition",
+      "graph_node_id": "data_acquisition::../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/data_acquisition.aadl#data_acquisition.data_acquisition.i",
+      "node_name": "data_acquisition",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/data_acquisition.aadl#data_acquisition.data_acquisition.i",
+      "ports": [
+        "picture",
+        "distance1",
+        "distance2",
+        "lane_change",
+        "speed1",
+        "speed2",
+        "obstacle_detected",
+        "distance_result",
+        "overtaking_active",
+        "speed_result"
+      ],
+      "node_text_used": "Component name: data acquisition. Category: process. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate-2 self-driving-car case-study software data acquisition.aadl#data acquisition.data acquisition.i. Ports: picture, distance1, distance2, lane change, speed1, speed2, obstacle detected, distance result, overtaking active, speed result.",
+      "ground_truth_ra_names": [
+        "Data_Collection",
+        "Data_Collection",
+        "Data_Collection",
+        "Data_Collection",
+        "Data_Collection",
+        "Data_Collection"
+      ],
+      "predicted_ra_name": "ML_AI_DL_Algorithms",
+      "predicted_ra_id": "comp.ml",
+      "predicted_score": 0.5393744707107544,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.5393744707107544,
+          "ra_text": "RA component: ML AI DL Algorithms. Tag: raelements. Incoming connectors: ML Execution Support. Outgoing connectors: ML APIs."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_thr_image_analysis",
+      "graph_node_id": "thr_image_analysis::../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/image_processing.aadl#image_processing.image_analysis_thr.i",
+      "node_name": "thr_image_analysis",
+      "category": "thread",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/image_processing.aadl#image_processing.image_analysis_thr.i",
+      "ports": [
+        "picture",
+        "obstacle_detected"
+      ],
+      "node_text_used": "Component name: thr image analysis. Category: thread. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate-2 self-driving-car case-study software image processing.aadl#image processing.image analysis thr.i. Ports: picture, obstacle detected.",
+      "ground_truth_ra_names": [
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms"
+      ],
+      "predicted_ra_name": "Processing_Unit",
+      "predicted_ra_id": "comp.processing",
+      "predicted_score": 0.46135413646698,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.46135413646698,
+          "ra_text": "RA component: Processing Unit. Tag: raelements. Incoming connectors: Network to Compute. Outgoing connectors: Compute Interconnect."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_thr_distance_voter",
+      "graph_node_id": "thr_distance_voter::../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/distance_processing.aadl#distance_processing.distance_voter_thr.i",
+      "node_name": "thr_distance_voter",
+      "category": "thread",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/distance_processing.aadl#distance_processing.distance_voter_thr.i",
+      "ports": [
+        "distance1",
+        "distance2",
+        "distance_result"
+      ],
+      "node_text_used": "Component name: thr distance voter. Category: thread. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate-2 self-driving-car case-study software distance processing.aadl#distance processing.distance voter thr.i. Ports: distance1, distance2, distance result.",
+      "ground_truth_ra_names": [
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Processing_Unit",
+      "predicted_ra_id": "comp.processing",
+      "predicted_score": 0.5042942762374878,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.5042942762374878,
+          "ra_text": "RA component: Processing Unit. Tag: raelements. Incoming connectors: Network to Compute. Outgoing connectors: Compute Interconnect."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_thr_overtaking_detection",
+      "graph_node_id": "thr_overtaking_detection::../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/overtaking_detection_processing.aadl#overtaking_detection_processing.overtaking_detection_thr.i",
+      "node_name": "thr_overtaking_detection",
+      "category": "thread",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/overtaking_detection_processing.aadl#overtaking_detection_processing.overtaking_detection_thr.i",
+      "ports": [
+        "lane_change",
+        "overtaking_active"
+      ],
+      "node_text_used": "Component name: thr overtaking detection. Category: thread. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate-2 self-driving-car case-study software overtaking detection processing.aadl#overtaking detection processing.overtaking detection thr.i. Ports: lane change, overtaking active.",
+      "ground_truth_ra_names": [
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms",
+        "ML_AI_DL_Algorithms"
+      ],
+      "predicted_ra_name": "Real_time_and_Critical_Control_Software",
+      "predicted_ra_id": "comp.rtcontrol",
+      "predicted_score": 0.48518580198287964,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.rtcontrol",
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "score": 0.48518580198287964,
+          "ra_text": "RA component: Real time and Critical Control Software. Tag: raelements. Incoming connectors: Real-time Services. Outgoing connectors: Control Services."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_thr_speed_voter",
+      "graph_node_id": "thr_speed_voter::../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/speed_processing.aadl#speed_processing.speed_voter_thr.i",
+      "node_name": "thr_speed_voter",
+      "category": "thread",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate-2/self-driving-car/case-study/software/speed_processing.aadl#speed_processing.speed_voter_thr.i",
+      "ports": [
+        "speed1",
+        "speed2",
+        "speed_result"
+      ],
+      "node_text_used": "Component name: thr speed voter. Category: thread. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate-2 self-driving-car case-study software speed processing.aadl#speed processing.speed voter thr.i. Ports: speed1, speed2, speed result.",
+      "ground_truth_ra_names": [
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Processing_Unit",
+      "predicted_ra_id": "comp.processing",
+      "predicted_score": 0.5060067176818848,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.5060067176818848,
+          "ra_text": "RA component: Processing Unit. Tag: raelements. Incoming connectors: Network to Compute. Outgoing connectors: Compute Interconnect."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_panel_controller",
+      "graph_node_id": "panel_controller::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/panel_processing.aadl#panel_processing.panel_controller.i",
+      "node_name": "panel_controller",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/panel_processing.aadl#panel_processing.panel_controller.i",
+      "ports": [
+        "current_speed",
+        "desired_speed",
+        "current_speed_result",
+        "desired_speed_result"
+      ],
+      "node_text_used": "Component name: panel controller. Category: process. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study software panel processing.aadl#panel processing.panel controller.i. Ports: current speed, desired speed, current speed result, desired speed result.",
+      "ground_truth_ra_names": [
+        "UI_UX_and_Infotainment",
+        "Real_time_and_Critical_Control_Software",
+        "UI_UX_and_Infotainment",
+        "Real_time_and_Critical_Control_Software",
+        "UI_UX_and_Infotainment",
+        "Real_time_and_Critical_Control_Software",
+        "UI_UX_and_Infotainment",
+        "Real_time_and_Critical_Control_Software",
+        "UI_UX_and_Infotainment",
+        "Real_time_and_Critical_Control_Software",
+        "UI_UX_and_Infotainment",
+        "Real_time_and_Critical_Control_Software",
+        "UI_UX_and_Infotainment",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Processing_Unit",
+      "predicted_ra_id": "comp.processing",
+      "predicted_score": 0.512136697769165,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.512136697769165,
+          "ra_text": "RA component: Processing Unit. Tag: raelements. Incoming connectors: Network to Compute. Outgoing connectors: Compute Interconnect."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_speed_controller",
+      "graph_node_id": "speed_controller::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/brake_acceleration_processing.aadl#brake_acceleration_processing.speed_controller.i",
+      "node_name": "speed_controller",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/brake_acceleration_processing.aadl#brake_acceleration_processing.speed_controller.i",
+      "ports": [
+        "obstacle_detected",
+        "current_distance",
+        "overtaking_active",
+        "current_speed",
+        "desired_speed",
+        "brake_cmd",
+        "accelerate_cmd"
+      ],
+      "node_text_used": "Component name: speed controller. Category: process. Classifier: .. .. github AADL-Self-driving-car self-driving-car-osate self-driving-car case-study software brake acceleration processing.aadl#brake acceleration processing.speed controller.i. Ports: obstacle detected, current distance, overtaking active, current speed, desired speed, brake cmd, accelerate cmd.",
+      "ground_truth_ra_names": [
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Processing_Unit",
+      "predicted_ra_id": "comp.processing",
+      "predicted_score": 0.4700203537940979,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.4700203537940979,
+          "ra_text": "RA component: Processing Unit. Tag: raelements. Incoming connectors: Network to Compute. Outgoing connectors: Compute Interconnect."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "mapping_folder": "mapping_data/SELF_DRIVING_CAR_mapping_files",
+  "ra_txt_path": "RA/autonomous_driving_system_ra_components.txt",
+  "num_models": 10,
+  "total_nodes": 181,
+  "total_correct": 55,
+  "overall_accuracy_micro": 0.30386740331491713,
+  "mean_accuracy_per_model": 0.2940173796791444,
+  "output_files": {
+    "node_mappings.csv": "autonomous_driving_system_output_tfidf_ra_matching/node_mappings.csv",
+    "model_accuracy.csv": "autonomous_driving_system_output_tfidf_ra_matching/model_accuracy.csv",
+    "summary.json": "autonomous_driving_system_output_tfidf_ra_matching/summary.json"
+  },
+  "runtime_seconds": 0.2912958339999996
+}

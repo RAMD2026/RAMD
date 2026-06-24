@@ -1,0 +1,49 @@
+{
+  "thread": 1,
+  "model": "chatgpt",
+  "option": 2,
+  "graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+  "file": "mapping_SmartHome_smart_home_arch_home_controller_framework_impl_1_aaxl2.json",
+  "predicted_mapping": {
+    "system": "Application",
+    "system settings": "Application",
+    "user command": "Application",
+    "schedular": "Application",
+    "software updater": "Application",
+    "protocol layer": "IoTIM"
+  },
+  "total_score": 5.0,
+  "avg_score": 0.833333,
+  "per_node_scores": {
+    "system": 1.0,
+    "system settings": 1.0,
+    "user command": 1.0,
+    "schedular": 1.0,
+    "software updater": 0.0,
+    "protocol layer": 1.0
+  },
+  "check_constraints_log": "All constraints have been satisfied",
+  "avg_prompt_cost": 562.25,
+  "total_llm_cost": 6747,
+  "execution_time_seconds": 22.701735,
+  "config": {
+    "use_ra_descriptions": true,
+    "use_ra_structural_info": false,
+    "check_RA_constraints": true,
+    "same_mapping_patience": 3,
+    "fewshot_learning": false,
+    "recreate_mapping_with_llm": true,
+    "recreate_window": 10,
+    "break_after_recreate": true,
+    "use_chunking": false,
+    "chunk_size": 3,
+    "use_semantic_filter": true,
+    "semantic_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "semantic_top_k": 5,
+    "mapping_knowledge_csv_path": "mapping_data/iot_ra_component_mapping_labels.csv",
+    "mapping_knowledge_top_k": 3,
+    "mapping_knowledge_weight": 0.0,
+    "num_threads": 5,
+    "execution_mode": "sequential"
+  }
+}
