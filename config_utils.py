@@ -10,8 +10,8 @@ def load_config(path: str) -> Dict[str, Any]:
 
 def load_ra_descriptions(path: str) -> Dict[str, str]:
     """
-    Đọc file TXT mô tả RA Components.
-    Định dạng mỗi dòng: '<RA Name>: <description>'.
+    Read file TXT describe RA Components.
+    Format: '<RA Name>: <description>'.
     """
     desc_map: Dict[str, str] = {}
     if not path:
