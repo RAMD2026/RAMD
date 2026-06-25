@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_74c5b1c0a5624ba4b00d39af156240de">
+  <relations xmi:id="_c7983db064ac4516ba3e61e5642d00d3">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/DHsystem_Accounts_DHaccounts_impl_1.model#comp_system"/>
+    <component href="../architectures/DHsystem_Accounts_DHaccounts_impl_1.model#comp_authentication"/>
+    <component href="../architectures/DHsystem_Accounts_DHaccounts_impl_1.model#comp_account_settings"/>
+    <component href="../architectures/DHsystem_Accounts_DHaccounts_impl_1.model#comp_access_control"/>
+  </relations>
+</ecore:Implementation_model>

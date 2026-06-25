@@ -1,0 +1,9 @@
+?nsuri: http://it.uni.sim/architecturemodeling
+
+ArchitectureModel: {
+
+Component: {name: a},
+
+Component: {name: b},
+Connector: {source: a, target: b}
+}

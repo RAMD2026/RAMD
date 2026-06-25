@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<architecturemodeling:ArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecturemodeling="http://it.disim.uni/architecturemodeling" xmi:id="arch_dhsystem_devices_humidity_impl_1" name="DHsystem_Devices_humidity_impl_1">
-  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_system" name="system"/>
-  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_humidifier" name="humidifier" outgoing="conn_humidifier_humidity_sensor" incoming="conn_humidifier_humidity_sensor"/>
-  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_dehumidifier" name="dehumidifier" outgoing="conn_dehumidifier_humidity_sensor" incoming="conn_dehumidifier_humidity_sensor"/>
-  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_humidity_sensor" name="humidity sensor" outgoing="conn_humidifier_humidity_sensor conn_dehumidifier_humidity_sensor" incoming="conn_humidifier_humidity_sensor conn_dehumidifier_humidity_sensor"/>
-  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_humidifier_humidity_sensor" name="humidifier_humidity_sensor" source="comp_humidifier" target="comp_humidity_sensor"/>
-  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_dehumidifier_humidity_sensor" name="dehumidifier_humidity_sensor" source="comp_dehumidifier" target="comp_humidity_sensor"/>
-</architecturemodeling:ArchitectureModel>

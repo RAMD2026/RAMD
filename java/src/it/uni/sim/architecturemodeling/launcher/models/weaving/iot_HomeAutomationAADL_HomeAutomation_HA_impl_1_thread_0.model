@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_57b165926c0a4c94a3a8dbc95be80f5a">
+  <relations xmi:id="_270d31073e2c47b9b5075c1c5f54e2e7">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_12a13fd7fabc41fdb18260e5f2e3a069">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Sensor"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_humid_sensor"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_temp_sensor"/>
+  </relations>
+  <relations xmi:id="_968062ebad134bcfbee16a1e2a7390c9">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_update"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_update_2"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_update_3"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_update_4"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_ha_control"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_algorithm"/>
+  </relations>
+  <relations xmi:id="_336235835c2c4933b4d91b1fd0cb2920">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Actuator"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_window"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_termostat"/>
+  </relations>
+  <relations xmi:id="_55b1ffbe58dc4675b62c84b917f4aaaa">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu1"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu2"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu3"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu5"/>
+  </relations>
+  <relations xmi:id="_a90c6e4941c04b8eb52a5aff74237c7d">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Driver"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu4"/>
+  </relations>
+</ecore:Implementation_model>

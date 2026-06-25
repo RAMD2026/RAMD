@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_eefea5ed94e64f76b562578e9e68a702">
+  <relations xmi:id="_2c6fc4275edd4427899175dca5f9261b">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_RemoteServer_RemoteServer_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_c82d143391ca45cfada8e968cde0c760">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Gateway"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_RemoteServer_RemoteServer_impl_1.model#comp_client_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_RemoteServer_RemoteServer_impl_1.model#comp_router_controller"/>
+  </relations>
+</ecore:Implementation_model>

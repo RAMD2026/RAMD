@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_cc75049bc2ab4ce68455f316da390667">
+  <relations xmi:id="_92eb981c82564828a214e650ba715534">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_system"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_driver"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_vehicle_obe"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_roadside_obe"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_parking_manager"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_rse_electric_charge_support_provider"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_rse_speed_management_provider"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_tic"/>
+  </relations>
+  <relations xmi:id="_4fccbf1fb11d48ebba2532185330e6c8">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_hardware_comm"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_rse_travel_information_communication_provider"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_rse_traffic_metering_provider"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_collection"/>
+  </relations>
+  <relations xmi:id="_ff04b8607a52479082e499fb248452ed">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.model#comp_sub_rse_workzone_safety_provider"/>
+  </relations>
+</ecore:Implementation_model>

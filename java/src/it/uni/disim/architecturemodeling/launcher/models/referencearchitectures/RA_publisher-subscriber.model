@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<referencearchitecturemodeling:ReferenceArchitecturalModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:referencearchitecturemodeling="http://it.uni.disim/referencearchitecturemodeling-1st-revision" xmi:id="_hyFwkKOwEeyTufOx-wewsQ" referenceArchitecturalName="RAPublisherSubscriber">
-  <raelements xsi:type="referencearchitecturemodeling:RAComponent" xmi:id="_isEskKOwEeyTufOx-wewsQ" name="Publisher"/>
-  <raelements xsi:type="referencearchitecturemodeling:RAComponent" xmi:id="_ll6ngKOwEeyTufOx-wewsQ" name="Subscriber"/>
-  <raelements xsi:type="referencearchitecturemodeling:RAComponent" xmi:id="_m_AhYKOwEeyTufOx-wewsQ" name="Broker"/>
-</referencearchitecturemodeling:ReferenceArchitecturalModel>

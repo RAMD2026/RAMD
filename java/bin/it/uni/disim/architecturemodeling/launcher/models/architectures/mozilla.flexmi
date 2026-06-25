@@ -1,9 +1,0 @@
-?nsuri: http://it.uni.disim/architecturemodeling
-
-ArchitectureModel: {
-
-Component: {name: a},
-
-Component: {name: b},
-Connector: {source: a, target: b}
-}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_67b7a44de76445f4ba69becf94f523e8">
+  <relations xmi:id="_911406f1730d455fb6ee9451b3259c58">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/SmartHome_smart_home_arch_sensor_unit_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_b5a57c2e085a4f2087107ee420095bfd">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/SmartHome_smart_home_arch_sensor_unit_impl_1.model#comp_hw"/>
+  </relations>
+  <relations xmi:id="_0d243c8d719f4616b1ea2ca9832d4e42">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/SmartHome_smart_home_arch_sensor_unit_impl_1.model#comp_plugin"/>
+  </relations>
+  <relations xmi:id="_20d82791087e4433a814fe5b0bb86be5">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Gateway"/>
+    <component href="../architectures/SmartHome_smart_home_arch_sensor_unit_impl_1.model#comp_home_controller_framework"/>
+  </relations>
+</ecore:Implementation_model>

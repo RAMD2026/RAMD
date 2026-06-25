@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_9acf5c25bdfe4161816c2552b97b84aa">
+  <relations xmi:id="_74fc4650fe944469883bc82ccd3ea99c">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//V2X_Cloud_Comms"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_cellular"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_internet"/>
+  </relations>
+  <relations xmi:id="_2f777801edd144d3a4cc49c545dda2a3">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Internal_Networking_Interfaces"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_router_cel"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_can_ihs"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_can_c"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_wifi"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_bcm"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_acc"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_eps"/>
+  </relations>
+  <relations xmi:id="_c48cb837984f43bebb80e704f646de75">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Mobile_Platform_Actuators"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_car"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_amplifier"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_epb"/>
+  </relations>
+  <relations xmi:id="_ea106fbe1db8448280804021655c95bd">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//UI_UX_and_Infotainment"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_radio"/>
+  </relations>
+  <relations xmi:id="_9038e0ab8c4d465d8bf3c62b013d798c">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Sensors"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_hvac"/>
+  </relations>
+  <relations xmi:id="_f9c2c18f58684a58b89c3b70adc24789">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Real_time_and_Critical_Control_Software"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_hsm"/>
+    <component href="../architectures/AASPE_automotive_system_integration_i_1.model#comp_abs"/>
+  </relations>
+</ecore:Implementation_model>

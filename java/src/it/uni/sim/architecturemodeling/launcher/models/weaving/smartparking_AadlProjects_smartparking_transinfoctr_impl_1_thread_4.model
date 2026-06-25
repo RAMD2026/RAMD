@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_ff0eeec597ab4a5185533ae596a5bab6">
+  <relations xmi:id="_fe9cdbe64c2542588bb9388d07fc4600">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_83d8a4f4259545e3880a431ae5def427">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Presentation_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_ticinteractv_trav_info"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_trav_info"/>
+  </relations>
+  <relations xmi:id="_f67c5855a48e46c0b6ca7b139e9de9f4">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_trav_profiles"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_ticdata_coll"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_misctravinfo"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_traff_data_trav"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_trafficdata"/>
+    <component href="../architectures/AadlProjects_smartparking_transinfoctr_impl_1.model#comp_pricedata"/>
+  </relations>
+</ecore:Implementation_model>

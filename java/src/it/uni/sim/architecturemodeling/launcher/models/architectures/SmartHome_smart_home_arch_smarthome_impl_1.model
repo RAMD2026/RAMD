@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<architecturemodeling:ArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecturemodeling="http://it.sim.uni/architecturemodeling" xmi:id="arch_smart_home_smart_home_arch_smarthome_impl_1" name="SmartHome_smart_home_arch_smarthome_impl_1">
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_in_range" name="in range" outgoing="conn_appliances_in_range conn_home_controller_in_range" incoming="conn_appliances_in_range conn_home_controller_in_range"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_communicator" name="communicator" outgoing="conn_appliances_communicator conn_communicator_home_controller" incoming="conn_appliances_communicator conn_communicator_home_controller"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_home_controller" name="home controller" outgoing="conn_home_controller_in_range conn_communicator_home_controller conn_home_controller_plugin" incoming="conn_home_controller_in_range conn_communicator_home_controller conn_home_controller_plugin"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_client_tier" name="client tier"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_smarthome_hw_platform" name="smarthome hw platform"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_plugin" name="plugin" outgoing="conn_home_controller_plugin conn_appliances_plugin" incoming="conn_home_controller_plugin conn_appliances_plugin"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_appliances" name="appliances" outgoing="conn_appliances_in_range conn_appliances_communicator conn_appliances_plugin" incoming="conn_appliances_in_range conn_appliances_communicator conn_appliances_plugin"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_appliances_in_range" name="appliances_in_range" source="comp_appliances" target="comp_in_range"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_appliances_communicator" name="appliances_communicator" source="comp_appliances" target="comp_communicator"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_home_controller_in_range" name="home_controller_in_range" source="comp_home_controller" target="comp_in_range"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_communicator_home_controller" name="communicator_home_controller" source="comp_communicator" target="comp_home_controller"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_home_controller_plugin" name="home_controller_plugin" source="comp_home_controller" target="comp_plugin"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_appliances_plugin" name="appliances_plugin" source="comp_appliances" target="comp_plugin"/>
+</architecturemodeling:ArchitectureModel>

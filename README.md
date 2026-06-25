@@ -90,7 +90,7 @@ Compile the Java sources:
 
 ```bash
 cd java
-javac -cp "lib/*" -d bin src/it/uni/disim/architecturemodeling/launcher/**/*.java
+javac -cp "lib/*" -d bin src/it/uni/sim/architecturemodeling/launcher/**/*.java
 ```
 
 Requires Java 11+.
