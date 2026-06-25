@@ -23,7 +23,6 @@ public class RawEMFTest {
 
     public static void main(String[] args) {
         try {
-            // === 0. Tạo ResourceSet + đăng ký factory cho đuôi ecore / model ===
             ResourceSet rs = new ResourceSetImpl();
 
             Map<String, Object> map = Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap();
@@ -40,7 +39,6 @@ public class RawEMFTest {
                 if (o instanceof EPackage) {
                     EPackage p = (EPackage) o;
                     System.out.println("  [archmm] EPackage: " + p.getName() + " nsURI=" + p.getNsURI());
-                    // Đăng ký để các model khác có thể resolve
                     rs.getPackageRegistry().put(p.getNsURI(), p);
                 }
             }
@@ -54,7 +52,6 @@ public class RawEMFTest {
                 if (o instanceof EPackage) {
                     EPackage p = (EPackage) o;
                     System.out.println("  [ramm] EPackage: " + p.getName() + " nsURI=" + p.getNsURI());
-                    // Nếu có nsURI, ta cũng có thể đăng ký
                     if (p.getNsURI() != null && !p.getNsURI().isEmpty()) {
                         rs.getPackageRegistry().put(p.getNsURI(), p);
                     }

@@ -44,7 +44,6 @@ public abstract class EpsilonStandaloneExample {
 		Registry reg = Resource.Factory.Registry.INSTANCE;
 		Map<String, Object> map = reg.getExtensionToFactoryMap();
 
-		// đảm bảo EMF biết cách mở .ecore, .model, .xmi
 		map.put("ecore", new XMIResourceFactoryImpl());
 		map.put("model", new XMIResourceFactoryImpl());
 		map.put("xmi",   new XMIResourceFactoryImpl());
@@ -203,7 +202,6 @@ public abstract class EpsilonStandaloneExample {
 			return f.toURI();
 		}
 
-		// 2) FALLBACK: CÁCH CŨ DÙNG getResource + bin→src (cho trường hợp chạy từ bin)
 		URL binUrl = EpsilonStandaloneExample.class.getResource(
 			fileName.startsWith("/") ? fileName : "/" + fileName
 		);
@@ -216,7 +214,6 @@ public abstract class EpsilonStandaloneExample {
 		URI uri = binUri;
 
 		if (binUri.toString().contains("/bin/")) {
-			// thay "bin" bằng "src" như logic gốc
 			uri = URI.create(binUri.toString().replaceFirst("/bin/", "/src/"));
 		}
 		

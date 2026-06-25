@@ -135,10 +135,7 @@ public class RAV extends EpsilonStandaloneExample {
         }
     }
 
-    /**
-     * Load một file .ecore và đăng ký tất cả EPackage bên trong vào global registry
-     * theo nsURI của nó.
-     */
+
     private static void registerMetamodelGlobally(String ecorePath) {
         try {
             System.out.println("### [registerMetamodel] Registering: " + ecorePath);
