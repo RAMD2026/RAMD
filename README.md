@@ -171,9 +171,20 @@ python baselines/strutural_matching.py
 
 ---
 
+## Dataset
+
+The AADL models used in our experiments are drawn from a curated, publicly available dataset:
+
+> **Mining Architectural Models in the Wild: A Curated Dataset of AADL Models**  
+> GitHub: [https://github.com/dinhtranthi/aadl-architectural-models-dataset](https://github.com/dinhtranthi/aadl-architectural-models-dataset)
+
+The pre-processed JSON representations of these models — with ground truth mappings between AADL components and RA components — are included in `mapping_data/`.
+
+---
+
 ## Data Format
 
-Each input file in `mapping_data/*/` is a JSON file representing one AADL model sub-graph, with the following structure:
+Each input file in `mapping_data/*/` is a JSON file representing one AADL model graph together with its ground truth mappings to RA components, with the following structure:
 
 ```json
 {
