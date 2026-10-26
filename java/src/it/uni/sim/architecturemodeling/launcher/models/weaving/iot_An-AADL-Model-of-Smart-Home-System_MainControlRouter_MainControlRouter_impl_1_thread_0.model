@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_dcf5fb6085d44e65b18803a47bc3ad11">
+  <relations xmi:id="_cd91060d0a8c4d429b70b0f503b0d355">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_system"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_main_controller"/>
+  </relations>
+  <relations xmi:id="_d01180c0255c49e092a0e24b4bb5b52e">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_zigbee_device_controller"/>
+  </relations>
+  <relations xmi:id="_cba7021e22434a768a58540b928e5dcd">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_ip_device_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_remote_msg_control"/>
+  </relations>
+</ecore:Implementation_model>

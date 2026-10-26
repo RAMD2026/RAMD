@@ -1,0 +1,236 @@
+{
+  "graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+  "ra_name": "IoT System Reference Architecture",
+  "num_nodes": 4,
+  "num_edges": 4,
+  "evaluated_nodes": 4,
+  "correct_predictions": 1,
+  "accuracy": 0.25,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.724112,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.724112
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.66686
+        },
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.59686
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.577112
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.561362
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_authentication",
+      "graph_node_id": "Authentication::../../github/DHsystem/Accounts.aadl#Accounts.Authentication",
+      "node_name": "Authentication",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.Authentication",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.692299,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.692299
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.635046
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.608299
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.592549
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.592549
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 24,
+          "aadl_graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 24,
+          "aadl_graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_account_settings",
+      "graph_node_id": "AccountSettings::../../github/DHsystem/Accounts.aadl#Accounts.AccountSettings",
+      "node_name": "AccountSettings",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.AccountSettings",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.689112,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.689112
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.647112
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.63186
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.631362
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.631362
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 23,
+          "aadl_graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 23,
+          "aadl_graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_access_control",
+      "graph_node_id": "AccessControl::../../github/DHsystem/Accounts.aadl#Accounts.AccessControl",
+      "node_name": "AccessControl",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.AccessControl",
+      "predicted_ra_id": "comp.gateway",
+      "predicted_ra_name": "Gateway",
+      "prediction_score": 0.692299,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.gateway",
+          "ra_name": "Gateway",
+          "score": 0.692299
+        },
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.650299
+        },
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.635046
+        },
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.634549
+        },
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.634549
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 22,
+          "aadl_graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 22,
+          "aadl_graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+          "match_mode": "per_graph"
+        }
+      ],
+      "is_correct": true
+    }
+  ],
+  "runtime_seconds": 0.000555
+}

@@ -1,0 +1,13 @@
+{
+  "iot_vs_smart_parking": {
+    "source_domain": "iot",
+    "injected_ra_domain": "smart_parking",
+    "injected_ra_ecore_file": "smartparking.ecore",
+    "injected_ra_description_file": "RA/smartparking_ra_components.txt",
+    "files": [
+      "mapping_An_AADL_Model_of_Smart_Home_System_MainControlRouter_MainControlRouter_impl_1_aaxl2.json",
+      "mapping_An_AADL_Model_of_Smart_Home_System_smart_home_system_smart_home_impl_1_aaxl2.json",
+      "mapping_DHsystem_Accounts_DHaccounts_impl_1_aaxl2.json"
+    ]
+  }
+}

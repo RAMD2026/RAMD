@@ -1,0 +1,151 @@
+========================================================
+PROMPT EXAMPLE — Option 2: Map One Node Per Call
+========================================================
+
+This file shows a concrete example of the prompt sent to the LLM under
+Option 2 (option: 2 in LLM_mapping_RA.yml). In this mode, RAMD issues a
+separate LLM call for each node in the graph (the "target node"), providing
+only that node's neighbors as local context. This is the default and
+best-performing mode in the paper.
+
+The prompt is constructed by prompts.build_option2_prompt_for_node() and
+includes:
+  - The target node name
+  - Names of its immediate neighbors in the AADL graph
+  - RA component names with their textual descriptions (if use_ra_descriptions: true)
+  - Few-shot examples drawn from the same RA domain (if fewshot_learning: true)
+  - Constraint feedback from the previous iteration (if check_RA_constraints: true)
+  - A task instruction specifying the required JSON output schema
+
+------------------------------------------------------------
+SYSTEM PROMPT
+------------------------------------------------------------
+You are an expert software architect and a careful classifier.
+You will receive:
+  (a) the name of a target node in an AADL graph,
+  (b) the names of its neighbor nodes (if any), and
+  (c) a finite set of reference architecture components as labels (as a list of names).
+Select EXACTLY ONE best label for the target node and also return a ranked list
+of labels with confidence scores in [0,1].
+All labels in the output MUST be exactly one of the provided component names.
+Return ONLY strict JSON with this schema:
+{"best":"<label>", "ranked":[{"label":"<label>","score":0.0}, ...]}
+
+------------------------------------------------------------
+USER PROMPT — Example A (no constraint feedback, RAG context included)
+------------------------------------------------------------
+Graph id: smart-home-arch_Clients_Clients_impl_1.aaxl2
+
+Target node name: system
+
+Neighbor node names:
+- client control unit
+
+Reference Architecture component labels (names):
+The label name is the text before ':' on each line; the text after ':' is its description.
+- Application: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.
+- IoTIM: Acts as an integration layer for sensors, actuators, devices, and applications. It receives data from devices, processes it, and forwards it to applications, enabling interoperability and unified management.
+- Gateway: Handles communication between devices and higher-level layers when direct connectivity is not possible. It bridges heterogeneous protocols, communication technologies, and payload formats.
+- Device: Serves as the entry point from the physical world into the digital one. It connects to sensors and/or actuators via wired or wireless interfaces and enables interaction with the environment.
+- Driver: Software running on the device that provides access to sensors and actuators. It includes computing and storage resources needed to control hardware components and manage data acquisition.
+- Sensor: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.
+- Actuator: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.
+
+Few-shot examples (follow the SAME output schema strictly; labels must be chosen from the given list):
+Example 1
+Graph id: smart_home_arch_RemoteServer_RemoteServer_impl_1.aaxl2
+
+Target node name: system
+
+Neighbor node names:
+- client controller
+- router controller
+
+Reference Architecture components (labels):
+- Application
+- IoTIM
+- Gateway
+- Device
+- Sensor
+- Actuator
+
+Output:
+{"best":"IoTIM","ranked":[{"label":"IoTIM","score":0.92},{"label":"Application","score":0.07},{"label":"Device","score":0.01}]}
+
+Example 2
+Graph id: DHsystem_Devices_humidity_impl_1.aaxl2
+
+Target node name: dehumidifier
+
+Neighbor node names:
+- humidity sensor
+
+Reference Architecture components (labels):
+- Application
+- IoTIM
+- Gateway
+- Device
+- Sensor
+- Actuator
+
+Constraint feedback (previous mapping violated RA rules):
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"humidifier", "dehumidifier"} does not
+respect the RA rules. Reasons: humidifier (mapped to Actuator) connects to humidity
+sensor (mapped to Sensor), but in the RA there is no allowed connection from Actuator
+to Sensor. || dehumidifier (mapped to Actuator) connects to humidity sensor (mapped to
+Sensor), but in the RA there is no allowed connection from Actuator to Sensor.
+
+Output:
+{"best":"Device","ranked":[{"label":"Device","score":0.90},{"label":"Application","score":0.07},{"label":"Actuator","score":0.03}]}
+
+Task: Select EXACTLY ONE best label (component NAME) for the target node.
+Also provide a ranked list of labels with confidence scores in [0,1].
+All labels MUST be chosen from the component names above.
+Return ONLY strict JSON with this schema:
+{"best":"<label>", "ranked":[{"label":"<label>","score":0.0}, ...]}
+
+------------------------------------------------------------
+EXPECTED OUTPUT FORMAT
+------------------------------------------------------------
+{"best":"IoTIM","ranked":[{"label":"IoTIM","score":0.88},{"label":"Application","score":0.10},{"label":"Gateway","score":0.02}]}
+
+------------------------------------------------------------
+USER PROMPT — Example B (constraint feedback present, iteration 2)
+------------------------------------------------------------
+Graph id: smart-home-arch_smart_home_system_smart_home_impl_1.aaxl2
+
+Target node name: client control unit
+
+Neighbor node names:
+- remote msg control
+- client controller
+
+Reference Architecture component labels (names):
+The label name is the text before ':' on each line; the text after ':' is its description.
+- Application: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.
+- IoTIM: Acts as an integration layer for sensors, actuators, devices, and applications. It receives data from devices, processes it, and forwards it to applications, enabling interoperability and unified management.
+- Gateway: Handles communication between devices and higher-level layers when direct connectivity is not possible. It bridges heterogeneous protocols, communication technologies, and payload formats.
+- Device: Serves as the entry point from the physical world into the digital one. It connects to sensors and/or actuators via wired or wireless interfaces and enables interaction with the environment.
+- Driver: Software running on the device that provides access to sensors and actuators. It includes computing and storage resources needed to control hardware components and manage data acquisition.
+- Sensor: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.
+- Actuator: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.
+
+Constraint feedback (previous mapping violated RA rules):
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"client control unit"} does not respect
+the RA rules. Reasons: client control unit (mapped to Device) connects to remote msg
+control (mapped to IoTIM), but in the RA there is no allowed connection from Device
+to IoTIM.
+IMPORTANT: Keep other correct mappings if possible, but change the violating ones.
+
+Task: Select EXACTLY ONE best label (component NAME) for the target node.
+Also provide a ranked list of labels with confidence scores in [0,1].
+All labels MUST be chosen from the component names above.
+Return ONLY strict JSON with this schema:
+{"best":"<label>", "ranked":[{"label":"<label>","score":0.0}, ...]}
+
+------------------------------------------------------------
+EXPECTED OUTPUT FORMAT
+------------------------------------------------------------
+{"best":"Application","ranked":[{"label":"Application","score":0.85},{"label":"IoTIM","score":0.12},{"label":"Gateway","score":0.03}]}

@@ -1,0 +1,592 @@
+{
+  "graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+  "ra_name": "Smart Parking System Reference Architecture",
+  "num_nodes": 12,
+  "num_edges": 14,
+  "evaluated_nodes": 12,
+  "correct_predictions": 5,
+  "accuracy": 0.4166666666666667,
+  "predictions": [
+    {
+      "node_id": "comp_transit_vehicle_databus",
+      "graph_node_id": "transitVehicleDatabus::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transitVehicleDatabus.impl",
+      "node_name": "transitVehicleDatabus",
+      "category": "bus",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transitVehicleDatabus.impl",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.628906,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.628906
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.628906
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.543156
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.543156
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 87,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 87,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_roadside_equip",
+      "graph_node_id": "RoadsideEquip::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.RoadsideEquip.impl",
+      "node_name": "RoadsideEquip",
+      "category": "device",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.RoadsideEquip.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.549976,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.549976
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.549976
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.492723
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.492723
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 13,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 88,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_itsroadequip",
+      "graph_node_id": "itsroadequip::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.itsroadequip.impl",
+      "node_name": "itsroadequip",
+      "category": "device",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.itsroadequip.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.57019,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.57019
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.57019
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.50019
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.50019
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Presentation_Layer",
+          "ra_id": "comp.presentation",
+          "confidence": 1,
+          "source_row": 89,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_transvobe",
+      "graph_node_id": "transvobe::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transvobe.impl",
+      "node_name": "transvobe",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transvobe.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.624667,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.624667
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.624667
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.554667
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.554667
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 90,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_transv2vsafety",
+      "graph_node_id": "transv2vsafety::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transv2vsafety.impl",
+      "node_name": "transv2vsafety",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transv2vsafety.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.378,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.378
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.378
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.308
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.308
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 91,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 146,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_status",
+      "graph_node_id": "status::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.status.impl",
+      "node_name": "status",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.status.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.698929,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.698929
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.698929
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.628929
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.628929
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 92,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 147,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_op_ctrl",
+      "graph_node_id": "op_ctrl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.op_ctrl.impl",
+      "node_name": "op_ctrl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.op_ctrl.impl",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.705244,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.705244
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.705244
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.624744
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.624744
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 93,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 148,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_loc_ctrl",
+      "graph_node_id": "loc_ctrl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.loc_ctrl.impl",
+      "node_name": "loc_ctrl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.loc_ctrl.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.591976,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.591976
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.591976
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.534723
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.534723
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 94,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 149,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_thp",
+      "graph_node_id": "thp::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thp.impl",
+      "node_name": "thp",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thp.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.696266,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.696266
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.696266
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.626266
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.626266
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 95,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 150,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_thl",
+      "graph_node_id": "thl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thl.impl",
+      "node_name": "thl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thl.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.696266,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.696266
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.696266
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.626266
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.626266
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 96,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 151,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_remote_vehicle_obe",
+      "graph_node_id": "remoteVehicleOBE::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.remoteVehicleOBE.impl",
+      "node_name": "remoteVehicleOBE",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.remoteVehicleOBE.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.696932,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.696932
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.696932
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.639679
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.639679
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 97,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_trans_operator",
+      "graph_node_id": "transOperator::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transOperator.impl",
+      "node_name": "transOperator",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transOperator.impl",
+      "predicted_ra_id": "comp.business",
+      "predicted_ra_name": "Business_Logic_Layer",
+      "prediction_score": 0.729255,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.729255
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.729255
+        },
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.648755
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.648755
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Business_Logic_Layer",
+          "ra_id": "comp.business",
+          "confidence": 1,
+          "source_row": 98,
+          "aadl_graph_id": "AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    }
+  ],
+  "runtime_seconds": 0.000922
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="RA_Autonomous_Driving_System_Model">
+  <eClassifiers xsi:type="ecore:EClass" name="Sensors">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensors_internal_networking_interfaces" eType="//Internal_Networking_Interfaces"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Processing_Units">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processing_units_internal_networking_interfaces" eType="//Internal_Networking_Interfaces"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="V2X_Cloud_Comms">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="v2x_cloud_comms_internal_networking_interfaces" eType="//Internal_Networking_Interfaces"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mobile_Platform_Actuators">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mobile_platform_actuators_internal_networking_interfaces" eType="//Internal_Networking_Interfaces"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Internal_Networking_Interfaces">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internal_networking_interfaces_sensors" eType="//Sensors"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internal_networking_interfaces_processing_units" eType="//Processing_Units"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internal_networking_interfaces_v2x_cloud_comms" eType="//V2X_Cloud_Comms"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internal_networking_interfaces_mobile_platform_actuators" eType="//Mobile_Platform_Actuators"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internal_networking_interfaces_software_frameworks_and_standards" eType="//Software_Frameworks_and_Standards"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Software_Frameworks_and_Standards">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="software_frameworks_and_standards_internal_networking_interfaces" eType="//Internal_Networking_Interfaces"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="software_frameworks_and_standards_ml_ai_dl_algorithms" eType="//ML_AI_DL_Algorithms"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="software_frameworks_and_standards_data_collection" eType="//Data_Collection"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="software_frameworks_and_standards_ui_ux_and_infotainment" eType="//UI_UX_and_Infotainment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="software_frameworks_and_standards_real_time_and_critical_control_software" eType="//Real_time_and_Critical_Control_Software"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ML_AI_DL_Algorithms">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ml_ai_dl_algorithms_software_frameworks_and_standards" eType="//Software_Frameworks_and_Standards"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data_Collection">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_collection_software_frameworks_and_standards" eType="//Software_Frameworks_and_Standards"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UI_UX_and_Infotainment">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ui_ux_and_infotainment_software_frameworks_and_standards" eType="//Software_Frameworks_and_Standards"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Real_time_and_Critical_Control_Software">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="real_time_and_critical_control_software_software_frameworks_and_standards" eType="//Software_Frameworks_and_Standards"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RA_Autonomous_Driving_System_Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensors" lowerBound="0" eType="//Sensors"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processing_units" lowerBound="0" eType="//Processing_Units"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="v2x_cloud_commss" eType="//V2X_Cloud_Comms"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mobile_platform_actuators" lowerBound="0" eType="//Mobile_Platform_Actuators"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internal_networking_interfacess" lowerBound="0" eType="//Internal_Networking_Interfaces"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="software_frameworks_and_standardss" lowerBound="0" eType="//Software_Frameworks_and_Standards"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ml_ai_dl_algorithms" lowerBound="0" eType="//ML_AI_DL_Algorithms"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_collection" lowerBound="0" eType="//Data_Collection"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ui_ux_and_infotainments" eType="//UI_UX_and_Infotainment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="real_time_and_critical_control_softwares" lowerBound="0" eType="//Real_time_and_Critical_Control_Software"/>
+  </eClassifiers>
+</ecore:EPackage>

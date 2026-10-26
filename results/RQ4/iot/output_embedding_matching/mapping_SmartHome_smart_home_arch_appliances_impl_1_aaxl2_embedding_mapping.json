@@ -1,0 +1,94 @@
+{
+  "graph_id": "SmartHome_smart_home_arch_appliances_impl_1.aaxl2",
+  "source_file": "mapping_SmartHome_smart_home_arch_appliances_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 3,
+  "num_correct": 2,
+  "average_score_for_model": 0.6666666666666666,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::SmartHome_smart_home_arch_appliances_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "Appliance_switch",
+        "Current_status"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: Appliance switch, Current status.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Actuator",
+      "predicted_ra_id": "comp.actuator",
+      "predicted_score": 0.37731990218162537,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.37731990218162537,
+          "ra_text": "RA component: Actuator. Definition: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.. Tag: raelements. Incoming connectors: Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_activator",
+      "graph_node_id": "ACTIVATOR::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Activator",
+      "node_name": "ACTIVATOR",
+      "category": "device",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Activator",
+      "ports": [
+        "Activate_devices",
+        "Running_devices",
+        "Battery_Level",
+        "Cofig",
+        "Measuring"
+      ],
+      "node_text_used": "Component name: ACTIVATOR. Category: device. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.Activator. Ports: Activate devices, Running devices, Battery Level, Cofig, Measuring.",
+      "ground_truth_ra_names": [
+        "Actuator"
+      ],
+      "predicted_ra_name": "Actuator",
+      "predicted_ra_id": "comp.actuator",
+      "predicted_score": 0.5604372024536133,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.5604372024536133,
+          "ra_text": "RA component: Actuator. Definition: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.. Tag: raelements. Incoming connectors: Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_power_source",
+      "graph_node_id": "POWER_SOURCE::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.power_source",
+      "node_name": "POWER_SOURCE",
+      "category": "device",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.power_source",
+      "ports": [
+        "Status"
+      ],
+      "node_text_used": "Component name: POWER SOURCE. Category: device. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.power source. Ports: Status.",
+      "ground_truth_ra_names": [
+        "Device"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.43738749623298645,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.43738749623298645,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    }
+  ]
+}

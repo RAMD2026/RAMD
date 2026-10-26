@@ -1,0 +1,389 @@
+{
+  "graph_id": "AADL-Architecture-of-Smart-Parking-_SmartParkingSystem_tispSys_impl_1.aaxl2",
+  "source_file": "mapping_AADL_Architecture_of_Smart_Parking_SmartParkingSystem_tispSys_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 13,
+  "num_correct": 7,
+  "average_score_for_model": 0.5384615384615384,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::AADL-Architecture-of-Smart-Parking-_SmartParkingSystem_tispSys_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "signal_in",
+        "signal2_in",
+        "signal3_in"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: signal in, signal2 in, signal3 in.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.40194612741470337,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.40194612741470337,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_driver",
+      "graph_node_id": "sub_driver::../../github/AADL-Architecture-of-Smart-Parking-/Driver.aadl#Driver.driver.impl",
+      "node_name": "sub_driver",
+      "category": "",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/Driver.aadl#Driver.driver.impl",
+      "ports": [
+        "DriverInfo_input",
+        "DriverOut"
+      ],
+      "node_text_used": "Component name: sub driver. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- Driver.aadl#Driver.driver.impl. Ports: DriverInfo input, DriverOut.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.3996497392654419,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.3996497392654419,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_hardware_comm",
+      "graph_node_id": "sub_hardwareComm::../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.hardwareComm.impl",
+      "node_name": "sub_hardwareComm",
+      "category": "bus",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.hardwareComm.impl",
+      "ports": [],
+      "node_text_used": "Component name: sub hardwareComm. Category: bus. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- InformationServiceProvider.aadl#InformationServiceProvider.hardwareComm.impl.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.49170300364494324,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.49170300364494324,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_vehicle_obe",
+      "graph_node_id": "sub_vehicleOBE::../../github/AADL-Architecture-of-Smart-Parking-/SmartParkingSystem.aadl#SmartParkingSystem.VehicleOBE",
+      "node_name": "sub_vehicleOBE",
+      "category": "device",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/SmartParkingSystem.aadl#SmartParkingSystem.VehicleOBE",
+      "ports": [
+        "signal_out",
+        "parking_data_received"
+      ],
+      "node_text_used": "Component name: sub vehicleOBE. Category: device. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- SmartParkingSystem.aadl#SmartParkingSystem.VehicleOBE. Ports: signal out, parking data received.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4448317289352417,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4448317289352417,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_roadside_obe",
+      "graph_node_id": "sub_roadsideOBE::../../github/AADL-Architecture-of-Smart-Parking-/SmartParkingSystem.aadl#SmartParkingSystem.RoadsideOBE",
+      "node_name": "sub_roadsideOBE",
+      "category": "device",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/SmartParkingSystem.aadl#SmartParkingSystem.RoadsideOBE",
+      "ports": [
+        "signal_out",
+        "parking_data_received"
+      ],
+      "node_text_used": "Component name: sub roadsideOBE. Category: device. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- SmartParkingSystem.aadl#SmartParkingSystem.RoadsideOBE. Ports: signal out, parking data received.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4400836229324341,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4400836229324341,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_parking_manager",
+      "graph_node_id": "sub_parkingManager::../../github/AADL-Architecture-of-Smart-Parking-/SmartParkingSystem.aadl#SmartParkingSystem.ParkingManager",
+      "node_name": "sub_parkingManager",
+      "category": "process",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/SmartParkingSystem.aadl#SmartParkingSystem.ParkingManager",
+      "ports": [
+        "signal_out",
+        "signal_in"
+      ],
+      "node_text_used": "Component name: sub parkingManager. Category: process. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- SmartParkingSystem.aadl#SmartParkingSystem.ParkingManager. Ports: signal out, signal in.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4215884208679199,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4215884208679199,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_rse_electric_charge_support_provider",
+      "graph_node_id": "sub_RSE_ElectricChargeSupportProvider::../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_ElectricChargeSupportProvider",
+      "node_name": "sub_RSE_ElectricChargeSupportProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_ElectricChargeSupportProvider",
+      "ports": [
+        "RSE_ECSP_data_in",
+        "RSE_ECSP_data_out"
+      ],
+      "node_text_used": "Component name: sub RSE ElectricChargeSupportProvider. Category: process. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- RSE.aadl#RSE.RSE ElectricChargeSupportProvider. Ports: RSE ECSP data in, RSE ECSP data out.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.41975635290145874,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.41975635290145874,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_rse_workzone_safety_provider",
+      "graph_node_id": "sub_RSE_WorkzoneSafetyProvider::../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_WorkzoneSafetyProvider",
+      "node_name": "sub_RSE_WorkzoneSafetyProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_WorkzoneSafetyProvider",
+      "ports": [
+        "RSE_WSP_data_in",
+        "RSE_WSP_data_out"
+      ],
+      "node_text_used": "Component name: sub RSE WorkzoneSafetyProvider. Category: process. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- RSE.aadl#RSE.RSE WorkzoneSafetyProvider. Ports: RSE WSP data in, RSE WSP data out.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Security",
+      "predicted_ra_id": "comp.security",
+      "predicted_score": 0.41526973247528076,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.41526973247528076,
+          "ra_text": "RA component: Security. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_rse_travel_information_communication_provider",
+      "graph_node_id": "sub_RSE_TravelInformationCommunicationProvider::../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_TravelInformationCommunicationProvider",
+      "node_name": "sub_RSE_TravelInformationCommunicationProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_TravelInformationCommunicationProvider",
+      "ports": [
+        "RSE_TICP_data_in",
+        "RSE_TICP_data_out"
+      ],
+      "node_text_used": "Component name: sub RSE TravelInformationCommunicationProvider. Category: process. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- RSE.aadl#RSE.RSE TravelInformationCommunicationProvider. Ports: RSE TICP data in, RSE TICP data out.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4991345703601837,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4991345703601837,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_rse_traffic_metering_provider",
+      "graph_node_id": "sub_RSE_TrafficMeteringProvider::../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_TrafficMeteringProvider",
+      "node_name": "sub_RSE_TrafficMeteringProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_TrafficMeteringProvider",
+      "ports": [
+        "RSE_TMP_data_in",
+        "RSE_TMP_data_out"
+      ],
+      "node_text_used": "Component name: sub RSE TrafficMeteringProvider. Category: process. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- RSE.aadl#RSE.RSE TrafficMeteringProvider. Ports: RSE TMP data in, RSE TMP data out.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4239298105239868,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4239298105239868,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_rse_speed_management_provider",
+      "graph_node_id": "sub_RSE_SpeedManagementProvider::../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_SpeedManagementProvider",
+      "node_name": "sub_RSE_SpeedManagementProvider",
+      "category": "process",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/RSE.aadl#RSE.RSE_SpeedManagementProvider",
+      "ports": [
+        "RSE_SMP_data_in",
+        "RSE_SMP_data_out"
+      ],
+      "node_text_used": "Component name: sub RSE SpeedManagementProvider. Category: process. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- RSE.aadl#RSE.RSE SpeedManagementProvider. Ports: RSE SMP data in, RSE SMP data out.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4444780647754669,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4444780647754669,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_sub_tic",
+      "graph_node_id": "sub_TIC::../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.TIC.impl",
+      "node_name": "sub_TIC",
+      "category": "processor",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.TIC.impl",
+      "ports": [
+        "bus_access"
+      ],
+      "node_text_used": "Component name: sub TIC. Category: processor. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- InformationServiceProvider.aadl#InformationServiceProvider.TIC.impl. Ports: bus access.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.484941691160202,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.484941691160202,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_collection",
+      "graph_node_id": "collection::../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.dataCollection",
+      "node_name": "collection",
+      "category": "memory",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.dataCollection",
+      "ports": [],
+      "node_text_used": "Component name: collection. Category: memory. Classifier: .. .. github AADL-Architecture-of-Smart-Parking- InformationServiceProvider.aadl#InformationServiceProvider.dataCollection.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.5007839202880859,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.5007839202880859,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    }
+  ]
+}

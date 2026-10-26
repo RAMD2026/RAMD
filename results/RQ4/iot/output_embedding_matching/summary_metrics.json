@@ -1,0 +1,209 @@
+{
+  "num_models": 25,
+  "mean_of_model_average_scores": 0.682985527544351,
+  "dataset_average_score": 0.6368421052631579,
+  "total_correct": 121,
+  "total_mappings": 190,
+  "per_model_results": [
+    {
+      "graph_id": "An-AADL-Model-of-Smart-Home-System_Clients_Clients_impl_1.aaxl2",
+      "source_file": "mapping_An_AADL_Model_of_Smart_Home_System_Clients_Clients_impl_1_aaxl2.json",
+      "num_nodes": 2,
+      "num_correct": 2,
+      "average_score_for_model": 1.0,
+      "output_file": "output_embedding_matching/mapping_An_AADL_Model_of_Smart_Home_System_Clients_Clients_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+      "source_file": "mapping_An_AADL_Model_of_Smart_Home_System_MainControlRouter_MainControlRouter_impl_1_aaxl2.json",
+      "num_nodes": 5,
+      "num_correct": 5,
+      "average_score_for_model": 1.0,
+      "output_file": "output_embedding_matching/mapping_An_AADL_Model_of_Smart_Home_System_MainControlRouter_MainControlRouter_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "An-AADL-Model-of-Smart-Home-System_RemoteServer_RemoteServer_impl_1.aaxl2",
+      "source_file": "mapping_An_AADL_Model_of_Smart_Home_System_RemoteServer_RemoteServer_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 2,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "output_embedding_matching/mapping_An_AADL_Model_of_Smart_Home_System_RemoteServer_RemoteServer_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+      "source_file": "mapping_An_AADL_Model_of_Smart_Home_System_smart_home_system_smart_home_impl_1_aaxl2.json",
+      "num_nodes": 12,
+      "num_correct": 10,
+      "average_score_for_model": 0.8333333333333334,
+      "output_file": "output_embedding_matching/mapping_An_AADL_Model_of_Smart_Home_System_smart_home_system_smart_home_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Accounts_DHaccounts_impl_1_aaxl2.json",
+      "num_nodes": 4,
+      "num_correct": 1,
+      "average_score_for_model": 0.25,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Accounts_DHaccounts_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Communications_DHcommunications_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Communications_DHcommunications_impl_1_aaxl2.json",
+      "num_nodes": 9,
+      "num_correct": 5,
+      "average_score_for_model": 0.5555555555555556,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Communications_DHcommunications_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Communications_DHgateway_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Communications_DHgateway_impl_1_aaxl2.json",
+      "num_nodes": 6,
+      "num_correct": 4,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Communications_DHgateway_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Configurations_DHconfig_impl_1_aaxl2.json",
+      "num_nodes": 8,
+      "num_correct": 3,
+      "average_score_for_model": 0.375,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Configurations_DHconfig_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Devices_DHdevices_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Devices_DHdevices_impl_1_aaxl2.json",
+      "num_nodes": 17,
+      "num_correct": 11,
+      "average_score_for_model": 0.6470588235294118,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Devices_DHdevices_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Devices_humidity_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Devices_humidity_impl_1_aaxl2.json",
+      "num_nodes": 4,
+      "num_correct": 3,
+      "average_score_for_model": 0.75,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Devices_humidity_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Devices_power_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Devices_power_impl_1_aaxl2.json",
+      "num_nodes": 4,
+      "num_correct": 4,
+      "average_score_for_model": 1.0,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Devices_power_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Devices_security_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Devices_security_impl_1_aaxl2.json",
+      "num_nodes": 4,
+      "num_correct": 1,
+      "average_score_for_model": 0.25,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Devices_security_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Devices_thermo_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Devices_thermo_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 2,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Devices_thermo_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "DHsystem_Systems_DHsystem_impl_1.aaxl2",
+      "source_file": "mapping_DHsystem_Systems_DHsystem_impl_1_aaxl2.json",
+      "num_nodes": 42,
+      "num_correct": 23,
+      "average_score_for_model": 0.5476190476190477,
+      "output_file": "output_embedding_matching/mapping_DHsystem_Systems_DHsystem_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+      "source_file": "mapping_HomeAutomationAADL_HomeAutomation_HA_impl_1_aaxl2.json",
+      "num_nodes": 16,
+      "num_correct": 7,
+      "average_score_for_model": 0.4375,
+      "output_file": "output_embedding_matching/mapping_HomeAutomationAADL_HomeAutomation_HA_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "SmartHome_smart_home_arch_Client_tier_impl_1.aaxl2",
+      "source_file": "mapping_SmartHome_smart_home_arch_Client_tier_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 2,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "output_embedding_matching/mapping_SmartHome_smart_home_arch_Client_tier_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "SmartHome_smart_home_arch_appliances_impl_1.aaxl2",
+      "source_file": "mapping_SmartHome_smart_home_arch_appliances_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 2,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "output_embedding_matching/mapping_SmartHome_smart_home_arch_appliances_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "SmartHome_smart_home_arch_home_controller_framework_impl_1.aaxl2",
+      "source_file": "mapping_SmartHome_smart_home_arch_home_controller_framework_impl_1_aaxl2.json",
+      "num_nodes": 6,
+      "num_correct": 4,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "output_embedding_matching/mapping_SmartHome_smart_home_arch_home_controller_framework_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "SmartHome_smart_home_arch_plugin_impl_1.aaxl2",
+      "source_file": "mapping_SmartHome_smart_home_arch_plugin_impl_1_aaxl2.json",
+      "num_nodes": 6,
+      "num_correct": 4,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "output_embedding_matching/mapping_SmartHome_smart_home_arch_plugin_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "SmartHome_smart_home_arch_sensor_unit_impl_1.aaxl2",
+      "source_file": "mapping_SmartHome_smart_home_arch_sensor_unit_impl_1_aaxl2.json",
+      "num_nodes": 4,
+      "num_correct": 3,
+      "average_score_for_model": 0.75,
+      "output_file": "output_embedding_matching/mapping_SmartHome_smart_home_arch_sensor_unit_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+      "source_file": "mapping_SmartHome_smart_home_arch_smarthome_impl_1_aaxl2.json",
+      "num_nodes": 7,
+      "num_correct": 3,
+      "average_score_for_model": 0.42857142857142855,
+      "output_file": "output_embedding_matching/mapping_SmartHome_smart_home_arch_smarthome_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "smart-home-arch_Clients_Clients_impl_1.aaxl2",
+      "source_file": "mapping_smart_home_arch_Clients_Clients_impl_1_aaxl2.json",
+      "num_nodes": 2,
+      "num_correct": 2,
+      "average_score_for_model": 1.0,
+      "output_file": "output_embedding_matching/mapping_smart_home_arch_Clients_Clients_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+      "source_file": "mapping_smart_home_arch_MainControlRouter_MainControlRouter_impl_1_aaxl2.json",
+      "num_nodes": 5,
+      "num_correct": 5,
+      "average_score_for_model": 1.0,
+      "output_file": "output_embedding_matching/mapping_smart_home_arch_MainControlRouter_MainControlRouter_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "smart-home-arch_RemoteServer_RemoteServer_impl_1.aaxl2",
+      "source_file": "mapping_smart_home_arch_RemoteServer_RemoteServer_impl_1_aaxl2.json",
+      "num_nodes": 3,
+      "num_correct": 2,
+      "average_score_for_model": 0.6666666666666666,
+      "output_file": "output_embedding_matching/mapping_smart_home_arch_RemoteServer_RemoteServer_impl_1_aaxl2_embedding_mapping.json"
+    },
+    {
+      "graph_id": "smart-home-arch_smart_home_system_smart_home_impl_1.aaxl2",
+      "source_file": "mapping_smart_home_arch_smart_home_system_smart_home_impl_1_aaxl2.json",
+      "num_nodes": 12,
+      "num_correct": 11,
+      "average_score_for_model": 0.9166666666666666,
+      "output_file": "output_embedding_matching/mapping_smart_home_arch_smart_home_system_smart_home_impl_1_aaxl2_embedding_mapping.json"
+    }
+  ]
+}

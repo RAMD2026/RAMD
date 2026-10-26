@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_38bd7c1b0ed548c4945e3065a6cf2778">
+  <relations xmi:id="_60750b7d7ad8406ea67842b57a3c5890">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_bd95fdd594834b1abcc7ca8c1a03a8bc">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Sensor"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_humid_sensor"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_temp_sensor"/>
+  </relations>
+  <relations xmi:id="_2c4e8555a5064c74a350df3eeb8094f5">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_update_4"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_ha_control"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_algorithm"/>
+  </relations>
+  <relations xmi:id="_d167296e04c549dcbc1f145cf26cd884">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_window"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_termostat"/>
+  </relations>
+  <relations xmi:id="_2a87de281797479591a273fb082f74f9">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Driver"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu1"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu2"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu3"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu4"/>
+    <component href="../architectures/HomeAutomationAADL_HomeAutomation_HA_impl_1.model#comp_cpu5"/>
+  </relations>
+</ecore:Implementation_model>

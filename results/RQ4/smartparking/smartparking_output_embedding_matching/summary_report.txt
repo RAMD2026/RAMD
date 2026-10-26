@@ -1,0 +1,39 @@
+Sentence embedding similarity
+Model: sentence-transformers/all-MiniLM-L6-v2
+Number of models: 29
+Runtime: 21.716536042
+Mean of model average scores: 0.3691
+Dataset average score: 0.4091
+Total correct mappings: 99
+Total mappings: 242
+
+Per-model results:
+- AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2: 1/3 = 0.3333
+- AADL-Architecture-of-Smart-Parking-_RSE_RSEOwner_impl_1.aaxl2: 2/5 = 0.4000
+- AADL-Architecture-of-Smart-Parking-_SmartParkingSystem_tispSys_impl_1.aaxl2: 7/13 = 0.5385
+- AADL-SmartParkingApplication_InformationServiceProvider_ISP_impl_1.aaxl2: 2/3 = 0.6667
+- AADL-SmartParkingApplication_RSE_RSEOwner_impl_1.aaxl2: 2/5 = 0.4000
+- AADL-SmartParkingApplication_SmartParkingSystem_tispSys_impl_1.aaxl2: 7/13 = 0.5385
+- AadlProjects_smartparking_RSEparkmgmt_impl_1.aaxl2: 2/5 = 0.4000
+- AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2: 22/54 = 0.4074
+- AadlProjects_smartparking_TICDataColl_impl_1.aaxl2: 2/5 = 0.4000
+- AadlProjects_smartparking_TICInteractvTravInfo_impl_1.aaxl2: 0/3 = 0.0000
+- AadlProjects_smartparking_communicationsupport_impl_1.aaxl2: 0/1 = 0.0000
+- AadlProjects_smartparking_driver_impl_1.aaxl2: 1/1 = 1.0000
+- AadlProjects_smartparking_parkelecpaymt_impl_1.aaxl2: 4/5 = 0.8000
+- AadlProjects_smartparking_parkingsystem_impl_1.aaxl2: 0/1 = 0.0000
+- AadlProjects_smartparking_parkmgmt_impl_1.aaxl2: 1/6 = 0.1667
+- AadlProjects_smartparking_parkmgmtsys_impl_1.aaxl2: 6/12 = 0.5000
+- AadlProjects_smartparking_persInteractvTravInfo_impl_1.aaxl2: 0/3 = 0.0000
+- AadlProjects_smartparking_persinfodev_impl_1.aaxl2: 1/7 = 0.1429
+- AadlProjects_smartparking_personallocmanagement_impl_1.aaxl2: 1/3 = 0.3333
+- AadlProjects_smartparking_roadsideequip_impl_1.aaxl2: 3/6 = 0.5000
+- AadlProjects_smartparking_roadsideinforeception_impl_1.aaxl2: 3/3 = 1.0000
+- AadlProjects_smartparking_transinfoctr_impl_1.aaxl2: 5/9 = 0.5556
+- AadlProjects_smartparking_vehbasesafe_impl_1.aaxl2: 3/10 = 0.3000
+- AadlProjects_smartparking_vehicleobe_impl_1.aaxl2: 8/19 = 0.4211
+- AadlProjects_vtv_VehicleTransitSystem_impl_1.aaxl2: 4/12 = 0.3333
+- AadlProjects_vtv_remoteVehicleOBE_impl_1.aaxl2: 0/1 = 0.0000
+- AadlProjects_vtv_transOperator_impl_1.aaxl2: 0/1 = 0.0000
+- AadlProjects_vtv_transvobe_impl_1.aaxl2: 1/7 = 0.1429
+- ParkingProject_parking_system_parking_simple_1.aaxl2: 11/26 = 0.4231

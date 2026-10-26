@@ -1,0 +1,447 @@
+{
+  "graph_id": "HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+  "source_file": "mapping_HomeAutomationAADL_HomeAutomation_HA_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 16,
+  "num_correct": 7,
+  "average_score_for_model": 0.4375,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::HomeAutomationAADL_HomeAutomation_HA_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "TargetTemp",
+        "TargetHumid"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: TargetTemp, TargetHumid.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.3687945306301117,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.3687945306301117,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_humid_sensor",
+      "graph_node_id": "humid_sensor::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.HumidSensorStep",
+      "node_name": "humid_sensor",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.HumidSensorStep",
+      "ports": [
+        "inValue",
+        "Value"
+      ],
+      "node_text_used": "Component name: humid sensor. Category: process. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.Sensor.HumidSensorStep. Ports: inValue, Value.",
+      "ground_truth_ra_names": [
+        "Sensor"
+      ],
+      "predicted_ra_name": "Sensor",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_score": 0.41421085596084595,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.41421085596084595,
+          "ra_text": "RA component: Sensor. Definition: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.. Tag: raelements. Incoming connectors: Device–Sensor Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_update",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Humid",
+      "node_name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Humid",
+      "ports": [
+        "Value_out",
+        "Value_in"
+      ],
+      "node_text_used": "Component name: update. Category: thread. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.SensorThread.Humid. Ports: Value out, Value in.",
+      "ground_truth_ra_names": [
+        "Application",
+        "Driver"
+      ],
+      "predicted_ra_name": "Sensor",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_score": 0.37972742319107056,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.37972742319107056,
+          "ra_text": "RA component: Sensor. Definition: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.. Tag: raelements. Incoming connectors: Device–Sensor Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_temp_sensor",
+      "graph_node_id": "temp_sensor::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.TemperatureSensorStep",
+      "node_name": "temp_sensor",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Sensor.TemperatureSensorStep",
+      "ports": [
+        "inValue",
+        "Value"
+      ],
+      "node_text_used": "Component name: temp sensor. Category: process. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.Sensor.TemperatureSensorStep. Ports: inValue, Value.",
+      "ground_truth_ra_names": [
+        "Sensor"
+      ],
+      "predicted_ra_name": "Sensor",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_score": 0.4722245931625366,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.4722245931625366,
+          "ra_text": "RA component: Sensor. Definition: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.. Tag: raelements. Incoming connectors: Device–Sensor Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_update_2",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Temp",
+      "node_name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.SensorThread.Temp",
+      "ports": [
+        "Value_out",
+        "Value_in"
+      ],
+      "node_text_used": "Component name: update. Category: thread. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.SensorThread.Temp. Ports: Value out, Value in.",
+      "ground_truth_ra_names": [
+        "Application",
+        "Driver"
+      ],
+      "predicted_ra_name": "Sensor",
+      "predicted_ra_id": "comp.sensor",
+      "predicted_score": 0.3817647695541382,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.sensor",
+          "ra_name": "Sensor",
+          "score": 0.3817647695541382,
+          "ra_text": "RA component: Sensor. Definition: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.. Tag: raelements. Incoming connectors: Device–Sensor Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_window",
+      "graph_node_id": "window::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.WindowStep",
+      "node_name": "window",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.WindowStep",
+      "ports": [
+        "tempValue",
+        "cmd"
+      ],
+      "node_text_used": "Component name: window. Category: process. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.Actuator.WindowStep. Ports: tempValue, cmd.",
+      "ground_truth_ra_names": [
+        "Actuator",
+        "Device"
+      ],
+      "predicted_ra_name": "Actuator",
+      "predicted_ra_id": "comp.actuator",
+      "predicted_score": 0.3574732840061188,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.3574732840061188,
+          "ra_text": "RA component: Actuator. Definition: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.. Tag: raelements. Incoming connectors: Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_update_3",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Window",
+      "node_name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Window",
+      "ports": [
+        "Cmd",
+        "Act"
+      ],
+      "node_text_used": "Component name: update. Category: thread. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.ActuatorThread.Window. Ports: Cmd, Act.",
+      "ground_truth_ra_names": [
+        "Application",
+        "Driver"
+      ],
+      "predicted_ra_name": "Actuator",
+      "predicted_ra_id": "comp.actuator",
+      "predicted_score": 0.32662421464920044,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.32662421464920044,
+          "ra_text": "RA component: Actuator. Definition: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.. Tag: raelements. Incoming connectors: Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_termostat",
+      "graph_node_id": "termostat::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.HeaterStep",
+      "node_name": "termostat",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.Actuator.HeaterStep",
+      "ports": [
+        "tempValue",
+        "cmd"
+      ],
+      "node_text_used": "Component name: termostat. Category: process. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.Actuator.HeaterStep. Ports: tempValue, cmd.",
+      "ground_truth_ra_names": [
+        "Actuator",
+        "Device"
+      ],
+      "predicted_ra_name": "Actuator",
+      "predicted_ra_id": "comp.actuator",
+      "predicted_score": 0.3695155382156372,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.3695155382156372,
+          "ra_text": "RA component: Actuator. Definition: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.. Tag: raelements. Incoming connectors: Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_update_4",
+      "graph_node_id": "update::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Thermostat",
+      "node_name": "update",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.ActuatorThread.Thermostat",
+      "ports": [
+        "Cmd",
+        "Act"
+      ],
+      "node_text_used": "Component name: update. Category: thread. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.ActuatorThread.Thermostat. Ports: Cmd, Act.",
+      "ground_truth_ra_names": [
+        "Application",
+        "Driver"
+      ],
+      "predicted_ra_name": "Actuator",
+      "predicted_ra_id": "comp.actuator",
+      "predicted_score": 0.3564802408218384,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.actuator",
+          "ra_name": "Actuator",
+          "score": 0.3564802408218384,
+          "ra_text": "RA component: Actuator. Definition: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.. Tag: raelements. Incoming connectors: Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_ha_control",
+      "graph_node_id": "HA_control::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.hostController.PeriodicOp",
+      "node_name": "HA_control",
+      "category": "process",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.hostController.PeriodicOp",
+      "ports": [
+        "set_TargetTemp",
+        "set_TargetHumid",
+        "tempValue",
+        "humidValue",
+        "windowCmd",
+        "termostatCMD"
+      ],
+      "node_text_used": "Component name: HA control. Category: process. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.hostController.PeriodicOp. Ports: set TargetTemp, set TargetHumid, tempValue, humidValue, windowCmd, termostatCMD.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.38738009333610535,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.38738009333610535,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_algorithm",
+      "graph_node_id": "algorithm::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.algorithm.ex",
+      "node_name": "algorithm",
+      "category": "thread",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.algorithm.ex",
+      "ports": [
+        "windowCMD",
+        "termostatCDM",
+        "Temp",
+        "Humid"
+      ],
+      "node_text_used": "Component name: algorithm. Category: thread. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.algorithm.ex. Ports: windowCMD, termostatCDM, Temp, Humid.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.38488298654556274,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.38488298654556274,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_cpu1",
+      "graph_node_id": "cpu1::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu1",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "node_text_used": "Component name: cpu1. Category: processor. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.cpu 1MHz.",
+      "ground_truth_ra_names": [
+        "Device",
+        "Driver"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.345828652381897,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.345828652381897,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_cpu2",
+      "graph_node_id": "cpu2::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu2",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "node_text_used": "Component name: cpu2. Category: processor. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.cpu 1MHz.",
+      "ground_truth_ra_names": [
+        "Device",
+        "Driver"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.34206244349479675,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.34206244349479675,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_cpu3",
+      "graph_node_id": "cpu3::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu3",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "node_text_used": "Component name: cpu3. Category: processor. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.cpu 1MHz.",
+      "ground_truth_ra_names": [
+        "Device",
+        "Driver"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.35275596380233765,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.35275596380233765,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_cpu4",
+      "graph_node_id": "cpu4::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu4",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "node_text_used": "Component name: cpu4. Category: processor. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.cpu 1MHz.",
+      "ground_truth_ra_names": [
+        "Device",
+        "Driver"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.350053071975708,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.350053071975708,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_cpu5",
+      "graph_node_id": "cpu5::../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "node_name": "cpu5",
+      "category": "processor",
+      "classifier": "../../github/HomeAutomationAADL/packages/HomeAutomation.aadl#HomeAutomation.cpu_1MHz",
+      "ports": [],
+      "node_text_used": "Component name: cpu5. Category: processor. Classifier: .. .. github HomeAutomationAADL packages HomeAutomation.aadl#HomeAutomation.cpu 1MHz.",
+      "ground_truth_ra_names": [
+        "Device",
+        "Driver"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.3510165810585022,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.3510165810585022,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    }
+  ]
+}

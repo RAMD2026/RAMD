@@ -1,0 +1,440 @@
+{
+  "graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "IoT System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.application",
+        "name": "Application",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.app-iotim",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.iotim",
+        "name": "IoTIM",
+        "mandatory": true,
+        "incoming": "conn.app-iotim",
+        "outgoing": "conn.iotim-gateway conn.app-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.gateway",
+        "name": "Gateway",
+        "mandatory": true,
+        "incoming": "conn.iotim-gateway",
+        "outgoing": "conn.gateway-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.device",
+        "name": "Device",
+        "mandatory": true,
+        "incoming": "conn.gateway-device conn.app-device",
+        "outgoing": "conn.device-sensor conn.device-actuator",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.driver",
+        "name": "Driver",
+        "mandatory": null,
+        "incoming": null,
+        "outgoing": null,
+        "tag": "child",
+        "parent_id": "comp.device",
+        "parent_name": "Device"
+      },
+      {
+        "id": "comp.sensor",
+        "name": "Sensor",
+        "mandatory": true,
+        "incoming": "conn.device-sensor",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.actuator",
+        "name": "Actuator",
+        "mandatory": true,
+        "incoming": "conn.device-actuator",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.app-iotim",
+        "name": "Application\u2013IoTIM Communication",
+        "source": "comp.application",
+        "target": "comp.iotim",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.iotim-gateway",
+        "name": "IoTIM\u2013Gateway Communication",
+        "source": "comp.iotim",
+        "target": "comp.gateway",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.gateway-device",
+        "name": "Gateway\u2013Device Communication",
+        "source": "comp.gateway",
+        "target": "comp.device",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-sensor",
+        "name": "Device\u2013Sensor Communication",
+        "source": "comp.device",
+        "target": "comp.sensor",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-actuator",
+        "name": "Device\u2013Actuator Communication",
+        "source": "comp.device",
+        "target": "comp.actuator",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.app-device",
+        "name": "Device\u2013IoTIM Communication",
+        "source": "comp.iotim",
+        "target": "comp.device",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_in_range",
+      "graph_node_id": "IN_RANGE::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.In_range",
+      "name": "IN_RANGE",
+      "category": "device",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.In_range",
+      "ports": [
+        "Turn_on_instructed_appliance",
+        "Sensor_Instruction"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 162,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_communicator",
+      "graph_node_id": "COMMUNICATOR::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.out_range",
+      "name": "COMMUNICATOR",
+      "category": "device",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.out_range",
+      "ports": [
+        "Turn_off_instructed_appliance",
+        "Sensor_Instruction"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 160,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 160,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_home_controller",
+      "graph_node_id": "HOME_CONTROLLER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.sensor_unit",
+      "name": "HOME_CONTROLLER",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.sensor_unit",
+      "ports": [
+        "Sense_inward_moment",
+        "user_command",
+        "Configuration"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 161,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 161,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_client_tier",
+      "graph_node_id": "CLIENT_TIER::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Client_tier.impl",
+      "name": "CLIENT_TIER",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Client_tier.impl",
+      "ports": [
+        "Configuration",
+        "Monitoring"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 159,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_smarthome_hw_platform",
+      "graph_node_id": "SMARTHOME_HW_PLATFORM::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Smarthome_HW_Platform",
+      "name": "SMARTHOME_HW_PLATFORM",
+      "category": "processor",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Smarthome_HW_Platform",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 137,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 164,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_plugin",
+      "graph_node_id": "PLUGIN::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.plugin",
+      "name": "PLUGIN",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.plugin",
+      "ports": [
+        "busdata",
+        "configure_control",
+        "Configured_control"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 136,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 136,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 156,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 156,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 163,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 163,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_appliances",
+      "graph_node_id": "APPLIANCES::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Appliances",
+      "name": "APPLIANCES",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.Appliances",
+      "ports": [
+        "Appliance_switch",
+        "Current_status"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 50,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 50,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 70,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 86,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 158,
+          "aadl_graph_id": "SmartHome_smart_home_arch_smarthome_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_in_range",
+      "target": "comp_appliances",
+      "type": "connection",
+      "src_port": "Turn_on_instructed_appliance",
+      "dst_port": "Appliance_switch",
+      "raw": {
+        "source": "//@componentInstance.0/@featureInstance.0",
+        "destination": "//@componentInstance.4/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_communicator",
+      "target": "comp_appliances",
+      "type": "connection",
+      "src_port": "Turn_off_instructed_appliance",
+      "dst_port": "Appliance_switch",
+      "raw": {
+        "source": "//@componentInstance.1/@featureInstance.0",
+        "destination": "//@componentInstance.4/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_home_controller",
+      "target": "comp_in_range",
+      "type": "connection",
+      "src_port": "Sense_inward_moment",
+      "dst_port": "Sensor_Instruction",
+      "raw": {
+        "source": "//@componentInstance.2/@featureInstance.0",
+        "destination": "//@componentInstance.0/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_home_controller",
+      "target": "comp_communicator",
+      "type": "connection",
+      "src_port": "user_command",
+      "dst_port": "Sensor_Instruction",
+      "raw": {
+        "source": "//@componentInstance.2/@featureInstance.1",
+        "destination": "//@componentInstance.1/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_plugin",
+      "target": "comp_home_controller",
+      "type": "connection",
+      "src_port": "Configured_control",
+      "dst_port": "Configuration",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.1/@featureInstance.2",
+        "destination": "//@componentInstance.2/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_appliances",
+      "target": "comp_plugin",
+      "type": "connection",
+      "src_port": "Current_status",
+      "dst_port": "configure_control",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.1",
+        "destination": "//@componentInstance.3/@componentInstance.1/@featureInstance.1"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_HOME_graphs.json",
+    "source_ra_grammar": "iot.gramm",
+    "source_mapping_labels": "iot_ra_component_mapping_labels.csv",
+    "enable_global_fallback": true
+  }
+}

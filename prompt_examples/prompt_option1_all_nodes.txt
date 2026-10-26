@@ -1,0 +1,184 @@
+========================================================
+PROMPT EXAMPLE — Option 1: Map All Nodes in One Call
+========================================================
+
+This file shows a concrete example of the prompt sent to the LLM under
+Option 1 (option: 1 in LLM_mapping_RA.yml). In this mode, RAMD asks the
+LLM to assign a Reference Architecture component to every node in the
+graph in a single request.
+
+The prompt is constructed by prompts.build_option1_prompt() and includes:
+  - The graph structure (node names + undirected edges)
+  - RA component names with their textual descriptions (if use_ra_descriptions: true)
+  - Few-shot examples drawn from the same RA domain (if fewshot_learning: true)
+  - Constraint feedback from the previous iteration (if check_RA_constraints: true)
+  - A task instruction specifying the required JSON output schema
+
+------------------------------------------------------------
+SYSTEM PROMPT
+------------------------------------------------------------
+You are an expert software architect. Your task is to map nodes in an AADL
+architecture graph to components in a reference architecture. You MUST output
+ONLY a single valid JSON object, without any markdown formatting, code fences,
+or explanations.
+
+------------------------------------------------------------
+USER PROMPT (iteration 2 — constraint feedback included)
+------------------------------------------------------------
+Graph id: smart-home-arch_smart_home_system_smart_home_impl_1.aaxl2
+
+Nodes (names):
+- zigbee devices
+- ip devices
+- main control router
+- zigbee device controller
+- ip device controller
+- remote msg control
+- main controller
+- remote server
+- client controller
+- router controller
+- clients
+- client control unit
+
+Edges between node names (undirected view):
+- zigbee devices -- zigbee device controller
+- ip devices -- ip device controller
+- zigbee device controller -- main controller
+- ip device controller -- main controller
+- remote msg control -- main controller
+- remote msg control -- router controller
+- remote msg control -- client control unit
+- client controller -- client control unit
+
+Reference Architecture components (labels):
+- Application: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.
+- IoTIM: Acts as an integration layer for sensors, actuators, devices, and applications. It receives data from devices, processes it, and forwards it to applications, enabling interoperability and unified management.
+- Gateway: Handles communication between devices and higher-level layers when direct connectivity is not possible. It bridges heterogeneous protocols, communication technologies, and payload formats.
+- Device: Serves as the entry point from the physical world into the digital one. It connects to sensors and/or actuators via wired or wireless interfaces and enables interaction with the environment.
+- Driver: Software running on the device that provides access to sensors and actuators. It includes computing and storage resources needed to control hardware components and manage data acquisition.
+- Sensor: A hardware component that reacts to physical stimulus, such as heat, light, sound, or motion, to collect information about the surrounding environment.
+- Actuator: A hardware component that affects the physical environment. It receives instructions from the device and converts them into physical actions, often through electrical signals.
+
+Few-shot examples (follow the SAME output schema strictly; labels must be chosen from the given list):
+Example 1
+Graph id: smart_home_arch_RemoteServer_RemoteServer_impl_1.aaxl2
+
+Nodes (names):
+- system
+- client controller
+- router controller
+
+Edges between node names (undirected view):
+- system -- client controller
+- system -- router controller
+
+Reference Architecture components (labels):
+- Application
+- IoTIM
+- Gateway
+- Device
+- Sensor
+- Actuator
+
+Output:
+{
+  "mappings": [
+    {"node_name": "system", "ra_component_name": "IoTIM"},
+    {"node_name": "client controller", "ra_component_name": "Application"},
+    {"node_name": "router controller", "ra_component_name": "Gateway"}
+  ]
+}
+
+Example 2
+Graph id: DHsystem_Devices_humidity_impl_1.aaxl2
+
+Nodes (names):
+- system
+- dehumidifier
+- humidifier
+- humidity sensor
+
+Edges between node names (undirected view):
+- humidity sensor -- dehumidifier
+- humidity sensor -- humidifier
+
+Reference Architecture components (labels):
+- Application
+- IoTIM
+- Gateway
+- Device
+- Sensor
+- Actuator
+
+Constraint feedback (previous mapping violated RA rules):
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"humidifier", "dehumidifier"} does not
+respect the RA rules. Reasons: humidifier (mapped to Actuator) connects to humidity
+sensor (mapped to Sensor), but in the RA there is no allowed connection from Actuator
+to Sensor. || dehumidifier (mapped to Actuator) connects to humidity sensor (mapped to
+Sensor), but in the RA there is no allowed connection from Actuator to Sensor.
+IMPORTANT: Keep other correct mappings if possible, but change the violating ones.
+
+Output:
+{
+  "mappings": [
+    {"node_name": "system", "ra_component_name": "Application"},
+    {"node_name": "dehumidifier", "ra_component_name": "Device"},
+    {"node_name": "humidifier", "ra_component_name": "Device"},
+    {"node_name": "humidity sensor", "ra_component_name": "Sensor"}
+  ]
+}
+
+Task: For each node name above, choose exactly ONE reference architecture component
+(by its NAME) that best matches the role of the node.
+Return a JSON object with this structure:
+{
+  "mappings": [
+    {"node_name": "<node name>", "ra_component_name": "<one of the component names above>"},
+    ...
+  ]
+}
+Ensure every node name from the list appears exactly once in the JSON.
+
+Constraint feedback (previous mapping violated RA rules):
+4 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee devices", "ip devices", "clients",
+"client control unit"} does not respect the RA rules. Reasons: client control unit
+(mapped to Device) connects to remote msg control (mapped to Application), but in the RA
+there is no allowed connection from Device to Application.
+constraint=relationType | component: Sequence {"zigbee device controller",
+"ip device controller"} does not respect the RA rules. Reasons: ip device controller
+(mapped to Driver) connects to main controller (mapped to IoTIM), but in the RA there
+is no allowed connection from Driver to IoTIM.
+constraint=relationType | component: Sequence {"remote msg control", "remote server",
+"client controller"} does not respect the RA rules. Reasons: remote msg control
+(mapped to Application) connects to router controller (mapped to Gateway), but in the
+RA there is no allowed connection from Application to Gateway. || client controller
+(mapped to Application) connects to client control unit (mapped to Device), but in the
+RA there is no allowed connection from Application to Device.
+constraint=relationType | component: Sequence {"main controller"} does not respect the
+RA rules. Reasons: main controller (mapped to IoTIM) connects to zigbee device
+controller (mapped to Driver), but in the RA there is no allowed connection from IoTIM
+to Driver.
+IMPORTANT: Keep other correct mappings if possible, but change the violating ones.
+
+------------------------------------------------------------
+EXPECTED OUTPUT FORMAT
+------------------------------------------------------------
+{
+  "mappings": [
+    {"node_name": "zigbee devices", "ra_component_name": "Device"},
+    {"node_name": "ip devices", "ra_component_name": "Device"},
+    {"node_name": "main control router", "ra_component_name": "Gateway"},
+    {"node_name": "zigbee device controller", "ra_component_name": "Driver"},
+    {"node_name": "ip device controller", "ra_component_name": "Driver"},
+    {"node_name": "remote msg control", "ra_component_name": "IoTIM"},
+    {"node_name": "main controller", "ra_component_name": "IoTIM"},
+    {"node_name": "remote server", "ra_component_name": "Application"},
+    {"node_name": "client controller", "ra_component_name": "Application"},
+    {"node_name": "router controller", "ra_component_name": "Gateway"},
+    {"node_name": "clients", "ra_component_name": "Application"},
+    {"node_name": "client control unit", "ra_component_name": "Application"}
+  ]
+}

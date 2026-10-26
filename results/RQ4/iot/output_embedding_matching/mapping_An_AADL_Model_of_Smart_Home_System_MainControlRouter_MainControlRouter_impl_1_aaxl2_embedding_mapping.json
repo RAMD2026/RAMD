@@ -1,0 +1,222 @@
+{
+  "graph_id": "An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+  "source_file": "mapping_An_AADL_Model_of_Smart_Home_System_MainControlRouter_MainControlRouter_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 5,
+  "num_correct": 5,
+  "average_score_for_model": 1.0,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "temperature_in",
+        "smoke_status_out",
+        "in_mcr_remote",
+        "out_mcr_remote",
+        "in_mcr_zd",
+        "out_mcr_zd",
+        "in_mcr_ipd",
+        "out_mcr_ipd"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: temperature in, smoke status out, in mcr remote, out mcr remote, in mcr zd, out mcr zd, in mcr ipd, out mcr ipd.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "Application",
+        "Application",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.4280443787574768,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.4280443787574768,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_zigbee_device_controller",
+      "graph_node_id": "ZIGBEE_DEVICE_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Zigbee_Device_Controller",
+      "node_name": "ZIGBEE_DEVICE_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Zigbee_Device_Controller",
+      "ports": [
+        "dev_data_receiver",
+        "dev_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "node_text_used": "Component name: ZIGBEE DEVICE CONTROLLER. Category: process. Classifier: .. .. github An-AADL-Model-of-Smart-Home-System Plugin Resources The Smart Home System MainControlRouter.aadl#MainControlRouter.Zigbee Device Controller. Ports: dev data receiver, dev data sender, ctr data receiver, ctr data sender.",
+      "ground_truth_ra_names": [
+        "Device",
+        "Gateway",
+        "Device",
+        "Gateway",
+        "Gateway",
+        "Device",
+        "Gateway"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.47377288341522217,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.47377288341522217,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_ip_device_controller",
+      "graph_node_id": "IP_DEVICE_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.IP_Device_Controller",
+      "node_name": "IP_DEVICE_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.IP_Device_Controller",
+      "ports": [
+        "dev_data_receiver",
+        "dev_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "node_text_used": "Component name: IP DEVICE CONTROLLER. Category: process. Classifier: .. .. github An-AADL-Model-of-Smart-Home-System Plugin Resources The Smart Home System MainControlRouter.aadl#MainControlRouter.IP Device Controller. Ports: dev data receiver, dev data sender, ctr data receiver, ctr data sender.",
+      "ground_truth_ra_names": [
+        "Gateway",
+        "Device",
+        "Gateway",
+        "Device",
+        "Gateway",
+        "Application",
+        "Device"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.502021074295044,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.502021074295044,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_remote_msg_control",
+      "graph_node_id": "REMOTE_MSG_CONTROL::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Remote_Msg_Control",
+      "node_name": "REMOTE_MSG_CONTROL",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Remote_Msg_Control",
+      "ports": [
+        "app_data_receiver",
+        "app_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "node_text_used": "Component name: REMOTE MSG CONTROL. Category: process. Classifier: .. .. github An-AADL-Model-of-Smart-Home-System Plugin Resources The Smart Home System MainControlRouter.aadl#MainControlRouter.Remote Msg Control. Ports: app data receiver, app data sender, ctr data receiver, ctr data sender.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM",
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.48395150899887085,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.48395150899887085,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_main_controller",
+      "graph_node_id": "MAIN_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Main_Controller",
+      "node_name": "MAIN_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Main_Controller",
+      "ports": [
+        "zdc_data_receiver",
+        "zdc_data_sender",
+        "ipdc_data_receiver",
+        "ipdc_data_sender",
+        "remote_data_receiver",
+        "remote_data_sender"
+      ],
+      "node_text_used": "Component name: MAIN CONTROLLER. Category: process. Classifier: .. .. github An-AADL-Model-of-Smart-Home-System Plugin Resources The Smart Home System MainControlRouter.aadl#MainControlRouter.Main Controller. Ports: zdc data receiver, zdc data sender, ipdc data receiver, ipdc data sender, remote data receiver, remote data sender.",
+      "ground_truth_ra_names": [
+        "Gateway",
+        "Gateway",
+        "IoTIM",
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.49575647711753845,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.49575647711753845,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    }
+  ]
+}

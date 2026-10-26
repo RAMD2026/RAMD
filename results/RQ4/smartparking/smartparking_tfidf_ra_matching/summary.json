@@ -1,0 +1,15 @@
+{
+  "mapping_folder": "mapping_data/SMART_PARKING_mapping_files",
+  "ra_txt_path": "RA/smartparking_ra_components.txt",
+  "num_models": 29,
+  "total_nodes": 242,
+  "total_correct": 53,
+  "overall_accuracy_micro": 0.2190082644628099,
+  "mean_accuracy_per_model": 0.1996016049555069,
+  "output_files": {
+    "node_mappings.csv": "smartparking_tfidf_ra_matching/node_mappings.csv",
+    "model_accuracy.csv": "smartparking_tfidf_ra_matching/model_accuracy.csv",
+    "summary.json": "smartparking_tfidf_ra_matching/summary.json"
+  },
+  "runtime_seconds": 0.48024766700000043
+}

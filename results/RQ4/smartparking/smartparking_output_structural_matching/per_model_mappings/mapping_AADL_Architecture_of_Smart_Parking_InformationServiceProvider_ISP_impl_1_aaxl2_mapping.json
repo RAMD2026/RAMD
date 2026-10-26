@@ -1,0 +1,197 @@
+{
+  "graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+  "ra_name": "Smart Parking System Reference Architecture",
+  "num_nodes": 3,
+  "num_edges": 1,
+  "evaluated_nodes": 3,
+  "correct_predictions": 0,
+  "accuracy": 0.0,
+  "predictions": [
+    {
+      "node_id": "comp_sub_hw_bus",
+      "graph_node_id": "sub_hw_bus::../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.hardwareComm.impl",
+      "node_name": "sub_hw_bus",
+      "category": "bus",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.hardwareComm.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.471836,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.395499
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.395499
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 55,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 190,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_sub_tic",
+      "graph_node_id": "sub_TIC::../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.TIC.impl",
+      "node_name": "sub_TIC",
+      "category": "processor",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.TIC.impl",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.471836,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.471836
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.395499
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.395499
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 56,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 128,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 191,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 205,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_collection",
+      "graph_node_id": "collection::../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.dataCollection",
+      "node_name": "collection",
+      "category": "memory",
+      "classifier": "../../github/AADL-Architecture-of-Smart-Parking-/InformationServiceProvider.aadl#InformationServiceProvider.dataCollection",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_ra_name": "Presentation_Layer",
+      "prediction_score": 0.289333,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.289333
+        },
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.196
+        },
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.196
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 57,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 129,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 192,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Data_Management_Layer",
+          "ra_id": "comp.data",
+          "confidence": 1,
+          "source_row": 206,
+          "aadl_graph_id": "AADL-Architecture-of-Smart-Parking-_InformationServiceProvider_ISP_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.001098
+}

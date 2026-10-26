@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_f290c1ff46ee42429e5022e91db84e17">
+  <relations xmi:id="_abeb58f3d06d4d98a155cc786b8bb987">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_bb931ebc65074514927c3dbf84b09703">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_acquisitor"/>
+  </relations>
+  <relations xmi:id="_d210ff409bf6448fb2acae5f6d70752b">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_communication_manager"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_appl_controller"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_sec_controller"/>
+  </relations>
+  <relations xmi:id="_93da7b1628684bd694c30f373bc04f80">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Gateway"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_dhgateway"/>
+  </relations>
+  <relations xmi:id="_8d166bd256a5484196fc7179e808200f">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Actuator"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_temp_controller"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_hum_controller"/>
+    <component href="../architectures/DHsystem_Communications_DHcommunications_impl_1.model#comp_power_controller"/>
+  </relations>
+</ecore:Implementation_model>

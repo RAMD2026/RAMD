@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use RAMD in your research, please cite the paper below."
+title: "RAMD: Reference Architecture Mapping Discovery"
+repository-code: "https://github.com/RAMD2026/RAMD"
+doi: 10.5281/zenodo.20829399
+license: MIT
+authors:
+  - family-names: Tran
+    given-names: Thi Dinh
+  - family-names: Rossi
+    given-names: Maria Teresa
+  - family-names: Iovino
+    given-names: Ludovico
+  - family-names: Mariani
+    given-names: Leonardo
+preferred-citation:
+  type: conference-paper
+  title: "Discovering the Relation Between Architectural Models and Reference Architectures"
+  authors:
+    - family-names: Tran
+      given-names: Thi Dinh
+    - family-names: Rossi
+      given-names: Maria Teresa
+    - family-names: Iovino
+      given-names: Ludovico
+    - family-names: Mariani
+      given-names: Leonardo
+  collection-title: "Proceedings of the 49th IEEE/ACM International Conference on Software Engineering (ICSE)"
+  year: 2027

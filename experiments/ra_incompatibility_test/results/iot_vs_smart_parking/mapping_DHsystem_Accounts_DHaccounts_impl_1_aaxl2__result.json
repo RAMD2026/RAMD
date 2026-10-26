@@ -1,0 +1,20 @@
+{
+  "pair": "iot_vs_smart_parking",
+  "graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+  "file": "mapping_DHsystem_Accounts_DHaccounts_impl_1_aaxl2.json",
+  "injected_ra_domain": "smart_parking",
+  "source_domain": "iot",
+  "predicted_mapping": {
+    "SYSTEM": "Security",
+    "Authentication": "Security",
+    "AccountSettings": "Security",
+    "AccessControl": "Security"
+  },
+  "total_nodes": 4,
+  "unmapped_count": 0,
+  "compliant": false,
+  "check_constraints_log": "1 constraint(s) have not been satisfied\nconstraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer, Business_Logic_Layer",
+  "avg_prompt_cost": 808.5,
+  "total_llm_cost": 12936,
+  "execution_time_seconds": 19.741
+}

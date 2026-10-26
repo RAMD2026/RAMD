@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_f5979a19cf2642a7b6f378e2191a3788">
+  <relations xmi:id="_6a5304615045454aa8101093d0d57ce1">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_roadsideequip_impl_1.model#comp_system"/>
+    <component href="../architectures/AadlProjects_smartparking_roadsideequip_impl_1.model#comp_rseparkmgmt"/>
+    <component href="../architectures/AadlProjects_smartparking_roadsideequip_impl_1.model#comp_veh_paymt"/>
+    <component href="../architectures/AadlProjects_smartparking_roadsideequip_impl_1.model#comp_rsideparkcomm"/>
+  </relations>
+  <relations xmi:id="_c3e3bea0940c4107b672c5492067c78b">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/AadlProjects_smartparking_roadsideequip_impl_1.model#comp_vehdata"/>
+  </relations>
+  <relations xmi:id="_a9e47ff4e26d4bd5b2f96bc748d0202f">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/AadlProjects_smartparking_roadsideequip_impl_1.model#comp_loc_identity"/>
+  </relations>
+</ecore:Implementation_model>

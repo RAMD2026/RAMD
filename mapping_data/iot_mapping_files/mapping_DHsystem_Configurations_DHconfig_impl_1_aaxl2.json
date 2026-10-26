@@ -1,0 +1,866 @@
+{
+  "graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "IoT System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.application",
+        "name": "Application",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.app-iotim",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.iotim",
+        "name": "IoTIM",
+        "mandatory": true,
+        "incoming": "conn.app-iotim",
+        "outgoing": "conn.iotim-gateway conn.app-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.gateway",
+        "name": "Gateway",
+        "mandatory": true,
+        "incoming": "conn.iotim-gateway",
+        "outgoing": "conn.gateway-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.device",
+        "name": "Device",
+        "mandatory": true,
+        "incoming": "conn.gateway-device conn.app-device",
+        "outgoing": "conn.device-sensor conn.device-actuator",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.driver",
+        "name": "Driver",
+        "mandatory": null,
+        "incoming": null,
+        "outgoing": null,
+        "tag": "child",
+        "parent_id": "comp.device",
+        "parent_name": "Device"
+      },
+      {
+        "id": "comp.sensor",
+        "name": "Sensor",
+        "mandatory": true,
+        "incoming": "conn.device-sensor",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.actuator",
+        "name": "Actuator",
+        "mandatory": true,
+        "incoming": "conn.device-actuator",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.app-iotim",
+        "name": "Application\u2013IoTIM Communication",
+        "source": "comp.application",
+        "target": "comp.iotim",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.iotim-gateway",
+        "name": "IoTIM\u2013Gateway Communication",
+        "source": "comp.iotim",
+        "target": "comp.gateway",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.gateway-device",
+        "name": "Gateway\u2013Device Communication",
+        "source": "comp.gateway",
+        "target": "comp.device",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-sensor",
+        "name": "Device\u2013Sensor Communication",
+        "source": "comp.device",
+        "target": "comp.sensor",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-actuator",
+        "name": "Device\u2013Actuator Communication",
+        "source": "comp.device",
+        "target": "comp.actuator",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.app-device",
+        "name": "Device\u2013IoTIM Communication",
+        "source": "comp.iotim",
+        "target": "comp.device",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_system",
+      "graph_node_id": "SYSTEM::DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+      "name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "config_acc",
+        "config_cm",
+        "web_config",
+        "br_config",
+        "pm_config"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 69,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 72,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 76,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_programmable_thermostat",
+      "graph_node_id": "ProgrammableThermostat::../../github/DHsystem/Configurations.aadl#Configurations.thermoProgram",
+      "name": "ProgrammableThermostat",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.thermoProgram",
+      "ports": [
+        "plan_tp",
+        "cm_tp",
+        "rep_tp"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 45,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 108,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_programmable_appliance_manager",
+      "graph_node_id": "ProgrammableApplianceManager::../../github/DHsystem/Configurations.aadl#Configurations.appProgramManager",
+      "name": "ProgrammableApplianceManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.appProgramManager",
+      "ports": [
+        "plan_apm",
+        "cm_apm",
+        "rep_apm"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 43,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 106,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_security_system",
+      "graph_node_id": "SecuritySystem::../../github/DHsystem/Configurations.aadl#Configurations.securitySystem",
+      "name": "SecuritySystem",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.securitySystem",
+      "ports": [
+        "plan_ss",
+        "cm_ss",
+        "rep_ss"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 48,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 111,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_programmable_humidistat",
+      "graph_node_id": "ProgrammableHumidistat::../../github/DHsystem/Configurations.aadl#Configurations.humProgram",
+      "name": "ProgrammableHumidistat",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.humProgram",
+      "ports": [
+        "plan_hp",
+        "cm_hp",
+        "rep_hp"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 44,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 107,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_planner",
+      "graph_node_id": "Planner::../../github/DHsystem/Configurations.aadl#Configurations.planner",
+      "name": "Planner",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.planner",
+      "ports": [
+        "plan_tp",
+        "plan_apm",
+        "plan_ss",
+        "plan_hp",
+        "cm_plan"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 42,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 103,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_configuration_manager",
+      "graph_node_id": "ConfigurationManager::../../github/DHsystem/Configurations.aadl#Configurations.commManager",
+      "name": "ConfigurationManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.commManager",
+      "ports": [
+        "cm_tp",
+        "cm_plan",
+        "cm_ss",
+        "cm_outCM",
+        "cm_outACC",
+        "cm_hp",
+        "cm_rep",
+        "cm_apm",
+        "webOUT_cm",
+        "brOUT_cm",
+        "pmOUT_cm"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 41,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 91,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_report",
+      "graph_node_id": "Report::../../github/DHsystem/Configurations.aadl#Configurations.report",
+      "name": "Report",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.report",
+      "ports": [
+        "rep_apm",
+        "rep_tp",
+        "rep_ss",
+        "rep_hp",
+        "cm_rep"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 46,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 46,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 109,
+          "aadl_graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_system",
+      "target": "comp_configuration_manager",
+      "type": "connection",
+      "src_port": "pm_config",
+      "dst_port": "pmOUT_cm",
+      "raw": {
+        "source": "//@featureInstance.4",
+        "destination": "//@componentInstance.5/@featureInstance.10"
+      }
+    },
+    {
+      "source": "comp_planner",
+      "target": "comp_programmable_thermostat",
+      "type": "connection",
+      "src_port": "plan_tp",
+      "dst_port": "plan_tp",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.0",
+        "destination": "//@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_planner",
+      "target": "comp_programmable_appliance_manager",
+      "type": "connection",
+      "src_port": "plan_apm",
+      "dst_port": "plan_apm",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.1",
+        "destination": "//@componentInstance.1/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_planner",
+      "target": "comp_security_system",
+      "type": "connection",
+      "src_port": "plan_ss",
+      "dst_port": "plan_ss",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.2",
+        "destination": "//@componentInstance.2/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_planner",
+      "target": "comp_programmable_humidistat",
+      "type": "connection",
+      "src_port": "plan_hp",
+      "dst_port": "plan_hp",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.3",
+        "destination": "//@componentInstance.3/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_configuration_manager",
+      "target": "comp_programmable_thermostat",
+      "type": "connection",
+      "src_port": "cm_tp",
+      "dst_port": "cm_tp",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.0",
+        "destination": "//@componentInstance.0/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_configuration_manager",
+      "target": "comp_planner",
+      "type": "connection",
+      "src_port": "cm_plan",
+      "dst_port": "cm_plan",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.1",
+        "destination": "//@componentInstance.4/@featureInstance.4"
+      }
+    },
+    {
+      "source": "comp_configuration_manager",
+      "target": "comp_security_system",
+      "type": "connection",
+      "src_port": "cm_ss",
+      "dst_port": "cm_ss",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.2",
+        "destination": "//@componentInstance.2/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_configuration_manager",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "cm_outACC",
+      "dst_port": "config_acc",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.4",
+        "destination": "//@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_configuration_manager",
+      "target": "comp_programmable_humidistat",
+      "type": "connection",
+      "src_port": "cm_hp",
+      "dst_port": "cm_hp",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.5",
+        "destination": "//@componentInstance.3/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_configuration_manager",
+      "target": "comp_report",
+      "type": "connection",
+      "src_port": "cm_rep",
+      "dst_port": "cm_rep",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.6",
+        "destination": "//@componentInstance.6/@featureInstance.4"
+      }
+    },
+    {
+      "source": "comp_configuration_manager",
+      "target": "comp_programmable_appliance_manager",
+      "type": "connection",
+      "src_port": "cm_apm",
+      "dst_port": "cm_apm",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.7",
+        "destination": "//@componentInstance.1/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_report",
+      "target": "comp_programmable_appliance_manager",
+      "type": "connection",
+      "src_port": "rep_apm",
+      "dst_port": "rep_apm",
+      "raw": {
+        "source": "//@componentInstance.6/@featureInstance.0",
+        "destination": "//@componentInstance.1/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_report",
+      "target": "comp_programmable_thermostat",
+      "type": "connection",
+      "src_port": "rep_tp",
+      "dst_port": "rep_tp",
+      "raw": {
+        "source": "//@componentInstance.6/@featureInstance.1",
+        "destination": "//@componentInstance.0/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_report",
+      "target": "comp_security_system",
+      "type": "connection",
+      "src_port": "rep_ss",
+      "dst_port": "rep_ss",
+      "raw": {
+        "source": "//@componentInstance.6/@featureInstance.2",
+        "destination": "//@componentInstance.2/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_report",
+      "target": "comp_programmable_humidistat",
+      "type": "connection",
+      "src_port": "rep_hp",
+      "dst_port": "rep_hp",
+      "raw": {
+        "source": "//@componentInstance.6/@featureInstance.3",
+        "destination": "//@componentInstance.3/@featureInstance.2"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_HOME_graphs.json",
+    "source_ra_grammar": "iot.gramm",
+    "source_mapping_labels": "iot_ra_component_mapping_labels.csv",
+    "enable_global_fallback": true
+  }
+}

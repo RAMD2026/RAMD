@@ -1,0 +1,53 @@
+{
+  "thread": 3,
+  "model": "chatgpt",
+  "option": 2,
+  "graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+  "file": "mapping_DHsystem_Configurations_DHconfig_impl_1_aaxl2.json",
+  "predicted_mapping": {
+    "system": "Application",
+    "programmable thermostat": "Device",
+    "programmable appliance manager": "IoTIM",
+    "security system": "Application",
+    "programmable humidistat": "Sensor",
+    "planner": "IoTIM",
+    "configuration manager": "Application",
+    "report": "Application"
+  },
+  "total_score": 5.0,
+  "avg_score": 0.625,
+  "per_node_scores": {
+    "system": 1.0,
+    "programmable thermostat": 1.0,
+    "programmable appliance manager": 0.0,
+    "security system": 1.0,
+    "programmable humidistat": 0.0,
+    "planner": 1.0,
+    "configuration manager": 0.0,
+    "report": 1.0
+  },
+  "check_constraints_log": "3 constraint(s) have not been satisfied\nconstraint=relationType | component: Sequence {\"programmable thermostat\"} does not respect the RA rules. Reasons: programmable thermostat (mapped to Device) connects to report (mapped to Application), but in the RA there is no allowed connection from Device to Application.\nconstraint=relationType | component: Sequence {\"programmable appliance manager\", \"planner\"} does not respect the RA rules. Reasons: planner (mapped to IoTIM) connects to programmable humidistat (mapped to Sensor), but in the RA there is no allowed connection from IoTIM to Sensor.\nconstraint=relationType | component: Sequence {\"programmable humidistat\"} does not respect the RA rules. Reasons: programmable humidistat (mapped to Sensor) connects to report (mapped to Application), but in the RA there is no allowed connection from Sensor to Application.",
+  "avg_prompt_cost": 703.056245,
+  "total_llm_cost": 28122,
+  "execution_time_seconds": 72.613829,
+  "config": {
+    "use_ra_descriptions": true,
+    "use_ra_structural_info": false,
+    "check_RA_constraints": true,
+    "same_mapping_patience": 3,
+    "fewshot_learning": false,
+    "recreate_mapping_with_llm": true,
+    "recreate_window": 10,
+    "break_after_recreate": true,
+    "use_chunking": false,
+    "chunk_size": 3,
+    "use_semantic_filter": true,
+    "semantic_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "semantic_top_k": 5,
+    "mapping_knowledge_csv_path": "mapping_data/iot_ra_component_mapping_labels.csv",
+    "mapping_knowledge_top_k": 3,
+    "mapping_knowledge_weight": 0.0,
+    "num_threads": 5,
+    "execution_mode": "sequential"
+  }
+}

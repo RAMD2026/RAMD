@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_7c05fe65c6d640eda07cb0585c25821d">
+  <relations xmi:id="_3eaeae84cb9543bb8235e4ceb883af40">
+    <RAcomp href="../referencearchitectures/iot.ecore#//IoTIM"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_85043cb967ee4cebb2b27696e34e55bc">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_device_manager"/>
+  </relations>
+  <relations xmi:id="_9411701ced6c4370a4f88a0a4ebbf669">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_humidity_devices"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_power_devices"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_switch"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_appliances"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_lights"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_security_devices"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_alarms"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_thermostat_devices"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_hvac"/>
+  </relations>
+  <relations xmi:id="_71600a411219424f9a37ab9da025c91f">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Actuator"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_humidifier"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_dehumidifier"/>
+  </relations>
+  <relations xmi:id="_0f776c46b8a9414fa5950b266950516a">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Sensor"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_humidity_sensor"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_door_sensor"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_window_sensor"/>
+    <component href="../architectures/DHsystem_Devices_DHdevices_impl_1.model#comp_thermostat_sensort"/>
+  </relations>
+</ecore:Implementation_model>

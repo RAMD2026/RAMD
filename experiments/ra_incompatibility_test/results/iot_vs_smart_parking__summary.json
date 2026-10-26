@@ -1,0 +1,71 @@
+[
+  {
+    "pair": "iot_vs_smart_parking",
+    "graph_id": "An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+    "file": "mapping_An_AADL_Model_of_Smart_Home_System_MainControlRouter_MainControlRouter_impl_1_aaxl2.json",
+    "injected_ra_domain": "smart_parking",
+    "source_domain": "iot",
+    "predicted_mapping": {
+      "SYSTEM": "Business_Logic_Layer",
+      "ZIGBEE_DEVICE_CONTROLLER": "Business_Logic_Layer",
+      "IP_DEVICE_CONTROLLER": "Business_Logic_Layer",
+      "REMOTE_MSG_CONTROL": "Business_Logic_Layer",
+      "MAIN_CONTROLLER": "Business_Logic_Layer"
+    },
+    "total_nodes": 5,
+    "unmapped_count": 0,
+    "compliant": false,
+    "check_constraints_log": "1 constraint(s) have not been satisfied\nconstraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer",
+    "avg_prompt_cost": 916.9803921568628,
+    "total_llm_cost": 46766,
+    "execution_time_seconds": 73.456
+  },
+  {
+    "pair": "iot_vs_smart_parking",
+    "graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+    "file": "mapping_An_AADL_Model_of_Smart_Home_System_smart_home_system_smart_home_impl_1_aaxl2.json",
+    "injected_ra_domain": "smart_parking",
+    "source_domain": "iot",
+    "predicted_mapping": {
+      "ZIGBEE_DEVICES": "Security",
+      "IP_DEVICES": "Business_Logic_Layer",
+      "MAIN_CONTROL_ROUTER": "Business_Logic_Layer",
+      "ZIGBEE_DEVICE_CONTROLLER": "Business_Logic_Layer",
+      "IP_DEVICE_CONTROLLER": "Business_Logic_Layer",
+      "REMOTE_MSG_CONTROL": "Business_Logic_Layer",
+      "MAIN_CONTROLLER": "Business_Logic_Layer",
+      "REMOTE_SERVER": "Data_Management_Layer",
+      "CLIENT_CONTROLLER": "Presentation_Layer",
+      "ROUTER_CONTROLLER": "Business_Logic_Layer",
+      "CLIENTS": "Business_Logic_Layer",
+      "CLIENT_CONTROL_UNIT": "Business_Logic_Layer"
+    },
+    "total_nodes": 12,
+    "unmapped_count": 0,
+    "compliant": false,
+    "check_constraints_log": "1 constraint(s) have not been satisfied\nconstraint=relationType | component: Sequence {\"zigbee devices\"} does not respect the RA rules. Reasons: zigbee devices (mapped to Security) connects to zigbee device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Security to Business_Logic_Layer.",
+    "avg_prompt_cost": 934.900826446281,
+    "total_llm_cost": 113123,
+    "execution_time_seconds": 144.106
+  },
+  {
+    "pair": "iot_vs_smart_parking",
+    "graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+    "file": "mapping_DHsystem_Accounts_DHaccounts_impl_1_aaxl2.json",
+    "injected_ra_domain": "smart_parking",
+    "source_domain": "iot",
+    "predicted_mapping": {
+      "SYSTEM": "Security",
+      "Authentication": "Security",
+      "AccountSettings": "Security",
+      "AccessControl": "Security"
+    },
+    "total_nodes": 4,
+    "unmapped_count": 0,
+    "compliant": false,
+    "check_constraints_log": "1 constraint(s) have not been satisfied\nconstraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer, Business_Logic_Layer",
+    "avg_prompt_cost": 808.5,
+    "total_llm_cost": 12936,
+    "execution_time_seconds": 19.741
+  }
+]

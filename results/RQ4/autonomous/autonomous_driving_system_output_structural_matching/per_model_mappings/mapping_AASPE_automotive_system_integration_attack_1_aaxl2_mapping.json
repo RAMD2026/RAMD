@@ -1,0 +1,1364 @@
+{
+  "graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+  "ra_name": "Autonomous Driving System Reference Architecture",
+  "num_nodes": 19,
+  "num_edges": 34,
+  "evaluated_nodes": 19,
+  "correct_predictions": 3,
+  "accuracy": 0.15789473684210525,
+  "predictions": [
+    {
+      "node_id": "comp_cellular",
+      "graph_node_id": "cellular::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.cellular",
+      "node_name": "cellular",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.cellular",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.582215,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.582215
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.582215
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.582215
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.582215
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.582215
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 146,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 146,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 162,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 162,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_internet",
+      "graph_node_id": "internet::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.internet",
+      "node_name": "internet",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.internet",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.624124,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.624124
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.624124
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.624124
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.624124
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.624124
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 147,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 147,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 163,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 163,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_router_cel",
+      "graph_node_id": "router_cel::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.router",
+      "node_name": "router_cel",
+      "category": "device",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.router",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.633529,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.633529
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.633529
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.633529
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.633529
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.633529
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 148,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 148,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 164,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 164,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_car",
+      "graph_node_id": "car::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.car.cherokee",
+      "node_name": "car",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.car.cherokee",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.511,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.511
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.511
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.511
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.511
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.511
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 149,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 165,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_can_ihs",
+      "graph_node_id": "can_ihs::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "node_name": "can_ihs",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "predicted_ra_id": "comp.network",
+      "predicted_ra_name": "Internal_Networking_Interfaces",
+      "prediction_score": 0.66315,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.network",
+          "ra_name": "Internal_Networking_Interfaces",
+          "score": 0.66315
+        },
+        {
+          "ra_id": "comp.frameworks",
+          "ra_name": "Software_Frameworks_and_Standards",
+          "score": 0.66315
+        },
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.45875
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.45875
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.45875
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 57,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 150,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_can_c",
+      "graph_node_id": "can_c::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "node_name": "can_c",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "predicted_ra_id": "comp.network",
+      "predicted_ra_name": "Internal_Networking_Interfaces",
+      "prediction_score": 0.66315,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.network",
+          "ra_name": "Internal_Networking_Interfaces",
+          "score": 0.66315
+        },
+        {
+          "ra_id": "comp.frameworks",
+          "ra_name": "Software_Frameworks_and_Standards",
+          "score": 0.66315
+        },
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.45875
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.45875
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.45875
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 58,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 151,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 167,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_wifi",
+      "graph_node_id": "wifi::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.wifi",
+      "node_name": "wifi",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.wifi",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.64193,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.64193
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.64193
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.64193
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.64193
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.64193
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 59,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 59,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 152,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 152,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 168,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 168,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_radio",
+      "graph_node_id": "radio::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.radio",
+      "node_name": "radio",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.radio",
+      "predicted_ra_id": "comp.network",
+      "predicted_ra_name": "Internal_Networking_Interfaces",
+      "prediction_score": 0.668584,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.network",
+          "ra_name": "Internal_Networking_Interfaces",
+          "score": 0.668584
+        },
+        {
+          "ra_id": "comp.frameworks",
+          "ra_name": "Software_Frameworks_and_Standards",
+          "score": 0.668584
+        },
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.468668
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.468668
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.468668
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": true
+    },
+    {
+      "node_id": "comp_hvac",
+      "graph_node_id": "hvac::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "hvac",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.716392,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.716392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 61,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 154,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_amplifier",
+      "graph_node_id": "amplifier::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "amplifier",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.716392,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.716392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 62,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 155,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 171,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_bcm",
+      "graph_node_id": "bcm::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "bcm",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.716392,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.716392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 63,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 156,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 172,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_hsm",
+      "graph_node_id": "hsm::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "hsm",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.716392,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.716392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 64,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 173,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_abs",
+      "graph_node_id": "abs::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "abs",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.716392,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.716392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 65,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 65,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 158,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 158,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_acc",
+      "graph_node_id": "acc::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "acc",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.716392,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.716392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 66,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "ML_AI_DL_Algorithms",
+          "ra_id": "comp.ml",
+          "confidence": 1,
+          "source_row": 66,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 159,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "ML_AI_DL_Algorithms",
+          "ra_id": "comp.ml",
+          "confidence": 1,
+          "source_row": 159,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 175,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "ML_AI_DL_Algorithms",
+          "ra_id": "comp.ml",
+          "confidence": 1,
+          "source_row": 175,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_eps",
+      "graph_node_id": "eps::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "eps",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.716392,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.716392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 67,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 67,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 160,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 160,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 176,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 176,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_epb",
+      "graph_node_id": "epb::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "epb",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.716392,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.716392
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.716392
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 68,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 68,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 161,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 161,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 177,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 177,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_attacker_cel",
+      "graph_node_id": "attacker_cel::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.attacker",
+      "node_name": "attacker_cel",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.attacker",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.689025,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.689025
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.689025
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.689025
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.689025
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.689025
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 178,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_attacker_wifi",
+      "graph_node_id": "attacker_wifi::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.attacker",
+      "node_name": "attacker_wifi",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.attacker",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.676864,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.676864
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.676864
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.676864
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.676864
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.676864
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 179,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    },
+    {
+      "node_id": "comp_attacker_internet",
+      "graph_node_id": "attacker_internet::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.attacker",
+      "node_name": "attacker_internet",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.attacker",
+      "predicted_ra_id": "comp.sensors",
+      "predicted_ra_name": "Sensors",
+      "prediction_score": 0.676032,
+      "top_5_candidates": [
+        {
+          "ra_id": "comp.sensors",
+          "ra_name": "Sensors",
+          "score": 0.676032
+        },
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.676032
+        },
+        {
+          "ra_id": "comp.v2x",
+          "ra_name": "V2X_Cloud_Comms",
+          "score": 0.676032
+        },
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.676032
+        },
+        {
+          "ra_id": "comp.ml",
+          "ra_name": "ML_AI_DL_Algorithms",
+          "score": 0.676032
+        }
+      ],
+      "ground_truth": [
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 180,
+          "aadl_graph_id": "AASPE_automotive_system_integration_attack_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ],
+      "is_correct": false
+    }
+  ],
+  "runtime_seconds": 0.002289
+}

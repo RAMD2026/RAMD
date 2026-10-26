@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<architecturemodeling:ArchitectureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecturemodeling="http://it.sim.uni/architecturemodeling" xmi:id="arch_dhsystem_accounts_dhaccounts_impl_1" name="DHsystem_Accounts_DHaccounts_impl_1">
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_system" name="system" outgoing="conn_authentication_system conn_access_control_system" incoming="conn_authentication_system conn_access_control_system"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_authentication" name="authentication" outgoing="conn_authentication_system conn_account_settings_authentication" incoming="conn_authentication_system conn_account_settings_authentication"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_account_settings" name="account settings" outgoing="conn_account_settings_authentication conn_access_control_account_settings" incoming="conn_account_settings_authentication conn_access_control_account_settings"/>
+  <architectureelements xsi:type="architecturemodeling:Component" xmi:id="comp_access_control" name="access control" outgoing="conn_access_control_system conn_access_control_account_settings" incoming="conn_access_control_system conn_access_control_account_settings"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_authentication_system" name="authentication_system" source="comp_authentication" target="comp_system"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_access_control_system" name="access_control_system" source="comp_access_control" target="comp_system"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_account_settings_authentication" name="account_settings_authentication" source="comp_account_settings" target="comp_authentication"/>
+  <architectureelements xsi:type="architecturemodeling:Connector" xmi:id="conn_access_control_account_settings" name="access_control_account_settings" source="comp_access_control" target="comp_account_settings"/>
+</architecturemodeling:ArchitectureModel>

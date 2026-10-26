@@ -1,0 +1,9 @@
+config,config_label,scope,metric,metric_label,n,rho,p_value,p_adj_holm,effect_size
+ramd_accuracy,RAMD,pooled,num_nodes,Size (#nodes),64,-0.2824004530820302,0.02376479069362769,0.09505916277451076,weak
+ramd_accuracy,RAMD,pooled,density,Connectivity (density),64,-0.07586866387028025,0.5512776983010077,1.0,negligible
+ramd_accuracy,RAMD,pooled,hierarchy_max_depth,Hierarchy (max containment depth),64,-0.17892549308396016,0.157175032741142,0.47152509822342603,weak
+ramd_accuracy,RAMD,pooled,lma,Naming ambiguity (LMA),64,-0.04116673491776752,0.7467104421088111,1.0,negligible
+ramd_mk_accuracy,RAMD +MK,pooled,num_nodes,Size (#nodes),64,-0.46576230742057373,0.00010513757100915063,0.0004205502840366025,moderate
+ramd_mk_accuracy,RAMD +MK,pooled,density,Connectivity (density),64,0.19088684613715523,0.13080677802080157,0.26161355604160313,weak
+ramd_mk_accuracy,RAMD +MK,pooled,hierarchy_max_depth,Hierarchy (max containment depth),64,-0.21926250348689819,0.08172219627093281,0.24516658881279846,weak
+ramd_mk_accuracy,RAMD +MK,pooled,lma,Naming ambiguity (LMA),64,0.16430407107386633,0.19450619048401172,0.26161355604160313,weak

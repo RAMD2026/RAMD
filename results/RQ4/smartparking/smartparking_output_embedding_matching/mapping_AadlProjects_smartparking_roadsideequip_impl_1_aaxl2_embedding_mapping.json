@@ -1,0 +1,207 @@
+{
+  "graph_id": "AadlProjects_smartparking_roadsideequip_impl_1.aaxl2",
+  "source_file": "mapping_AadlProjects_smartparking_roadsideequip_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 6,
+  "num_correct": 3,
+  "average_score_for_model": 0.5,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::AadlProjects_smartparking_roadsideequip_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "personal_loca",
+        "vehicle_paymt_req",
+        "park_mgmt_appl_info",
+        "conn_vehicle_data",
+        "park_avail",
+        "veh_paymt_req",
+        "veh_paymt_update"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: personal loca, vehicle paymt req, park mgmt appl info, conn vehicle data, park avail, veh paymt req, veh paymt update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4631078839302063,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4631078839302063,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_rseparkmgmt",
+      "graph_node_id": "RSEparkmgmt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.RSEparkmgmt.impl",
+      "node_name": "RSEparkmgmt",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.RSEparkmgmt.impl",
+      "ports": [
+        "personal_loca",
+        "vehicle_paymt_req",
+        "conn_vehicle_data",
+        "park_avail",
+        "veh_paymt_req"
+      ],
+      "node_text_used": "Component name: RSEparkmgmt. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.RSEparkmgmt.impl. Ports: personal loca, vehicle paymt req, conn vehicle data, park avail, veh paymt req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4726720452308655,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4726720452308655,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehdata",
+      "graph_node_id": "vehdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehdata.impl",
+      "node_name": "vehdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehdata.impl",
+      "ports": [
+        "personal_loca",
+        "vehicle_paymt_req",
+        "veh_paymt_req"
+      ],
+      "node_text_used": "Component name: vehdata. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehdata.impl. Ports: personal loca, vehicle paymt req, veh paymt req.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4718118906021118,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4718118906021118,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_loc_identity",
+      "graph_node_id": "loc_identity::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.loc_identity.impl",
+      "node_name": "loc_identity",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.loc_identity.impl",
+      "ports": [
+        "personal_loca"
+      ],
+      "node_text_used": "Component name: loc identity. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.loc identity.impl. Ports: personal loca.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.42414164543151855,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.42414164543151855,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_veh_paymt",
+      "graph_node_id": "veh_paymt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.veh_paymt.impl",
+      "node_name": "veh_paymt",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.veh_paymt.impl",
+      "ports": [
+        "vehicle_paymt_req",
+        "veh_paymt_req"
+      ],
+      "node_text_used": "Component name: veh paymt. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.veh paymt.impl. Ports: vehicle paymt req, veh paymt req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.44316720962524414,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.44316720962524414,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_rsideparkcomm",
+      "graph_node_id": "Rsideparkcomm::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.Rsideparkcomm.impl",
+      "node_name": "Rsideparkcomm",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.Rsideparkcomm.impl",
+      "ports": [
+        "conn_vehicle_data",
+        "park_avail"
+      ],
+      "node_text_used": "Component name: Rsideparkcomm. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.Rsideparkcomm.impl. Ports: conn vehicle data, park avail.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.47621363401412964,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.47621363401412964,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    }
+  ]
+}

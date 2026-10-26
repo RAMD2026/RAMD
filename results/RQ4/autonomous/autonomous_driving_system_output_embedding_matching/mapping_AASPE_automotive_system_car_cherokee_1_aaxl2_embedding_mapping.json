@@ -1,0 +1,391 @@
+{
+  "graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+  "source_file": "mapping_AASPE_automotive_system_car_cherokee_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 13,
+  "num_correct": 3,
+  "average_score_for_model": 0.23076923076923078,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::AASPE_automotive_system_car_cherokee_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "cellular_access",
+        "wifi_access"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: cellular access, wifi access.",
+      "ground_truth_ra_names": [
+        "V2X_Cloud_Comms"
+      ],
+      "predicted_ra_name": "UI_UX_and_Infotainment",
+      "predicted_ra_id": "comp.uiux",
+      "predicted_score": 0.50075364112854,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.uiux",
+          "ra_name": "UI_UX_and_Infotainment",
+          "score": 0.50075364112854,
+          "ra_text": "RA component: UI UX and Infotainment. Tag: raelements. Incoming connectors: UI Middleware. Outgoing connectors: UI UX Services."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_can_ihs",
+      "graph_node_id": "can_ihs::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "node_name": "can_ihs",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "ports": [],
+      "node_text_used": "Component name: can ihs. Category: bus. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.can.",
+      "ground_truth_ra_names": [
+        "Internal_Networking_Interfaces",
+        "Internal_Networking_Interfaces",
+        "Internal_Networking_Interfaces"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.47037115693092346,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.47037115693092346,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_can_c",
+      "graph_node_id": "can_c::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "node_name": "can_c",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "ports": [],
+      "node_text_used": "Component name: can c. Category: bus. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.can.",
+      "ground_truth_ra_names": [
+        "Internal_Networking_Interfaces",
+        "Internal_Networking_Interfaces",
+        "Internal_Networking_Interfaces"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.4948759973049164,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.4948759973049164,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_wifi",
+      "graph_node_id": "wifi::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.wifi",
+      "node_name": "wifi",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.wifi",
+      "ports": [],
+      "node_text_used": "Component name: wifi. Category: bus. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.wifi.",
+      "ground_truth_ra_names": [
+        "Internal_Networking_Interfaces",
+        "V2X_Cloud_Comms",
+        "Internal_Networking_Interfaces",
+        "V2X_Cloud_Comms",
+        "Internal_Networking_Interfaces",
+        "V2X_Cloud_Comms"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.5630178451538086,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.5630178451538086,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_radio",
+      "graph_node_id": "radio::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.radio",
+      "node_name": "radio",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.radio",
+      "ports": [
+        "can_ihs_socket",
+        "can_c_socket",
+        "wifi_access",
+        "cellular_access"
+      ],
+      "node_text_used": "Component name: radio. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.radio. Ports: can ihs socket, can c socket, wifi access, cellular access.",
+      "ground_truth_ra_names": [
+        "UI_UX_and_Infotainment",
+        "V2X_Cloud_Comms",
+        "Internal_Networking_Interfaces",
+        "UI_UX_and_Infotainment",
+        "V2X_Cloud_Comms",
+        "Internal_Networking_Interfaces",
+        "UI_UX_and_Infotainment",
+        "V2X_Cloud_Comms",
+        "Internal_Networking_Interfaces"
+      ],
+      "predicted_ra_name": "Internal_Networking_Interfaces",
+      "predicted_ra_id": "comp.network",
+      "predicted_score": 0.5556855201721191,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.network",
+          "ra_name": "Internal_Networking_Interfaces",
+          "score": 0.5556855201721191,
+          "ra_text": "RA component: Internal_Networking_Interfaces. Tag: raelements. Incoming connectors: Sensor Data, Compute Interconnect, External Communications, Actuation Feedback, Middleware to Network Interfaces. Outgoing connectors: Network to Compute, Network to Actuators, Hardware Abstraction."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_hvac",
+      "graph_node_id": "hvac::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "hvac",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "node_text_used": "Component name: hvac. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.function. Ports: can socket.",
+      "ground_truth_ra_names": [
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment"
+      ],
+      "predicted_ra_name": "Real_time_and_Critical_Control_Software",
+      "predicted_ra_id": "comp.rtcontrol",
+      "predicted_score": 0.5252947211265564,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.rtcontrol",
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "score": 0.5252947211265564,
+          "ra_text": "RA component: Real time and Critical Control Software. Tag: raelements. Incoming connectors: Real-time Services. Outgoing connectors: Control Services."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_amplifier",
+      "graph_node_id": "amplifier::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "amplifier",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "node_text_used": "Component name: amplifier. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.function. Ports: can socket.",
+      "ground_truth_ra_names": [
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment",
+        "UI_UX_and_Infotainment"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.5152838230133057,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.5152838230133057,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_bcm",
+      "graph_node_id": "bcm::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "bcm",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "node_text_used": "Component name: bcm. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.function. Ports: can socket.",
+      "ground_truth_ra_names": [
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Processing_Unit",
+      "predicted_ra_id": "comp.processing",
+      "predicted_score": 0.5154704451560974,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.5154704451560974,
+          "ra_text": "RA component: Processing Unit. Tag: raelements. Incoming connectors: Network to Compute. Outgoing connectors: Compute Interconnect."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_hsm",
+      "graph_node_id": "hsm::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "hsm",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "node_text_used": "Component name: hsm. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.function. Ports: can socket.",
+      "ground_truth_ra_names": [
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.5423160195350647,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.5423160195350647,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_abs",
+      "graph_node_id": "abs::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "abs",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "node_text_used": "Component name: abs. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.function. Ports: can socket.",
+      "ground_truth_ra_names": [
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software",
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software",
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.574653685092926,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.574653685092926,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_acc",
+      "graph_node_id": "acc::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "acc",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "node_text_used": "Component name: acc. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.function. Ports: can socket.",
+      "ground_truth_ra_names": [
+        "Real_time_and_Critical_Control_Software",
+        "ML_AI_DL_Algorithms",
+        "Real_time_and_Critical_Control_Software",
+        "ML_AI_DL_Algorithms",
+        "Real_time_and_Critical_Control_Software",
+        "ML_AI_DL_Algorithms"
+      ],
+      "predicted_ra_name": "Mobile_Platform_Actuators",
+      "predicted_ra_id": "comp.mobileact",
+      "predicted_score": 0.5560862421989441,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.mobileact",
+          "ra_name": "Mobile_Platform_Actuators",
+          "score": 0.5560862421989441,
+          "ra_text": "RA component: Mobile Platform Actuators. Tag: raelements. Incoming connectors: Network to Actuators. Outgoing connectors: Actuation Feedback."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_eps",
+      "graph_node_id": "eps::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "eps",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "node_text_used": "Component name: eps. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.function. Ports: can socket.",
+      "ground_truth_ra_names": [
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software",
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software",
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Processing_Unit",
+      "predicted_ra_id": "comp.processing",
+      "predicted_score": 0.5198885202407837,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.processing",
+          "ra_name": "Processing_Unit",
+          "score": 0.5198885202407837,
+          "ra_text": "RA component: Processing Unit. Tag: raelements. Incoming connectors: Network to Compute. Outgoing connectors: Compute Interconnect."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_epb",
+      "graph_node_id": "epb::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "node_name": "epb",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "node_text_used": "Component name: epb. Category: system. Classifier: .. .. github AASPE edu.cmu.aaspe.examples car automotive-system.aadl#automotive system.function. Ports: can socket.",
+      "ground_truth_ra_names": [
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software",
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software",
+        "Mobile_Platform_Actuators",
+        "Real_time_and_Critical_Control_Software"
+      ],
+      "predicted_ra_name": "Real_time_and_Critical_Control_Software",
+      "predicted_ra_id": "comp.rtcontrol",
+      "predicted_score": 0.5108780264854431,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.rtcontrol",
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "score": 0.5108780264854431,
+          "ra_text": "RA component: Real time and Critical Control Software. Tag: raelements. Incoming connectors: Real-time Services. Outgoing connectors: Control Services."
+        }
+      ]
+    }
+  ]
+}

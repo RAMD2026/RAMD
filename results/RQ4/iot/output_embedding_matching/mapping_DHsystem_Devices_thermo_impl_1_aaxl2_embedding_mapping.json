@@ -1,0 +1,91 @@
+{
+  "graph_id": "DHsystem_Devices_thermo_impl_1.aaxl2",
+  "source_file": "mapping_DHsystem_Devices_thermo_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 3,
+  "num_correct": 2,
+  "average_score_for_model": 0.6666666666666666,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::DHsystem_Devices_thermo_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "dm_thermo"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: dm thermo.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "IoTIM",
+      "predicted_ra_id": "comp.iotim",
+      "predicted_score": 0.3175092339515686,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.iotim",
+          "ra_name": "IoTIM",
+          "score": 0.3175092339515686,
+          "ra_text": "RA component: IoTIM. Definition: Acts as an integration layer for sensors, actuators, devices, and applications. It receives data from devices, processes it, and forwards it to applications, enabling interoperability and unified management.. Tag: raelements. Incoming connectors: Application–IoTIM Communication. Outgoing connectors: IoTIM–Gateway Communication, Device–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_hvac",
+      "graph_node_id": "HVAC::../../github/DHsystem/Devices.aadl#Devices.hvac",
+      "node_name": "HVAC",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.hvac",
+      "ports": [
+        "hvac_ts"
+      ],
+      "node_text_used": "Component name: HVAC. Category: device. Classifier: .. .. github DHsystem Devices.aadl#Devices.hvac. Ports: hvac ts.",
+      "ground_truth_ra_names": [
+        "Actuator",
+        "Device",
+        "Sensor"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.4968003034591675,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.4968003034591675,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_thermostat_sensort",
+      "graph_node_id": "ThermostatSensort::../../github/DHsystem/Devices.aadl#Devices.thermoSensor",
+      "node_name": "ThermostatSensort",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Devices.aadl#Devices.thermoSensor",
+      "ports": [
+        "hvac_ts"
+      ],
+      "node_text_used": "Component name: ThermostatSensort. Category: device. Classifier: .. .. github DHsystem Devices.aadl#Devices.thermoSensor. Ports: hvac ts.",
+      "ground_truth_ra_names": [
+        "Sensor"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.4434833526611328,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.4434833526611328,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    }
+  ]
+}

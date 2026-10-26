@@ -1,0 +1,35 @@
+[
+  {
+    "thread": "__AVG_THREADS__",
+    "model": "chatgpt",
+    "option": 2,
+    "graph_id": "__ALL__",
+    "file": "__ALL__",
+    "total_score": null,
+    "avg_micro_score": 0.7215,
+    "avg_macro_score": 0.610241,
+    "avg_prompt_cost": 593.97245,
+    "total_llm_cost": 814804.603348,
+    "execution_time_seconds": 1770.0,
+    "config": {
+      "use_ra_descriptions": true,
+      "use_ra_structural_info": false,
+      "check_RA_constraints": true,
+      "same_mapping_patience": 3,
+      "fewshot_learning": false,
+      "recreate_mapping_with_llm": true,
+      "recreate_window": 10,
+      "break_after_recreate": true,
+      "use_chunking": false,
+      "chunk_size": 3,
+      "use_semantic_filter": true,
+      "semantic_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "semantic_top_k": 5,
+      "mapping_knowledge_csv_path": "mapping_data/iot_ra_component_mapping_labels.csv",
+      "mapping_knowledge_top_k": 3,
+      "mapping_knowledge_weight": 0.0,
+      "num_threads": 5,
+      "execution_mode": "sequential"
+    }
+  }
+]

@@ -1,0 +1,1376 @@
+{
+  "graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+  "ra_reference": {
+    "name": "Autonomous Driving System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.sensors",
+        "name": "Sensors",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.sensors-network",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.processing",
+        "name": "Processing_Unit",
+        "mandatory": true,
+        "incoming": "conn.network-processing",
+        "outgoing": "conn.processing-network",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.v2x",
+        "name": "V2X_Cloud_Comms",
+        "mandatory": false,
+        "incoming": null,
+        "outgoing": "conn.v2x-network",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.mobileact",
+        "name": "Mobile_Platform_Actuators",
+        "mandatory": true,
+        "incoming": "conn.network-mobileact",
+        "outgoing": "conn.mobileact-network",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.network",
+        "name": "Internal_Networking_Interfaces",
+        "mandatory": true,
+        "incoming": "conn.sensors-network conn.processing-network conn.v2x-network conn.mobileact-network conn.frameworks-network",
+        "outgoing": "conn.network-processing conn.network-mobileact conn.network-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.frameworks",
+        "name": "Software_Frameworks_and_Standards",
+        "mandatory": true,
+        "incoming": "conn.network-frameworks conn.ml-frameworks conn.datacollection-frameworks conn.uiux-frameworks conn.rtcontrol-frameworks",
+        "outgoing": "conn.frameworks-network conn.frameworks-ml conn.frameworks-datacollection conn.frameworks-uiux conn.frameworks-rtcontrol",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.ml",
+        "name": "ML_AI_DL_Algorithms",
+        "mandatory": true,
+        "incoming": "conn.frameworks-ml",
+        "outgoing": "conn.ml-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.datacollection",
+        "name": "Data_Collection",
+        "mandatory": true,
+        "incoming": "conn.frameworks-datacollection",
+        "outgoing": "conn.datacollection-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.uiux",
+        "name": "UI_UX_and_Infotainment",
+        "mandatory": false,
+        "incoming": "conn.frameworks-uiux",
+        "outgoing": "conn.uiux-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.rtcontrol",
+        "name": "Real_time_and_Critical_Control_Software",
+        "mandatory": true,
+        "incoming": "conn.frameworks-rtcontrol",
+        "outgoing": "conn.rtcontrol-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.sensors-network",
+        "name": "Sensor Data",
+        "source": "comp.sensors",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.processing-network",
+        "name": "Compute Interconnect",
+        "source": "comp.processing",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.v2x-network",
+        "name": "External Communications",
+        "source": "comp.v2x",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.mobileact-network",
+        "name": "Actuation Feedback",
+        "source": "comp.mobileact",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.network-processing",
+        "name": "Network to Compute",
+        "source": "comp.network",
+        "target": "comp.processing",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.network-mobileact",
+        "name": "Network to Actuators",
+        "source": "comp.network",
+        "target": "comp.mobileact",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-network",
+        "name": "Middleware to Network Interfaces",
+        "source": "comp.frameworks",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.network-frameworks",
+        "name": "Hardware Abstraction",
+        "source": "comp.network",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-ml",
+        "name": "ML Execution Support",
+        "source": "comp.frameworks",
+        "target": "comp.ml",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.ml-frameworks",
+        "name": "ML APIs",
+        "source": "comp.ml",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-datacollection",
+        "name": "Data APIs",
+        "source": "comp.frameworks",
+        "target": "comp.datacollection",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.datacollection-frameworks",
+        "name": "Data Collection Services",
+        "source": "comp.datacollection",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-uiux",
+        "name": "UI Middleware",
+        "source": "comp.frameworks",
+        "target": "comp.uiux",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.uiux-frameworks",
+        "name": "UI/UX Services",
+        "source": "comp.uiux",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-rtcontrol",
+        "name": "Real-time Services",
+        "source": "comp.frameworks",
+        "target": "comp.rtcontrol",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.rtcontrol-frameworks",
+        "name": "Control Services",
+        "source": "comp.rtcontrol",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_camera",
+      "graph_node_id": "camera::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.camera",
+      "name": "camera",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.camera",
+      "ports": [
+        "picture"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 0,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 17,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 39,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 69,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 86,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 108,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 130,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_radar1",
+      "graph_node_id": "radar1::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.radar1",
+      "name": "radar1",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.radar1",
+      "ports": [
+        "distance"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 18,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 40,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 70,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 87,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 109,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 131,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_radar2",
+      "graph_node_id": "radar2::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.radar2",
+      "name": "radar2",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.radar2",
+      "ports": [
+        "distance"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 2,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 19,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 41,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 71,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 88,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 110,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 132,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_traffic_lane_sensor",
+      "graph_node_id": "traffic_lane_sensor::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.traffic_lane_sensor",
+      "name": "traffic_lane_sensor",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.traffic_lane_sensor",
+      "ports": [
+        "lane_crossed"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 3,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 20,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 42,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 72,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 89,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 111,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 133,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_induction_speed_sensor",
+      "graph_node_id": "induction_speed_sensor::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.induction_speed_sensor",
+      "name": "induction_speed_sensor",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.induction_speed_sensor",
+      "ports": [
+        "speed"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 4,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 21,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 43,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 73,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 90,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 112,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 134,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_optical_speed_sensor",
+      "graph_node_id": "optical_speed_sensor::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.optical_speed_sensor",
+      "name": "optical_speed_sensor",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.optical_speed_sensor",
+      "ports": [
+        "speed"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 22,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 44,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 74,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 91,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 113,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 135,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_acceleration_pedal",
+      "graph_node_id": "acceleration_pedal::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.acceleration_pedal",
+      "name": "acceleration_pedal",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.acceleration_pedal",
+      "ports": [
+        "speed"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 6,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 23,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 45,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 75,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 92,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 114,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensors",
+          "ra_id": "comp.sensors",
+          "confidence": 1,
+          "source_row": 136,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_brake",
+      "graph_node_id": "brake::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.brake",
+      "name": "brake",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.brake",
+      "ports": [
+        "brake_cmd"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 7,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 24,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 46,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 76,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 93,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 115,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 137,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_accelerator",
+      "graph_node_id": "accelerator::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.accelerator",
+      "name": "accelerator",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.accelerator",
+      "ports": [
+        "accelerate_cmd"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 8,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 77,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 94,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 116,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_panel",
+      "graph_node_id": "panel::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.panel",
+      "name": "panel",
+      "category": "device",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/devices.aadl#devices.panel",
+      "ports": [
+        "current_speed",
+        "desired_speed"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 26,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 48,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 78,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 95,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 117,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 139,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_image_analysis",
+      "graph_node_id": "image_analysis::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/image_processing.aadl#image_processing.image_analysis.i",
+      "name": "image_analysis",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/image_processing.aadl#image_processing.image_analysis.i",
+      "ports": [
+        "picture",
+        "obstacle_detected"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "ML_AI_DL_Algorithms",
+          "ra_id": "comp.ml",
+          "confidence": 1,
+          "source_row": 140,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_distance_voter",
+      "graph_node_id": "distance_voter::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/distance_processing.aadl#distance_processing.distance_voter.i",
+      "name": "distance_voter",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/distance_processing.aadl#distance_processing.distance_voter.i",
+      "ports": [
+        "distance1",
+        "distance2",
+        "distance_result"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_overtaking_detection",
+      "graph_node_id": "overtaking_detection::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/overtaking_detection_processing.aadl#overtaking_detection_processing.overtaking_detection.i",
+      "name": "overtaking_detection",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/overtaking_detection_processing.aadl#overtaking_detection_processing.overtaking_detection.i",
+      "ports": [
+        "lane_change",
+        "overtaking_active"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "ML_AI_DL_Algorithms",
+          "ra_id": "comp.ml",
+          "confidence": 1,
+          "source_row": 142,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_speed_voter",
+      "graph_node_id": "speed_voter::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/speed_processing.aadl#speed_processing.speed_voter.i",
+      "name": "speed_voter",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/speed_processing.aadl#speed_processing.speed_voter.i",
+      "ports": [
+        "speed1",
+        "speed2",
+        "speed_result"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 143,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_panel_controller",
+      "graph_node_id": "panel_controller::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/panel_processing.aadl#panel_processing.panel_controller.i",
+      "name": "panel_controller",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/panel_processing.aadl#panel_processing.panel_controller.i",
+      "ports": [
+        "current_speed",
+        "desired_speed",
+        "current_speed_result",
+        "desired_speed_result"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 15,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 15,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 32,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 32,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 54,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 54,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 84,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 84,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 101,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 101,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 123,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 123,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 144,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 144,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_speed_controller",
+      "graph_node_id": "speed_controller::../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/brake_acceleration_processing.aadl#brake_acceleration_processing.speed_controller.i",
+      "name": "speed_controller",
+      "category": "process",
+      "classifier": "../../github/AADL-Self-driving-car/self-driving-car-osate/self-driving-car/case-study/software/brake_acceleration_processing.aadl#brake_acceleration_processing.speed_controller.i",
+      "ports": [
+        "obstacle_detected",
+        "current_distance",
+        "overtaking_active",
+        "current_speed",
+        "desired_speed",
+        "brake_cmd",
+        "accelerate_cmd"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 16,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 33,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 55,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 85,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 102,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "AADL-Self-driving-car_integration_integration_functional_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_camera",
+      "target": "comp_image_analysis",
+      "type": "connection",
+      "src_port": "picture",
+      "dst_port": "picture",
+      "raw": {
+        "source": "//@componentInstance.0/@featureInstance.0",
+        "destination": "//@componentInstance.10/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_radar1",
+      "target": "comp_distance_voter",
+      "type": "connection",
+      "src_port": "distance",
+      "dst_port": "distance1",
+      "raw": {
+        "source": "//@componentInstance.1/@featureInstance.0",
+        "destination": "//@componentInstance.11/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_radar2",
+      "target": "comp_distance_voter",
+      "type": "connection",
+      "src_port": "distance",
+      "dst_port": "distance2",
+      "raw": {
+        "source": "//@componentInstance.2/@featureInstance.0",
+        "destination": "//@componentInstance.11/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_traffic_lane_sensor",
+      "target": "comp_overtaking_detection",
+      "type": "connection",
+      "src_port": "lane_crossed",
+      "dst_port": "lane_change",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.0",
+        "destination": "//@componentInstance.12/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_induction_speed_sensor",
+      "target": "comp_speed_voter",
+      "type": "connection",
+      "src_port": "speed",
+      "dst_port": "speed1",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.0",
+        "destination": "//@componentInstance.13/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_optical_speed_sensor",
+      "target": "comp_speed_voter",
+      "type": "connection",
+      "src_port": "speed",
+      "dst_port": "speed2",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.0",
+        "destination": "//@componentInstance.13/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_acceleration_pedal",
+      "target": "comp_panel_controller",
+      "type": "connection",
+      "src_port": "speed",
+      "dst_port": "desired_speed",
+      "raw": {
+        "source": "//@componentInstance.6/@featureInstance.0",
+        "destination": "//@componentInstance.14/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_acceleration_pedal",
+      "target": "comp_speed_controller",
+      "type": "connection",
+      "src_port": "speed",
+      "dst_port": "desired_speed",
+      "raw": {
+        "source": "//@componentInstance.6/@featureInstance.0",
+        "destination": "//@componentInstance.15/@featureInstance.4"
+      }
+    },
+    {
+      "source": "comp_image_analysis",
+      "target": "comp_speed_controller",
+      "type": "connection",
+      "src_port": "obstacle_detected",
+      "dst_port": "obstacle_detected",
+      "raw": {
+        "source": "//@componentInstance.10/@featureInstance.1",
+        "destination": "//@componentInstance.15/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_distance_voter",
+      "target": "comp_speed_controller",
+      "type": "connection",
+      "src_port": "distance_result",
+      "dst_port": "current_distance",
+      "raw": {
+        "source": "//@componentInstance.11/@featureInstance.2",
+        "destination": "//@componentInstance.15/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_overtaking_detection",
+      "target": "comp_speed_controller",
+      "type": "connection",
+      "src_port": "overtaking_active",
+      "dst_port": "overtaking_active",
+      "raw": {
+        "source": "//@componentInstance.12/@featureInstance.1",
+        "destination": "//@componentInstance.15/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_speed_voter",
+      "target": "comp_speed_controller",
+      "type": "connection",
+      "src_port": "speed_result",
+      "dst_port": "current_speed",
+      "raw": {
+        "source": "//@componentInstance.13/@featureInstance.2",
+        "destination": "//@componentInstance.15/@featureInstance.3"
+      }
+    },
+    {
+      "source": "comp_speed_voter",
+      "target": "comp_panel_controller",
+      "type": "connection",
+      "src_port": "speed_result",
+      "dst_port": "current_speed",
+      "raw": {
+        "source": "//@componentInstance.13/@featureInstance.2",
+        "destination": "//@componentInstance.14/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_panel_controller",
+      "target": "comp_panel",
+      "type": "connection",
+      "src_port": "desired_speed_result",
+      "dst_port": "desired_speed",
+      "raw": {
+        "source": "//@componentInstance.14/@featureInstance.3",
+        "destination": "//@componentInstance.9/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_speed_controller",
+      "target": "comp_brake",
+      "type": "connection",
+      "src_port": "brake_cmd",
+      "dst_port": "brake_cmd",
+      "raw": {
+        "source": "//@componentInstance.15/@featureInstance.5",
+        "destination": "//@componentInstance.7/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_speed_controller",
+      "target": "comp_accelerator",
+      "type": "connection",
+      "src_port": "accelerate_cmd",
+      "dst_port": "accelerate_cmd",
+      "raw": {
+        "source": "//@componentInstance.15/@featureInstance.6",
+        "destination": "//@componentInstance.8/@featureInstance.0"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SELF_DRIVING_CAR_graphs.json",
+    "source_ra_grammar": "autonomous_driving_system.gramm",
+    "source_mapping_labels": "all_SELF_DRIVING_CAR_connection_components_with_ra_component.csv",
+    "enable_global_fallback": true
+  }
+}

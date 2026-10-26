@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_507d670626884191968979cde88bf4d5">
+  <relations xmi:id="_ed280becf62047678018abfa27dbf75f">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//UI_UX_and_Infotainment"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_system"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_radio"/>
+  </relations>
+  <relations xmi:id="_41612559e7cf48d9a6dcaf2bf64f858d">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Internal_Networking_Interfaces"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_can_ihs"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_can_c"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_wifi"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_bcm"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_eps"/>
+  </relations>
+  <relations xmi:id="_fa205508c14b4c2ba895d4307e830cb8">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Sensors"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_hvac"/>
+  </relations>
+  <relations xmi:id="_422a8de3dcc44c549554704cff00362e">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Mobile_Platform_Actuators"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_amplifier"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_epb"/>
+  </relations>
+  <relations xmi:id="_f38a07a114e44b88ae9bb66e62392f1d">
+    <RAcomp href="../referencearchitectures/autonomous_driving_system.ecore#//Real_time_and_Critical_Control_Software"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_hsm"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_abs"/>
+    <component href="../architectures/AASPE_automotive_system_car_cherokee_1.model#comp_acc"/>
+  </relations>
+</ecore:Implementation_model>

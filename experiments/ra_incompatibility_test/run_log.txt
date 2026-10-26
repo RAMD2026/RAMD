@@ -1,0 +1,196 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[iot_vs_smart_parking] Processing mapping_An_AADL_Model_of_Smart_Home_System_MainControlRouter_MainControlRouter_impl_1_aaxl2.json ...
+current mapping:  {'comp_system': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer
+current mapping:  {'comp_system': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.presentation', 'comp_remote_msg_control': 'comp.presentation', 'comp_main_controller': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"system", "zigbee device controller", "main controller"} does not respect the RA rules. Reasons: main controller (mapped to Business_Logic_Layer) connects to remote msg control (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer.
+current mapping:  {'comp_system': 'comp.data', 'comp_zigbee_device_controller': 'comp.security', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.data'}
+2 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"system", "main controller"} does not respect the RA rules. Reasons: main controller (mapped to Data_Management_Layer) connects to remote msg control (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer
+current mapping:  {'comp_system': 'comp.presentation', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.presentation', 'comp_remote_msg_control': 'comp.presentation', 'comp_main_controller': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee device controller", "main controller"} does not respect the RA rules. Reasons: main controller (mapped to Business_Logic_Layer) connects to remote msg control (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer.
+current mapping:  {'comp_system': 'comp.business', 'comp_zigbee_device_controller': 'comp.security', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.data'}
+2 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"main controller"} does not respect the RA rules. Reasons: main controller (mapped to Data_Management_Layer) connects to remote msg control (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer
+current mapping:  {'comp_system': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.presentation', 'comp_remote_msg_control': 'comp.presentation', 'comp_main_controller': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"system", "zigbee device controller", "main controller"} does not respect the RA rules. Reasons: main controller (mapped to Business_Logic_Layer) connects to remote msg control (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer.
+current mapping:  {'comp_system': 'comp.data', 'comp_zigbee_device_controller': 'comp.data', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.data'}
+2 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"system", "zigbee device controller", "main controller"} does not respect the RA rules. Reasons: main controller (mapped to Data_Management_Layer) connects to remote msg control (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer
+current mapping:  {'comp_system': 'comp.presentation', 'comp_zigbee_device_controller': 'comp.presentation', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"ip device controller", "remote msg control", "main controller"} does not respect the RA rules. Reasons: ip device controller (mapped to Business_Logic_Layer) connects to system (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer. || remote msg control (mapped to Business_Logic_Layer) connects to system (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer. || main controller (mapped to Business_Logic_Layer) connects to zigbee device controller (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer.
+current mapping:  {'comp_system': 'comp.business', 'comp_zigbee_device_controller': 'comp.presentation', 'comp_ip_device_controller': 'comp.presentation', 'comp_remote_msg_control': 'comp.presentation', 'comp_main_controller': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"system", "main controller"} does not respect the RA rules. Reasons: system (mapped to Business_Logic_Layer) connects to zigbee device controller (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer. || main controller (mapped to Business_Logic_Layer) connects to zigbee device controller (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer. || main controller (mapped to Business_Logic_Layer) connects to remote msg control (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer.
+current mapping:  {'comp_system': 'comp.data', 'comp_zigbee_device_controller': 'comp.presentation', 'comp_ip_device_controller': 'comp.presentation', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business'}
+2 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"main controller", "system"} does not respect the RA rules. Reasons: main controller (mapped to Data_Management_Layer) connects to remote msg control (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer
+[iot_vs_smart_parking] mapping_An_AADL_Model_of_Smart_Home_System_MainControlRouter_MainControlRouter_impl_1_aaxl2.json: compliant=False, unmapped=0/5, time=73.5s
+[iot_vs_smart_parking] Processing mapping_An_AADL_Model_of_Smart_Home_System_smart_home_system_smart_home_impl_1_aaxl2.json ...
+current mapping:  {'comp_zigbee_devices': 'comp.security', 'comp_ip_devices': 'comp.data', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.presentation'}
+3 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee devices"} does not respect the RA rules. Reasons: zigbee devices (mapped to Security) connects to zigbee device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Security to Business_Logic_Layer.
+constraint=relationType | component: Sequence {"ip devices", "remote server"} does not respect the RA rules. Reasons: ip devices (mapped to Data_Management_Layer) connects to ip device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+constraint=relationType | component: Sequence {"main control router", "zigbee device controller", "ip device controller", "remote msg control", "main controller", "client controller", "router controller"} does not respect the RA rules. Reasons: client controller (mapped to Business_Logic_Layer) connects to client control unit (mapped to Presentation_Layer), but in the RA there is no allowed connection from Business_Logic_Layer to Presentation_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.security', 'comp_ip_devices': 'comp.business', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.presentation', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.business', 'comp_client_control_unit': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee devices"} does not respect the RA rules. Reasons: zigbee devices (mapped to Security) connects to zigbee device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Security to Business_Logic_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.business', 'comp_ip_devices': 'comp.data', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"ip devices", "remote server"} does not respect the RA rules. Reasons: ip devices (mapped to Data_Management_Layer) connects to ip device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.security', 'comp_ip_devices': 'comp.presentation', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.data', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.business'}
+3 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee devices"} does not respect the RA rules. Reasons: zigbee devices (mapped to Security) connects to zigbee device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Security to Business_Logic_Layer.
+constraint=relationType | component: Sequence {"ip devices", "clients"} does not respect the RA rules. Reasons: ip devices (mapped to Presentation_Layer) connects to ip device controller (mapped to Data_Management_Layer), but in the RA there is no allowed connection from Presentation_Layer to Data_Management_Layer.
+constraint=relationType | component: Sequence {"ip device controller", "remote server"} does not respect the RA rules. Reasons: ip device controller (mapped to Data_Management_Layer) connects to main controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.security', 'comp_ip_devices': 'comp.presentation', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee devices"} does not respect the RA rules. Reasons: zigbee devices (mapped to Security) connects to zigbee device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Security to Business_Logic_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.business', 'comp_ip_devices': 'comp.data', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"ip devices", "remote server"} does not respect the RA rules. Reasons: ip devices (mapped to Data_Management_Layer) connects to ip device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.security', 'comp_ip_devices': 'comp.presentation', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.data', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.business'}
+3 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee devices"} does not respect the RA rules. Reasons: zigbee devices (mapped to Security) connects to zigbee device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Security to Business_Logic_Layer.
+constraint=relationType | component: Sequence {"ip devices", "clients"} does not respect the RA rules. Reasons: ip devices (mapped to Presentation_Layer) connects to ip device controller (mapped to Data_Management_Layer), but in the RA there is no allowed connection from Presentation_Layer to Data_Management_Layer.
+constraint=relationType | component: Sequence {"ip device controller", "remote server"} does not respect the RA rules. Reasons: ip device controller (mapped to Data_Management_Layer) connects to main controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.security', 'comp_ip_devices': 'comp.presentation', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee devices"} does not respect the RA rules. Reasons: zigbee devices (mapped to Security) connects to zigbee device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Security to Business_Logic_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.business', 'comp_ip_devices': 'comp.data', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.business', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.business'}
+1 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"ip devices", "remote server"} does not respect the RA rules. Reasons: ip devices (mapped to Data_Management_Layer) connects to ip device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+current mapping:  {'comp_zigbee_devices': 'comp.security', 'comp_ip_devices': 'comp.presentation', 'comp_main_control_router': 'comp.business', 'comp_zigbee_device_controller': 'comp.business', 'comp_ip_device_controller': 'comp.data', 'comp_remote_msg_control': 'comp.business', 'comp_main_controller': 'comp.business', 'comp_remote_server': 'comp.data', 'comp_client_controller': 'comp.business', 'comp_router_controller': 'comp.business', 'comp_clients': 'comp.presentation', 'comp_client_control_unit': 'comp.business'}
+3 constraint(s) have not been satisfied
+constraint=relationType | component: Sequence {"zigbee devices"} does not respect the RA rules. Reasons: zigbee devices (mapped to Security) connects to zigbee device controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Security to Business_Logic_Layer.
+constraint=relationType | component: Sequence {"ip devices", "clients"} does not respect the RA rules. Reasons: ip devices (mapped to Presentation_Layer) connects to ip device controller (mapped to Data_Management_Layer), but in the RA there is no allowed connection from Presentation_Layer to Data_Management_Layer.
+constraint=relationType | component: Sequence {"remote server", "ip device controller"} does not respect the RA rules. Reasons: ip device controller (mapped to Data_Management_Layer) connects to main controller (mapped to Business_Logic_Layer), but in the RA there is no allowed connection from Data_Management_Layer to Business_Logic_Layer.
+[iot_vs_smart_parking] mapping_An_AADL_Model_of_Smart_Home_System_smart_home_system_smart_home_impl_1_aaxl2.json: compliant=False, unmapped=0/12, time=144.1s
+[iot_vs_smart_parking] Processing mapping_DHsystem_Accounts_DHaccounts_impl_1_aaxl2.json ...
+current mapping:  {'comp_system': 'comp.security', 'comp_authentication': 'comp.security', 'comp_account_settings': 'comp.security', 'comp_access_control': 'comp.security'}
+1 constraint(s) have not been satisfied
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer, Business_Logic_Layer
+current mapping:  {'comp_system': 'comp.security', 'comp_authentication': 'comp.security', 'comp_account_settings': 'comp.security', 'comp_access_control': 'comp.security'}
+1 constraint(s) have not been satisfied
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer, Business_Logic_Layer
+current mapping:  {'comp_system': 'comp.security', 'comp_authentication': 'comp.security', 'comp_account_settings': 'comp.security', 'comp_access_control': 'comp.security'}
+1 constraint(s) have not been satisfied
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer, Business_Logic_Layer
+current mapping:  {'comp_system': 'comp.security', 'comp_authentication': 'comp.security', 'comp_account_settings': 'comp.security', 'comp_access_control': 'comp.security'}
+1 constraint(s) have not been satisfied
+constraint=MandatoryComponents | Not all the mandatory components in the RA are used. Missing: Presentation_Layer, Business_Logic_Layer
+[iot_vs_smart_parking] mapping_DHsystem_Accounts_DHaccounts_impl_1_aaxl2.json: compliant=False, unmapped=0/4, time=19.7s
+[iot_vs_smart_parking] moved 3 weaving model file(s) into experiments/ra_incompatibility_test/results/iot_vs_smart_parking/weaving_models
+Done. Per-file results under: experiments/ra_incompatibility_test/results

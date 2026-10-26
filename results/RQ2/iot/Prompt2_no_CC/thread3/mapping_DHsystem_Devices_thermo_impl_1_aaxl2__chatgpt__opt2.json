@@ -1,0 +1,43 @@
+{
+  "thread": 3,
+  "model": "chatgpt",
+  "option": 2,
+  "graph_id": "DHsystem_Devices_thermo_impl_1.aaxl2",
+  "file": "mapping_DHsystem_Devices_thermo_impl_1_aaxl2.json",
+  "predicted_mapping": {
+    "system": "Device",
+    "hvac": "Device",
+    "thermostat sensort": "Sensor"
+  },
+  "total_score": 2.0,
+  "avg_score": 0.666667,
+  "per_node_scores": {
+    "system": 0.0,
+    "hvac": 1.0,
+    "thermostat sensort": 1.0
+  },
+  "check_constraints_log": "",
+  "avg_prompt_cost": 834.001754,
+  "total_llm_cost": 10008,
+  "execution_time_seconds": 13.522168,
+  "config": {
+    "use_ra_descriptions": true,
+    "use_ra_structural_info": false,
+    "check_RA_constraints": false,
+    "same_mapping_patience": 3,
+    "fewshot_learning": true,
+    "recreate_mapping_with_llm": true,
+    "recreate_window": 10,
+    "break_after_recreate": true,
+    "use_chunking": false,
+    "chunk_size": 3,
+    "use_semantic_filter": true,
+    "semantic_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "semantic_top_k": 5,
+    "mapping_knowledge_csv_path": "mapping_data/iot_ra_component_mapping_labels.csv",
+    "mapping_knowledge_top_k": 3,
+    "mapping_knowledge_weight": 0.0,
+    "num_threads": 5,
+    "execution_mode": "sequential"
+  }
+}

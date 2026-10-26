@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_2871f1b61250481eaa001faf2ee75591">
+  <relations xmi:id="_08dc332119d8497687b58c2ce94c750f">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_ip_device_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_remote_msg_control"/>
+  </relations>
+  <relations xmi:id="_c3363e5d777d4e02b00eb3108cd07156">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_main_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_system"/>
+  </relations>
+  <relations xmi:id="_3b27e53dd8e6496a93bd72ee8f8bfa3d">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_MainControlRouter_MainControlRouter_impl_1.model#comp_zigbee_device_controller"/>
+  </relations>
+</ecore:Implementation_model>

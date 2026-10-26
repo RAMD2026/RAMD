@@ -1,0 +1,1548 @@
+{
+  "graph_id": "AadlProjects_smartparking_SmartParkingSystem_impl_1.aaxl2",
+  "source_file": "mapping_AadlProjects_smartparking_SmartParkingSystem_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 54,
+  "num_correct": 22,
+  "average_score_for_model": 0.4074074074074074,
+  "predictions": [
+    {
+      "node_id": "comp_parkmgmtsys",
+      "graph_node_id": "parkmgmtsys::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkmgmtsys.impl",
+      "node_name": "parkmgmtsys",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkmgmtsys.impl",
+      "ports": [
+        "vehicle_paymt_req",
+        "conn_vehicle_data",
+        "parking_info",
+        "park_mgmt_appl_info",
+        "driver_info"
+      ],
+      "node_text_used": "Component name: parkmgmtsys. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.parkmgmtsys.impl. Ports: vehicle paymt req, conn vehicle data, parking info, park mgmt appl info, driver info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4331669509410858,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4331669509410858,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_parkmgmt",
+      "graph_node_id": "parkmgmt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkmgmt.impl",
+      "node_name": "parkmgmt",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkmgmt.impl",
+      "ports": [
+        "occupancy",
+        "park_spaces"
+      ],
+      "node_text_used": "Component name: parkmgmt. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.parkmgmt.impl. Ports: occupancy, park spaces.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.3858071565628052,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.3858071565628052,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_dynparklot",
+      "graph_node_id": "dynparklot::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.dynparklot.impl",
+      "node_name": "dynparklot",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.dynparklot.impl",
+      "ports": [
+        "occupancy"
+      ],
+      "node_text_used": "Component name: dynparklot. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.dynparklot.impl. Ports: occupancy.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.3655623197555542,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.3655623197555542,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_park_lot_occupancy",
+      "graph_node_id": "park_lot_occupancy::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.park_lot_occupancy.impl",
+      "node_name": "park_lot_occupancy",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.park_lot_occupancy.impl",
+      "ports": [
+        "park_occupancy"
+      ],
+      "node_text_used": "Component name: park lot occupancy. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.park lot occupancy.impl. Ports: park occupancy.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.37678253650665283,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.37678253650665283,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_detectveh",
+      "graph_node_id": "detectveh::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.detectveh.impl",
+      "node_name": "detectveh",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.detectveh.impl",
+      "ports": [],
+      "node_text_used": "Component name: detectveh. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.detectveh.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.3432616889476776,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.3432616889476776,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_manageparkreserv",
+      "graph_node_id": "manageparkreserv::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.manageparkreserv.impl",
+      "node_name": "manageparkreserv",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.manageparkreserv.impl",
+      "ports": [
+        "park_spaces"
+      ],
+      "node_text_used": "Component name: manageparkreserv. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.manageparkreserv.impl. Ports: park spaces.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.3994305729866028,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.3994305729866028,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_park_lot_spaces",
+      "graph_node_id": "park_lot_spaces::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.park_lot_spaces.impl",
+      "node_name": "park_lot_spaces",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.park_lot_spaces.impl",
+      "ports": [
+        "spaces"
+      ],
+      "node_text_used": "Component name: park lot spaces. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.park lot spaces.impl. Ports: spaces.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.3799492120742798,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.3799492120742798,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_parkelecpaymt",
+      "graph_node_id": "parkelecpaymt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkelecpaymt.impl",
+      "node_name": "parkelecpaymt",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkelecpaymt.impl",
+      "ports": [
+        "pay_req",
+        "capacity_update"
+      ],
+      "node_text_used": "Component name: parkelecpaymt. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.parkelecpaymt.impl. Ports: pay req, capacity update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4079515337944031,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4079515337944031,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_billdriver",
+      "graph_node_id": "billdriver::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.billdriver.impl",
+      "node_name": "billdriver",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.billdriver.impl",
+      "ports": [
+        "pay_req"
+      ],
+      "node_text_used": "Component name: billdriver. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.billdriver.impl. Ports: pay req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4485776424407959,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4485776424407959,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_parking_cost",
+      "graph_node_id": "parking_cost::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parking_cost.impl",
+      "node_name": "parking_cost",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parking_cost.impl",
+      "ports": [
+        "pay_req"
+      ],
+      "node_text_used": "Component name: parking cost. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.parking cost.impl. Ports: pay req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4365414083003998,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4365414083003998,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_updateparkdata",
+      "graph_node_id": "updateparkdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.updateparkdata.impl",
+      "node_name": "updateparkdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.updateparkdata.impl",
+      "ports": [
+        "capacity_update"
+      ],
+      "node_text_used": "Component name: updateparkdata. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.updateparkdata.impl. Ports: capacity update.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.40398645401000977,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.40398645401000977,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_spaces",
+      "graph_node_id": "spaces::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.spaces.impl",
+      "node_name": "spaces",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.spaces.impl",
+      "ports": [
+        "capacity_update"
+      ],
+      "node_text_used": "Component name: spaces. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.spaces.impl. Ports: capacity update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4017099440097809,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4017099440097809,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_roadsideequip",
+      "graph_node_id": "roadsideequip::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.roadsideequip.impl",
+      "node_name": "roadsideequip",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.roadsideequip.impl",
+      "ports": [
+        "personal_loca",
+        "vehicle_paymt_req",
+        "park_mgmt_appl_info",
+        "conn_vehicle_data",
+        "park_avail",
+        "veh_paymt_req",
+        "veh_paymt_update"
+      ],
+      "node_text_used": "Component name: roadsideequip. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.roadsideequip.impl. Ports: personal loca, vehicle paymt req, park mgmt appl info, conn vehicle data, park avail, veh paymt req, veh paymt update.",
+      "ground_truth_ra_names": [
+        "Presentation_Layer",
+        "Presentation_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.45115548372268677,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.45115548372268677,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_rseparkmgmt",
+      "graph_node_id": "RSEparkmgmt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.RSEparkmgmt.impl",
+      "node_name": "RSEparkmgmt",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.RSEparkmgmt.impl",
+      "ports": [
+        "personal_loca",
+        "vehicle_paymt_req",
+        "conn_vehicle_data",
+        "park_avail",
+        "veh_paymt_req"
+      ],
+      "node_text_used": "Component name: RSEparkmgmt. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.RSEparkmgmt.impl. Ports: personal loca, vehicle paymt req, conn vehicle data, park avail, veh paymt req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4726720452308655,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4726720452308655,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehdata",
+      "graph_node_id": "vehdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehdata.impl",
+      "node_name": "vehdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehdata.impl",
+      "ports": [
+        "personal_loca",
+        "vehicle_paymt_req",
+        "veh_paymt_req"
+      ],
+      "node_text_used": "Component name: vehdata. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehdata.impl. Ports: personal loca, vehicle paymt req, veh paymt req.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4718118906021118,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4718118906021118,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_loc_identity",
+      "graph_node_id": "loc_identity::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.loc_identity.impl",
+      "node_name": "loc_identity",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.loc_identity.impl",
+      "ports": [
+        "personal_loca"
+      ],
+      "node_text_used": "Component name: loc identity. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.loc identity.impl. Ports: personal loca.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.42414164543151855,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.42414164543151855,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_veh_paymt",
+      "graph_node_id": "veh_paymt::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.veh_paymt.impl",
+      "node_name": "veh_paymt",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.veh_paymt.impl",
+      "ports": [
+        "vehicle_paymt_req",
+        "veh_paymt_req"
+      ],
+      "node_text_used": "Component name: veh paymt. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.veh paymt.impl. Ports: vehicle paymt req, veh paymt req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.44316720962524414,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.44316720962524414,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_rsideparkcomm",
+      "graph_node_id": "Rsideparkcomm::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.Rsideparkcomm.impl",
+      "node_name": "Rsideparkcomm",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.Rsideparkcomm.impl",
+      "ports": [
+        "conn_vehicle_data",
+        "park_avail"
+      ],
+      "node_text_used": "Component name: Rsideparkcomm. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.Rsideparkcomm.impl. Ports: conn vehicle data, park avail.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.47621363401412964,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.47621363401412964,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_transinfoctr",
+      "graph_node_id": "transinfoctr::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.transinfoctr.impl",
+      "node_name": "transinfoctr",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.transinfoctr.impl",
+      "ports": [
+        "traveler_req",
+        "traveler_src_update",
+        "parking_info",
+        "interactv_travle_info"
+      ],
+      "node_text_used": "Component name: transinfoctr. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.transinfoctr.impl. Ports: traveler req, traveler src update, parking info, interactv travle info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.45051291584968567,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.45051291584968567,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_ticinteractv_trav_info",
+      "graph_node_id": "TICInteractvTravInfo::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.TICInteractvTravInfo.impl",
+      "node_name": "TICInteractvTravInfo",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.TICInteractvTravInfo.impl",
+      "ports": [
+        "traveler_req",
+        "interactv_travle_info"
+      ],
+      "node_text_used": "Component name: TICInteractvTravInfo. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.TICInteractvTravInfo.impl. Ports: traveler req, interactv travle info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.43351057171821594,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.43351057171821594,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_trav_profiles",
+      "graph_node_id": "trav_profiles::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_profiles.impl",
+      "node_name": "trav_profiles",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_profiles.impl",
+      "ports": [
+        "traveler_req",
+        "interactv_travle_info"
+      ],
+      "node_text_used": "Component name: trav profiles. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.trav profiles.impl. Ports: traveler req, interactv travle info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.45899224281311035,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.45899224281311035,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_trav_info",
+      "graph_node_id": "trav_info::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_info.impl",
+      "node_name": "trav_info",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trav_info.impl",
+      "ports": [
+        "traveler_req",
+        "interactv_travle_info"
+      ],
+      "node_text_used": "Component name: trav info. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.trav info.impl. Ports: traveler req, interactv travle info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4546887278556824,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4546887278556824,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_ticdata_coll",
+      "graph_node_id": "TICDataColl::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.TICDataColl.impl",
+      "node_name": "TICDataColl",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.TICDataColl.impl",
+      "ports": [
+        "traveler_src_update"
+      ],
+      "node_text_used": "Component name: TICDataColl. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.TICDataColl.impl. Ports: traveler src update.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4367496967315674,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4367496967315674,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_misctravinfo",
+      "graph_node_id": "misctravinfo::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.misctravinfo.impl",
+      "node_name": "misctravinfo",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.misctravinfo.impl",
+      "ports": [
+        "traveler_src_update"
+      ],
+      "node_text_used": "Component name: misctravinfo. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.misctravinfo.impl. Ports: traveler src update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.33198362588882446,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.33198362588882446,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_traff_data_trav",
+      "graph_node_id": "traff_data_trav::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.traff_data_trav.impl",
+      "node_name": "traff_data_trav",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.traff_data_trav.impl",
+      "ports": [
+        "traveler_src_update"
+      ],
+      "node_text_used": "Component name: traff data trav. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.traff data trav.impl. Ports: traveler src update.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.43851983547210693,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.43851983547210693,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_trafficdata",
+      "graph_node_id": "trafficdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trafficdata.impl",
+      "node_name": "trafficdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.trafficdata.impl",
+      "ports": [],
+      "node_text_used": "Component name: trafficdata. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.trafficdata.impl.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4413284659385681,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4413284659385681,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_pricedata",
+      "graph_node_id": "pricedata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.pricedata.impl",
+      "node_name": "pricedata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.pricedata.impl",
+      "ports": [],
+      "node_text_used": "Component name: pricedata. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.pricedata.impl.",
+      "ground_truth_ra_names": [
+        "Data_Management_Layer",
+        "Data_Management_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.46411973237991333,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.46411973237991333,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehicleobe",
+      "graph_node_id": "vehicleobe::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehicleobe.impl",
+      "node_name": "vehicleobe",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehicleobe.impl",
+      "ports": [
+        "traveler_info",
+        "driver_ip",
+        "park_avail",
+        "pers_info",
+        "vehicle_paymt_req",
+        "vehicle_paymt_update",
+        "vehicle_loca_motion"
+      ],
+      "node_text_used": "Component name: vehicleobe. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehicleobe.impl. Ports: traveler info, driver ip, park avail, pers info, vehicle paymt req, vehicle paymt update, vehicle loca motion.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.44927191734313965,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.44927191734313965,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehbasesafe",
+      "graph_node_id": "vehbasesafe::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehbasesafe.impl",
+      "node_name": "vehbasesafe",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehbasesafe.impl",
+      "ports": [
+        "to_veh",
+        "guide_req",
+        "guidance",
+        "loca_identity",
+        "pers_info"
+      ],
+      "node_text_used": "Component name: vehbasesafe. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehbasesafe.impl. Ports: to veh, guide req, guidance, loca identity, pers info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.41364338994026184,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.41364338994026184,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_communicationremote",
+      "graph_node_id": "communicationremote::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.communicationremote.impl",
+      "node_name": "communicationremote",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.communicationremote.impl",
+      "ports": [
+        "to_veh"
+      ],
+      "node_text_used": "Component name: communicationremote. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.communicationremote.impl. Ports: to veh.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4110976755619049,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4110976755619049,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_deviceidentity",
+      "graph_node_id": "deviceidentity::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.deviceidentity.impl",
+      "node_name": "deviceidentity",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.deviceidentity.impl",
+      "ports": [
+        "to_veh"
+      ],
+      "node_text_used": "Component name: deviceidentity. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.deviceidentity.impl. Ports: to veh.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.38737359642982483,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.38737359642982483,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_driverguidanceinterface",
+      "graph_node_id": "driverguidanceinterface::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverguidanceinterface.impl",
+      "node_name": "driverguidanceinterface",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverguidanceinterface.impl",
+      "ports": [
+        "guide_req",
+        "guidance"
+      ],
+      "node_text_used": "Component name: driverguidanceinterface. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.driverguidanceinterface.impl. Ports: guide req, guidance.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Presentation_Layer",
+        "Business_Logic_Layer",
+        "Presentation_Layer",
+        "Business_Logic_Layer",
+        "Presentation_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.3740571439266205,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.3740571439266205,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_fromdriver",
+      "graph_node_id": "fromdriver::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.fromdriver.impl",
+      "node_name": "fromdriver",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.fromdriver.impl",
+      "ports": [
+        "guide_req"
+      ],
+      "node_text_used": "Component name: fromdriver. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.fromdriver.impl. Ports: guide req.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4019177258014679,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4019177258014679,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_confirmation",
+      "graph_node_id": "confirmation::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.confirmation.impl",
+      "node_name": "confirmation",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.confirmation.impl",
+      "ports": [
+        "guidance"
+      ],
+      "node_text_used": "Component name: confirmation. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.confirmation.impl. Ports: guidance.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4219357669353485,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4219357669353485,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehiclelocationdata",
+      "graph_node_id": "vehiclelocationdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclelocationdata.impl",
+      "node_name": "vehiclelocationdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclelocationdata.impl",
+      "ports": [
+        "loca_identity"
+      ],
+      "node_text_used": "Component name: vehiclelocationdata. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehiclelocationdata.impl. Ports: loca identity.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Data_Management_Layer",
+        "Business_Logic_Layer",
+        "Data_Management_Layer",
+        "Business_Logic_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.41342490911483765,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.41342490911483765,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehicleloc",
+      "graph_node_id": "vehicleloc::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehicleloc.impl",
+      "node_name": "vehicleloc",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehicleloc.impl",
+      "ports": [
+        "loca_identity"
+      ],
+      "node_text_used": "Component name: vehicleloc. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehicleloc.impl. Ports: loca identity.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.398266077041626,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.398266077041626,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_driverinformationinterface",
+      "graph_node_id": "driverinformationinterface::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverinformationinterface.impl",
+      "node_name": "driverinformationinterface",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverinformationinterface.impl",
+      "ports": [
+        "pers_info"
+      ],
+      "node_text_used": "Component name: driverinformationinterface. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.driverinformationinterface.impl. Ports: pers info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Presentation_Layer",
+        "Business_Logic_Layer",
+        "Presentation_Layer",
+        "Business_Logic_Layer",
+        "Presentation_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.3921809196472168,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.3921809196472168,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_persidentity",
+      "graph_node_id": "persidentity::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persidentity.impl",
+      "node_name": "persidentity",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persidentity.impl",
+      "ports": [
+        "pers_info"
+      ],
+      "node_text_used": "Component name: persidentity. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.persidentity.impl. Ports: pers info.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.42104965448379517,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.42104965448379517,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_communicationsupport",
+      "graph_node_id": "communicationsupport::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.communicationsupport.impl",
+      "node_name": "communicationsupport",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.communicationsupport.impl",
+      "ports": [],
+      "node_text_used": "Component name: communicationsupport. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.communicationsupport.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.44568079710006714,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.44568079710006714,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehiclesecurecommunication",
+      "graph_node_id": "vehiclesecurecommunication::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclesecurecommunication.impl",
+      "node_name": "vehiclesecurecommunication",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclesecurecommunication.impl",
+      "ports": [],
+      "node_text_used": "Component name: vehiclesecurecommunication. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehiclesecurecommunication.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Security",
+      "predicted_ra_id": "comp.security",
+      "predicted_score": 0.483662873506546,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.483662873506546,
+          "ra_text": "RA component: Security. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_parkingsystem",
+      "graph_node_id": "parkingsystem::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkingsystem.impl",
+      "node_name": "parkingsystem",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.parkingsystem.impl",
+      "ports": [],
+      "node_text_used": "Component name: parkingsystem. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.parkingsystem.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.37786760926246643,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.37786760926246643,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_paymentdeviceinterface",
+      "graph_node_id": "paymentdeviceinterface::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.paymentdeviceinterface.impl",
+      "node_name": "paymentdeviceinterface",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.paymentdeviceinterface.impl",
+      "ports": [],
+      "node_text_used": "Component name: paymentdeviceinterface. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.paymentdeviceinterface.impl.",
+      "ground_truth_ra_names": [
+        "Presentation_Layer",
+        "Presentation_Layer",
+        "Presentation_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.42598074674606323,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.42598074674606323,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_roadsideinforeception",
+      "graph_node_id": "roadsideinforeception::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.roadsideinforeception.impl",
+      "node_name": "roadsideinforeception",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.roadsideinforeception.impl",
+      "ports": [],
+      "node_text_used": "Component name: roadsideinforeception. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.roadsideinforeception.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.41619277000427246,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.41619277000427246,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehiclelocdata",
+      "graph_node_id": "vehiclelocdata::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclelocdata.impl",
+      "node_name": "vehiclelocdata",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclelocdata.impl",
+      "ports": [],
+      "node_text_used": "Component name: vehiclelocdata. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehiclelocdata.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Data_Management_Layer",
+        "Business_Logic_Layer",
+        "Data_Management_Layer",
+        "Business_Logic_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.445509672164917,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.445509672164917,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_vehiclenavmapdatabase",
+      "graph_node_id": "vehiclenavmapdatabase::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclenavmapdatabase.impl",
+      "node_name": "vehiclenavmapdatabase",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclenavmapdatabase.impl",
+      "ports": [],
+      "node_text_used": "Component name: vehiclenavmapdatabase. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehiclenavmapdatabase.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Data_Management_Layer",
+        "Business_Logic_Layer",
+        "Data_Management_Layer",
+        "Business_Logic_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4489843249320984,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4489843249320984,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_driverpersonalreq",
+      "graph_node_id": "driverpersonalreq::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverpersonalreq.impl",
+      "node_name": "driverpersonalreq",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverpersonalreq.impl",
+      "ports": [],
+      "node_text_used": "Component name: driverpersonalreq. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.driverpersonalreq.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.3986494243144989,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.3986494243144989,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_driver",
+      "graph_node_id": "driver::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driver.impl",
+      "node_name": "driver",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driver.impl",
+      "ports": [
+        "driver_info",
+        "driver_ip",
+        "req_service",
+        "driver_up",
+        "paymt_txn_status"
+      ],
+      "node_text_used": "Component name: driver. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.driver.impl. Ports: driver info, driver ip, req service, driver up, paymt txn status.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.40279337763786316,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.40279337763786316,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_persinfodev",
+      "graph_node_id": "persinfodev::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persinfodev.impl",
+      "node_name": "persinfodev",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persinfodev.impl",
+      "ports": [
+        "local_travlr_info",
+        "interactv_travle_info",
+        "personal_loca",
+        "transit_user_info",
+        "traveler_req",
+        "traveler_src_update"
+      ],
+      "node_text_used": "Component name: persinfodev. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.persinfodev.impl. Ports: local travlr info, interactv travle info, personal loca, transit user info, traveler req, traveler src update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.502310037612915,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.502310037612915,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_pers_interactv_trav_info",
+      "graph_node_id": "persInteractvTravInfo::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persInteractvTravInfo.impl",
+      "node_name": "persInteractvTravInfo",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.persInteractvTravInfo.impl",
+      "ports": [
+        "interactv_travle_info",
+        "traveler_req",
+        "traveler_src_update"
+      ],
+      "node_text_used": "Component name: persInteractvTravInfo. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.persInteractvTravInfo.impl. Ports: interactv travle info, traveler req, traveler src update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.45657241344451904,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.45657241344451904,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_personal_info",
+      "graph_node_id": "personal_info::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.personal_info.impl",
+      "node_name": "personal_info",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.personal_info.impl",
+      "ports": [
+        "interactv_travle_info",
+        "traveler_req",
+        "traveler_src_update"
+      ],
+      "node_text_used": "Component name: personal info. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.personal info.impl. Ports: interactv travle info, traveler req, traveler src update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4721497893333435,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4721497893333435,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_info_thread",
+      "graph_node_id": "info_thread::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.info_thread.impl",
+      "node_name": "info_thread",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.info_thread.impl",
+      "ports": [
+        "interactv_travle_info",
+        "traveler_req",
+        "traveler_src_update"
+      ],
+      "node_text_used": "Component name: info thread. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.info thread.impl. Ports: interactv travle info, traveler req, traveler src update.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.43850207328796387,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.43850207328796387,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_personallocmanagement",
+      "graph_node_id": "personallocmanagement::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.personallocmanagement.impl",
+      "node_name": "personallocmanagement",
+      "category": "system",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.personallocmanagement.impl",
+      "ports": [
+        "personal_loca"
+      ],
+      "node_text_used": "Component name: personallocmanagement. Category: system. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.personallocmanagement.impl. Ports: personal loca.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4264717102050781,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4264717102050781,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_travnavmapdatabase",
+      "graph_node_id": "travnavmapdatabase::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.travnavmapdatabase.impl",
+      "node_name": "travnavmapdatabase",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.travnavmapdatabase.impl",
+      "ports": [
+        "personal_loca"
+      ],
+      "node_text_used": "Component name: travnavmapdatabase. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.travnavmapdatabase.impl. Ports: personal loca.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Data_Management_Layer",
+        "Business_Logic_Layer",
+        "Data_Management_Layer",
+        "Business_Logic_Layer",
+        "Data_Management_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.4282534718513489,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.4282534718513489,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_driverloc",
+      "graph_node_id": "driverloc::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverloc.impl",
+      "node_name": "driverloc",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.driverloc.impl",
+      "ports": [
+        "personal_loca"
+      ],
+      "node_text_used": "Component name: driverloc. Category: thread. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.driverloc.impl. Ports: personal loca.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Data_Management_Layer",
+      "predicted_ra_id": "comp.data",
+      "predicted_score": 0.35853755474090576,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.data",
+          "ra_name": "Data_Management_Layer",
+          "score": 0.35853755474090576,
+          "ra_text": "RA component: Data Management Layer. Tag: raelements."
+        }
+      ]
+    }
+  ]
+}

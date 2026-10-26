@@ -1,0 +1,124 @@
+{
+  "graph_id": "DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+  "source_file": "mapping_DHsystem_Accounts_DHaccounts_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 4,
+  "num_correct": 1,
+  "average_score_for_model": 0.25,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::DHsystem_Accounts_DHaccounts_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "web_acc",
+        "br_acc",
+        "config_acc"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: web acc, br acc, config acc.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.40908992290496826,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.40908992290496826,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_authentication",
+      "graph_node_id": "Authentication::../../github/DHsystem/Accounts.aadl#Accounts.Authentication",
+      "node_name": "Authentication",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.Authentication",
+      "ports": [
+        "webOUT_au",
+        "brOUT_au",
+        "au"
+      ],
+      "node_text_used": "Component name: Authentication. Category: device. Classifier: .. .. github DHsystem Accounts.aadl#Accounts.Authentication. Ports: webOUT au, brOUT au, au.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.3829866647720337,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.3829866647720337,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_account_settings",
+      "graph_node_id": "AccountSettings::../../github/DHsystem/Accounts.aadl#Accounts.AccountSettings",
+      "node_name": "AccountSettings",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.AccountSettings",
+      "ports": [
+        "au_as",
+        "ac_as"
+      ],
+      "node_text_used": "Component name: AccountSettings. Category: device. Classifier: .. .. github DHsystem Accounts.aadl#Accounts.AccountSettings. Ports: au as, ac as.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.3848411440849304,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.3848411440849304,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_access_control",
+      "graph_node_id": "AccessControl::../../github/DHsystem/Accounts.aadl#Accounts.AccessControl",
+      "node_name": "AccessControl",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Accounts.aadl#Accounts.AccessControl",
+      "ports": [
+        "config_ac",
+        "ac"
+      ],
+      "node_text_used": "Component name: AccessControl. Category: device. Classifier: .. .. github DHsystem Accounts.aadl#Accounts.AccessControl. Ports: config ac, ac.",
+      "ground_truth_ra_names": [
+        "Application",
+        "Gateway"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.3472245931625366,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.3472245931625366,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    }
+  ]
+}

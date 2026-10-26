@@ -1,0 +1,247 @@
+{
+  "graph_id": "AadlProjects_vtv_transvobe_impl_1.aaxl2",
+  "source_file": "mapping_AadlProjects_vtv_transvobe_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 7,
+  "num_correct": 1,
+  "average_score_for_model": 0.14285714285714285,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::AadlProjects_vtv_transvobe_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "bus_access",
+        "host_status",
+        "coll_inf",
+        "op_disp",
+        "op_in",
+        "rvloc",
+        "vloc",
+        "alarm",
+        "pla_ctrl",
+        "chg_ctrl",
+        "p",
+        "l"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: bus access, host status, coll inf, op disp, op in, rvloc, vloc, alarm, pla ctrl, chg ctrl, p, l.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Security",
+      "predicted_ra_id": "comp.security",
+      "predicted_score": 0.49268412590026855,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.49268412590026855,
+          "ra_text": "RA component: Security. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_transv2vsafety",
+      "graph_node_id": "transv2vsafety::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transv2vsafety.impl",
+      "node_name": "transv2vsafety",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.transv2vsafety.impl",
+      "ports": [
+        "host_status",
+        "coll_inf",
+        "op_disp",
+        "op_in",
+        "rvloc",
+        "vloc",
+        "alarm",
+        "pla_ctrl",
+        "chg_ctrl",
+        "p",
+        "l"
+      ],
+      "node_text_used": "Component name: transv2vsafety. Category: process. Classifier: .. .. github AadlProjects VTV%20final%202 vtv.aadl#vtv.transv2vsafety.impl. Ports: host status, coll inf, op disp, op in, rvloc, vloc, alarm, pla ctrl, chg ctrl, p, l.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Security",
+      "predicted_ra_id": "comp.security",
+      "predicted_score": 0.48030737042427063,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.48030737042427063,
+          "ra_text": "RA component: Security. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_status",
+      "graph_node_id": "status::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.status.impl",
+      "node_name": "status",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.status.impl",
+      "ports": [
+        "host_status",
+        "coll_inf",
+        "alarm",
+        "p",
+        "l"
+      ],
+      "node_text_used": "Component name: status. Category: thread. Classifier: .. .. github AadlProjects VTV%20final%202 vtv.aadl#vtv.status.impl. Ports: host status, coll inf, alarm, p, l.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Business_Logic_Layer",
+      "predicted_ra_id": "comp.business",
+      "predicted_score": 0.4803679585456848,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.business",
+          "ra_name": "Business_Logic_Layer",
+          "score": 0.4803679585456848,
+          "ra_text": "RA component: Business Logic Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_op_ctrl",
+      "graph_node_id": "op_ctrl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.op_ctrl.impl",
+      "node_name": "op_ctrl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.op_ctrl.impl",
+      "ports": [
+        "op_disp",
+        "op_in",
+        "dp",
+        "dl"
+      ],
+      "node_text_used": "Component name: op ctrl. Category: thread. Classifier: .. .. github AadlProjects VTV%20final%202 vtv.aadl#vtv.op ctrl.impl. Ports: op disp, op in, dp, dl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Presentation_Layer",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_score": 0.43903452157974243,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.43903452157974243,
+          "ra_text": "RA component: Presentation Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_loc_ctrl",
+      "graph_node_id": "loc_ctrl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.loc_ctrl.impl",
+      "node_name": "loc_ctrl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.loc_ctrl.impl",
+      "ports": [
+        "rvloc",
+        "vloc"
+      ],
+      "node_text_used": "Component name: loc ctrl. Category: thread. Classifier: .. .. github AadlProjects VTV%20final%202 vtv.aadl#vtv.loc ctrl.impl. Ports: rvloc, vloc.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Presentation_Layer",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_score": 0.3799988031387329,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.3799988031387329,
+          "ra_text": "RA component: Presentation Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_thp",
+      "graph_node_id": "thp::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thp.impl",
+      "node_name": "thp",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thp.impl",
+      "ports": [
+        "datin",
+        "datout"
+      ],
+      "node_text_used": "Component name: thp. Category: thread. Classifier: .. .. github AadlProjects VTV%20final%202 vtv.aadl#vtv.thp.impl. Ports: datin, datout.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Presentation_Layer",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_score": 0.43597766757011414,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.43597766757011414,
+          "ra_text": "RA component: Presentation Layer. Tag: raelements."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_thl",
+      "graph_node_id": "thl::../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thl.impl",
+      "node_name": "thl",
+      "category": "thread",
+      "classifier": "../../github/AadlProjects/VTV%20final%202/vtv.aadl#vtv.thl.impl",
+      "ports": [
+        "datin",
+        "datout"
+      ],
+      "node_text_used": "Component name: thl. Category: thread. Classifier: .. .. github AadlProjects VTV%20final%202 vtv.aadl#vtv.thl.impl. Ports: datin, datout.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Presentation_Layer",
+      "predicted_ra_id": "comp.presentation",
+      "predicted_score": 0.4477714002132416,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.presentation",
+          "ra_name": "Presentation_Layer",
+          "score": 0.4477714002132416,
+          "ra_text": "RA component: Presentation Layer. Tag: raelements."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "graph_id": "DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+  "source_file": "mapping_DHsystem_Configurations_DHconfig_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 8,
+  "num_correct": 3,
+  "average_score_for_model": 0.375,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::DHsystem_Configurations_DHconfig_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "config_acc",
+        "config_cm",
+        "web_config",
+        "br_config",
+        "pm_config"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: config acc, config cm, web config, br config, pm config.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.3684220016002655,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.3684220016002655,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_programmable_thermostat",
+      "graph_node_id": "ProgrammableThermostat::../../github/DHsystem/Configurations.aadl#Configurations.thermoProgram",
+      "node_name": "ProgrammableThermostat",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.thermoProgram",
+      "ports": [
+        "plan_tp",
+        "cm_tp",
+        "rep_tp"
+      ],
+      "node_text_used": "Component name: ProgrammableThermostat. Category: device. Classifier: .. .. github DHsystem Configurations.aadl#Configurations.thermoProgram. Ports: plan tp, cm tp, rep tp.",
+      "ground_truth_ra_names": [
+        "Device"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.3602828085422516,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.3602828085422516,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_programmable_appliance_manager",
+      "graph_node_id": "ProgrammableApplianceManager::../../github/DHsystem/Configurations.aadl#Configurations.appProgramManager",
+      "node_name": "ProgrammableApplianceManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.appProgramManager",
+      "ports": [
+        "plan_apm",
+        "cm_apm",
+        "rep_apm"
+      ],
+      "node_text_used": "Component name: ProgrammableApplianceManager. Category: device. Classifier: .. .. github DHsystem Configurations.aadl#Configurations.appProgramManager. Ports: plan apm, cm apm, rep apm.",
+      "ground_truth_ra_names": [
+        "Application"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.3629966378211975,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.3629966378211975,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_security_system",
+      "graph_node_id": "SecuritySystem::../../github/DHsystem/Configurations.aadl#Configurations.securitySystem",
+      "node_name": "SecuritySystem",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.securitySystem",
+      "ports": [
+        "plan_ss",
+        "cm_ss",
+        "rep_ss"
+      ],
+      "node_text_used": "Component name: SecuritySystem. Category: device. Classifier: .. .. github DHsystem Configurations.aadl#Configurations.securitySystem. Ports: plan ss, cm ss, rep ss.",
+      "ground_truth_ra_names": [
+        "Application"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.4107424318790436,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.4107424318790436,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_programmable_humidistat",
+      "graph_node_id": "ProgrammableHumidistat::../../github/DHsystem/Configurations.aadl#Configurations.humProgram",
+      "node_name": "ProgrammableHumidistat",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.humProgram",
+      "ports": [
+        "plan_hp",
+        "cm_hp",
+        "rep_hp"
+      ],
+      "node_text_used": "Component name: ProgrammableHumidistat. Category: device. Classifier: .. .. github DHsystem Configurations.aadl#Configurations.humProgram. Ports: plan hp, cm hp, rep hp.",
+      "ground_truth_ra_names": [
+        "Device"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.3071829080581665,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.3071829080581665,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_planner",
+      "graph_node_id": "Planner::../../github/DHsystem/Configurations.aadl#Configurations.planner",
+      "node_name": "Planner",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.planner",
+      "ports": [
+        "plan_tp",
+        "plan_apm",
+        "plan_ss",
+        "plan_hp",
+        "cm_plan"
+      ],
+      "node_text_used": "Component name: Planner. Category: device. Classifier: .. .. github DHsystem Configurations.aadl#Configurations.planner. Ports: plan tp, plan apm, plan ss, plan hp, cm plan.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.37007999420166016,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.37007999420166016,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_configuration_manager",
+      "graph_node_id": "ConfigurationManager::../../github/DHsystem/Configurations.aadl#Configurations.commManager",
+      "node_name": "ConfigurationManager",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.commManager",
+      "ports": [
+        "cm_tp",
+        "cm_plan",
+        "cm_ss",
+        "cm_outCM",
+        "cm_outACC",
+        "cm_hp",
+        "cm_rep",
+        "cm_apm",
+        "webOUT_cm",
+        "brOUT_cm",
+        "pmOUT_cm"
+      ],
+      "node_text_used": "Component name: ConfigurationManager. Category: device. Classifier: .. .. github DHsystem Configurations.aadl#Configurations.commManager. Ports: cm tp, cm plan, cm ss, cm outCM, cm outACC, cm hp, cm rep, cm apm, webOUT cm, brOUT cm, pmOUT cm.",
+      "ground_truth_ra_names": [
+        "Application"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.40007346868515015,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.40007346868515015,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_report",
+      "graph_node_id": "Report::../../github/DHsystem/Configurations.aadl#Configurations.report",
+      "node_name": "Report",
+      "category": "device",
+      "classifier": "../../github/DHsystem/Configurations.aadl#Configurations.report",
+      "ports": [
+        "rep_apm",
+        "rep_tp",
+        "rep_ss",
+        "rep_hp",
+        "cm_rep"
+      ],
+      "node_text_used": "Component name: Report. Category: device. Classifier: .. .. github DHsystem Configurations.aadl#Configurations.report. Ports: rep apm, rep tp, rep ss, rep hp, cm rep.",
+      "ground_truth_ra_names": [
+        "Application"
+      ],
+      "predicted_ra_name": "Device",
+      "predicted_ra_id": "comp.device",
+      "predicted_score": 0.37834295630455017,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.device",
+          "ra_name": "Device",
+          "score": 0.37834295630455017,
+          "ra_text": "RA component: Device. Definition: Serves as the entry point from the physical world into the digital one. It connects to sensors and or actuators via wired or wireless interfaces and enables interaction with the environment.. Tag: raelements. Incoming connectors: Gateway–Device Communication, Device–IoTIM Communication. Outgoing connectors: Device–Sensor Communication, Device–Actuator Communication."
+        }
+      ]
+    }
+  ]
+}

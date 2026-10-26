@@ -1,0 +1,916 @@
+{
+  "graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "IoT System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.application",
+        "name": "Application",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.app-iotim",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.iotim",
+        "name": "IoTIM",
+        "mandatory": true,
+        "incoming": "conn.app-iotim",
+        "outgoing": "conn.iotim-gateway conn.app-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.gateway",
+        "name": "Gateway",
+        "mandatory": true,
+        "incoming": "conn.iotim-gateway",
+        "outgoing": "conn.gateway-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.device",
+        "name": "Device",
+        "mandatory": true,
+        "incoming": "conn.gateway-device conn.app-device",
+        "outgoing": "conn.device-sensor conn.device-actuator",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.driver",
+        "name": "Driver",
+        "mandatory": null,
+        "incoming": null,
+        "outgoing": null,
+        "tag": "child",
+        "parent_id": "comp.device",
+        "parent_name": "Device"
+      },
+      {
+        "id": "comp.sensor",
+        "name": "Sensor",
+        "mandatory": true,
+        "incoming": "conn.device-sensor",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.actuator",
+        "name": "Actuator",
+        "mandatory": true,
+        "incoming": "conn.device-actuator",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.app-iotim",
+        "name": "Application\u2013IoTIM Communication",
+        "source": "comp.application",
+        "target": "comp.iotim",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.iotim-gateway",
+        "name": "IoTIM\u2013Gateway Communication",
+        "source": "comp.iotim",
+        "target": "comp.gateway",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.gateway-device",
+        "name": "Gateway\u2013Device Communication",
+        "source": "comp.gateway",
+        "target": "comp.device",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-sensor",
+        "name": "Device\u2013Sensor Communication",
+        "source": "comp.device",
+        "target": "comp.sensor",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-actuator",
+        "name": "Device\u2013Actuator Communication",
+        "source": "comp.device",
+        "target": "comp.actuator",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.app-device",
+        "name": "Device\u2013IoTIM Communication",
+        "source": "comp.iotim",
+        "target": "comp.device",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_zigbee_devices",
+      "graph_node_id": "ZIGBEE_DEVICES::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/ZigbeeDevices.aadl#ZigbeeDevices.ZigbeeDevices.impl",
+      "name": "ZIGBEE_DEVICES",
+      "category": "device",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/ZigbeeDevices.aadl#ZigbeeDevices.ZigbeeDevices.impl",
+      "ports": [
+        "Sensing",
+        "out_zd_mcr"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 20,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 185,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_ip_devices",
+      "graph_node_id": "IP_DEVICES::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/IPDevices.aadl#IPDevices.IPDevices.impl",
+      "name": "IP_DEVICES",
+      "category": "device",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/IPDevices.aadl#IPDevices.IPDevices.impl",
+      "ports": [
+        "in_ipd_mcr",
+        "out_ipd_mcr"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 13,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 178,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Sensor",
+          "ra_id": "comp.sensor",
+          "confidence": 1,
+          "source_row": 178,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_main_control_router",
+      "graph_node_id": "MAIN_CONTROL_ROUTER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.MainControlRouter.impl",
+      "name": "MAIN_CONTROL_ROUTER",
+      "category": "system",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.MainControlRouter.impl",
+      "ports": [
+        "temperature_in",
+        "smoke_status_out",
+        "in_mcr_remote",
+        "out_mcr_remote",
+        "in_mcr_zd",
+        "out_mcr_zd",
+        "in_mcr_ipd",
+        "out_mcr_ipd"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 16,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 181,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_zigbee_device_controller",
+      "graph_node_id": "ZIGBEE_DEVICE_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Zigbee_Device_Controller",
+      "name": "ZIGBEE_DEVICE_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Zigbee_Device_Controller",
+      "ports": [
+        "dev_data_receiver",
+        "dev_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 6,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 6,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 21,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 21,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 171,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 186,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 186,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_ip_device_controller",
+      "graph_node_id": "IP_DEVICE_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.IP_Device_Controller",
+      "name": "IP_DEVICE_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.IP_Device_Controller",
+      "ports": [
+        "dev_data_receiver",
+        "dev_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 2,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 14,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 14,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 167,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 167,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 179,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 179,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_remote_msg_control",
+      "graph_node_id": "REMOTE_MSG_CONTROL::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Remote_Msg_Control",
+      "name": "REMOTE_MSG_CONTROL",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Remote_Msg_Control",
+      "ports": [
+        "app_data_receiver",
+        "app_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 4,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 4,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 17,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 17,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 182,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 182,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_main_controller",
+      "graph_node_id": "MAIN_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Main_Controller",
+      "name": "MAIN_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/MainControlRouter.aadl#MainControlRouter.Main_Controller",
+      "ports": [
+        "zdc_data_receiver",
+        "zdc_data_sender",
+        "ipdc_data_receiver",
+        "ipdc_data_sender",
+        "remote_data_receiver",
+        "remote_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 3,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 15,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 168,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 180,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 180,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_remote_server",
+      "graph_node_id": "REMOTE_SERVER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.RemoteServer.impl",
+      "name": "REMOTE_SERVER",
+      "category": "system",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.RemoteServer.impl",
+      "ports": [
+        "in_rs_mcr",
+        "out_rs_mcr",
+        "in_rs_clients",
+        "out_rs_clients"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 18,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 183,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 183,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_client_controller",
+      "graph_node_id": "CLIENT_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.Client_Controller",
+      "name": "CLIENT_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.Client_Controller",
+      "ports": [
+        "cc_data_receiver",
+        "cc_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 7,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 11,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 172,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 176,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_router_controller",
+      "graph_node_id": "ROUTER_CONTROLLER::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.Router_Controller",
+      "name": "ROUTER_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/RemoteServer.aadl#RemoteServer.Router_Controller",
+      "ports": [
+        "rc_data_receiver",
+        "rc_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 8,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 19,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 19,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 173,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 173,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 184,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 184,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_clients",
+      "graph_node_id": "CLIENTS::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/Clients.aadl#Clients.Clients.impl",
+      "name": "CLIENTS",
+      "category": "system",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/Clients.aadl#Clients.Clients.impl",
+      "ports": [
+        "in_clients_mcr",
+        "out_clients_mcr",
+        "in_clients_rs",
+        "out_clients_rs"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 10,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 175,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_client_control_unit",
+      "graph_node_id": "CLIENT_CONTROL_UNIT::../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/Clients.aadl#Clients.Clients_Control_Unit",
+      "name": "CLIENT_CONTROL_UNIT",
+      "category": "process",
+      "classifier": "../../github/An-AADL-Model-of-Smart-Home-System/Plugin_Resources/The_Smart_Home_System/Clients.aadl#Clients.Clients_Control_Unit",
+      "ports": [
+        "ccu_data_receiver",
+        "ccu_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 0,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 12,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 165,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 177,
+          "aadl_graph_id": "An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_zigbee_devices",
+      "target": "comp_zigbee_device_controller",
+      "type": "connection",
+      "src_port": "out_zd_mcr",
+      "dst_port": "dev_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.0/@featureInstance.1",
+        "destination": "//@componentInstance.2/@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_ip_devices",
+      "target": "comp_ip_device_controller",
+      "type": "connection",
+      "src_port": "out_ipd_mcr",
+      "dst_port": "dev_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.1/@featureInstance.1",
+        "destination": "//@componentInstance.2/@componentInstance.1/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_zigbee_device_controller",
+      "target": "comp_main_controller",
+      "type": "connection",
+      "src_port": "ctr_data_sender",
+      "dst_port": "zdc_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.0/@featureInstance.3",
+        "destination": "//@componentInstance.2/@componentInstance.3/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_zigbee_device_controller",
+      "target": "comp_zigbee_devices",
+      "type": "connection",
+      "src_port": "dev_data_sender",
+      "dst_port": "Sensing",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.0/@featureInstance.1",
+        "destination": "//@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_ip_device_controller",
+      "target": "comp_main_controller",
+      "type": "connection",
+      "src_port": "ctr_data_sender",
+      "dst_port": "ipdc_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.1/@featureInstance.3",
+        "destination": "//@componentInstance.2/@componentInstance.3/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_ip_device_controller",
+      "target": "comp_ip_devices",
+      "type": "connection",
+      "src_port": "dev_data_sender",
+      "dst_port": "in_ipd_mcr",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.1/@featureInstance.1",
+        "destination": "//@componentInstance.1/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_remote_msg_control",
+      "target": "comp_main_controller",
+      "type": "connection",
+      "src_port": "ctr_data_sender",
+      "dst_port": "remote_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.2/@featureInstance.3",
+        "destination": "//@componentInstance.2/@componentInstance.3/@featureInstance.4"
+      }
+    },
+    {
+      "source": "comp_remote_msg_control",
+      "target": "comp_router_controller",
+      "type": "connection",
+      "src_port": "app_data_sender",
+      "dst_port": "rc_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.2/@featureInstance.1",
+        "destination": "//@componentInstance.3/@componentInstance.1/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_remote_msg_control",
+      "target": "comp_client_control_unit",
+      "type": "connection",
+      "src_port": "app_data_sender",
+      "dst_port": "ccu_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.2/@featureInstance.1",
+        "destination": "//@componentInstance.4/@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_main_controller",
+      "target": "comp_zigbee_device_controller",
+      "type": "connection",
+      "src_port": "zdc_data_sender",
+      "dst_port": "ctr_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.3/@featureInstance.1",
+        "destination": "//@componentInstance.2/@componentInstance.0/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_main_controller",
+      "target": "comp_ip_device_controller",
+      "type": "connection",
+      "src_port": "ipdc_data_sender",
+      "dst_port": "ctr_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.3/@featureInstance.3",
+        "destination": "//@componentInstance.2/@componentInstance.1/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_main_controller",
+      "target": "comp_remote_msg_control",
+      "type": "connection",
+      "src_port": "remote_data_sender",
+      "dst_port": "ctr_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@componentInstance.3/@featureInstance.5",
+        "destination": "//@componentInstance.2/@componentInstance.2/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_client_controller",
+      "target": "comp_client_control_unit",
+      "type": "connection",
+      "src_port": "cc_data_sender",
+      "dst_port": "ccu_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.0/@featureInstance.1",
+        "destination": "//@componentInstance.4/@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_router_controller",
+      "target": "comp_remote_msg_control",
+      "type": "connection",
+      "src_port": "rc_data_sender",
+      "dst_port": "app_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.3/@componentInstance.1/@featureInstance.1",
+        "destination": "//@componentInstance.2/@componentInstance.2/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_client_control_unit",
+      "target": "comp_remote_msg_control",
+      "type": "connection",
+      "src_port": "ccu_data_sender",
+      "dst_port": "app_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.4/@componentInstance.0/@featureInstance.1",
+        "destination": "//@componentInstance.2/@componentInstance.2/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_client_control_unit",
+      "target": "comp_client_controller",
+      "type": "connection",
+      "src_port": "ccu_data_sender",
+      "dst_port": "cc_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.4/@componentInstance.0/@featureInstance.1",
+        "destination": "//@componentInstance.3/@componentInstance.0/@featureInstance.0"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_HOME_graphs.json",
+    "source_ra_grammar": "iot.gramm",
+    "source_mapping_labels": "iot_ra_component_mapping_labels.csv",
+    "enable_global_fallback": true
+  }
+}

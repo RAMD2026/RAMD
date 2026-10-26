@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_9f84a1b5ba0d4ac09c827ac31ab045f0">
+  <relations xmi:id="_bf7e4a11838d494a8c19f388af1577bf">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Security"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_zigbee_devices"/>
+  </relations>
+  <relations xmi:id="_1ff37d41d7484c66b7aff9181a3cf00f">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Presentation_Layer"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_ip_devices"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_clients"/>
+  </relations>
+  <relations xmi:id="_4db69d3561044835b99cc0f0aeb046af">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Data_Management_Layer"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_remote_server"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_ip_device_controller"/>
+  </relations>
+  <relations xmi:id="_8e9fc4eaa509472d92e047bdc68dac0d">
+    <RAcomp href="../referencearchitectures/smartparking.ecore#//Business_Logic_Layer"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_client_control_unit"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_client_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_main_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_router_controller"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_main_control_router"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_remote_msg_control"/>
+    <component href="../architectures/An-AADL-Model-of-Smart-Home-System_smart_home_system_smart_home_impl_1.model#comp_zigbee_device_controller"/>
+  </relations>
+</ecore:Implementation_model>

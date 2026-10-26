@@ -1,0 +1,123 @@
+{
+  "graph_id": "SmartHome_smart_home_arch_sensor_unit_impl_1.aaxl2",
+  "source_file": "mapping_SmartHome_smart_home_arch_sensor_unit_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 4,
+  "num_correct": 3,
+  "average_score_for_model": 0.75,
+  "predictions": [
+    {
+      "node_id": "comp_system",
+      "graph_node_id": "SYSTEM::SmartHome_smart_home_arch_sensor_unit_impl_1.aaxl2",
+      "node_name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "Sense_inward_moment",
+        "user_command",
+        "Configuration"
+      ],
+      "node_text_used": "Component name: SYSTEM. Category: system. Ports: Sense inward moment, user command, Configuration.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.4370805025100708,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.4370805025100708,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_hw",
+      "graph_node_id": "HW::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.HWConnection",
+      "node_name": "HW",
+      "category": "bus",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.HWConnection",
+      "ports": [],
+      "node_text_used": "Component name: HW. Category: bus. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.HWConnection.",
+      "ground_truth_ra_names": [
+        "Actuator",
+        "Device",
+        "Sensor"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.4216766655445099,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.4216766655445099,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_plugin",
+      "graph_node_id": "PLUGIN::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.plugin",
+      "node_name": "PLUGIN",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.plugin",
+      "ports": [
+        "busdata",
+        "configure_control",
+        "Configured_control"
+      ],
+      "node_text_used": "Component name: PLUGIN. Category: system. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.plugin. Ports: busdata, configure control, Configured control.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.42721083760261536,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.42721083760261536,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    },
+    {
+      "node_id": "comp_home_controller_framework",
+      "graph_node_id": "HOME_CONTROLLER_FRAMEWORK::../../github/SmartHome/smarthome/main.aadl#smart_home_arch.home_controller_framework",
+      "node_name": "HOME_CONTROLLER_FRAMEWORK",
+      "category": "system",
+      "classifier": "../../github/SmartHome/smarthome/main.aadl#smart_home_arch.home_controller_framework",
+      "ports": [
+        "busdata",
+        "Fin",
+        "Fout"
+      ],
+      "node_text_used": "Component name: HOME CONTROLLER FRAMEWORK. Category: system. Classifier: .. .. github SmartHome smarthome main.aadl#smart home arch.home controller framework. Ports: busdata, Fin, Fout.",
+      "ground_truth_ra_names": [
+        "Application",
+        "IoTIM"
+      ],
+      "predicted_ra_name": "Application",
+      "predicted_ra_id": "comp.application",
+      "predicted_score": 0.4511492848396301,
+      "is_correct": 1,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.application",
+          "ra_name": "Application",
+          "score": 0.4511492848396301,
+          "ra_text": "RA component: Application. Definition: Provides high-level services by consuming processed data from the IoT infrastructure. It uses information delivered by the middleware to implement domain-specific functionalities.. Tag: raelements. Outgoing connectors: Application–IoTIM Communication."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1136 @@
+{
+  "graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+  "ra_reference": {
+    "name": "Autonomous Driving System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.sensors",
+        "name": "Sensors",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.sensors-network",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.processing",
+        "name": "Processing_Unit",
+        "mandatory": true,
+        "incoming": "conn.network-processing",
+        "outgoing": "conn.processing-network",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.v2x",
+        "name": "V2X_Cloud_Comms",
+        "mandatory": false,
+        "incoming": null,
+        "outgoing": "conn.v2x-network",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.mobileact",
+        "name": "Mobile_Platform_Actuators",
+        "mandatory": true,
+        "incoming": "conn.network-mobileact",
+        "outgoing": "conn.mobileact-network",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.network",
+        "name": "Internal_Networking_Interfaces",
+        "mandatory": true,
+        "incoming": "conn.sensors-network conn.processing-network conn.v2x-network conn.mobileact-network conn.frameworks-network",
+        "outgoing": "conn.network-processing conn.network-mobileact conn.network-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.frameworks",
+        "name": "Software_Frameworks_and_Standards",
+        "mandatory": true,
+        "incoming": "conn.network-frameworks conn.ml-frameworks conn.datacollection-frameworks conn.uiux-frameworks conn.rtcontrol-frameworks",
+        "outgoing": "conn.frameworks-network conn.frameworks-ml conn.frameworks-datacollection conn.frameworks-uiux conn.frameworks-rtcontrol",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.ml",
+        "name": "ML_AI_DL_Algorithms",
+        "mandatory": true,
+        "incoming": "conn.frameworks-ml",
+        "outgoing": "conn.ml-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.datacollection",
+        "name": "Data_Collection",
+        "mandatory": true,
+        "incoming": "conn.frameworks-datacollection",
+        "outgoing": "conn.datacollection-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.uiux",
+        "name": "UI_UX_and_Infotainment",
+        "mandatory": false,
+        "incoming": "conn.frameworks-uiux",
+        "outgoing": "conn.uiux-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.rtcontrol",
+        "name": "Real_time_and_Critical_Control_Software",
+        "mandatory": true,
+        "incoming": "conn.frameworks-rtcontrol",
+        "outgoing": "conn.rtcontrol-frameworks",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.sensors-network",
+        "name": "Sensor Data",
+        "source": "comp.sensors",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.processing-network",
+        "name": "Compute Interconnect",
+        "source": "comp.processing",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.v2x-network",
+        "name": "External Communications",
+        "source": "comp.v2x",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.mobileact-network",
+        "name": "Actuation Feedback",
+        "source": "comp.mobileact",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.network-processing",
+        "name": "Network to Compute",
+        "source": "comp.network",
+        "target": "comp.processing",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.network-mobileact",
+        "name": "Network to Actuators",
+        "source": "comp.network",
+        "target": "comp.mobileact",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-network",
+        "name": "Middleware to Network Interfaces",
+        "source": "comp.frameworks",
+        "target": "comp.network",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.network-frameworks",
+        "name": "Hardware Abstraction",
+        "source": "comp.network",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-ml",
+        "name": "ML Execution Support",
+        "source": "comp.frameworks",
+        "target": "comp.ml",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.ml-frameworks",
+        "name": "ML APIs",
+        "source": "comp.ml",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-datacollection",
+        "name": "Data APIs",
+        "source": "comp.frameworks",
+        "target": "comp.datacollection",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.datacollection-frameworks",
+        "name": "Data Collection Services",
+        "source": "comp.datacollection",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-uiux",
+        "name": "UI Middleware",
+        "source": "comp.frameworks",
+        "target": "comp.uiux",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.uiux-frameworks",
+        "name": "UI/UX Services",
+        "source": "comp.uiux",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.frameworks-rtcontrol",
+        "name": "Real-time Services",
+        "source": "comp.frameworks",
+        "target": "comp.rtcontrol",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.rtcontrol-frameworks",
+        "name": "Control Services",
+        "source": "comp.rtcontrol",
+        "target": "comp.frameworks",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_system",
+      "graph_node_id": "SYSTEM::AASPE_automotive_system_car_cherokee_1.aaxl2",
+      "name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "cellular_access",
+        "wifi_access"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 56,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_can_ihs",
+      "graph_node_id": "can_ihs::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "name": "can_ihs",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 57,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 150,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_can_c",
+      "graph_node_id": "can_c::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "name": "can_c",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.can",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 58,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 151,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 167,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_wifi",
+      "graph_node_id": "wifi::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.wifi",
+      "name": "wifi",
+      "category": "bus",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.wifi",
+      "ports": [],
+      "ra_mappings": [
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 59,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 59,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 152,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 152,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 168,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 168,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_radio",
+      "graph_node_id": "radio::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.radio",
+      "name": "radio",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.radio",
+      "ports": [
+        "can_ihs_socket",
+        "can_c_socket",
+        "wifi_access",
+        "cellular_access"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "V2X_Cloud_Comms",
+          "ra_id": "comp.v2x",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Internal_Networking_Interfaces",
+          "ra_id": "comp.network",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_hvac",
+      "graph_node_id": "hvac::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "name": "hvac",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 61,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 154,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_amplifier",
+      "graph_node_id": "amplifier::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "name": "amplifier",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 62,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 155,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "UI_UX_and_Infotainment",
+          "ra_id": "comp.uiux",
+          "confidence": 1,
+          "source_row": 171,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_bcm",
+      "graph_node_id": "bcm::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "name": "bcm",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 63,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 156,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 172,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_hsm",
+      "graph_node_id": "hsm::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "name": "hsm",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 64,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 173,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_abs",
+      "graph_node_id": "abs::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "name": "abs",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 65,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 65,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 158,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 158,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_acc",
+      "graph_node_id": "acc::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "name": "acc",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 66,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "ML_AI_DL_Algorithms",
+          "ra_id": "comp.ml",
+          "confidence": 1,
+          "source_row": 66,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 159,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "ML_AI_DL_Algorithms",
+          "ra_id": "comp.ml",
+          "confidence": 1,
+          "source_row": 159,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 175,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "ML_AI_DL_Algorithms",
+          "ra_id": "comp.ml",
+          "confidence": 1,
+          "source_row": 175,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_eps",
+      "graph_node_id": "eps::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "name": "eps",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 67,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 67,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 160,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 160,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 176,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 176,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_epb",
+      "graph_node_id": "epb::../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "name": "epb",
+      "category": "system",
+      "classifier": "../../github/AASPE/edu.cmu.aaspe.examples/car/automotive-system.aadl#automotive_system.function",
+      "ports": [
+        "can_socket"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 68,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 68,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 161,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 161,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Mobile_Platform_Actuators",
+          "ra_id": "comp.mobileact",
+          "confidence": 1,
+          "source_row": 177,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Real_time_and_Critical_Control_Software",
+          "ra_id": "comp.rtcontrol",
+          "confidence": 1,
+          "source_row": 177,
+          "aadl_graph_id": "AASPE_automotive_system_car_cherokee_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_system",
+      "target": "comp_radio",
+      "type": "connection",
+      "src_port": "cellular_access",
+      "dst_port": "cellular_access",
+      "raw": {
+        "source": "//@featureInstance.0",
+        "destination": "//@componentInstance.3/@featureInstance.3"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_wifi",
+      "type": "connection",
+      "src_port": "wifi_access",
+      "dst_port": "wifi",
+      "raw": {
+        "source": "//@featureInstance.1",
+        "destination": "//@componentInstance.2"
+      }
+    },
+    {
+      "source": "comp_can_ihs",
+      "target": "comp_radio",
+      "type": "connection",
+      "src_port": "can_ihs",
+      "dst_port": "can_ihs_socket",
+      "raw": {
+        "source": "//@componentInstance.0",
+        "destination": "//@componentInstance.3/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_can_ihs",
+      "target": "comp_hvac",
+      "type": "connection",
+      "src_port": "can_ihs",
+      "dst_port": "can_socket",
+      "raw": {
+        "source": "//@componentInstance.0",
+        "destination": "//@componentInstance.4/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_can_ihs",
+      "target": "comp_amplifier",
+      "type": "connection",
+      "src_port": "can_ihs",
+      "dst_port": "can_socket",
+      "raw": {
+        "source": "//@componentInstance.0",
+        "destination": "//@componentInstance.5/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_can_ihs",
+      "target": "comp_bcm",
+      "type": "connection",
+      "src_port": "can_ihs",
+      "dst_port": "can_socket",
+      "raw": {
+        "source": "//@componentInstance.0",
+        "destination": "//@componentInstance.6/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_can_ihs",
+      "target": "comp_hsm",
+      "type": "connection",
+      "src_port": "can_ihs",
+      "dst_port": "can_socket",
+      "raw": {
+        "source": "//@componentInstance.0",
+        "destination": "//@componentInstance.7/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_can_c",
+      "target": "comp_radio",
+      "type": "connection",
+      "src_port": "can_c",
+      "dst_port": "can_c_socket",
+      "raw": {
+        "source": "//@componentInstance.1",
+        "destination": "//@componentInstance.3/@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_can_c",
+      "target": "comp_abs",
+      "type": "connection",
+      "src_port": "can_c",
+      "dst_port": "can_socket",
+      "raw": {
+        "source": "//@componentInstance.1",
+        "destination": "//@componentInstance.8/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_can_c",
+      "target": "comp_acc",
+      "type": "connection",
+      "src_port": "can_c",
+      "dst_port": "can_socket",
+      "raw": {
+        "source": "//@componentInstance.1",
+        "destination": "//@componentInstance.9/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_can_c",
+      "target": "comp_eps",
+      "type": "connection",
+      "src_port": "can_c",
+      "dst_port": "can_socket",
+      "raw": {
+        "source": "//@componentInstance.1",
+        "destination": "//@componentInstance.10/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_can_c",
+      "target": "comp_epb",
+      "type": "connection",
+      "src_port": "can_c",
+      "dst_port": "can_socket",
+      "raw": {
+        "source": "//@componentInstance.1",
+        "destination": "//@componentInstance.11/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_wifi",
+      "target": "comp_radio",
+      "type": "connection",
+      "src_port": "wifi",
+      "dst_port": "wifi_access",
+      "raw": {
+        "source": "//@componentInstance.2",
+        "destination": "//@componentInstance.3/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_wifi",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "wifi",
+      "dst_port": "wifi_access",
+      "raw": {
+        "source": "//@componentInstance.2",
+        "destination": "//@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_radio",
+      "target": "comp_can_ihs",
+      "type": "connection",
+      "src_port": "can_ihs_socket",
+      "dst_port": "can_ihs",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.0",
+        "destination": "//@componentInstance.0"
+      }
+    },
+    {
+      "source": "comp_radio",
+      "target": "comp_can_c",
+      "type": "connection",
+      "src_port": "can_c_socket",
+      "dst_port": "can_c",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.1",
+        "destination": "//@componentInstance.1"
+      }
+    },
+    {
+      "source": "comp_radio",
+      "target": "comp_wifi",
+      "type": "connection",
+      "src_port": "wifi_access",
+      "dst_port": "wifi",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.2",
+        "destination": "//@componentInstance.2"
+      }
+    },
+    {
+      "source": "comp_radio",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "cellular_access",
+      "dst_port": "cellular_access",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.3",
+        "destination": "//@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_hvac",
+      "target": "comp_can_ihs",
+      "type": "connection",
+      "src_port": "can_socket",
+      "dst_port": "can_ihs",
+      "raw": {
+        "source": "//@componentInstance.4/@featureInstance.0",
+        "destination": "//@componentInstance.0"
+      }
+    },
+    {
+      "source": "comp_amplifier",
+      "target": "comp_can_ihs",
+      "type": "connection",
+      "src_port": "can_socket",
+      "dst_port": "can_ihs",
+      "raw": {
+        "source": "//@componentInstance.5/@featureInstance.0",
+        "destination": "//@componentInstance.0"
+      }
+    },
+    {
+      "source": "comp_bcm",
+      "target": "comp_can_ihs",
+      "type": "connection",
+      "src_port": "can_socket",
+      "dst_port": "can_ihs",
+      "raw": {
+        "source": "//@componentInstance.6/@featureInstance.0",
+        "destination": "//@componentInstance.0"
+      }
+    },
+    {
+      "source": "comp_hsm",
+      "target": "comp_can_ihs",
+      "type": "connection",
+      "src_port": "can_socket",
+      "dst_port": "can_ihs",
+      "raw": {
+        "source": "//@componentInstance.7/@featureInstance.0",
+        "destination": "//@componentInstance.0"
+      }
+    },
+    {
+      "source": "comp_abs",
+      "target": "comp_can_c",
+      "type": "connection",
+      "src_port": "can_socket",
+      "dst_port": "can_c",
+      "raw": {
+        "source": "//@componentInstance.8/@featureInstance.0",
+        "destination": "//@componentInstance.1"
+      }
+    },
+    {
+      "source": "comp_acc",
+      "target": "comp_can_c",
+      "type": "connection",
+      "src_port": "can_socket",
+      "dst_port": "can_c",
+      "raw": {
+        "source": "//@componentInstance.9/@featureInstance.0",
+        "destination": "//@componentInstance.1"
+      }
+    },
+    {
+      "source": "comp_eps",
+      "target": "comp_can_c",
+      "type": "connection",
+      "src_port": "can_socket",
+      "dst_port": "can_c",
+      "raw": {
+        "source": "//@componentInstance.10/@featureInstance.0",
+        "destination": "//@componentInstance.1"
+      }
+    },
+    {
+      "source": "comp_epb",
+      "target": "comp_can_c",
+      "type": "connection",
+      "src_port": "can_socket",
+      "dst_port": "can_c",
+      "raw": {
+        "source": "//@componentInstance.11/@featureInstance.0",
+        "destination": "//@componentInstance.1"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SELF_DRIVING_CAR_graphs.json",
+    "source_ra_grammar": "autonomous_driving_system.gramm",
+    "source_mapping_labels": "all_SELF_DRIVING_CAR_connection_components_with_ra_component.csv",
+    "enable_global_fallback": true
+  }
+}

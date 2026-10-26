@@ -1,0 +1,25 @@
+config,config_label,scope,metric,metric_label,n,rho,p_value,p_adj_holm,effect_size,scope_label
+ramd_accuracy,RAMD,iot,num_nodes,Size (#nodes),25,-0.1444435680393074,0.4909056476489665,1.0,weak,IoT
+ramd_accuracy,RAMD,iot,density,Connectivity (density),25,-0.014756347873830851,0.9441873235718621,1.0,negligible,IoT
+ramd_accuracy,RAMD,iot,hierarchy_max_depth,Hierarchy (max containment depth),25,-0.14544968311295894,0.4878584109171641,1.0,weak,IoT
+ramd_accuracy,RAMD,iot,lma,Naming ambiguity (LMA),25,0.1541266826161515,0.46197865323087506,1.0,weak,IoT
+ramd_accuracy,RAMD,smartparking,num_nodes,Size (#nodes),29,-0.4167049756927838,0.024530674690914002,0.09812269876365601,moderate,Smart Parking
+ramd_accuracy,RAMD,smartparking,density,Connectivity (density),29,0.009107091552456132,0.9626034746305413,1.0,negligible,Smart Parking
+ramd_accuracy,RAMD,smartparking,hierarchy_max_depth,Hierarchy (max containment depth),29,-0.2695457943519454,0.1573536678409845,0.47206100352295355,weak,Smart Parking
+ramd_accuracy,RAMD,smartparking,lma,Naming ambiguity (LMA),29,-0.03936508222150267,0.839337468719171,1.0,negligible,Smart Parking
+ramd_accuracy,RAMD,selfdriving,num_nodes,Size (#nodes),10,-0.07525322988306804,0.8363126272438614,1.0,negligible,Self-driving Car
+ramd_accuracy,RAMD,selfdriving,density,Connectivity (density),10,-0.3438104407416782,0.3306876887873206,1.0,moderate,Self-driving Car
+ramd_accuracy,RAMD,selfdriving,hierarchy_max_depth,Hierarchy (max containment depth),10,-0.08757118051300736,0.80990032902882,1.0,negligible,Self-driving Car
+ramd_accuracy,RAMD,selfdriving,lma,Naming ambiguity (LMA),10,-0.3609402693277305,0.30551398156201576,1.0,moderate,Self-driving Car
+ramd_mk_accuracy,RAMD +MK,iot,num_nodes,Size (#nodes),25,-0.43702565112036257,0.02892915957596471,0.08678747872789414,moderate,IoT
+ramd_mk_accuracy,RAMD +MK,iot,density,Connectivity (density),25,0.28195944544628576,0.17209090145763178,0.17209090145763178,weak,IoT
+ramd_mk_accuracy,RAMD +MK,iot,hierarchy_max_depth,Hierarchy (max containment depth),25,-0.3533120192363913,0.08318494015823065,0.1663698803164613,moderate,IoT
+ramd_mk_accuracy,RAMD +MK,iot,lma,Naming ambiguity (LMA),25,0.4829730347643912,0.014463563416875094,0.057854253667500376,moderate,IoT
+ramd_mk_accuracy,RAMD +MK,smartparking,num_nodes,Size (#nodes),29,-0.5387061636659202,0.0025699393562506785,0.010279757425002714,strong,Smart Parking
+ramd_mk_accuracy,RAMD +MK,smartparking,density,Connectivity (density),29,0.19932292972610738,0.2999132006066102,0.8997396018198306,weak,Smart Parking
+ramd_mk_accuracy,RAMD +MK,smartparking,hierarchy_max_depth,Hierarchy (max containment depth),29,-0.17524590141879862,0.3632019959193976,0.8997396018198306,weak,Smart Parking
+ramd_mk_accuracy,RAMD +MK,smartparking,lma,Naming ambiguity (LMA),29,0.12431207871342966,0.5205526120277809,0.8997396018198306,weak,Smart Parking
+ramd_mk_accuracy,RAMD +MK,selfdriving,num_nodes,Size (#nodes),10,-0.07692307692307693,0.8327229151885773,1.0,negligible,Self-driving Car
+ramd_mk_accuracy,RAMD +MK,selfdriving,density,Connectivity (density),10,-0.2492025498024157,0.48748029865687714,1.0,weak,Self-driving Car
+ramd_mk_accuracy,RAMD +MK,selfdriving,hierarchy_max_depth,Hierarchy (max containment depth),10,0.13427153888239365,0.7115193869616474,1.0,weak,Self-driving Car
+ramd_mk_accuracy,RAMD +MK,selfdriving,lma,Naming ambiguity (LMA),10,-0.33011264588676237,0.35155951328281015,1.0,moderate,Self-driving Car

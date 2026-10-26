@@ -1,0 +1,15 @@
+{
+  "mapping_folder": "mapping_data/iot_mapping_files",
+  "ra_txt_path": "RA/iot_ra_components.txt",
+  "num_models": 25,
+  "total_nodes": 190,
+  "total_correct": 51,
+  "overall_accuracy_micro": 0.26842105263157895,
+  "mean_accuracy_per_model": 0.33099533146591964,
+  "output_files": {
+    "node_mappings.csv": "output_tfidf_ra_matching/node_mappings.csv",
+    "model_accuracy.csv": "output_tfidf_ra_matching/model_accuracy.csv",
+    "summary.json": "output_tfidf_ra_matching/summary.json"
+  },
+  "runtime_seconds": 0.420829667
+}

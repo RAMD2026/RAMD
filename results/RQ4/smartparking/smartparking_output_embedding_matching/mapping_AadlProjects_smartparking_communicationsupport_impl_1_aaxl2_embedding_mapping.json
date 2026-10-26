@@ -1,0 +1,36 @@
+{
+  "graph_id": "AadlProjects_smartparking_communicationsupport_impl_1.aaxl2",
+  "source_file": "mapping_AadlProjects_smartparking_communicationsupport_impl_1_aaxl2.json",
+  "method": "sentence_embedding_similarity_all-MiniLM-L6-v2",
+  "num_nodes": 1,
+  "num_correct": 0,
+  "average_score_for_model": 0.0,
+  "predictions": [
+    {
+      "node_id": "comp_vehiclesecurecommunication",
+      "graph_node_id": "vehiclesecurecommunication::../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclesecurecommunication.impl",
+      "node_name": "vehiclesecurecommunication",
+      "category": "process",
+      "classifier": "../../github/AadlProjects/smartpark/smartparking.aadl#smartparking.vehiclesecurecommunication.impl",
+      "ports": [],
+      "node_text_used": "Component name: vehiclesecurecommunication. Category: process. Classifier: .. .. github AadlProjects smartpark smartparking.aadl#smartparking.vehiclesecurecommunication.impl.",
+      "ground_truth_ra_names": [
+        "Business_Logic_Layer",
+        "Business_Logic_Layer",
+        "Business_Logic_Layer"
+      ],
+      "predicted_ra_name": "Security",
+      "predicted_ra_id": "comp.security",
+      "predicted_score": 0.483662873506546,
+      "is_correct": 0,
+      "top_k_candidates": [
+        {
+          "ra_id": "comp.security",
+          "ra_name": "Security",
+          "score": 0.483662873506546,
+          "ra_text": "RA component: Security. Tag: raelements."
+        }
+      ]
+    }
+  ]
+}

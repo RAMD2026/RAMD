@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:Implementation_model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://it.uni.sim/ra_adl" xmi:id="_66701038b4eb44cfb1182cf42d79752d">
+  <relations xmi:id="_89c2f41542144218ae5768eea05c6be9">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Application"/>
+    <component href="../architectures/SmartHome_smart_home_arch_Client_tier_impl_1.model#comp_system"/>
+    <component href="../architectures/SmartHome_smart_home_arch_Client_tier_impl_1.model#comp_plugin"/>
+  </relations>
+  <relations xmi:id="_cea088d6e3874c53890d5343979a5252">
+    <RAcomp href="../referencearchitectures/iot.ecore#//Device"/>
+    <component href="../architectures/SmartHome_smart_home_arch_Client_tier_impl_1.model#comp_smarthome_hw_platform"/>
+  </relations>
+</ecore:Implementation_model>

@@ -1,0 +1,871 @@
+{
+  "graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+  "ra_reference": {
+    "name": "IoT System Reference Architecture",
+    "components": [
+      {
+        "id": "comp.application",
+        "name": "Application",
+        "mandatory": true,
+        "incoming": null,
+        "outgoing": "conn.app-iotim",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.iotim",
+        "name": "IoTIM",
+        "mandatory": true,
+        "incoming": "conn.app-iotim",
+        "outgoing": "conn.iotim-gateway conn.app-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.gateway",
+        "name": "Gateway",
+        "mandatory": true,
+        "incoming": "conn.iotim-gateway",
+        "outgoing": "conn.gateway-device",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.device",
+        "name": "Device",
+        "mandatory": true,
+        "incoming": "conn.gateway-device conn.app-device",
+        "outgoing": "conn.device-sensor conn.device-actuator",
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.driver",
+        "name": "Driver",
+        "mandatory": null,
+        "incoming": null,
+        "outgoing": null,
+        "tag": "child",
+        "parent_id": "comp.device",
+        "parent_name": "Device"
+      },
+      {
+        "id": "comp.sensor",
+        "name": "Sensor",
+        "mandatory": true,
+        "incoming": "conn.device-sensor",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      },
+      {
+        "id": "comp.actuator",
+        "name": "Actuator",
+        "mandatory": true,
+        "incoming": "conn.device-actuator",
+        "outgoing": null,
+        "tag": "raelements",
+        "parent_id": null,
+        "parent_name": null
+      }
+    ],
+    "connectors": [
+      {
+        "id": "conn.app-iotim",
+        "name": "Application\u2013IoTIM Communication",
+        "source": "comp.application",
+        "target": "comp.iotim",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.iotim-gateway",
+        "name": "IoTIM\u2013Gateway Communication",
+        "source": "comp.iotim",
+        "target": "comp.gateway",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.gateway-device",
+        "name": "Gateway\u2013Device Communication",
+        "source": "comp.gateway",
+        "target": "comp.device",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-sensor",
+        "name": "Device\u2013Sensor Communication",
+        "source": "comp.device",
+        "target": "comp.sensor",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.device-actuator",
+        "name": "Device\u2013Actuator Communication",
+        "source": "comp.device",
+        "target": "comp.actuator",
+        "bidirectional": true
+      },
+      {
+        "id": "conn.app-device",
+        "name": "Device\u2013IoTIM Communication",
+        "source": "comp.iotim",
+        "target": "comp.device",
+        "bidirectional": true
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "comp_system",
+      "graph_node_id": "SYSTEM::smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+      "name": "SYSTEM",
+      "category": "system",
+      "classifier": "",
+      "ports": [
+        "in_mcr_remote",
+        "out_mcr_remote",
+        "in_mcr_zd",
+        "out_mcr_zd",
+        "in_mcr_ipd",
+        "out_mcr_ipd"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 1,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 5,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 9,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 25,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 29,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 35,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 47,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 60,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 69,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 72,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 76,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 79,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 124,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 138,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 141,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 145,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 153,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 157,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 166,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 170,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 174,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_zigbee_device_controller",
+      "graph_node_id": "ZIGBEE_DEVICE_CONTROLLER::../../github/smart-home-arch/MainControlRouter.aadl#MainControlRouter.Zigbee_Device_Controller",
+      "name": "ZIGBEE_DEVICE_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/smart-home-arch/MainControlRouter.aadl#MainControlRouter.Zigbee_Device_Controller",
+      "ports": [
+        "dev_data_receiver",
+        "dev_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 6,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 6,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 21,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 21,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 171,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 186,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 186,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_ip_device_controller",
+      "graph_node_id": "IP_DEVICE_CONTROLLER::../../github/smart-home-arch/MainControlRouter.aadl#MainControlRouter.IP_Device_Controller",
+      "name": "IP_DEVICE_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/smart-home-arch/MainControlRouter.aadl#MainControlRouter.IP_Device_Controller",
+      "ports": [
+        "dev_data_receiver",
+        "dev_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 2,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 14,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 14,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 167,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 167,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 179,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Device",
+          "ra_id": "comp.device",
+          "confidence": 1,
+          "source_row": 179,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_remote_msg_control",
+      "graph_node_id": "REMOTE_MSG_CONTROL::../../github/smart-home-arch/MainControlRouter.aadl#MainControlRouter.Remote_Msg_Control",
+      "name": "REMOTE_MSG_CONTROL",
+      "category": "process",
+      "classifier": "../../github/smart-home-arch/MainControlRouter.aadl#MainControlRouter.Remote_Msg_Control",
+      "ports": [
+        "app_data_receiver",
+        "app_data_sender",
+        "ctr_data_receiver",
+        "ctr_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 4,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 4,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 17,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 17,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 169,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 182,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 182,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    },
+    {
+      "id": "comp_main_controller",
+      "graph_node_id": "MAIN_CONTROLLER::../../github/smart-home-arch/MainControlRouter.aadl#MainControlRouter.Main_Controller",
+      "name": "MAIN_CONTROLLER",
+      "category": "process",
+      "classifier": "../../github/smart-home-arch/MainControlRouter.aadl#MainControlRouter.Main_Controller",
+      "ports": [
+        "zdc_data_receiver",
+        "zdc_data_sender",
+        "ipdc_data_receiver",
+        "ipdc_data_sender",
+        "remote_data_receiver",
+        "remote_data_sender"
+      ],
+      "ra_mappings": [
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 3,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Gateway",
+          "ra_id": "comp.gateway",
+          "confidence": 1,
+          "source_row": 15,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 168,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "Application",
+          "ra_id": "comp.application",
+          "confidence": 1,
+          "source_row": 180,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        },
+        {
+          "ra_name": "IoTIM",
+          "ra_id": "comp.iotim",
+          "confidence": 1,
+          "source_row": 180,
+          "aadl_graph_id": "smart-home-arch_MainControlRouter_MainControlRouter_impl_1.aaxl2",
+          "match_mode": "global_fallback"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_system",
+      "target": "comp_remote_msg_control",
+      "type": "connection",
+      "src_port": "in_mcr_remote",
+      "dst_port": "app_data_receiver",
+      "raw": {
+        "source": "//@featureInstance.0",
+        "destination": "//@componentInstance.2/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_zigbee_device_controller",
+      "type": "connection",
+      "src_port": "in_mcr_zd",
+      "dst_port": "dev_data_receiver",
+      "raw": {
+        "source": "//@featureInstance.2",
+        "destination": "//@componentInstance.0/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_system",
+      "target": "comp_ip_device_controller",
+      "type": "connection",
+      "src_port": "in_mcr_ipd",
+      "dst_port": "dev_data_receiver",
+      "raw": {
+        "source": "//@featureInstance.4",
+        "destination": "//@componentInstance.1/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_zigbee_device_controller",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "dev_data_sender",
+      "dst_port": "out_mcr_zd",
+      "raw": {
+        "source": "//@componentInstance.0/@featureInstance.1",
+        "destination": "//@featureInstance.3"
+      }
+    },
+    {
+      "source": "comp_zigbee_device_controller",
+      "target": "comp_main_controller",
+      "type": "connection",
+      "src_port": "ctr_data_sender",
+      "dst_port": "zdc_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.0/@featureInstance.3",
+        "destination": "//@componentInstance.3/@featureInstance.0"
+      }
+    },
+    {
+      "source": "comp_ip_device_controller",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "dev_data_sender",
+      "dst_port": "out_mcr_ipd",
+      "raw": {
+        "source": "//@componentInstance.1/@featureInstance.1",
+        "destination": "//@featureInstance.5"
+      }
+    },
+    {
+      "source": "comp_ip_device_controller",
+      "target": "comp_main_controller",
+      "type": "connection",
+      "src_port": "ctr_data_sender",
+      "dst_port": "ipdc_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.1/@featureInstance.3",
+        "destination": "//@componentInstance.3/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_remote_msg_control",
+      "target": "comp_system",
+      "type": "connection",
+      "src_port": "app_data_sender",
+      "dst_port": "out_mcr_remote",
+      "raw": {
+        "source": "//@componentInstance.2/@featureInstance.1",
+        "destination": "//@featureInstance.1"
+      }
+    },
+    {
+      "source": "comp_remote_msg_control",
+      "target": "comp_main_controller",
+      "type": "connection",
+      "src_port": "ctr_data_sender",
+      "dst_port": "remote_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.2/@featureInstance.3",
+        "destination": "//@componentInstance.3/@featureInstance.4"
+      }
+    },
+    {
+      "source": "comp_main_controller",
+      "target": "comp_zigbee_device_controller",
+      "type": "connection",
+      "src_port": "zdc_data_sender",
+      "dst_port": "ctr_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.1",
+        "destination": "//@componentInstance.0/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_main_controller",
+      "target": "comp_ip_device_controller",
+      "type": "connection",
+      "src_port": "ipdc_data_sender",
+      "dst_port": "ctr_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.3",
+        "destination": "//@componentInstance.1/@featureInstance.2"
+      }
+    },
+    {
+      "source": "comp_main_controller",
+      "target": "comp_remote_msg_control",
+      "type": "connection",
+      "src_port": "remote_data_sender",
+      "dst_port": "ctr_data_receiver",
+      "raw": {
+        "source": "//@componentInstance.3/@featureInstance.5",
+        "destination": "//@componentInstance.2/@featureInstance.2"
+      }
+    }
+  ],
+  "meta": {
+    "source_graphs_file": "SMART_HOME_graphs.json",
+    "source_ra_grammar": "iot.gramm",
+    "source_mapping_labels": "iot_ra_component_mapping_labels.csv",
+    "enable_global_fallback": true
+  }
+}

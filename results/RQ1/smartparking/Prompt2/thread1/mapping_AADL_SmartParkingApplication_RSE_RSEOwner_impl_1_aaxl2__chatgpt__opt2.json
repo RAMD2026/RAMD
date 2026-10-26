@@ -1,0 +1,47 @@
+{
+  "thread": 1,
+  "model": "chatgpt",
+  "option": 2,
+  "graph_id": "AADL-SmartParkingApplication_RSE_RSEOwner_impl_1.aaxl2",
+  "file": "mapping_AADL_SmartParkingApplication_RSE_RSEOwner_impl_1_aaxl2.json",
+  "predicted_mapping": {
+    "rse electric charge support provider": "Business_Logic_Layer",
+    "rse workzone safety provider": "Security",
+    "rse travel information communication provider": "Business_Logic_Layer",
+    "rse traffic metering provider": "Business_Logic_Layer",
+    "rse speed management provider": "Business_Logic_Layer"
+  },
+  "total_score": 4.0,
+  "avg_score": 0.8,
+  "per_node_scores": {
+    "rse electric charge support provider": 1.0,
+    "rse workzone safety provider": 0.0,
+    "rse travel information communication provider": 1.0,
+    "rse traffic metering provider": 1.0,
+    "rse speed management provider": 1.0
+  },
+  "check_constraints_log": "",
+  "avg_prompt_cost": 354.0,
+  "total_llm_cost": 7080,
+  "execution_time_seconds": 35.099987,
+  "config": {
+    "use_ra_descriptions": false,
+    "use_ra_structural_info": false,
+    "check_RA_constraints": false,
+    "same_mapping_patience": 3,
+    "fewshot_learning": false,
+    "recreate_mapping_with_llm": true,
+    "recreate_window": 10,
+    "break_after_recreate": false,
+    "use_chunking": true,
+    "chunk_size": 3,
+    "use_semantic_filter": false,
+    "semantic_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "semantic_top_k": 6,
+    "mapping_knowledge_csv_path": "mapping_data/all_SMART_PARKING_connection_components_with_ra_component.csv",
+    "mapping_knowledge_top_k": 5,
+    "mapping_knowledge_weight": 0.7,
+    "num_threads": 5,
+    "execution_mode": "sequential"
+  }
+}

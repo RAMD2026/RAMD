@@ -1,0 +1,19 @@
+ML_AI_DL_Algorithms: Provide intelligent perception, prediction, and decision-making capabilities. They process collected data to enable automation and adaptive behavior.
+
+Data_Collection: Gathers data from sensors, internal networks, and external sources. It prepares structured inputs for analytics and control functions.
+
+UI_UX_and_Infotainment: Delivers user interaction and multimedia functionalities. It enables visualization, configuration, and user engagement with the system.
+
+Real_time_and_Critical_Control_Software: Executes time-sensitive and safety-critical functions. It ensures deterministic behavior and reliable system operation.
+
+Software_Frameworks_and_Standards: Provide middleware and standardized interfaces for application development. They manage communication, scheduling, and hardware abstraction.
+
+Internal_Networking_Interfaces: Enable data exchange between hardware and software components. They support heterogeneous communication protocols and bandwidth requirements.
+
+Sensors: Capture physical signals from the environment. They provide raw data for perception, control, and analytics.
+
+Processing_Units: Execute software algorithms and control logic. They provide computational resources for real-time and AI workloads.
+
+V2X_Cloud_Comms: Enable communication with external vehicles, infrastructure, and cloud services. They support data sharing, remote updates, and cooperative functions.
+
+Mobile_Platform_Actuators: Execute physical actions based on control commands. They include propulsion, steering, braking, and other motion-related mechanisms.
